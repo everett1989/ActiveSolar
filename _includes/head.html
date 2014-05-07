@@ -1,0 +1,14 @@
+<head>
+  <meta charset="utf-8">
+  {% if page.title != 'Home'%}<title>{{ page.title }} &ndash; Jekyll Begin</title>{% endif %}
+  {% if page.title == 'Home'%}<title>Jekyll Begin &ndash; Home</title>{% endif %}
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="stylesheet" href="/site.css">
+
+  {% include head-fonts.html %}
+
+  {% include head-analytics.html %}
+
+</head>

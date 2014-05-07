@@ -1,0 +1,60 @@
+/*** Basic structure and formatting ***/
+
+html {
+  background: #f9fafa;
+  background: hsla(138, 10%, 98%, 1);
+  color: #15181e;
+  color: hsla(224, 16%, 10%, 1);
+  font: normal 400 16px/1.5 'Open Sans', sans-serif;
+  font: normal 400 1rem/1.5 'Open Sans', sans-serif;
+}
+
+a,
+a:visited {
+  background: transparent;
+  color: #04f;
+  color: hsla(224, 100%, 50%, 1);
+}
+
+a:hover,
+a:focus {
+  color: #ff4d00;
+  color: hsla(18, 100%, 50%, 1);
+  outline: 0;
+}
+
+h1 {
+  font: normal 400 1.5em/1.4 'Open Sans', sans-serif;
+}
+
+h2 {
+  font: normal 400 1.25em/1.4 'Open Sans', sans-serif;
+}
+
+h3 {
+  font: normal 400 1.125em/1.4 'Open Sans', sans-serif;
+}
+
+h4 {
+  font: normal 600 1em/1.4 'Open Sans', sans-serif;
+}
+
+ul {
+  list-style-type: square;
+  margin: 1em 0 1em 2em;
+}
+
+.page,
+.banner,
+.site-info {
+  margin: 1em auto;
+  max-width: 40em;
+  padding: 0 1em;
+}
+
+body {
+  background: #f9fafa;
+  background: hsla(138, 10%, 98%, 1);
+}
+
+/***! END Basic structure and formatting ***/

@@ -1,0 +1,7 @@
+---
+# no YAML required. Blank front matter so that CSS files can be included via
+# Liquid templating.
+---
+
+{% include reset.css %}
+{% include project.css %}
