@@ -1,0 +1,29 @@
+/*This controls the properties on the four navigation buttons.*/
+.form-button{    
+     
+     padding: 1em; 
+    
+     
+        a:link, a:visited{
+            display:block;
+            font-weight:bold;
+            color:black;
+            background-color:$tertiary-color;
+            text-align:center;
+            padding:0.05em;
+            text-decoration:none;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+            border-radius: 7px;
+            opacity:0.9;
+            min-height: 50px;
+            padding: 1em;
+
+        }
+        a:hover, a:active{
+            background-color:$tertiary-color;
+            box-shadow: 0 0 20px rgba(0,0,0,0.4);
+            border-radius: 7px;
+            opacity:1;
+
+       } 
+}
