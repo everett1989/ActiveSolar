@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{}</title>
+  <link href="/full.xml" rel="self"/>
+  <link href="/"/>
+  <updated>2014-05-11T16:10:14-04:00</updated>
+  <id></id>
+  <author>
+    <name></name>
+  </author>
+  <rights>CC BY-NC </rights>
+  
+  
+  <entry>
+    <title>New post!</title>
+    <link href="/new-post.html"/>
+    <updated>0000-12-31T19:00:01-05:00</updated>
+    <id>tag:,0000-12-31T19:00:01-05:00:/new-post</id>
+    <content type="html">&lt;p&gt;This is the start of a new project. Use this post to test whether the project is working project.&lt;/p&gt;
+
+&lt;p&gt;In the command line, go to the directory for the project &lt;code&gt;$ cd path/to/jekyll-begin&lt;/code&gt; and then build with &lt;code&gt;jekyll serve -w&lt;/code&gt; and open &lt;code&gt;localhost:4000&lt;/code&gt; in a web browser.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Another new post!</title>
+    <link href="/another-new-post.html"/>
+    <updated>0000-12-31T19:00:01-05:00</updated>
+    <id>tag:,0000-12-31T19:00:01-05:00:/another-new-post</id>
+    <content type="html">&lt;p&gt;Another new post to test out post navigation.&lt;/p&gt;
+</content>
+  </entry>
+  
+</feed>
