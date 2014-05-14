@@ -1,6 +1,14 @@
 name: Jekyll Begin
 markdown: redcarpet
-pygments: false
+#pygments: false
+highlighter: pygments 
+
+source: ./jekyll
+
+
+destination: ./site
+
+
 # change baseurl to:
 # '': for root level domains ie: mycustomdomain.com
 # '/projectname': for subdomains ie: user.github.io/projectname
