@@ -1,8 +1,0 @@
-name: Jekyll Begin
-markdown: redcarpet
-pygments: false
-# change baseurl to:
-# '': for root level domains ie: mycustomdomain.com
-# '/projectname': for subdomains ie: user.github.io/projectname
-baseurl: '/jekyll-test'
-permalink: :title.html
