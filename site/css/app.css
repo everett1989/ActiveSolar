@@ -1293,9 +1293,9 @@ select {
     color: white; }
   /* line 116, ../../bower_components/foundation/scss/foundation/components/_alert-boxes.scss */
   .alert-box.secondary {
-    background-color: #e7e7e7;
-    border-color: #c7c7c7;
-    color: #4f4f4f; }
+    background-color: rgba(67, 255, 67, 0.06);
+    border-color: rgba(22, 255, 22, 0.06);
+    color: white; }
   /* line 117, ../../bower_components/foundation/scss/foundation/components/_alert-boxes.scss */
   .alert-box.warning {
     background-color: #f08a24;
@@ -1305,7 +1305,7 @@ select {
   .alert-box.info {
     background-color: #a0d3e8;
     border-color: #74bfdd;
-    color: #4f4f4f; }
+    color: rgba(0, 109, 0, 0.06); }
 
 /* line 105, ../../bower_components/foundation/scss/foundation/components/_block-grid.scss */
 [class*="block-grid-"] {
@@ -2668,8 +2668,8 @@ select {
   list-style: none;
   border-style: solid;
   border-width: 1px;
-  background-color: #f4f4f4;
-  border-color: gainsboro;
+  background-color: rgba(170, 255, 170, 0.06);
+  border-color: rgba(128, 255, 128, 0.06);
   -webkit-border-radius: 3px;
   border-radius: 3px; }
   /* line 122, ../../bower_components/foundation/scss/foundation/components/_breadcrumbs.scss */
@@ -2760,15 +2760,15 @@ button, .button {
     color: white; }
   /* line 209, ../../bower_components/foundation/scss/foundation/components/_buttons.scss */
   button.secondary, .button.secondary {
-    background-color: #e7e7e7;
-    border-color: #b9b9b9;
-    color: #333333; }
+    background-color: rgba(67, 255, 67, 0.06);
+    border-color: rgba(3, 255, 3, 0.06);
+    color: white; }
     /* line 146, ../../bower_components/foundation/scss/foundation/components/_buttons.scss */
     button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
-      background-color: #b9b9b9; }
-    /* line 152, ../../bower_components/foundation/scss/foundation/components/_buttons.scss */
+      background-color: rgba(3, 255, 3, 0.06); }
+    /* line 157, ../../bower_components/foundation/scss/foundation/components/_buttons.scss */
     button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
-      color: #333333; }
+      color: white; }
   /* line 210, ../../bower_components/foundation/scss/foundation/components/_buttons.scss */
   button.success, .button.success {
     background-color: #43ac6a;
@@ -2856,22 +2856,22 @@ button, .button {
       background-color: #61c66a; }
     /* line 225, ../../bower_components/foundation/scss/foundation/components/_buttons.scss */
     button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
-      background-color: #e7e7e7;
-      border-color: #b9b9b9;
-      color: #333333;
+      background-color: rgba(67, 255, 67, 0.06);
+      border-color: rgba(3, 255, 3, 0.06);
+      color: white;
       cursor: default;
       opacity: 0.7;
       -webkit-box-shadow: none;
       box-shadow: none; }
       /* line 146, ../../bower_components/foundation/scss/foundation/components/_buttons.scss */
       button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
-        background-color: #b9b9b9; }
-      /* line 152, ../../bower_components/foundation/scss/foundation/components/_buttons.scss */
+        background-color: rgba(3, 255, 3, 0.06); }
+      /* line 157, ../../bower_components/foundation/scss/foundation/components/_buttons.scss */
       button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
-        color: #333333; }
+        color: white; }
       /* line 170, ../../bower_components/foundation/scss/foundation/components/_buttons.scss */
       button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
-        background-color: #e7e7e7; }
+        background-color: rgba(67, 255, 67, 0.06); }
     /* line 226, ../../bower_components/foundation/scss/foundation/components/_buttons.scss */
     button.disabled.success, button[disabled].success, .button.disabled.success, .button[disabled].success {
       background-color: #43ac6a;
@@ -4333,8 +4333,8 @@ kbd {
     color: white; }
   /* line 101, ../../bower_components/foundation/scss/foundation/components/_labels.scss */
   .label.secondary {
-    background-color: #e7e7e7;
-    color: #333333; }
+    background-color: rgba(67, 255, 67, 0.06);
+    color: white; }
 
 /* line 18, ../../bower_components/foundation/scss/foundation/components/_magellan.scss */
 [data-magellan-expedition] {
@@ -4911,7 +4911,7 @@ ul.pagination {
     display: block; }
   /* line 64, ../../bower_components/foundation/scss/foundation/components/_progress-bars.scss */
   .progress.secondary .meter {
-    background: #e7e7e7;
+    background: rgba(67, 255, 67, 0.06);
     height: 100%;
     display: block; }
   /* line 65, ../../bower_components/foundation/scss/foundation/components/_progress-bars.scss */
@@ -5008,7 +5008,7 @@ ul.pagination {
   display: inline-block;
   position: absolute;
   height: 0.875rem;
-  background: #e5e5e5; }
+  background: rgba(64, 255, 64, 0.06); }
 
 /* line 143, ../../bower_components/foundation/scss/foundation/components/_range-slider.scss */
 .range-slider-handle {
@@ -5981,10 +5981,10 @@ meta.foundation-mq-topbar {
         background: #399e42; }
     /* line 330, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
     .top-bar-section ul li > a.button.secondary {
-      background: #e7e7e7; }
+      background: rgba(67, 255, 67, 0.06); }
       /* line 332, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
       .top-bar-section ul li > a.button.secondary:hover {
-        background: #cecece; }
+        background: rgba(32, 255, 32, 0.06); }
     /* line 336, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
     .top-bar-section ul li > a.button.success {
       background: #43ac6a; }
@@ -7789,13 +7789,13 @@ th.hide-for-touch {
   .footer .copyright {
     text-align: center; }
 
-/* line 8, ../../scss/_fonts.scss */
+/* line 4, ../../scss/_fonts.scss */
 .footer p {
   color: #7f7f7f;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 11px;
   line-height: 18px; }
-/* line 17, ../../scss/_fonts.scss */
+/* line 13, ../../scss/_fonts.scss */
 .footer h3 {
   color: #9f9f9f;
   font-size: 25px;
@@ -7803,6 +7803,38 @@ th.hide-for-touch {
   font-weight: 300;
   margin: 0 0 25px 0; }
 
-/* line 13, ../../scss/app.scss */
+/* line 26, ../../scss/_fonts.scss */
+.panel p, .panel h3 {
+  font-family: "Open Sans";
+  font-weight: 300; }
+/* line 31, ../../scss/_fonts.scss */
+.panel h3 {
+  color: #6F6F6F;
+  font-size: 25px; }
+/* line 36, ../../scss/_fonts.scss */
+.panel p {
+  color: #626262;
+  font-size: 14px; }
+
+@media screen and (min-width: 1000px) {
+  /* line 14, ../../scss/_index.scss */
+  .slide_show ul.slider_img li img {
+    min-height: 315px; } }
+
+/* line 14, ../../scss/app.scss */
+h3 {
+  color: #6F6F6F;
+  font-size: 25px;
+  font-family: "Open Sans";
+  font-weight: 300; }
+
+/* line 22, ../../scss/app.scss */
+p {
+  color: #6F6F6F;
+  font-size: 15px;
+  font-family: "Open Sans";
+  font-weight: 300; }
+
+/* line 30, ../../scss/app.scss */
 .row {
   margin-bottom: 2em; }
