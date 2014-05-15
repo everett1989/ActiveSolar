@@ -4,11 +4,16 @@ $primary-color: #61C66A; //green
 $primary-opacity: scale-color($primary-color,$lightness: 13%);//opacity at 13%
 $primary-dark: scale-color($primary-color,$lightness: -13%);//opacity at 13% darker
 
+$secondary-color: rgba(67, 255, 67, 0.06);//very light green
+
 
 $topbar-bg: $primary-color; //Color for menu bar
 $topbar-link-bg-hover: $primary-opacity;//on hover menu
 
 $topbar-dropdown-bg: $primary-dark;
+
+
+$max-row-width: 1000px;
 
 
 

@@ -1,0 +1,33 @@
+
+
+.slide_show{
+
+	
+
+
+
+
+	ul.slider_img {
+		
+		li{
+
+			img{
+				@media screen and (min-width: $max-row-width){
+					min-height:315px;
+				}
+
+			// @media only screen 
+			// and (min-device-width : $max-row-width){
+			// 	height: 470px;
+
+			// }
+
+
+			// @media screen (max-width: $max-row-width){
+			// 	height: 470;
+			// }
+
+		}
+	}
+}
+}
