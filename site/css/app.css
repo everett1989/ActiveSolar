@@ -7780,7 +7780,8 @@ th.hide-for-touch {
 /* line 1, ../../scss/_header-menu.scss */
 .header-menu {
   background: #61c66a;
-  box-shadow: 0px 0px 5px; }
+  box-shadow: 0px 0px 5px;
+  margin-bottom: 2em; }
 
 /* line 2, ../../scss/_footer.scss */
 .footer {
