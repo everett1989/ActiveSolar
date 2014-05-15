@@ -9,9 +9,27 @@
 @import "footer";
 @import "fonts";
 
+@import "index";
+
+h3{
+		color: #6F6F6F;
+		font-size: 25px;
+		font-family: "Open Sans";
+		font-weight: 300;
+
+	}
+
+p{
+		color: #6F6F6F;
+		font-size: 15px;
+		font-family: "Open Sans";
+		font-weight: 300;
+}
+
 
 .row{
 	margin-bottom: 2em;
+	//background:$secondary-color;
 }
 
 // .top-bar-section{
