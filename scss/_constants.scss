@@ -1,16 +1,21 @@
 
 
 $primary-color: #61C66A; //green 
-$primary-opacity: scale-color($primary-color,$lightness: 13%);//opacity at 13%
+$primary-light: scale-color($primary-color,$lightness: 13%);//opacity at 13%
 $primary-dark: scale-color($primary-color,$lightness: -13%);//opacity at 13% darker
 
 $secondary-color: rgba(67, 255, 67, 0.06);//very light green
+$grey-hover: rgb(223, 223, 223);
 
-
+//Header colors
 $topbar-bg: $primary-color; //Color for menu bar
-$topbar-link-bg-hover: $primary-opacity;//on hover menu
+$topbar-link-bg-hover: $primary-light;//on hover menu
+$topbar-dropdown-bg: $primary-dark;//dropdown colors
 
-$topbar-dropdown-bg: $primary-dark;
+$topbar-link-bg-active: $primary-dark;//Color for active nav li
+$topbar-link-bg-active-hover: scale-color($primary-dark, $lightness: -14%);
+$icon-size-40:40px;//icon size 40
+
 
 
 $max-row-width: 1000px;

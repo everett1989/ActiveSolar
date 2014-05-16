@@ -7,38 +7,51 @@
 
 
 <!-- <div class="row logo_banner">
- -->	
+-->	
 <!-- </div> -->
+<!-- {% for node in site.pages %}
+    {% if page.url == node.url %}
+      <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+    {% else %}
+      <li><a href="{{node.url}}">{{node.title}}</a></li>
+    {% endif %}
+  {% endfor %}
+-->
 
 
 
-
-		
 
 
 <div class="row">
 	<div class="small-12 columns">
-<img class="logo_pic" src="logo/Logo.jpg" alt="logo">
-</div>
+		<img class="logo_pic" src="logo/Logo.jpg" alt="logo">
+	</div>
 </div>
 <div class="sticky contain-to-grid header-menu">
-<nav class="top-bar" data-topbar>
+	<nav class="top-bar" data-topbar>
 
 
-	<ul class="title-area">
-		<li class="name"><h1><a href="index.html"><i class="fi-home"></i> Home</a></h1></li>
-		<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>	
-	</ul>
+		<ul class="title-area">
+			<li class="name"><h1><a href="index.html"><i class="fi-home"></i> Home</a></h1></li>
+			<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>	
+		</ul>
 
-	<section class = "top-bar-section">
-		<ul class ="right">
+		<section class = "top-bar-section">
+			<ul class ="right">
 
-			<li><a href="about.html">About Us</a></li>
-			<li><a href="services.html">Services</a></li>
+			<li{% if page.url == '/about.html' %} class="active"{% endif %}><a href="about.html">About Us</a></li>
+			<li{% if page.url == '/gallery.html' %} class="active"{% endif %}><a href="gallery.html">Services</a></li>
+			<li{% if page.url == '/services.html' %} class="active"{% endif %}><a href="services.html">Gallery</a></li>
+			<li{% if page.url == '/incentives.html' %} class="active"{% endif %}><a href="incentives.html">Incentives</a></li>
+			<li{% if page.url == '/about_solar.html' %} class="active"{% endif %}><a href="about_solar.html">About Solar</a></li>
+			<li{% if page.url == '/projects.html' %} class="active"{% endif %}><a href="projects.html">Projects</a></li>
+			
+
+<!-- 			<li><a href="services.html">Services</a></li>
 			<li><a href="gallery.html">Gallery</a></li>
 			<li><a href="incentives.html">Incentives</a></li>
 			<li><a href="about_solar.html">About Solar</a></li>
-			<li><a href="projects.html">Projects</a></li>
+			<li><a href="projects.html">Projects</a></li> -->
 		</ul>
 		
 	</section>

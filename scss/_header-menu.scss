@@ -1,8 +1,32 @@
 .header-menu{
-	background: $primary-color;
+	//background: $primary-color;
 	box-shadow: 0px 0px 5px;
 	margin-bottom:2em;
 	// height:100px;
+
+	nav{
+
+		ul.title-area{
+			li.name{
+
+				.fi-home{//home icon size
+					font-size: $icon-size-40;
+				}
+
+
+				a:hover{//change home on hover
+					color: $grey-hover;
+
+
+
+
+				}
+
+			}
+		}
+	}
+
+
 
 }
 
