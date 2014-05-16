@@ -4,6 +4,10 @@
 
 		
 
+	h3{
+		text-align:center;
+	}
+
 
 
 
@@ -12,9 +16,9 @@
 		li{
 
 			img{
-				@media screen and (min-width: $max-row-width){
-					min-height:315px;
-				}
+				// @media screen and (min-width: $max-row-width){
+				// 	min-height:315px;
+				// }
 
 				
 
