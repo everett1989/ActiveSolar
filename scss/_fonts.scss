@@ -24,9 +24,9 @@
 
 .panel{
 	p, h3{
-	font-family: "Open Sans";
-	font-weight: 300;
-}
+		font-family: "Open Sans";
+		font-weight: 300;
+	}
 
 	h3{
 		color: #6F6F6F;
@@ -40,4 +40,13 @@
 	}
 
 
-};
+}
+
+.fi-home{
+	font-size: 32px;
+}
+
+  li {
+    clear: none !important;
+    margin-right: 0;
+  }
