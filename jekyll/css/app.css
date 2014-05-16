@@ -6003,11 +6003,11 @@ meta.foundation-mq-topbar {
     color: white; }
   /* line 359, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section ul li.active > a {
-    background: #61c66a;
+    background: #45bc4f;
     color: white; }
     /* line 362, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
     .top-bar-section ul li.active > a:hover {
-      background: #43ba4e;
+      background: #3ba244;
       color: white; }
   /* line 370, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar-section .has-form {
@@ -6167,10 +6167,10 @@ meta.foundation-mq-topbar {
       padding: 0 15px;
       line-height: 45px;
       color: white;
-      background: #61c66a; }
+      background: #45bc4f; }
       /* line 509, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
       .top-bar-section li.active:not(.has-form) a:not(.button):hover {
-        background: #43ba4e; }
+        background: #3ba244; }
     /* line 518, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
     .top-bar-section .has-dropdown > a {
       padding-right: 35px !important; }
@@ -6268,7 +6268,7 @@ meta.foundation-mq-topbar {
     color: white; }
   /* line 630, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .no-js .top-bar-section ul li:active > a {
-    background: #61c66a;
+    background: #45bc4f;
     color: white; }
   /* line 638, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .no-js .top-bar-section .has-dropdown:hover > .dropdown {
@@ -7779,11 +7779,16 @@ th.hide-for-touch {
 
 /* line 1, ../../scss/_header-menu.scss */
 .header-menu {
-  background: #61c66a;
   box-shadow: 0px 0px 5px;
   margin-bottom: 2em; }
+  /* line 12, ../../scss/_header-menu.scss */
+  .header-menu nav ul.title-area li.name .fi-home {
+    font-size: 40px; }
+  /* line 17, ../../scss/_header-menu.scss */
+  .header-menu nav ul.title-area li.name a:hover {
+    color: #dfdfdf; }
 
-/* line 14, ../../scss/_header-menu.scss */
+/* line 38, ../../scss/_header-menu.scss */
 .logo_pic {
   margin-bottom: 5px; }
 
@@ -7820,15 +7825,6 @@ th.hide-for-touch {
 .panel p {
   color: #626262;
   font-size: 14px; }
-
-/* line 45, ../../scss/_fonts.scss */
-.fi-home {
-  font-size: 32px; }
-
-/* line 49, ../../scss/_fonts.scss */
-li {
-  clear: none !important;
-  margin-right: 0; }
 
 @media screen and (min-width: 1000px) {
   /* line 14, ../../scss/_index.scss */
