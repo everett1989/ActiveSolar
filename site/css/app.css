@@ -7792,6 +7792,10 @@ th.hide-for-touch {
 .logo_pic {
   margin-bottom: 5px; }
 
+/* line 47, ../../scss/_header-menu.scss */
+.magellan {
+  margin-top: 45px; }
+
 /* line 2, ../../scss/_footer.scss */
 .footer {
   margin-top: 2em; }
@@ -7821,15 +7825,14 @@ th.hide-for-touch {
 .panel h3 {
   color: #6F6F6F;
   font-size: 25px; }
-/* line 36, ../../scss/_fonts.scss */
+/* line 37, ../../scss/_fonts.scss */
 .panel p {
   color: #626262;
   font-size: 14px; }
 
-@media screen and (min-width: 1000px) {
-  /* line 14, ../../scss/_index.scss */
-  .slide_show ul.slider_img li img {
-    min-height: 315px; } }
+/* line 7, ../../scss/_index.scss */
+.slide_show h3 {
+  text-align: center; }
 
 /* line 7, ../../scss/_gallery.scss */
 ul.clearing-thumbs li {
@@ -7840,14 +7843,14 @@ ul.clearing-thumbs li {
 h3 {
   color: #6F6F6F;
   font-size: 25px;
-  font-family: "Open Sans";
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: 300; }
 
 /* line 24, ../../scss/app.scss */
 p {
   color: #6F6F6F;
   font-size: 15px;
-  font-family: "Open Sans";
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: 300; }
 
 /* line 32, ../../scss/app.scss */

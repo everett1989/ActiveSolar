@@ -1,4 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -22,52 +26,7 @@
 
 </head>
 <body>
-	<!-- <header class="banner" id="top" role="banner">
-  <nav class="top-menu">
-    <a href="/ActiveSolar">Home</a>
-  </nav>
-  <h1><a href="/ActiveSolar">Active Solar</a></h1>
-</header> -->
-
-
-<!-- <div class="row logo_banner">
--->	
-<!-- </div> -->
-<!-- 
-    
-      <li><a href="/about.html">About Us</a></li>
-    
-  
-    
-      <li class="active"><a href="/about_solar.html" class="active">About Solar</a></li>
-    
-  
-    
-      <li><a href="/gallery.html">Gallery</a></li>
-    
-  
-    
-      <li><a href="/incentives.html">Incentives</a></li>
-    
-  
-    
-      <li><a href="/index.html">Home</a></li>
-    
-  
-    
-      <li><a href="/projects.html">Projects</a></li>
-    
-  
-    
-      <li><a href="/services.html">Services</a></li>
-    
-  
--->
-
-
-
-
-
+	
 <div class="row">
 	<div class="small-12 columns">
 		<a href="index.html"><img class="logo_pic" src="logo/Logo.jpg" alt="logo"></a>
@@ -76,9 +35,8 @@
 <div class="sticky contain-to-grid header-menu">
 	<nav class="top-bar" data-topbar>
 
-
 		<ul class="title-area">
-			<li class="name"><h1><a href="index.html"><i class="fi-home"></i> Home</a></h1></li>
+			<li class="name"><h1><a href="index.html"><!-- <i class="fi-home"></i>  -->Home</a></h1></li>
 			<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>	
 		</ul>
 
@@ -86,35 +44,104 @@
 			<ul class ="right">
 
 				<li><a href="about.html">About Us</a></li>
-				<li><a href="services.html">Services</a></li>
+
+				<li class="has-dropdown">
+					<a href="#">Services</a>
+				<!-- </li> -->
+					<!-- <li class="active"><a href="#">Right Button Active</a></li> -->
+      				<!-- <li class="has-dropdown"> -->
+					<ul class="dropdown">
+          				<li><a href="residential_services.html">Residential</a></li>
+          				<li><a href="commercial_services.html">Commercial</a></li>
+        			</ul>
+				</li>
+
 				<li><a href="gallery.html">Gallery</a></li>
-				<li><a href="incentives.html">Incentives</a></li>
+				<li><a href="process.html">Our Process</a></li>
 				<li class="active"><a href="about_solar.html">About Solar</a></li>
+				<li><a href="financing.html">Financing</a></li>
 				<li><a href="projects.html">Projects</a></li>
-
-
-<!-- 			<li><a href="services.html">Services</a></li>
-			<li><a href="gallery.html">Gallery</a></li>
-			<li><a href="incentives.html">Incentives</a></li>
-			<li><a href="about_solar.html">About Solar</a></li>
-			<li><a href="projects.html">Projects</a></li> -->
 		</ul>
 		
 	</section>
 
-
-
 </nav>
+
+</div>
+
+	<div class="row content">
+		<div class="large-2 columns">
+			<ul class="side-nav">
+	<li><a href="#">Request a quote</a></li>
+	<li><a href="#">Link 2</a></li>
+	<li><a href="#">Link 3</a></li>
+	<li><a href="#">Link 4</a></li>
+</ul>
+<!-- <h3 data-magellan-destination="js">Quick Links</h3>
+<div data-magellan-expedition="fixed">
+  <ul class="sub-nav">
+    <li><a href="#">Get a Quote</a></li>
+    <li><a href="#">Arrival 2</a></li>
+  </ul>
+</div> -->
+
+<!-- <ul class="magellan tabs vertical" data-magellan-expedition="fixed">
+
+  <li data-magellan-arrival="buttons"><a href="#buttons">Buttons</a></li>
+</ul> -->
+
+<!-- <div data-magellan-expedition="fixed">
+  <dl class="sub-nav vertical">
+    <dd data-magellan-arrival="build"><a href="#build">Build with HTML</a></dd>
+    <dd data-magellan-arrival="js"><a href="#js">Arrival 2</a></dd>
+  </dl>
+</div> -->
+
+
+		</div>
+		<div class="large-10 columns">
+			<div class="magellan" data-magellan-expedition="fixed">
+	<dl class="sub-nav">
+		<dd data-magellan-arrival="how_it_works"><a href="#how_it_works">How it Works</a></dd>
+		<dd data-magellan-arrival="solar_101"><a href="#solar_101">Solar 101</a></dd>
+		<dd data-magellan-arrival="asd"><a href="#asd">Active Solar Developement</a></dd>
+
+	</dl>
 </div>
 
 
-	<div class="row">
-	<div class="large-12 columns">
-		<h3>About Solar</h3>
-		<p>Stufffffff</p>
+<div class="row">
+
+	<div id="how_it_works" class="large-12 columns">
+
+		<a name="how_it_works"></a>
+		<h3 data-magellan-destination="how_it_works">&nbsp;</h3>
+		<h3>How it works</h3>
+
+		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+	</div>
+	<hr>
+
+	<div id="solar_101" class="large-12 columns">
+		<a name="solar_101"></a>
+		<h3 data-magellan-destination="solar_101">&nbsp;</h3>
+		<h3>Solar 101</h3>
+		
+		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+	</div>
+	<hr>
+
+	<div id="asd" class="large-12 columns">
+		<a name="asd"></a>
+		<h3 data-magellan-destination="asd">&nbsp;</h3>
+		<h3>Active Solar Devlopment</h3>
+		
+		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
 	</div>
 
 </div>
+		</div>
+	</div>
 
 	<!-- <footer class="site-info" role="contentinfo">
   <p>Here is a footer.</p>
