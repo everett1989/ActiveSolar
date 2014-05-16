@@ -7783,6 +7783,10 @@ th.hide-for-touch {
   box-shadow: 0px 0px 5px;
   margin-bottom: 2em; }
 
+/* line 14, ../../scss/_header-menu.scss */
+.logo_pic {
+  margin-bottom: 5px; }
+
 /* line 2, ../../scss/_footer.scss */
 .footer {
   margin-top: 2em; }
@@ -7817,25 +7821,39 @@ th.hide-for-touch {
   color: #626262;
   font-size: 14px; }
 
+/* line 45, ../../scss/_fonts.scss */
+.fi-home {
+  font-size: 32px; }
+
+/* line 49, ../../scss/_fonts.scss */
+li {
+  clear: none !important;
+  margin-right: 0; }
+
 @media screen and (min-width: 1000px) {
   /* line 14, ../../scss/_index.scss */
   .slide_show ul.slider_img li img {
     min-height: 315px; } }
 
-/* line 14, ../../scss/app.scss */
+/* line 7, ../../scss/_gallery.scss */
+ul.clearing-thumbs li {
+  clear: none !important;
+  margin-right: 0; }
+
+/* line 16, ../../scss/app.scss */
 h3 {
   color: #6F6F6F;
   font-size: 25px;
   font-family: "Open Sans";
   font-weight: 300; }
 
-/* line 22, ../../scss/app.scss */
+/* line 24, ../../scss/app.scss */
 p {
   color: #6F6F6F;
   font-size: 15px;
   font-family: "Open Sans";
   font-weight: 300; }
 
-/* line 30, ../../scss/app.scss */
+/* line 32, ../../scss/app.scss */
 .row {
   margin-bottom: 2em; }
