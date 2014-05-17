@@ -72,20 +72,22 @@
 	<div class="row content">
 		<div class="medium-2  columns">
 			
-
-<dl class="side-links show-for-medium-up" data-magellan-expedition="fixed">
-  <dd ><a href="#">Get a Quote</a></dd>
-  <dd ><a href="#">FAQs</a></dd>
-  <dd ><a href="#">Contact Us</a></dd>
-</dl>
+<ul class="side-links" data-magellan-expedition="fixed" >
+    <li ><a href="#">Get a Quote</a></li>
+    <li ><a href="#">FAQs</a></li>
+    <li ><a href="#">Questions</a></li>
+    <li ><a href="#">Contact Us</a></li>
+</ul>
 
 		</div>
 
 		<div class="medium-10  columns">
 			
-			<h2>Page Name</h2>
+			
 			
 			<img class="banner"src="http://i.telegraph.co.uk/multimedia/archive/02597/solar-panels_2597461b.jpg" alt="temp">
+			<hr>
+			<h2>Page Name</h2>
 			<hr>
 			<!-- <h2>Commercial Services</h2> -->
 <!-- <div class="magellan" data-magellan-expedition="fixed"> -->
@@ -141,47 +143,39 @@
 
 	<hr>
 	<div class=" small-block-grid-2 large-block-grid-4">
-		<li>
-			<h4>About</h4>
-
+		<li >
 			<ul>
+				<li><h4>About</h4></li>
 				<li><a href="#">Who we are</a></li>
 				<li><a href="#">Contact</a></li>
 				<li><a href="#">History</a></li>
 				<li><a href="#">Blahblah</a></li>
 			</ul>
 		</li>
+
 		<li>
-
-
-			<h4>For Home</h4>
-
 			<ul>
+				<li><h4>For Home</h4></li>
 				<li><a href="#">Who we are</a></li>
 				<li><a href="#">Contact</a></li>
 				<li><a href="#">History</a></li>
 				<li><a href="#">Blahblah</a></li>
 			</ul>
-
 		</li>
+
 		<li>
-
-
-			<h4>For Business</h4>
-
 			<ul>
+				<li><h4>For Business</h4></li>
 				<li><a href="#">Who we are</a></li>
 				<li><a href="#">Contact</a></li>
 				<li><a href="#">History</a></li>
 				<li><a href="#">Blahblah</a></li>
 			</ul>
-
 		</li>
+
 		<li>
-
-			<h4>Careers</h4>
-
 			<ul>
+				<li><h4>Careers</h4></li>
 				<li><a href="#">Who we are</a></li>
 				<li><a href="#">Contact</a></li>
 				<li><a href="#">History</a></li>
@@ -207,9 +201,13 @@ $(document).foundation(
   // specify the class used for active sections
   //active_class: 'active',
   // how many pixels until the magellan bar sticks, 0 = auto
-  threshold: -45,
+  threshold: -100,
   // pixels from the top of destination for it to be considered active
-  destination_threshold: 0,//for sub-nav
+  destination_threshold: -50,//for sub-nav
+  orbit: {
+  	slide_number: false,//for orbit slideshow- Removes numbers
+  	timer_speed: 4000
+	}
   // calculation throttling to increase framerate
   //throttle_delay: 50 
 }

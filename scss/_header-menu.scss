@@ -59,14 +59,22 @@
 dl.side-links{
 	// background:blue;
 	margin-top: 45px;
-	z-index:0;
+	//z-index:0;
+	//width: 200px;
+	@media only screen and (max-width: 767px) {
+  		position: static !important; width: 100%
+}
+
 
 }
 
 dl.sub-nav{
+
+
 	  //margin-top: 45px;
 	  top: 45px !important;
 	  padding-top:10px;
+
 
 	// z-index:0;
 }
@@ -77,4 +85,16 @@ img.banner{
 	box-shadow: 0 0 5px;
 
 
+}
+
+ul.side-links {
+	width: 240px;
+	top: 45px !important;
+	z-index:0;
+
+	@media only screen and (max-width: 767px) {
+  		position: static !important;
+   		width: 100%;
+   		//display:none;
+	}
 }
