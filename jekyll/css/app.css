@@ -5792,8 +5792,8 @@ table {
     margin-top: -5px; } }
 /* line 102, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 meta.foundation-mq-topbar {
-  font-family: "/only screen and (min-width:40.063em)/";
-  width: 40.063em; }
+  font-family: "/only screen and (min-width: 754px)/";
+  width: 754px; }
 
 /* Wrapped around .top-bar to contain to grid width */
 /* line 108, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -5870,7 +5870,7 @@ meta.foundation-mq-topbar {
     /* line 184, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
     .top-bar .name h1 {
       line-height: 45px;
-      font-size: 1.0625rem;
+      font-size: 25px;
       margin: 0; }
       /* line 188, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
       .top-bar .name h1 a {
@@ -5966,14 +5966,14 @@ meta.foundation-mq-topbar {
     padding: 12px 0 12px 0;
     padding-left: 15px;
     font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    font-size: 0.8125rem;
+    font-size: rem-calc(13);
     font-weight: normal;
     text-transform: none;
     background: #45bc4f; }
     /* line 321, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
     .top-bar-section ul li > a.button {
       background: #61c66a;
-      font-size: 0.8125rem;
+      font-size: rem-calc(13);
       padding-right: 15px;
       padding-left: 15px; }
       /* line 326, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -6095,7 +6095,7 @@ meta.foundation-mq-topbar {
 .js-generated {
   display: block; }
 
-@media only screen and (min-width: 40.063em) {
+@media only screen and (min-width: 754px) {
   /* line 447, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar {
     background: #61c66a;
@@ -7777,44 +7777,57 @@ th.hide-for-touch {
 .touch th.show-for-touch {
   display: table-cell !important; }
 
-/* line 1, ../../scss/_header-menu.scss */
+/* line 3, ../../scss/_header-menu.scss */
 .header-menu {
   box-shadow: 0px 0px 5px;
   margin-bottom: 2em; }
-  /* line 12, ../../scss/_header-menu.scss */
-  .header-menu nav ul.title-area li.name .fi-home {
-    font-size: 40px; }
-  /* line 17, ../../scss/_header-menu.scss */
+  /* line 23, ../../scss/_header-menu.scss */
   .header-menu nav ul.title-area li.name a:hover {
     color: #dfdfdf; }
 
-/* line 35, ../../scss/_header-menu.scss */
+/* line 54, ../../scss/_header-menu.scss */
 .logo_pic {
   margin-bottom: 5px; }
 
-/* line 40, ../../scss/_header-menu.scss */
+/* line 59, ../../scss/_header-menu.scss */
 dl.side-links {
-  margin-top: 45px;
-  z-index: 0; }
+  margin-top: 45px; }
+  @media only screen and (max-width: 767px) {
+    /* line 59, ../../scss/_header-menu.scss */
+    dl.side-links {
+      position: static !important;
+      width: 100%; } }
 
-/* line 45, ../../scss/_header-menu.scss */
+/* line 71, ../../scss/_header-menu.scss */
 dl.sub-nav {
   top: 45px !important;
   padding-top: 10px; }
 
-/* line 53, ../../scss/_header-menu.scss */
+/* line 82, ../../scss/_header-menu.scss */
 img.banner {
   max-height: 175px;
   width: 100%;
   box-shadow: 0 0 5px; }
 
+/* line 90, ../../scss/_header-menu.scss */
+ul.side-links {
+  width: 240px;
+  top: 45px !important;
+  z-index: 0; }
+  @media only screen and (max-width: 767px) {
+    /* line 90, ../../scss/_header-menu.scss */
+    ul.side-links {
+      position: static !important;
+      width: 100%; } }
+
 /* line 2, ../../scss/_footer.scss */
 .footer {
+  text-align: center;
   margin-top: 2em; }
-  /* line 7, ../../scss/_footer.scss */
+  /* line 10, ../../scss/_footer.scss */
   .footer ul li a {
     color: #9f9f9f; }
-  /* line 19, ../../scss/_footer.scss */
+  /* line 23, ../../scss/_footer.scss */
   .footer .copyright {
     text-align: center; }
 
@@ -7854,23 +7867,23 @@ ul.clearing-thumbs li {
   clear: none !important;
   margin-right: 0; }
 
-/* line 16, ../../scss/app.scss */
+/* line 18, ../../scss/app.scss */
 h3, h4, h2, h5 {
   color: #6F6F6F;
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: 300; }
 
-/* line 23, ../../scss/app.scss */
+/* line 25, ../../scss/app.scss */
 p {
   color: #6F6F6F;
   font-size: 15px;
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: 300; }
 
-/* line 31, ../../scss/app.scss */
+/* line 33, ../../scss/app.scss */
 .row {
   margin-bottom: 2em; }
 
-/* line 36, ../../scss/app.scss */
+/* line 39, ../../scss/app.scss */
 li {
   list-style-type: none; }

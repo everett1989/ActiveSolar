@@ -1,57 +1,53 @@
 <!-- <footer class="site-info" role="contentinfo">
   <p>Here is a footer.</p>
 </footer> -->
-	
+
 <div id="footer" class="footer row">
 
 	<!-- <h4>Active Solar &copy; 2014</h4> -->
 
 	<hr>
-	<div class="medium-3 columns">
-		<h4>About</h4>
+	<div class=" small-block-grid-2 large-block-grid-4">
+		<li >
+			<ul>
+				<li><h4>About</h4></li>
+				<li><a href="#">Who we are</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">History</a></li>
+				<li><a href="#">Blahblah</a></li>
+			</ul>
+		</li>
 
-		<ul>
-			<li><a href="#">Who we are</a></li>
-			<li><a href="#">Contact</a></li>
-			<li><a href="#">History</a></li>
-			<li><a href="#">Blahblah</a></li>
-		</ul>
+		<li>
+			<ul>
+				<li><h4>For Home</h4></li>
+				<li><a href="#">Who we are</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">History</a></li>
+				<li><a href="#">Blahblah</a></li>
+			</ul>
+		</li>
 
+		<li>
+			<ul>
+				<li><h4>For Business</h4></li>
+				<li><a href="#">Who we are</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">History</a></li>
+				<li><a href="#">Blahblah</a></li>
+			</ul>
+		</li>
+
+		<li>
+			<ul>
+				<li><h4>Careers</h4></li>
+				<li><a href="#">Who we are</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">History</a></li>
+				<li><a href="#">Blahblah</a></li>
+			</ul>
+		</li>
 		
-	</div>
-
-	<div class="medium-3 columns">
-		<h4>For Home</h4>
-
-		<ul>
-			<li><a href="#">Who we are</a></li>
-			<li><a href="#">Contact</a></li>
-			<li><a href="#">History</a></li>
-			<li><a href="#">Blahblah</a></li>
-		</ul>
-
-		
-	</div>
-	<div class="medium-3 columns">
-		<h4>For Business</h4>
-
-		<ul>
-			<li><a href="#">Who we are</a></li>
-			<li><a href="#">Contact</a></li>
-			<li><a href="#">History</a></li>
-			<li><a href="#">Blahblah</a></li>
-		</ul>
-
-	</div>
-	<div class="medium-3 columns">
-		<h4>Careers</h4>
-
-		<ul>
-			<li><a href="#">Who we are</a></li>
-			<li><a href="#">Contact</a></li>
-			<li><a href="#">History</a></li>
-			<li><a href="#">Blahblah</a></li>
-		</ul>
 
 	</div>
 	<div class="medium-12 columns copyright">
@@ -61,22 +57,26 @@
 </div>
 
 
-    <script src="foundation/js/vendor/jquery.js"></script>
-    <script src="foundation/js/foundation.min.js"></script>
-    
-    <script>
-      $(document).foundation(
-      	{
+<script src="foundation/js/vendor/jquery.js"></script>
+<script src="foundation/js/foundation.min.js"></script>
+
+<script>
+$(document).foundation(
+{
   // specify the class used for active sections
   //active_class: 'active',
   // how many pixels until the magellan bar sticks, 0 = auto
-  threshold: -45,
+  threshold: -100,
   // pixels from the top of destination for it to be considered active
-  destination_threshold: 0,//for sub-nav
+  destination_threshold: -50,//for sub-nav
+  orbit: {
+  	slide_number: false,//for orbit slideshow- Removes numbers
+  	timer_speed: 4000
+	}
   // calculation throttling to increase framerate
   //throttle_delay: 50 
 }
 
 
-      	);
-    </script>
+);
+</script>
