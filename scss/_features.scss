@@ -1,0 +1,70 @@
+
+
+
+/****************CLEARING LIGHTBOX**********************************/
+ul.clearing-thumbs{//Fixed full screen gallery pictures
+	li {
+		clear: none !important;
+		margin-right: 0;
+	}
+
+}
+/*************END CLEARING LIGHTBOX**********************************/
+
+/************ORBIT SLIDE SHOW****************************************/
+.slide_show{
+
+	h3{
+		text-align:center;
+	}
+	ul.slider_img {
+
+		li{
+
+			img{
+				// @media screen and (min-width: $max-row-width){
+				// 	min-height:315px;
+				// }
+
+				
+
+
+			// @media only screen 
+			// and (min-device-width : $max-row-width){
+			// 	height: 470px;
+
+			// }
+
+
+			// @media screen (max-width: $max-row-width){
+			// 	height: 470;
+			// }
+
+			}
+		}
+	}
+}
+/******************END ORBIT SLIDE SHOW****************************/
+
+/******************MAGELLAN************************************/
+ul.side-links {//For the sticky side-nav
+	width: 240px;
+	top: 45px !important;
+	z-index:0;
+
+	@media only screen and (max-width: 767px) {
+  		position: static !important;
+   		width: 100%;
+   		//display:none;
+	}
+}
+
+
+dl.sub-nav{//For quick anchor scrolling
+	  //margin-top: 45px;
+	  top: 45px !important;
+	  padding-top:10px;
+	// z-index:0;
+}
+
+/******************END MAGELLAN************************************/
