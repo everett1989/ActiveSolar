@@ -18,8 +18,8 @@ $topbar-link-bg-active-hover: scale-color($primary-dark, $lightness: -14%);
 
 
 //$topbar-title-weight: bold;
-//$topbar-title-font-size: 20px;
-//$topbar-link-font-size: 15px;
+$topbar-title-font-size: 25px;
+$topbar-link-font-size: rem-calc(13);//15px;
 
 
 //$topbar-breakpoint: lower-bound(9999px);

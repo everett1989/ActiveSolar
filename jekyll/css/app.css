@@ -5792,8 +5792,8 @@ table {
     margin-top: -5px; } }
 /* line 102, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 meta.foundation-mq-topbar {
-  font-family: "/only screen and (min-width:40.063em)/";
-  width: 40.063em; }
+  font-family: "/only screen and (min-width: 754px)/";
+  width: 754px; }
 
 /* Wrapped around .top-bar to contain to grid width */
 /* line 108, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -5870,7 +5870,7 @@ meta.foundation-mq-topbar {
     /* line 184, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
     .top-bar .name h1 {
       line-height: 45px;
-      font-size: 1.0625rem;
+      font-size: 25px;
       margin: 0; }
       /* line 188, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
       .top-bar .name h1 a {
@@ -5966,14 +5966,14 @@ meta.foundation-mq-topbar {
     padding: 12px 0 12px 0;
     padding-left: 15px;
     font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    font-size: 0.8125rem;
+    font-size: rem-calc(13);
     font-weight: normal;
     text-transform: none;
     background: #45bc4f; }
     /* line 321, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
     .top-bar-section ul li > a.button {
       background: #61c66a;
-      font-size: 0.8125rem;
+      font-size: rem-calc(13);
       padding-right: 15px;
       padding-left: 15px; }
       /* line 326, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -6095,7 +6095,7 @@ meta.foundation-mq-topbar {
 .js-generated {
   display: block; }
 
-@media only screen and (min-width: 40.063em) {
+@media only screen and (min-width: 754px) {
   /* line 447, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar {
     background: #61c66a;
