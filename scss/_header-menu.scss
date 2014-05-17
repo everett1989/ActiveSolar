@@ -17,9 +17,6 @@
 				a:hover{//change home on hover
 					color: $grey-hover;
 
-
-
-
 				}
 
 			}
@@ -40,11 +37,23 @@
 	margin-bottom:5px;
 }
 
-ul.side-nav{
-
-	// position:fixed;
-}
-.magellan{
-
+dl.side-links{
+	// background:blue;
 	margin-top: 45px;
+	z-index:0;	
+}
+dl.sub-nav{
+	  //margin-top: 45px;
+	  top: 45px !important;
+	  padding-top:10px;
+
+	// z-index:0;
+}
+
+img.banner{
+	max-height:175px;
+	width:100%;
+	box-shadow: 0 0 5px;
+
+
 }

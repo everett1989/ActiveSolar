@@ -7788,18 +7788,33 @@ th.hide-for-touch {
   .header-menu nav ul.title-area li.name a:hover {
     color: #dfdfdf; }
 
-/* line 38, ../../scss/_header-menu.scss */
+/* line 35, ../../scss/_header-menu.scss */
 .logo_pic {
   margin-bottom: 5px; }
 
-/* line 47, ../../scss/_header-menu.scss */
-.magellan {
-  margin-top: 45px; }
+/* line 40, ../../scss/_header-menu.scss */
+dl.side-links {
+  margin-top: 45px;
+  z-index: 0; }
+
+/* line 45, ../../scss/_header-menu.scss */
+dl.sub-nav {
+  top: 45px !important;
+  padding-top: 10px; }
+
+/* line 53, ../../scss/_header-menu.scss */
+img.banner {
+  max-height: 175px;
+  width: 100%;
+  box-shadow: 0 0 5px; }
 
 /* line 2, ../../scss/_footer.scss */
 .footer {
   margin-top: 2em; }
-  /* line 8, ../../scss/_footer.scss */
+  /* line 7, ../../scss/_footer.scss */
+  .footer ul li a {
+    color: #9f9f9f; }
+  /* line 19, ../../scss/_footer.scss */
   .footer .copyright {
     text-align: center; }
 
@@ -7840,19 +7855,22 @@ ul.clearing-thumbs li {
   margin-right: 0; }
 
 /* line 16, ../../scss/app.scss */
-h3 {
+h3, h4, h2, h5 {
   color: #6F6F6F;
-  font-size: 25px;
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: 300; }
 
-/* line 24, ../../scss/app.scss */
+/* line 23, ../../scss/app.scss */
 p {
   color: #6F6F6F;
   font-size: 15px;
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: 300; }
 
-/* line 32, ../../scss/app.scss */
+/* line 31, ../../scss/app.scss */
 .row {
   margin-bottom: 2em; }
+
+/* line 36, ../../scss/app.scss */
+li {
+  list-style-type: none; }
