@@ -14,8 +14,19 @@ $topbar-dropdown-bg: $primary-dark;//dropdown colors
 
 $topbar-link-bg-active: $primary-dark;//Color for active nav li
 $topbar-link-bg-active-hover: scale-color($primary-dark, $lightness: -14%);
-$icon-size-40:40px;//icon size 40
+//$header-name-size:30px;//icon size 40
 
+
+//$topbar-title-weight: bold;
+$topbar-title-font-size: 25px;
+$topbar-link-font-size: rem-calc(13);//15px;
+
+
+//$topbar-breakpoint: lower-bound(9999px);
+
+
+// $topbar-menu-link-transform: uppercase;
+// $topbar-menu-link-font-size: rem-calc(13);
 
 
 $max-row-width: 1000px;
