@@ -7777,32 +7777,29 @@ th.hide-for-touch {
 .touch th.show-for-touch {
   display: table-cell !important; }
 
-/* line 1, ../../scss/_header-menu.scss */
+/* line 3, ../../scss/_header-menu.scss */
 .header-menu {
   box-shadow: 0px 0px 5px;
   margin-bottom: 2em; }
-  /* line 12, ../../scss/_header-menu.scss */
-  .header-menu nav ul.title-area li.name .fi-home {
-    font-size: 40px; }
-  /* line 17, ../../scss/_header-menu.scss */
+  /* line 23, ../../scss/_header-menu.scss */
   .header-menu nav ul.title-area li.name a:hover {
     color: #dfdfdf; }
 
-/* line 35, ../../scss/_header-menu.scss */
+/* line 54, ../../scss/_header-menu.scss */
 .logo_pic {
   margin-bottom: 5px; }
 
-/* line 40, ../../scss/_header-menu.scss */
+/* line 59, ../../scss/_header-menu.scss */
 dl.side-links {
   margin-top: 45px;
   z-index: 0; }
 
-/* line 45, ../../scss/_header-menu.scss */
+/* line 66, ../../scss/_header-menu.scss */
 dl.sub-nav {
   top: 45px !important;
   padding-top: 10px; }
 
-/* line 53, ../../scss/_header-menu.scss */
+/* line 74, ../../scss/_header-menu.scss */
 img.banner {
   max-height: 175px;
   width: 100%;
@@ -7855,23 +7852,23 @@ ul.clearing-thumbs li {
   clear: none !important;
   margin-right: 0; }
 
-/* line 16, ../../scss/app.scss */
+/* line 18, ../../scss/app.scss */
 h3, h4, h2, h5 {
   color: #6F6F6F;
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: 300; }
 
-/* line 23, ../../scss/app.scss */
+/* line 25, ../../scss/app.scss */
 p {
   color: #6F6F6F;
   font-size: 15px;
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: 300; }
 
-/* line 31, ../../scss/app.scss */
+/* line 33, ../../scss/app.scss */
 .row {
   margin-bottom: 2em; }
 
-/* line 36, ../../scss/app.scss */
+/* line 39, ../../scss/app.scss */
 li {
   list-style-type: none; }
