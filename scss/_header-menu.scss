@@ -11,15 +11,6 @@
 		ul.title-area{
 			li.name{
 
-				.fi-home{//home icon size
-					// font-size: $icon-size-40;
-				}
-
-				a{
-					//font-size:25px;
-				}
-
-
 				a:hover{//change home on hover
 					color: $grey-hover;
 
@@ -56,28 +47,6 @@
 	margin-bottom:5px;
 }
 
-dl.side-links{
-	// background:blue;
-	margin-top: 45px;
-	//z-index:0;
-	//width: 200px;
-	@media only screen and (max-width: 767px) {
-  		position: static !important; width: 100%
-}
-
-
-}
-
-dl.sub-nav{
-
-
-	  //margin-top: 45px;
-	  top: 45px !important;
-	  padding-top:10px;
-
-
-	// z-index:0;
-}
 
 img.banner{
 	max-height:175px;
@@ -87,14 +56,4 @@ img.banner{
 
 }
 
-ul.side-links {
-	width: 240px;
-	top: 45px !important;
-	z-index:0;
 
-	@media only screen and (max-width: 767px) {
-  		position: static !important;
-   		width: 100%;
-   		//display:none;
-	}
-}
