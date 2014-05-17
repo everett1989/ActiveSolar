@@ -7810,6 +7810,7 @@ img.banner {
 
 /* line 2, ../../scss/_footer.scss */
 .footer {
+  text-align: center;
   margin-top: 2em; }
   /* line 7, ../../scss/_footer.scss */
   .footer ul li a {
