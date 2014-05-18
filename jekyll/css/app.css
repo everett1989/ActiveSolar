@@ -6158,9 +6158,30 @@ img.banner {
   /* line 30, ../../scss/_footer.scss */
   .footer ul li a {
     color: #9f9f9f; }
-  /* line 43, ../../scss/_footer.scss */
+  /* line 39, ../../scss/_footer.scss */
+  .footer .certifications {
+    float: left; }
+    /* line 42, ../../scss/_footer.scss */
+    .footer .certifications img {
+      padding: 3px;
+      height: 60px; }
+  /* line 52, ../../scss/_footer.scss */
   .footer .copyright {
     text-align: center; }
+
+/* line 6, ../../scss/_fonts.scss */
+h4.slogan {
+  margin-top: -.75em;
+  margin-left: 2em;
+  font-style: italic; }
+
+/* line 12, ../../scss/_fonts.scss */
+a:hover {
+  text-decoration: underline; }
+
+/* line 14, ../../scss/_fonts.scss */
+.panel {
+  display: inline-block; }
 
 /****************CLEARING LIGHTBOX**********************************/
 /* line 6, ../../scss/_features.scss */
@@ -6196,23 +6217,19 @@ dl.sub-nav {
 /******************END MAGELLAN************************************/
 /*******************LABELS*****************************************/
 /*********************END LABELS***********************************/
-/* line 76, ../../scss/app.scss */
-.row {
-  margin-bottom: 2em; }
-
-/* line 82, ../../scss/app.scss */
+/* line 83, ../../scss/app.scss */
 li {
   list-style-type: none; }
 
-/* line 88, ../../scss/app.scss */
+/* line 89, ../../scss/app.scss */
 .panel p, .panel h3 {
   font-family: "Open Sans";
   font-weight: 300; }
-/* line 93, ../../scss/app.scss */
+/* line 94, ../../scss/app.scss */
 .panel h3 {
   color: #6F6F6F;
   font-size: 25px; }
-/* line 99, ../../scss/app.scss */
+/* line 100, ../../scss/app.scss */
 .panel p {
   color: #626262;
   font-size: 14px; }
