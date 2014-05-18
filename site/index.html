@@ -146,12 +146,62 @@
 		<div class="medium-2  columns">
 			
 <ul class="side-links" data-magellan-expedition="fixed" >
-    <li ><a href="#">Get a Quote</a></li>
-    <li ><a href="#">FAQs</a></li>
-    <li ><a href="#">Questions</a></li>
-    <li ><a href="#">Contact Us</a></li>
+	<li ><a data-reveal-id="quote" class="label" href="#">Get a Quote</a></li>
+	<li ><a data-reveal-id="faqs" class="label" href="#">FAQs</a></li>
+	<li ><a data-reveal-id="questions" class="label" href="#">Q&A's</a></li>
+	<li ><a data-reveal-id="contact" class="label" href="#">Contact Us</a></li>
 </ul>
 
+
+<div id="quote" class="reveal-modal" data-reveal>
+
+	<form data-abide>
+		<div class="name-field">
+			<label>Your name <small>required</small>
+				<input type="text" required pattern="[a-zA-Z]+">
+			</label>
+			<small class="error">Name is required and must be a string.</small>
+		</div>
+		<div class="email-field">
+			<label>Email <small>required</small>
+				<input type="email" required>
+			</label>
+			<small class="error">An email address is required.</small>
+		</div>
+		<button type="submit">Submit</button>
+	</form>
+	<a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+<div id="faqs" class="reveal-modal" data-reveal>
+
+	<h2>Quick FAQs</h2>
+
+	<a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div id="questions" class="reveal-modal" data-reveal>
+
+	<h2>Questions and Answers</h2>
+
+
+
+	<a class="close-reveal-modal">&#215;</a>
+</div>
+
+<div id="contact" class="reveal-modal" data-reveal>
+
+	<h2> Contact Us</h2>
+
+		<dl>
+			<dd>Phone</dd>
+			<dd>555-555-5555</dd>
+		</dl>
+
+	<a class="close-reveal-modal">&#215;</a>
+	
+</div>
 		</div>
 
 		<div class="medium-10  columns">
@@ -164,39 +214,49 @@
 			<hr> -->
 
 			
+<hr>
 
-
+	
+	
  		
 	
 	 
 
+	
+	
  		
 	
 	 
 
+	
+	
  		
 	
 	 
 
+	
+	
  		
 	
 	 
 
- 		
 	
-	 	<hr>
-	 	<h2>Home</h2>
-	 
-	 
-
- 		
+	 <!-- skip home -->
+		
 	
-	 
-
+	
  		
 	
 	 
 
+	
+	
+ 		
+	
+	 
+
+	
+	
  		
 	
 	 
