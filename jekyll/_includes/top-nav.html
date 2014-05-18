@@ -3,7 +3,7 @@
 
 	{% for node in site.pages %}
 		<!-- skip home -->
-		{% if "Home" == node.title or node.url == "/residential_services.html" %} 
+		{% if "index.html" == node.path or node.url == "/residential_services.html" %} 
 			{% continue %}
 		{% endif %}
 

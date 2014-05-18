@@ -623,11 +623,11 @@
 // $include-html-label-classes: $include-html-classes;
 
 // We use these to style the labels
-// $label-padding: rem-calc(4 8 6);
+ $label-padding: rem-calc(4 8 6);
 // $label-radius: $global-radius;
 
 // We use these to style the label text
-// $label-font-sizing: rem-calc(11);
+ $label-font-sizing: rem-calc(15);
 // $label-font-weight: normal;
 // $label-font-color: #333;
 // $label-font-color-alt: #fff;
@@ -638,7 +638,7 @@
 // $include-html-magellan-classes: $include-html-classes;
 
 // $magellan-bg: #fff;
-// $magellan-padding: 10px;
+$magellan-padding: -10px;
 
 // Off-canvas
 
@@ -1143,7 +1143,7 @@
 
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: normal;
-// $topbar-title-font-size: rem-calc(17);
+ $topbar-title-font-size: rem-calc(17);
 
 // Style the top bar dropdown elements
 // $topbar-dropdown-bg: #333;
@@ -1160,7 +1160,7 @@
 // $topbar-link-color-active: #fff;
 // $topbar-link-color-active-hover: #fff;
 // $topbar-link-weight: normal;
-// $topbar-link-font-size: rem-calc(13);
+ $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg-hover: #272727;
 // $topbar-link-bg-active: $primary-color;

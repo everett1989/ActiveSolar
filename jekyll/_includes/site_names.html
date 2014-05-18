@@ -1,9 +1,13 @@
 
-
+<hr>
 {% for node in site.pages %}
+	
+	{% if node.path == "index.html" %} <!-- skip home -->
+		{% continue %}
+	{% endif %}
  		
 	{% if page.url == node.url %}
-	 	<hr>
+	 	
 	 	<h2>{{ page.title }}</h2>
 	 {% endif %}
 	 
