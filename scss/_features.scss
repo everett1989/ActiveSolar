@@ -48,13 +48,15 @@ ul.clearing-thumbs{//Fixed full screen gallery pictures
 
 /******************MAGELLAN************************************/
 ul.side-links {//For the sticky side-nav
-	width: 240px;
+	//width: 240px;
 	top: 45px !important;
 	z-index:0;
+	padding-top:10px;
+
 
 	@media only screen and (max-width: 767px) {
   		position: static !important;
-   		width: 100%;
+   		//width: 100%;
    		//display:none;
 	}
 }
@@ -64,7 +66,17 @@ dl.sub-nav{//For quick anchor scrolling
 	  //margin-top: 45px;
 	  top: 45px !important;
 	  padding-top:10px;
+	  //padding-bottom
 	// z-index:0;
 }
 
 /******************END MAGELLAN************************************/
+
+
+
+/*******************LABELS*****************************************/
+
+
+
+
+/*********************END LABELS***********************************/
