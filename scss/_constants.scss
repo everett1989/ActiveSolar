@@ -1,6 +1,36 @@
 
+ $primary-color: #61C66A;
+ $secondary-color: #CDEFD0;
+ $alert-color: #f04124;
+ $success-color: #43AC6A;
+ $warning-color: #f08a24;
+ $info-color: #a0d3e8;
 
-$primary-color: #61C66A; //green 
+
+// We use these to control various global styles
+$body-bg: rgb(255, 252, 223);
+$body-font-color: #6F6F6F;//greyish
+$body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-weight: normal;
+$body-font-style: normal;
+
+// We use these to control header font styles
+$header-font-family: $body-font-family;
+$header-font-weight: normal;
+$header-font-style: normal;
+$header-font-color: #6F6f6f;
+$header-line-height: 1.4;
+$header-top-margin: .2rem;
+$header-bottom-margin: .5rem;
+$header-text-rendering: optimizeLegibility;
+
+
+// We use these to control inset shadow shiny edges and depressions.
+$shiny-edge-size: 0 1px 0;
+$shiny-edge-color: rgba(#fff, .5);
+$shiny-edge-active-color: rgba(#000, .2);
+
+//$primary-color: #61C66A; //green 
 $primary-light: scale-color($primary-color,$lightness: 13%);//opacity at 13%
 $primary-dark: scale-color($primary-color,$lightness: -13%);//opacity at 13% darker
 

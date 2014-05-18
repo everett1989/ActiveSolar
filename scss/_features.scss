@@ -52,6 +52,7 @@ ul.side-links {//For the sticky side-nav
 	top: 45px !important;
 	z-index:0;
 	padding-top:10px;
+	background: $body-bg;
 
 
 	@media only screen and (max-width: 767px) {
@@ -66,6 +67,7 @@ dl.sub-nav{//For quick anchor scrolling
 	  //margin-top: 45px;
 	  top: 45px !important;
 	  padding-top:10px;
+	  background: $body-bg;
 	  //padding-bottom
 	// z-index:0;
 }
