@@ -1,17 +1,20 @@
 
- $primary-color: #75D97B;//#61C67F;//#61C66A;
+ $primary-color: #287c3b;//#75D97B;//#61C67F;//#61C66A;
  $secondary-color: #BDE6FB;
  $alert-color: #f04124;
  $success-color: #43AC6A;
  $warning-color: #f08a24;
  $info-color: #a0d3e8;
 
- $footer-color:rgb(151, 220, 255);
+ $footer-color: scale-color($primary-color,$lightness: 13%);
+ 
+ $light-font:white;
+ $dark-font: #6F6F6F;
 
 
 // We use these to control various global styles
 $body-bg: rgb(255, 252, 223);
-$body-font-color: #6F6F6F;//greyish
+$body-font-color: $dark-font;//greyish
 $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 $body-font-weight: normal;
 $body-font-style: normal;
@@ -20,7 +23,7 @@ $body-font-style: normal;
 $header-font-family: $body-font-family;
 $header-font-weight: normal;
 $header-font-style: normal;
-$header-font-color: #6F6f6f;
+$header-font-color: $dark-font;
 $header-line-height: 1.4;
 $header-top-margin: .2rem;
 $header-bottom-margin: .5rem;
@@ -50,11 +53,10 @@ $topbar-link-bg-active-hover: scale-color($primary-dark, $lightness: -14%);
 
 
 //$topbar-title-weight: bold;
-$topbar-title-font-size: 25px;
+//$topbar-title-font-size: 15px;
 $topbar-link-font-size:  15px;
 //$topbar-link-font-size: rem-calc(13);
 
-$magellan-padding: -10px;
 
 
 //$topbar-breakpoint: lower-bound(9999px);
@@ -98,4 +100,4 @@ $panel-font-color-alt: #fff;
 // $panel-header-adjust: true;
 // $callout-panel-link-color: $primary-color;
 
-$hr-color: white;//#dddddd;
+$hr-color: #dddddd;
