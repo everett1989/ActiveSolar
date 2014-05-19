@@ -1,14 +1,28 @@
 
-<hr>
+
 {% for node in site.pages %}
+
 	
-	{% if node.path == "index.html" %} <!-- skip home -->
-		{% continue %}
-	{% endif %}
- 		
+
 	{% if page.url == node.url %}
+		
+
+		{% if page.url == '/index.html' %}
+			<div class="banner-heading">
+				<h1>Active Solar</h1> 
+				<h4 class="slogan">Own the future now</h4> 
+			</div>
+			<img src="http://www.siresolar.com/wp-content/uploads/2013/10/SIRenewSlider8.jpg">
+			
+
+		{% else %}
+			<div class="banner-heading">
+				<h1>{{ node.title }}</h1>
+			</div>
+			<img src="http://www.siresolar.com/wp-content/uploads/2013/10/SIRenewSlider8.jpg">
+
+		{% endif %}
 	 	
-	 	<h2>{{ page.title }}</h2>
 	 {% endif %}
 	 
 {% endfor %}
