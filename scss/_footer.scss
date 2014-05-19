@@ -3,31 +3,39 @@
 footer{
 	margin-top:3em;
 	background:$footer-color;
+	//text-align:center;
+	*{
+		color: $light-font;
+	}
+	
 
 
 	.footer-heading{
-		background:$secondary-color;
-		height:3em;
+		background:$primary-color;
+		height:4em;
+
+
 	}
 
 
-	.footer-content{
+	.certifications{
+
+		float:left;
+		img{
+			padding: 3px;
+			height:80px;
+		}
+	}
+	ul{
 		text-align:center;
+	}
 
-		a{
+	.footer-content{
 
-			color: $header-font-color;
+		
 
-		}
 
-		.certifications{
 
-			float:left;
-			img{
-				padding: 3px;
-				height:60px;
-			}
-		}
 
 		margin-top:2em;
 
@@ -36,6 +44,10 @@ footer{
 			text-align:center;
 		}
 
+	}
+
+	.footer-bottom{
+		//background:$primary-dark;
 	}
 
 }
