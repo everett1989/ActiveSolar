@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 @import "compass";
- 
+
 @import "settings";
 
 @import "constants";
@@ -22,7 +22,7 @@
   "foundation/components/forms",
   "foundation/components/grid",
   //"foundation/components/inline-lists",
-  //"foundation/components/joyride",
+  "foundation/components/joyride",
   //"foundation/components/keystrokes",
   "foundation/components/labels",
   "foundation/components/magellan",
@@ -56,53 +56,72 @@
   @import "fonts";
 
   @import "features";
+  @import "pages";
 
 
 
- //  h3,h4,h2,h5{
- //  	color: #6F6F6F;
-	// 	// font-size: 25px;
-	// 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-	// 	font-weight: 300;
-	// }
 
-	// p{
-	// 	color: #6F6F6F;
-	// 	font-size: 15px;
-	// 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-	// 	font-weight: 300;
-	// }
-
-
-	.row{
-		//margin-bottom: 2em;
-	//background:$secondary-color;
-}
-
-
-li{
+ul{
 	list-style-type: none;
 }
 
 
-.panel{
-	p, h3{
-		font-family: "Open Sans";
-		font-weight: 300;
-	}
+.line-border{
+  //border-color:white;
+  // border-left: 1px solid $body-font-color;
+  // @media #{$medium-up} {
+   border-right: 1px solid white;
 
-	h3{
-		color: #6F6F6F;
-		font-size: 25px;
+  //  }  
+}
+
+.content{
+    background:$body-bg;
+  .row{
+    box-shadow: 0 0 5px;
+    margin-bottom:2em;
+    background: $secondary-color;
+    border-radius:5px;
+
+    p{
+      background:white;
+      border-radius:5px;
+      padding:2em;
+      box-shadow: 0 0 5px;
+
+    }
+
+    // h2{
+    //    border-bottom: 1px solid #C4C4C4;
+    // }
+    // border-top: 1px solid #C4C4C4;
+    // padding-top: 1em;
+    // margin-bottom:3em !important;
+   
+    
 
 
-	}
-	p{
-		color: #626262;
-		font-size: 14px;
+  }
+}
 
-	}
+
+//   .row-content{
+//     margin-top:3em;
+//     background:rgb(255, 252, 223);
+//     //box-shadow: 0 0 1px;
+//     //background:white;
+
+// }
+
+
+.hr-bottom{
+      border-bottom: 1px solid $hr-color;
+      // margin: 1.25rem 0 1.1875rem;
+
+      // margin-bottom:1em;
+       margin-bottom: .8em;
+    padding: .4em;
+
 
 
 }
-

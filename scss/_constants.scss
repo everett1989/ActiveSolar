@@ -1,10 +1,12 @@
 
- $primary-color: #61C66A;
- $secondary-color: #CDEFD0;
+ $primary-color: #75D97B;//#61C67F;//#61C66A;
+ $secondary-color: #BDE6FB;
  $alert-color: #f04124;
  $success-color: #43AC6A;
  $warning-color: #f08a24;
  $info-color: #a0d3e8;
+
+ $footer-color:rgb(151, 220, 255);
 
 
 // We use these to control various global styles
@@ -34,7 +36,7 @@ $shiny-edge-active-color: rgba(#000, .2);
 $primary-light: scale-color($primary-color,$lightness: 13%);//opacity at 13%
 $primary-dark: scale-color($primary-color,$lightness: -13%);//opacity at 13% darker
 
-$secondary-color: rgba(67, 255, 67, 0.06);//very light green
+//$secondary-color: rgba(67, 255, 67, 0.06);//very light green
 $grey-hover: rgb(223, 223, 223);
 
 //Header colors
@@ -50,6 +52,9 @@ $topbar-link-bg-active-hover: scale-color($primary-dark, $lightness: -14%);
 //$topbar-title-weight: bold;
 $topbar-title-font-size: 25px;
 $topbar-link-font-size:  15px;
+//$topbar-link-font-size: rem-calc(13);
+
+$magellan-padding: -10px;
 
 
 //$topbar-breakpoint: lower-bound(9999px);
@@ -63,4 +68,34 @@ $max-row-width: 1000px;
 $medium-row-width: 700px;
 
 
+// Transitions and breakpoint styles
+$topbar-breakpoint: 754px; // Change to 9999px for always mobile layout
+$topbar-media-query: "only screen and (min-width: #{$topbar-breakpoint})";
 
+
+//borderline color
+
+//$border-line-color: 
+
+
+// We use these to control the background and border styles
+$panel-bg: scale-color(#fff, $lightness: -5%);
+$panel-border-style: solid;
+$panel-border-size: 1px;
+
+// We use this % to control how much we darken things on hover
+$panel-function-factor: -11%;
+$panel-border-color: scale-color($panel-bg, $lightness: $panel-function-factor);
+
+// We use these to set default inner padding and bottom margin
+$panel-margin-bottom: rem-calc(20);
+$panel-padding: rem-calc(20);
+
+// We use these to set default font colors
+$panel-font-color: #333;
+$panel-font-color-alt: #fff;
+
+// $panel-header-adjust: true;
+// $callout-panel-link-color: $primary-color;
+
+$hr-color: white;//#dddddd;

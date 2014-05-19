@@ -22,23 +22,6 @@ ul.clearing-thumbs{//Fixed full screen gallery pictures
 		li{
 
 			img{
-				// @media screen and (min-width: $max-row-width){
-				// 	min-height:315px;
-				// }
-
-				
-
-
-			// @media only screen 
-			// and (min-device-width : $max-row-width){
-			// 	height: 470px;
-
-			// }
-
-
-			// @media screen (max-width: $max-row-width){
-			// 	height: 470;
-			// }
 
 			}
 		}
@@ -49,10 +32,13 @@ ul.clearing-thumbs{//Fixed full screen gallery pictures
 /******************MAGELLAN************************************/
 ul.side-links {//For the sticky side-nav
 	//width: 240px;
+	// @extend ul.no-underline;
 	top: 45px !important;
 	z-index:0;
 	padding-top:10px;
 	background: $body-bg;
+	//min-width: 100px !important;
+
 
 
 	@media only screen and (max-width: 767px) {
@@ -67,11 +53,13 @@ dl.sub-nav{//For quick anchor scrolling
 	  //margin-top: 45px;
 	  top: 45px !important;
 	  padding-top:10px;
+	  //max-height: 35px;
+	  //box-shadow: 0 0 3px;
 	  background: $body-bg;
+	  //width:816px;
 	  //padding-bottom
 	// z-index:0;
 }
-
 /******************END MAGELLAN************************************/
 
 

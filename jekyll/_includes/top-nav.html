@@ -6,11 +6,12 @@
 		{% if "index.html" == node.path or node.url == "/residential_services.html" %} 
 			{% continue %}
 		{% endif %}
-
+			<li class="divider"></li>
 			{% if node.url == "/commercial_services.html" %}
 
 				<li class="has-dropdown {% if page.url == '/residential_services.html' or page.url == '/commercial_services.html' %}active {% endif %}"><a href="#">Services</a>
 					<ul class="dropdown">
+
 						<li {% if page.url == '/residential_services.html' %} class="active"{% endif %} ><a href="residential_services.html">Residential</a></li>
 						<li {% if page.url == '/commercial_services.html' %} class="active"{% endif %} ><a href="commercial_services.html">Commercial</a></li>
 					</ul>
@@ -21,11 +22,11 @@
 					<a href="{{ node.path }}">{{ node.title }}</a>
 				</li>
 
-			
-
 		{% endif %}
 
+
 	{% endfor %}
+	<li class="divider"></li>
 
 
 </ul>

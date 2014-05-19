@@ -1,96 +1,102 @@
 <!-- <footer class="site-info" role="contentinfo">
   <p>Here is a footer.</p>
 </footer> -->
+<footer>
 
-<div id="footer" class="footer row">
+	<div class="footer-heading">
 
-	<!-- <h4>Active Solar &copy; 2014</h4> -->
-	<div class="large-12 columns">
 
-	<hr>
-	<div class=" small-block-grid-2 large-block-grid-4">
-		<li >
-			<ul>
-				<li><h4>About</h4></li>
-				<li><a href="#">Who we are</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#">History</a></li>
-				<li><a href="#">Blahblah</a></li>
-			</ul>
-		</li>
-
-		<li>
-			<ul>
-				<li><h4>For Home</h4></li>
-				<li><a href="#">Who we are</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#">History</a></li>
-				<li><a href="#">Blahblah</a></li>
-			</ul>
-		</li>
-
-		<li>
-			<ul>
-				<li><h4>For Business</h4></li>
-				<li><a href="#">Who we are</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#">History</a></li>
-				<li><a href="#">Blahblah</a></li>
-			</ul>
-		</li>
-
-		<li>
-			<ul>
-				<li><h4>Careers</h4></li>
-				<li><a href="#">Who we are</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#">History</a></li>
-				<li><a href="#">Blahblah</a></li>
-			</ul>
-		</li>
 	</div>
-	<div="small-12 columns">
 
-		<div class="certifications small-block-grid-2">
-			<img src="img/certifications/BPI-Logo.jpg" alt="BPI">
+	<div class="footer-content row">
 
-			<img src="img/certifications/nabcep-cert-seal.jpg" alt="nabcep">
 
-			<img src="img/certifications/polysun.png" alt="polysun">
+		<div class="row"></div>
+		<!-- <div class="large-12 columns"> -->
 
+		<div class=" small-block-grid-2 large-block-grid-4">
+			<li>
+				<ul  class="line-border">
+					<li><h4>About</h4></li>
+					<li><a href="#">Who we are</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">History</a></li>
+					<li><a href="#">Blahblah</a></li>
+				</ul>
+			</li>
+
+			<li>
+				<ul  class="line-border">
+					<li><h4>For Home</h4></li>
+					<li><a href="#">Who we are</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">History</a></li>
+					<li><a href="#">Blahblah</a></li>
+				</ul>
+			</li>
+
+			<li>
+				<ul  class="line-border">
+					<li><h4>For Business</h4></li>
+					<li><a href="#">Who we are</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">History</a></li>
+					<li><a href="#">Blahblah</a></li>
+				</ul>
+			</li>
+
+			<li>
+				<ul >
+					<li><h4>Careers</h4></li>
+					<li><a href="#">Who we are</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">History</a></li>
+					<li><a href="#">Blahblah</a></li>
+				</ul>
+			</li>
 		</div>
+		<!-- <div class="row"> -->
+			<div class="large-3 columns">
+
+				<div class="certifications small-block-grid-3">
+					<img src="img/certifications/BPI-Logo.jpg" alt="BPI">
+					<img src="img/certifications/nabcep-cert-seal.jpg" alt="nabcep">
+					<img src="img/certifications/polysun.png" alt="polysun">
+				</div>
+
+			</div>
+
+			<div class="large-9 columns copyright">
+				<h3>Copyright &copy; 2014</h3>
+			</div>
+		<!-- </div> -->
+
+
+		
+		<!-- </div> -->
+	</footer>
 
 
 
-	</div>
+	<script src="foundation/js/vendor/jquery.js"></script>
+	<script src="foundation/js/foundation.min.js"></script>
 
-	<div class="medium-12 columns copyright">
-		<h3>Copyright &copy; 2014</h3>
-	</div>
+	<script>
 	
-</div>
 
-
-<script src="foundation/js/vendor/jquery.js"></script>
-<script src="foundation/js/foundation.min.js"></script>
-
-<script>
-$(document).foundation(
-{
-  // specify the class used for active sections
-  //active_class: 'active',
+	$(document).foundation({
   // how many pixels until the magellan bar sticks, 0 = auto
-  threshold: -100,
+  //threshold: 45,
   // pixels from the top of destination for it to be considered active
-  destination_threshold: -50,//for sub-nav
+  destination_threshold: 80,//for sub-nav
   orbit: {
   	slide_number: false,//for orbit slideshow- Removes numbers
   	timer_speed: 4000
-	}
+  }
   // calculation throttling to increase framerate
   //throttle_delay: 50 
-}
+});
+	//$(document).foundation('joyride', 'start');
+	</script>
 
 
-);
-</script>
