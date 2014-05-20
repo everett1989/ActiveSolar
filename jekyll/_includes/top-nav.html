@@ -1,13 +1,24 @@
-<ul class ="right">
+
+<div class="sticky contain-to-grid header-menu">
+	<nav class="top-bar" data-topbar>
+
+		<ul class="title-area">
+			<li class="name"><h1><a href="index.html">Home</a></h1></li>
+			<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>	
+		</ul>
+
+		<section class = "top-bar-section">
 
 
-	{% for node in site.pages %}
-		<!-- skip home -->
-		{% if "index.html" == node.path or node.url == "/residential_services.html" %} 
-			{% continue %}
-		{% endif %}
-			<li class="divider"></li>
-			{% if node.url == "/commercial_services.html" %}
+			<ul class ="right">
+
+				{% for node in site.pages %}
+				<!-- skip home -->
+				{% if "index.html" == node.path or node.url == "/residential_services.html" %} 
+				{% continue %}
+				{% endif %}
+				<li class="divider"></li>
+				{% if node.url == "/commercial_services.html" %}
 
 				<li class="has-dropdown {% if page.url == '/residential_services.html' or page.url == '/commercial_services.html' %}active {% endif %}"><a href="#">Services</a>
 					<ul class="dropdown">
@@ -17,16 +28,21 @@
 					</ul>
 				</li>
 
-			{% else %}
+				{% else %}
 				<li {% if page.url == node.url %} class="active" {% endif %}>
 					<a href="{{ node.path }}">{{ node.title }}</a>
 				</li>
 
-		{% endif %}
+				{% endif %}
 
 
-	{% endfor %}
-	<li class="divider"></li>
+				{% endfor %}
+				<li class="divider"></li>
 
 
-</ul>
+			</ul>
+		</section>
+
+	</nav>
+
+</div>
