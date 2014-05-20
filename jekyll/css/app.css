@@ -5632,47 +5632,37 @@ th.hide-for-touch {
 .logo-background {
   background: linear-gradient(#ffffff, #287c3b); }
 
-/* line 13, ../../scss/_header-menu.scss */
-.header-menu {
-  border-top: 1px solid #dddddd;
-  border-bottom: 1px solid #dddddd;
-  margin-bottom: 2em; }
-
-/* line 46, ../../scss/_header-menu.scss */
+/* line 11, ../../scss/_header-menu.scss */
 .logo_pic {
   margin-bottom: 5px; }
 
-/* line 51, ../../scss/_header-menu.scss */
+/* line 16, ../../scss/_header-menu.scss */
 .banner {
-  max-height: 190px;
+  max-height: 300px;
   margin-bottom: 3em;
   position: relative;
   overflow: hidden;
   box-shadow: 0 0 5px; }
-  /* line 58, ../../scss/_header-menu.scss */
+  /* line 23, ../../scss/_header-menu.scss */
   .banner .banner-heading {
     width: 100%; }
-    /* line 66, ../../scss/_header-menu.scss */
+    /* line 31, ../../scss/_header-menu.scss */
     .banner .banner-heading h4, .banner .banner-heading h1 {
       color: white;
       position: absolute;
       font-style: italic; }
-    /* line 76, ../../scss/_header-menu.scss */
+    /* line 41, ../../scss/_header-menu.scss */
     .banner .banner-heading h1 {
       margin-top: 1em;
       margin-left: .6em; }
-    /* line 84, ../../scss/_header-menu.scss */
+    /* line 49, ../../scss/_header-menu.scss */
     .banner .banner-heading h4 {
       margin-left: 4em;
       margin-top: 4em; }
-    /* line 94, ../../scss/_header-menu.scss */
+    /* line 59, ../../scss/_header-menu.scss */
     .banner .banner-heading img {
       height: 100%;
       width: auto; }
-
-/* line 108, ../../scss/_header-menu.scss */
-li.divider {
-  border-right: solid 1px #dddddd !important; }
 
 /* line 3, ../../scss/_footer.scss */
 footer {
@@ -5740,6 +5730,19 @@ dl.sub-nav {
 /******************END MAGELLAN************************************/
 /*******************LABELS*****************************************/
 /*********************END LABELS***********************************/
+/*********************TOP-MENU**************************************/
+/* line 77, ../../scss/_features.scss */
+.header-menu {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd; }
+  /* line 87, ../../scss/_features.scss */
+  .header-menu nav li.divider {
+    border-right: solid 1px #dddddd !important; }
+  /* line 91, ../../scss/_features.scss */
+  .header-menu nav ul.dropdown .active {
+    text-decoration: underline; }
+
+/************************EMD TOP-MENU********************************/
 /*******INDEX*********************************/
 /********************************************/
 /* line 64, ../../scss/app.scss */
