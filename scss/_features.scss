@@ -42,11 +42,11 @@ ul.side-links {//For the sticky side-nav
 
 
 	@media only screen and (max-width: 767px) {
-  		position: static !important;
+		position: static !important;
    		//width: 100%;
    		//display:none;
-	}
-}
+   	}
+   }
 
 
 dl.sub-nav{//For quick anchor scrolling
@@ -70,3 +70,34 @@ dl.sub-nav{//For quick anchor scrolling
 
 
 /*********************END LABELS***********************************/
+
+
+/*********************TOP-MENU**************************************/
+
+.header-menu{
+	//background: $primary-color;
+	border-top: 1px solid $hr-color;;
+	border-bottom: 1px solid $hr-color;;
+	//box-shadow: 0px 0px 5px;
+	//margin-bottom:2em;
+	// height:100px;
+
+	nav{
+
+		li.divider{
+			border-right: solid 1px $hr-color !important;
+		}
+		ul.dropdown{
+			.active{
+				text-decoration:underline;
+			}
+		}
+
+
+	}//end nav
+
+}
+
+
+
+/************************EMD TOP-MENU********************************/
