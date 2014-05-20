@@ -5690,11 +5690,10 @@ footer {
     margin-top: 2em; }
     /* line 44, ../../scss/_footer.scss */
     footer .footer-content .copyright {
-      box-shadow: 0 0 5px;
       text-align: center; }
   /* line 54, ../../scss/_footer.scss */
   footer .footer-bottom {
-    background: #236c33; }
+    background: #4A7E55; }
 
 /* line 60, ../../scss/_footer.scss */
 h5.copyright {
