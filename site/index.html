@@ -15,7 +15,7 @@
     <title>Active Solar</title>
     <!-- <link rel="stylesheet" href="./bower_components/foundation/css/foundation.min.css"> -->
     <link rel="stylesheet" href="css/app.css">
-    <!-- <link rel="stylesheet" href="foundation/foundation-icons/foundation-icons.css"> -->
+    <link rel="stylesheet" href="foundation/foundation-icons/foundation-icons.css">
     <script src="foundation/js/vendor/modernizr.js"></script>
 
 
@@ -35,6 +35,8 @@
 </div>
 
 			
+
+	
 <div class="sticky contain-to-grid header-menu">
 	<nav class="top-bar" data-topbar>
 
@@ -141,13 +143,44 @@
 	</nav>
 
 </div>
-			
-
 	
 <div class="banner">
+<!-- 	<div class="banner-contact">
+
+	<table>
+		<th>
+			<td>Contact Us</td>
+		</th>
+		<tr>
+			<td>Phone:</td>
+			<td>555-555-5555</td>
+		</tr>
+		<tr>
+			<td>Mail</td>
+			<td>222 Fake Street</td>
+		</tr>
+		<tr>
+			<td>Email</td>
+			<td>ActiveSolar@fake.com</td>
+		</tr>
+	</table>
+</div> -->
+
+
+
 
 
 	
+	 
+
+
+	
+	 
+
+
+	
+	 
+
 
 	
 	 
@@ -155,25 +188,6 @@
 
 	
 
-	
-	 
-
-
-	
-
-	
-	 
-
-
-	
-
-	
-	 
-
-
-	
-
-	
 		
 
 		
@@ -191,18 +205,12 @@
 
 
 	
-
-	
 	 
 
 
 	
-
-	
 	 
 
-
-	
 
 	
 	 
@@ -216,10 +224,10 @@
 		<div class="medium-2  columns">
 			
 <ul class="side-links" data-magellan-expedition="fixed" >
-	<li ><a data-reveal-id="quote"  href="#">Get a Quote</a></li>
-	<li ><a data-reveal-id="faqs"  href="#">FAQs</a></li>
-	<li ><a data-reveal-id="questions"  href="#">Q&A's</a></li>
-	<li ><a data-reveal-id="contact"  href="#">Contact Us</a></li>
+	<li ><a data-reveal-id="quote"  href="#"><i class="fi-clipboard-pencil"></i>&nbsp;Get a Quote</a></li>
+	<li ><a data-reveal-id="faqs"  href="#"><i class="fi-checkbox"></i>&nbsp;FAQs</a></li>
+	<li ><a data-reveal-id="questions"  href="#"><i class="fi-comment-quotes"></i>&nbsp;Q&A's</a></li>
+	<li ><a data-reveal-id="contact"  href="#"><i class="fi-telephone"></i>&nbsp;Contact Us</a></li>
 </ul>
 
 
@@ -361,7 +369,13 @@
 <footer class="footer-content">
 
 
-	<div class="footer-heading"></div>
+	<div class="footer-heading">
+		<div class="row">
+			<div class="copyright large-12 columns">
+				<h5 class="copyright">Copyright &copy; 2014</h5>
+			</div>
+		</div>
+	</div>
 
 	<div class="row">
 		<div class="footer-content large-12 columns">
@@ -409,24 +423,22 @@
 		</div>
 	</div>
 
-		<!-- <div class="row"> -->
+	<div class="footer-bottom">
 
 
-		<div class=" row footer-bottom">
-			<div class="large-4 columns">
-				<div class="certifications large-block-grid-3">
-					<img src="img/certifications/BPI-Logo.jpg" alt="BPI">
-					<img src="img/certifications/nabcep-cert-seal.jpg" alt="nabcep">
-					<img src="img/certifications/polysun.png" alt="polysun">
-				</div>
-			</div>
-			<div class="copyright large-8 columns">
-				<h5>Copyright &copy; 2014</h5>
+	<div class=" row footer-bottom">
+		<div class="large-12 columns">
+			<div class="certifications large-block-grid-3">
+				<img src="img/certifications/BPI-Logo.jpg" alt="BPI">
+				<img src="img/certifications/nabcep-cert-seal.jpg" alt="nabcep">
+				<img src="img/certifications/polysun.png" alt="polysun">
 			</div>
 		</div>
 
+	</div>
 
-	<!-- </div> -->
+
+	</div>
 
 </footer>
 
@@ -440,15 +452,17 @@
 
 $(document).foundation({
   // how many pixels until the magellan bar sticks, 0 = auto
-  //threshold: 45,
+  //threshold: 50,
   // pixels from the top of destination for it to be considered active
   //destination_threshold: 80,//for sub-nav
-  orbit: {
+ // calculation throttling to increase framerate
+ // throttle_delay: 1000,
+
+ orbit: {
   	slide_number: false,//for orbit slideshow- Removes numbers
   	timer_speed: 4000
   }
-  // calculation throttling to increase framerate
-  //throttle_delay: 50 
+
 });
 	//$(document).foundation('joyride', 'start');
 	</script>
