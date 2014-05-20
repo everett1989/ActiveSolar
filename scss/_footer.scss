@@ -12,7 +12,8 @@ footer{
 
 	.footer-heading{
 		background:$primary-color;
-		height:4em;
+		text-align:center;
+		//height:4em;
 
 
 	}
@@ -41,13 +42,23 @@ footer{
 
 
 		.copyright{
+			box-shadow:0 0 5px;
 			text-align:center;
+		
 		}
+
+
 
 	}
 
 	.footer-bottom{
-		//background:$primary-dark;
+		//padding:1em;
+		background:$primary-dark;
 	}
 
 }
+	h5.copyright{
+
+				color: darkgray;
+				padding:.7em;
+			}
