@@ -9,14 +9,15 @@
   <title>Financing &ndash; Active Solar</title>
   
 
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Active Solar</title>
-    <!-- <link rel="stylesheet" href="./bower_components/foundation/css/foundation.min.css"> -->
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="foundation/foundation-icons/foundation-icons.css">
-    <script src="foundation/js/vendor/modernizr.js"></script>
+  <title>Active Solar</title>
+  
+  <!-- <link rel="stylesheet" href="./bower_components/foundation/css/foundation.min.css"> -->
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="foundation/foundation-icons/foundation-icons.css">
+  <script src="foundation/js/vendor/modernizr.js"></script>
 
 
 
@@ -38,6 +39,8 @@
 
 	
 <div class="sticky contain-to-grid header-menu">
+<!-- <div class=" contain-to-grid header-menu"> -->
+
 	<nav class="top-bar" data-topbar>
 
 		<ul class="title-area">
@@ -219,15 +222,18 @@
 	<div class="row ">
 
 
-		<div class="medium-2  columns">
+		<div class="content-left medium-2  columns">
 			
-<ul class="side-links" data-magellan-expedition="fixed" >
+<div>
+	<ul class="side-links">
+<!-- <ul class="side-links" data-magellan-expedition="fixed" > -->
+<!-- <ul class="side-links sticky-test"  > -->
 	<li ><a data-reveal-id="quote"  href="#"><i class="fi-clipboard-pencil"></i>&nbsp;Get a Quote</a></li>
 	<li ><a data-reveal-id="faqs"  href="#"><i class="fi-checkbox"></i>&nbsp;FAQs</a></li>
 	<li ><a data-reveal-id="questions"  href="#"><i class="fi-comment-quotes"></i>&nbsp;Q&A's</a></li>
 	<li ><a data-reveal-id="contact"  href="#"><i class="fi-telephone"></i>&nbsp;Contact Us</a></li>
 </ul>
-
+</div>
 
 <div id="quote" class="reveal-modal" data-reveal>
 
@@ -352,16 +358,16 @@
 	<div class="footer-bottom">
 
 
-	<div class=" row footer-bottom">
-		<div class="large-12 columns">
-			<div class="certifications large-block-grid-3">
-				<img src="img/certifications/BPI-Logo.jpg" alt="BPI">
-				<img src="img/certifications/nabcep-cert-seal.jpg" alt="nabcep">
-				<img src="img/certifications/polysun.png" alt="polysun">
+		<div class=" row footer-bottom">
+			<div class="large-12 columns">
+				<div class="certifications large-block-grid-3">
+					<img src="img/certifications/BPI-Logo.jpg" alt="BPI">
+					<img src="img/certifications/nabcep-cert-seal.jpg" alt="nabcep">
+					<img src="img/certifications/polysun.png" alt="polysun">
+				</div>
 			</div>
-		</div>
 
-	</div>
+		</div>
 
 
 	</div>
@@ -369,27 +375,40 @@
 </footer>
 
 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 <script src="foundation/js/vendor/jquery.js"></script>
 <script src="foundation/js/foundation.min.js"></script>
 
+<script type="text/javascript">
+$(document).ready(function () { //for the sticky side links 
+	var top = $('.side-links').offset().top;
+	$(window).scroll(function (event) {
+		var y = $(this).scrollTop()-top ;
+		if (y >= top)
+			$('.side-links').addClass('sticky-side-links');
+		else
+			$('.side-links').removeClass('sticky-side-links');
+		$('.side-links').width($('.side-links').parent().width());
+	});
+});
+</script>
 <script>
-
-
 $(document).foundation({
   // how many pixels until the magellan bar sticks, 0 = auto
   //threshold: 50,
   // pixels from the top of destination for it to be considered active
   //destination_threshold: 80,//for sub-nav
  // calculation throttling to increase framerate
- // throttle_delay: 1000,
+  //throttle_delay: 20,
 
- orbit: {
+  orbit: {
   	slide_number: false,//for orbit slideshow- Removes numbers
   	timer_speed: 4000
   }
 
 });
+
 	//$(document).foundation('joyride', 'start');
 	</script>
 

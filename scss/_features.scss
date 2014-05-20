@@ -28,17 +28,21 @@ ul.clearing-thumbs{//Fixed full screen gallery pictures
 	}
 }
 /******************END ORBIT SLIDE SHOW****************************/
+.content-left{
 
-/******************MAGELLAN************************************/
-[data-magellan-expedition-clone] { visibility:hidden; }//Hides clone until patch comes out
+
+
+	/******************MAGELLAN************************************/
+//[data-magellan-expedition-clone] { visibility:hidden; }//Hides clone until patch comes out
 ul.side-links {//For the sticky side-nav
 	//width: 240px;
 	// @extend ul.no-underline;
-	top: 45px !important;
-	z-index:0;
-	padding-top:10px;
+	//top: 45px !important;
+	//z-index:0;
+	//padding-top:10px;
 	//background: $body-bg;
 	background: rgba(84, 80, 43, 0);
+	//position:absolute;
 	//min-width: 100px !important;
 
 
@@ -49,7 +53,13 @@ ul.side-links {//For the sticky side-nav
    		//display:none;
    	}
    }
-
+}
+.sticky-side-links {
+	position:fixed;
+	top:0;
+	margin-top:50px;
+  // z-index:99999;
+}
 
 dl.sub-nav{//For quick anchor scrolling
 	  //margin-top: 45px;
@@ -78,6 +88,8 @@ dl.sub-nav{//For quick anchor scrolling
 /*********************TOP-MENU**************************************/
 
 .header-menu{
+
+
 	//background: $primary-color;
 	border-top: 1px solid $hr-color;;
 	border-bottom: 1px solid $hr-color;;

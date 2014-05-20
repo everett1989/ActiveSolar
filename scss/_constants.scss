@@ -1,6 +1,6 @@
 
  $primary-color: #287c3b;//#75D97B;//#61C67F;//#61C66A;
- $secondary-color: #BDE6FB;
+ $secondary-color: #C0DEED;// #BDE6FB;
  $alert-color: #f04124;
  $success-color: #43AC6A;
  $warning-color: #f08a24;
@@ -13,7 +13,7 @@
 
 
 // We use these to control various global styles
-$body-bg: rgb(255, 252, 223);
+$body-bg: white;//rgb(255, 252, 223);
 $body-font-color: $dark-font;//greyish
 $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 $body-font-weight: normal;
@@ -81,7 +81,7 @@ $topbar-media-query: "only screen and (min-width: #{$topbar-breakpoint})";
 
 
 // We use these to control the background and border styles
-$panel-bg: scale-color(#fff, $lightness: -5%);
+$panel-bg: scale-color($secondary-color, $lightness: -5%);
 $panel-border-style: solid;
 $panel-border-size: 1px;
 
@@ -94,8 +94,8 @@ $panel-margin-bottom: rem-calc(20);
 $panel-padding: rem-calc(20);
 
 // We use these to set default font colors
-$panel-font-color: #333;
-$panel-font-color-alt: #fff;
+$panel-font-color: $dark-font; //#333;
+$panel-font-color-alt: $dark-font;
 
 // $panel-header-adjust: true;
 // $callout-panel-link-color: $primary-color;
