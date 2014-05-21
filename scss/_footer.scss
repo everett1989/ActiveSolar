@@ -9,6 +9,7 @@ footer{
 	*{
 		color: $light-font;
 	}
+
 	
 
 
@@ -36,7 +37,10 @@ footer{
 	.footer-content{
 
 		margin-top:2em;
-		
+			a:hover{
+		color: $light-font;
+	}
+
 
 	}
 

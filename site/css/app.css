@@ -5703,25 +5703,28 @@ footer {
   /* line 9, ../../scss/_footer.scss */
   footer * {
     color: white; }
-  /* line 15, ../../scss/_footer.scss */
+  /* line 16, ../../scss/_footer.scss */
   footer .footer-heading {
     height: 3em;
     background: #287c3b;
     text-align: center; }
-  /* line 24, ../../scss/_footer.scss */
+  /* line 25, ../../scss/_footer.scss */
   footer .certifications {
     float: left; }
-    /* line 27, ../../scss/_footer.scss */
+    /* line 28, ../../scss/_footer.scss */
     footer .certifications img {
       padding: 3px;
       height: 80px; }
-  /* line 32, ../../scss/_footer.scss */
+  /* line 33, ../../scss/_footer.scss */
   footer ul {
     text-align: center; }
-  /* line 36, ../../scss/_footer.scss */
+  /* line 37, ../../scss/_footer.scss */
   footer .footer-content {
     margin-top: 2em; }
-  /* line 43, ../../scss/_footer.scss */
+    /* line 40, ../../scss/_footer.scss */
+    footer .footer-content a:hover {
+      color: white; }
+  /* line 47, ../../scss/_footer.scss */
   footer .footer-bottom {
     background: #4A7E55; }
 
