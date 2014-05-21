@@ -1,20 +1,23 @@
 
 
 footer{
+	box-shadow: 0 0 5px;
+
 	margin-top:3em;
 	background:$footer-color;
 	//text-align:center;
 	*{
 		color: $light-font;
 	}
+
 	
 
 
 	.footer-heading{
+		height:3em;
 		background:$primary-color;
 		text-align:center;
 		//height:4em;
-
 
 	}
 
@@ -33,32 +36,21 @@ footer{
 
 	.footer-content{
 
-		
-
-
-
-
 		margin-top:2em;
-
-
-		.copyright{
-			
-			text-align:center;
-		
-		}
-
+			a:hover{
+		color: $light-font;
+	}
 
 
 	}
 
 	.footer-bottom{
-		//padding:1em;
+
+	
+
 		background:#4A7E55;//$primary-dark;
 	}
 
 }
-	h5.copyright{
 
-				color: darkgray;
-				padding:.7em;
-			}
+
