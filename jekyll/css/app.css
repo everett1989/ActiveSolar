@@ -5630,14 +5630,14 @@ th.hide-for-touch {
 
 /* line 2, ../../scss/_header-menu.scss */
 .logo-background {
-  background: linear-gradient(#ffffff, #287c3b); }
+  background: linear-gradient(#ffffff, #339e4b); }
 
 /* line 11, ../../scss/_header-menu.scss */
 .logo_pic {
   margin-bottom: 5px; }
 
-/* line 16, ../../scss/_header-menu.scss */
-.banner {
+/* line 18, ../../scss/_header-menu.scss */
+.banner, .banner-small {
   height: 300px;
   max-height: 300px;
   margin-bottom: 3em;
@@ -5647,57 +5647,92 @@ th.hide-for-touch {
   background-image: url(http://www.siresolar.com/wp-content/uploads/2013/10/SIRenewSlider8.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
-  /* line 28, ../../scss/_header-menu.scss */
-  .banner .banner-slider {
-    border-radius: 4px;
-    margin-top: 100px;
-    box-shadow: 0 0 10px;
-    background: #c0deed; }
-  /* line 44, ../../scss/_header-menu.scss */
-  .banner .banner-heading {
-    margin-top: 60px; }
-    /* line 50, ../../scss/_header-menu.scss */
-    .banner .banner-heading h4, .banner .banner-heading h1 {
+  /* line 29, ../../scss/_header-menu.scss */
+  .banner .banner-heading, .banner-small .banner-heading {
+    margin-top: 40px; }
+    /* line 32, ../../scss/_header-menu.scss */
+    .banner .banner-heading h4, .banner-small .banner-heading h4, .banner .banner-heading h1, .banner-small .banner-heading h1 {
       color: white;
       font-style: italic; }
+    /* line 36, ../../scss/_header-menu.scss */
+    .banner .banner-heading h4, .banner-small .banner-heading h4 {
+      margin-left: 2em;
+      text-decoration: underline; }
+  /* line 42, ../../scss/_header-menu.scss */
+  .banner .banner-contact, .banner-small .banner-contact {
+    color: white; }
+    /* line 43, ../../scss/_header-menu.scss */
+    .banner .banner-contact i, .banner-small .banner-contact i {
+      color: white; }
+    /* line 48, ../../scss/_header-menu.scss */
+    .banner .banner-contact td, .banner-small .banner-contact td {
+      padding-right: 1em;
+      font-size: 36px; }
+      /* line 51, ../../scss/_header-menu.scss */
+      .banner .banner-contact td a, .banner-small .banner-contact td a {
+        color: white; }
+  /* line 60, ../../scss/_header-menu.scss */
+  .banner .banner-slider, .banner-small .banner-slider {
+    padding: 10px;
+    color: #4b4b4b;
+    border-radius: 4px;
+    margin-top: 80px;
+    opacity: .8;
+    box-shadow: 0 0 10px;
+    background: #c0deed; }
+    /* line 68, ../../scss/_header-menu.scss */
+    .banner .banner-slider h3, .banner-small .banner-slider h3 {
+      text-decoration: underline; }
+  /* line 75, ../../scss/_header-menu.scss */
+  .banner .social-media-icons ul, .banner-small .social-media-icons ul {
+    margin-top: 80px;
+    font-size: 36px; }
+
+/* line 86, ../../scss/_header-menu.scss */
+.banner-small {
+  max-height: 180px; }
+  /* line 90, ../../scss/_header-menu.scss */
+  .banner-small .banner-contact {
+    margin-top: 40px; }
 
 /* line 3, ../../scss/_footer.scss */
 footer {
+  box-shadow: 0 0 5px;
   margin-top: 3em;
   background: #339e4b; }
-  /* line 7, ../../scss/_footer.scss */
+  /* line 9, ../../scss/_footer.scss */
   footer * {
     color: white; }
-  /* line 13, ../../scss/_footer.scss */
+  /* line 16, ../../scss/_footer.scss */
   footer .footer-heading {
+    height: 3em;
     background: #287c3b;
     text-align: center; }
-  /* line 22, ../../scss/_footer.scss */
+  /* line 25, ../../scss/_footer.scss */
   footer .certifications {
     float: left; }
-    /* line 25, ../../scss/_footer.scss */
+    /* line 28, ../../scss/_footer.scss */
     footer .certifications img {
       padding: 3px;
       height: 80px; }
-  /* line 30, ../../scss/_footer.scss */
+  /* line 33, ../../scss/_footer.scss */
   footer ul {
     text-align: center; }
-  /* line 34, ../../scss/_footer.scss */
+  /* line 37, ../../scss/_footer.scss */
   footer .footer-content {
     margin-top: 2em; }
-    /* line 44, ../../scss/_footer.scss */
-    footer .footer-content .copyright {
-      text-align: center; }
-  /* line 54, ../../scss/_footer.scss */
+    /* line 40, ../../scss/_footer.scss */
+    footer .footer-content a:hover {
+      color: white; }
+  /* line 47, ../../scss/_footer.scss */
   footer .footer-bottom {
     background: #4A7E55; }
 
-/* line 60, ../../scss/_footer.scss */
-h5.copyright {
-  color: darkgray;
-  padding: .7em; }
+/* line 1, ../../scss/_fonts.scss */
+i {
+  color: #287c3b; }
 
-/* line 8, ../../scss/_fonts.scss */
+/* line 10, ../../scss/_fonts.scss */
 a:hover {
   text-decoration: underline; }
 
@@ -5767,16 +5802,20 @@ ul {
 .line-border {
   border-right: 1px solid white; }
 
-/* line 80, ../../scss/app.scss */
+/* line 84, ../../scss/app.scss */
 .content .row {
   margin-bottom: 2em; }
 
-/* line 117, ../../scss/app.scss */
+/* line 124, ../../scss/app.scss */
 .hr-bottom {
   border-bottom: 1px solid #dddddd;
   margin-bottom: .8em;
   padding: .4em; }
 
-/* line 128, ../../scss/app.scss */
+/* line 135, ../../scss/app.scss */
 .panel {
   box-shadow: 0 0 8px; }
+
+/* line 141, ../../scss/app.scss */
+.has-icons i {
+  font-size: 42px; }
