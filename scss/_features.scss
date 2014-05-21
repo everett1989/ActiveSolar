@@ -33,11 +33,11 @@ ul.clearing-thumbs{//Fixed full screen gallery pictures
 
 
 	/******************MAGELLAN************************************/
-//[data-magellan-expedition-clone] { visibility:hidden; }//Hides clone until patch comes out
+[data-magellan-expedition-clone] { visibility:hidden; }//Hides clone until patch comes out
 ul.side-links {//For the sticky side-nav
 	//width: 240px;
 	// @extend ul.no-underline;
-	//top: 45px !important;
+	top: 45px !important;
 	//z-index:0;
 	//padding-top:10px;
 	//background: $body-bg;

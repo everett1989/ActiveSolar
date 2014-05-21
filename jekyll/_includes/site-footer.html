@@ -83,19 +83,7 @@
 <script src="foundation/js/vendor/jquery.js"></script>
 <script src="foundation/js/foundation.min.js"></script>
 
-<script type="text/javascript">
-$(document).ready(function () { //for the sticky side links 
-	var top = $('.side-links').offset().top;
-	$(window).scroll(function (event) {
-		var y = $(this).scrollTop() ;
-		if (y >= top)
-			$('.side-links').addClass('sticky-side-links');
-		else
-			$('.side-links').removeClass('sticky-side-links');
-		$('.side-links').width($('.side-links').parent().width());
-	});
-});
-</script>
+
 <script>
 $(document).foundation({
   // how many pixels until the magellan bar sticks, 0 = auto
@@ -116,3 +104,17 @@ $(document).foundation({
 	</script>
 
 
+<script type="text/javascript">
+
+// $(document).ready(function () { //for the sticky side links 
+// 	var top = $('.side-links').offset().top;
+// 	$(window).scroll(function (event) {
+// 		var y = $(this).scrollTop()+10 ;
+// 		if (y >= top)
+// 			$('.side-links').addClass('sticky-side-links');
+// 		else
+// 			$('.side-links').removeClass('sticky-side-links');
+// 		$('.side-links').width($('.side-links').parent().width());
+// 	});
+// });
+</script>
