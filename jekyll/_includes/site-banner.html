@@ -1,52 +1,80 @@
 
 <div class="banner">
-<!-- 	<div class="banner-contact">
+	<div class="row">
+<!-- 	<div class="large-12 columns banner-contact">
 
-	<table>
-		<th>
-			<td>Contact Us</td>
-		</th>
-		<tr>
-			<td>Phone:</td>
-			<td>555-555-5555</td>
-		</tr>
-		<tr>
-			<td>Mail</td>
-			<td>222 Fake Street</td>
-		</tr>
-		<tr>
-			<td>Email</td>
-			<td>ActiveSolar@fake.com</td>
-		</tr>
-	</table>
 </div> -->
 
 
 
+
+	<!-- 		<img src="http://www.siresolar.com/wp-content/uploads/2013/10/SIRenewSlider8.jpg"> -->
+
+<div class="large-4 columns banner-heading">
 {% for node in site.pages %}
 
-	{% if page.url == node.url %}
-
-		
-
+	{% if page.url == node.url %}	
 		{% if page.url == '/index.html' %}
-			<div class="banner-heading">
 				<h1>Active Solar</h1> 
-				<h4 class="slogan">Own the future now</h4> 
-			</div>
-			<img src="http://www.siresolar.com/wp-content/uploads/2013/10/SIRenewSlider8.jpg">
-			
-
 		{% else %}
-			<div class="banner-heading">
 				<h1>{{ node.title }}</h1>
-			</div>
-			<img src="http://www.siresolar.com/wp-content/uploads/2013/10/SIRenewSlider8.jpg">
-
 		{% endif %}
-	 	
 	 {% endif %}
 	 
 {% endfor %}
+<h4 class="slogan">Own the future now</h4>
+</div>
 
+
+<div class="large-5 columns banner-slider">
+	<h3>Contact Us</h3>
+	
+		<ul>
+			<li>Phone: 555-555-5555</li>
+
+		
+		
+			<li>Mail: 222 Fake Street</li>
+
+		
+		
+			<li>Email: ActiveSolar@fake.com</li>
+			<li>
+				<i class="fi-social-facebook"></i>
+				<i class="fi-social-facebook"></i>
+				<i class="fi-social-facebook"></i>
+
+			</li>
+			
+		
+	</ul>
+ 		<!-- <ul class="example-orbit-content" data-orbit>
+  <li data-orbit-slide="headline-1">
+    <div>
+      <h2>Headline 1</h2>
+      <h3>Subheadline</h3>
+    </div>
+  </li>
+  <li data-orbit-slide="headline-2">
+    <div>
+      <h2>Headline 2</h2>
+      <h3>Subheadline</h3>
+    </div>
+  </li>
+  <li data-orbit-slide="headline-3">
+    <div>
+      <h2>Headline 3</h2>
+      <h3>Subheadline</h3>
+    </div>
+  </li>
+</ul> -->
+
+
+</div>
+
+<div class="large-3 columns">
+
+
+</div>
+</div>
 </div>
