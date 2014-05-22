@@ -204,7 +204,8 @@
 			navigation_arrows:false;
 			bullets:false;
 			timer_show_progress_bar: false;
-			pause_on_hover: false;">
+			pause_on_hover: false;
+			slide_number: false;">
 
 			<li data-orbit-slide="headline-1">
 				<div>
@@ -315,7 +316,11 @@
 			<div class="row slide_show">
 	<div class="panel medium-6 columns">
 		<h3>Residential</h3>
-		<ul class ="slider_img" data-orbit>
+		<ul class ="slider_img" data-orbit
+		 data-options="slide_number: false;
+		 				timer_speed: 4000;
+		 				pause_on_hover:false;
+		 				">
 			<li>
 				<img src="img/gallery/img_lg/IMG_4200.jpg" alt="slide 1">
 				<div class="orbit-caption">
@@ -329,7 +334,7 @@
 				</div>
 			</li>
 			<li>
-				<img src="img/gallery/img_lg/Nosal Roof.jpg" alt="slide 3">
+				<img src="img/gallery/img_lg/Nosal_Roof.jpg" alt="slide 3">
 				<div class="orbit-caption">
 					Caption Three.
 				</div>
@@ -340,7 +345,11 @@
 
 	<div class="panel medium-6 columns">
 		<h3>Commercial</h3>
-		<ul class ="slider_img" data-orbit>
+		<ul class ="slider_img" data-orbit
+		data-options="slide_number: false;
+						pause_on_hover:false;
+		 				timer_speed: 4000;
+		 				">
 			<li>
 				<img src="img/gallery/img_lg/IMG_4200.jpg" alt="slide 1">
 				<div class="orbit-caption">
@@ -354,7 +363,7 @@
 				</div>
 			</li>
 			<li>
-				<img src="img/gallery/img_lg/Nosal Roof.jpg" alt="slide 3">
+				<img src="img/gallery/img_lg/Nosal_Roof.jpg" alt="slide 3">
 				<div class="orbit-caption">
 					Caption Three.
 				</div>
@@ -490,10 +499,10 @@ $(document).foundation({
  // calculation throttling to increase framerate
   //throttle_delay: 20,
 
-  orbit: {
-  	slide_number: false,//for orbit slideshow- Removes numbers
-  	timer_speed: 4000
-  }
+  // orbit: {
+  // 	slide_number: false,//for orbit slideshow- Removes numbers
+  // 	timer_speed: 4000
+  // }
 
 });
 
@@ -501,20 +510,7 @@ $(document).foundation({
 	</script>
 
 
-<script type="text/javascript">
 
-// $(document).ready(function () { //for the sticky side links 
-// 	var top = $('.side-links').offset().top;
-// 	$(window).scroll(function (event) {
-// 		var y = $(this).scrollTop()+10 ;
-// 		if (y >= top)
-// 			$('.side-links').addClass('sticky-side-links');
-// 		else
-// 			$('.side-links').removeClass('sticky-side-links');
-// 		$('.side-links').width($('.side-links').parent().width());
-// 	});
-// });
-</script>
 
 </body>
 </html>
