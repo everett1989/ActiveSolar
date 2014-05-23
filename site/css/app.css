@@ -5631,12 +5631,29 @@ th.hide-for-touch {
 /* line 2, ../../scss/_header-menu.scss */
 .logo-background {
   background: linear-gradient(#ffffff, #339e4b); }
+  /* line 12, ../../scss/_header-menu.scss */
+  .logo-background .banner-contact li {
+    font-size: 20px;
+    color: #236c33; }
+    /* line 16, ../../scss/_header-menu.scss */
+    .logo-background .banner-contact li i {
+      font-size: 20px; }
+  /* line 25, ../../scss/_header-menu.scss */
+  .logo-background .banner-contact td {
+    padding-right: 1em;
+    font-size: 36px; }
+    /* line 29, ../../scss/_header-menu.scss */
+    .logo-background .banner-contact td i {
+      font-size: 38px; }
+    /* line 32, ../../scss/_header-menu.scss */
+    .logo-background .banner-contact td a {
+      color: white; }
 
-/* line 11, ../../scss/_header-menu.scss */
+/* line 43, ../../scss/_header-menu.scss */
 .logo_pic {
   margin-bottom: 5px; }
 
-/* line 18, ../../scss/_header-menu.scss */
+/* line 50, ../../scss/_header-menu.scss */
 .banner, .banner-small {
   height: 300px;
   max-height: 300px;
@@ -5647,31 +5664,18 @@ th.hide-for-touch {
   background-image: url(http://www.siresolar.com/wp-content/uploads/2013/10/SIRenewSlider8.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
-  /* line 29, ../../scss/_header-menu.scss */
+  /* line 61, ../../scss/_header-menu.scss */
   .banner .banner-heading, .banner-small .banner-heading {
     margin-top: 40px; }
-    /* line 32, ../../scss/_header-menu.scss */
+    /* line 64, ../../scss/_header-menu.scss */
     .banner .banner-heading h4, .banner-small .banner-heading h4, .banner .banner-heading h1, .banner-small .banner-heading h1 {
       color: white;
       font-style: italic; }
-    /* line 36, ../../scss/_header-menu.scss */
+    /* line 68, ../../scss/_header-menu.scss */
     .banner .banner-heading h4, .banner-small .banner-heading h4 {
       margin-left: 2em;
       text-decoration: underline; }
-  /* line 42, ../../scss/_header-menu.scss */
-  .banner .banner-contact, .banner-small .banner-contact {
-    color: white; }
-    /* line 43, ../../scss/_header-menu.scss */
-    .banner .banner-contact i, .banner-small .banner-contact i {
-      color: white; }
-    /* line 48, ../../scss/_header-menu.scss */
-    .banner .banner-contact td, .banner-small .banner-contact td {
-      padding-right: 1em;
-      font-size: 36px; }
-      /* line 51, ../../scss/_header-menu.scss */
-      .banner .banner-contact td a, .banner-small .banner-contact td a {
-        color: white; }
-  /* line 60, ../../scss/_header-menu.scss */
+  /* line 77, ../../scss/_header-menu.scss */
   .banner .banner-slider, .banner-small .banner-slider {
     padding: 10px;
     color: #4b4b4b;
@@ -5680,18 +5684,18 @@ th.hide-for-touch {
     opacity: .8;
     box-shadow: 0 0 10px;
     background: #c0deed; }
-    /* line 68, ../../scss/_header-menu.scss */
+    /* line 85, ../../scss/_header-menu.scss */
     .banner .banner-slider h3, .banner-small .banner-slider h3 {
       text-decoration: underline; }
-  /* line 75, ../../scss/_header-menu.scss */
+  /* line 92, ../../scss/_header-menu.scss */
   .banner .social-media-icons ul, .banner-small .social-media-icons ul {
     margin-top: 80px;
     font-size: 36px; }
 
-/* line 86, ../../scss/_header-menu.scss */
+/* line 103, ../../scss/_header-menu.scss */
 .banner-small {
   max-height: 180px; }
-  /* line 90, ../../scss/_header-menu.scss */
+  /* line 107, ../../scss/_header-menu.scss */
   .banner-small .banner-contact {
     margin-top: 40px; }
 
@@ -5784,7 +5788,8 @@ dl.sub-nav {
 /* line 91, ../../scss/_features.scss */
 .header-menu {
   border-top: 1px solid #dddddd;
-  border-bottom: 1px solid #dddddd; }
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 2em; }
   /* line 103, ../../scss/_features.scss */
   .header-menu nav li.divider {
     border-right: solid 1px #dddddd !important; }

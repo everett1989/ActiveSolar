@@ -3,7 +3,39 @@
 	background: linear-gradient(white, $primary-light);
 
 	//background: linear-gradient(color-stops(white, white 20%, $primary-color 80%));
+	.banner-contact{
 
+
+
+
+		//background:white;
+		li{
+			font-size:20px;
+
+			color:$primary-dark;
+			i{
+
+				// color:green;
+				font-size:20px;
+
+
+			}
+		}
+		
+		td{
+
+			padding-right:1em;
+			font-size:36px;
+			i{
+				font-size:38px;
+			}
+			a{
+				color:white;
+			}
+		}
+
+
+	}
 
 }
 
@@ -39,22 +71,7 @@
 		}
 	}
 
-	.banner-contact{
-		i{
-			color:white;
-		}
-		//background:white;
-		color:white;
-		td{
-			padding-right:1em;
-			font-size:36px;
-			a{
-				color:white;
-			}
-		}
 
-
-	}
 
 
 	.banner-slider{
