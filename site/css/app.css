@@ -5629,31 +5629,46 @@ th.hide-for-touch {
   display: table-cell !important; }
 
 /* line 2, ../../scss/_header-menu.scss */
+.header-slider {
+  max-width: 150px;
+  color: #4b4b4b;
+  border-radius: 4px;
+  opacity: .8;
+  box-shadow: 0 0 10px;
+  background: #c0deed; }
+  /* line 12, ../../scss/_header-menu.scss */
+  .header-slider h3 {
+    text-decoration: underline; }
+
+/* line 20, ../../scss/_header-menu.scss */
 .logo-background {
   background: linear-gradient(#ffffff, #339e4b); }
-  /* line 12, ../../scss/_header-menu.scss */
-  .logo-background .banner-contact li {
+  /* line 32, ../../scss/_header-menu.scss */
+  .logo-background .banner-contact ul {
+    margin-bottom: -1px;
+    text-align: right;
     font-size: 20px;
+    margin-right: -15px;
     color: #236c33; }
-    /* line 16, ../../scss/_header-menu.scss */
-    .logo-background .banner-contact li i {
-      font-size: 20px; }
-  /* line 25, ../../scss/_header-menu.scss */
-  .logo-background .banner-contact td {
-    padding-right: 1em;
-    font-size: 36px; }
-    /* line 29, ../../scss/_header-menu.scss */
-    .logo-background .banner-contact td i {
-      font-size: 38px; }
-    /* line 32, ../../scss/_header-menu.scss */
-    .logo-background .banner-contact td a {
-      color: white; }
+    /* line 38, ../../scss/_header-menu.scss */
+    .logo-background .banner-contact ul .button {
+      padding: 5px 10px;
+      box-shadow: 0 0 px;
+      border: solid black 1px;
+      border-radius: 5px;
+      margin-bottom: 3px; }
+    /* line 48, ../../scss/_header-menu.scss */
+    .logo-background .banner-contact ul li.social-media {
+      font-size: 30px; }
+      /* line 51, ../../scss/_header-menu.scss */
+      .logo-background .banner-contact ul li.social-media i {
+        margin-left: 30px; }
 
-/* line 43, ../../scss/_header-menu.scss */
+/* line 81, ../../scss/_header-menu.scss */
 .logo_pic {
   margin-bottom: 5px; }
 
-/* line 50, ../../scss/_header-menu.scss */
+/* line 88, ../../scss/_header-menu.scss */
 .banner, .banner-small {
   height: 300px;
   max-height: 300px;
@@ -5664,18 +5679,18 @@ th.hide-for-touch {
   background-image: url(http://www.siresolar.com/wp-content/uploads/2013/10/SIRenewSlider8.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
-  /* line 61, ../../scss/_header-menu.scss */
+  /* line 99, ../../scss/_header-menu.scss */
   .banner .banner-heading, .banner-small .banner-heading {
     margin-top: 40px; }
-    /* line 64, ../../scss/_header-menu.scss */
+    /* line 102, ../../scss/_header-menu.scss */
     .banner .banner-heading h4, .banner-small .banner-heading h4, .banner .banner-heading h1, .banner-small .banner-heading h1 {
       color: white;
       font-style: italic; }
-    /* line 68, ../../scss/_header-menu.scss */
+    /* line 106, ../../scss/_header-menu.scss */
     .banner .banner-heading h4, .banner-small .banner-heading h4 {
       margin-left: 2em;
       text-decoration: underline; }
-  /* line 77, ../../scss/_header-menu.scss */
+  /* line 115, ../../scss/_header-menu.scss */
   .banner .banner-slider, .banner-small .banner-slider {
     padding: 10px;
     color: #4b4b4b;
@@ -5684,18 +5699,18 @@ th.hide-for-touch {
     opacity: .8;
     box-shadow: 0 0 10px;
     background: #c0deed; }
-    /* line 85, ../../scss/_header-menu.scss */
+    /* line 123, ../../scss/_header-menu.scss */
     .banner .banner-slider h3, .banner-small .banner-slider h3 {
       text-decoration: underline; }
-  /* line 92, ../../scss/_header-menu.scss */
+  /* line 130, ../../scss/_header-menu.scss */
   .banner .social-media-icons ul, .banner-small .social-media-icons ul {
     margin-top: 80px;
     font-size: 36px; }
 
-/* line 103, ../../scss/_header-menu.scss */
+/* line 141, ../../scss/_header-menu.scss */
 .banner-small {
   max-height: 180px; }
-  /* line 107, ../../scss/_header-menu.scss */
+  /* line 145, ../../scss/_header-menu.scss */
   .banner-small .banner-contact {
     margin-top: 40px; }
 
@@ -5787,18 +5802,22 @@ dl.sub-nav {
 /*********************TOP-MENU**************************************/
 /* line 91, ../../scss/_features.scss */
 .header-menu {
-  border-top: 1px solid #dddddd;
-  border-bottom: 1px solid #dddddd;
-  margin-bottom: 2em; }
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  margin-bottom: 1em; }
   /* line 103, ../../scss/_features.scss */
   .header-menu nav li.divider {
-    border-right: solid 1px #dddddd !important; }
+    border-right: solid 1px white !important; }
   /* line 107, ../../scss/_features.scss */
   .header-menu nav ul.dropdown .active {
     text-decoration: underline; }
 
 /************************EMD TOP-MENU********************************/
 /*******INDEX*********************************/
+/* line 12, ../../scss/_pages.scss */
+.title-box-res {
+  background: red; }
+
 /********************************************/
 /* line 64, ../../scss/app.scss */
 ul {
@@ -5814,7 +5833,7 @@ ul {
 
 /* line 124, ../../scss/app.scss */
 .hr-bottom {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #9b9b9b;
   margin-bottom: .8em;
   padding: .4em; }
 
