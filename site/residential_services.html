@@ -8,6 +8,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
   <title>Residential Services &ndash; Active Solar</title>
   
 
@@ -16,6 +17,12 @@
   <title>Active Solar</title>
   
   <!-- <link rel="stylesheet" href="./bower_components/foundation/css/foundation.min.css"> -->
+    <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  <script src="//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
+  <script src="//html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+<![endif]-->
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="foundation/foundation-icons/foundation-icons.css">
   <script src="foundation/js/vendor/modernizr.js"></script>
@@ -55,10 +62,9 @@
 			<ul class ="right">
 
 				
-				<!-- skip home -->
-				
-				<li class="divider"></li>
-				
+					
+						<li class="divider"></li>
+					
 				<li >
 					<a href="about.html">About Us</a>
 				</li>
@@ -67,10 +73,9 @@
 
 
 				
-				<!-- skip home -->
-				
-				<li class="divider"></li>
-				
+					
+						<li class="divider"></li>
+					
 				<li >
 					<a href="about_solar.html">About Solar</a>
 				</li>
@@ -79,10 +84,9 @@
 
 
 				
-				<!-- skip home -->
-				
-				<li class="divider"></li>
-				
+					
+						<li class="divider"></li>
+					
 
 				<li class="has-dropdown active "><a href="#">Services</a>
 					<ul class="dropdown">
@@ -96,10 +100,9 @@
 
 
 				
-				<!-- skip home -->
-				
-				<li class="divider"></li>
-				
+					
+						<li class="divider"></li>
+					
 				<li >
 					<a href="financing.html">Financing</a>
 				</li>
@@ -108,13 +111,11 @@
 
 
 				
-				<!-- skip home -->
-				 
-				
-				<!-- skip home -->
-				
-				<li class="divider"></li>
-				
+					 
+						
+					
+						<li class="divider"></li>
+					
 				<li >
 					<a href="process.html">Our Process</a>
 				</li>
@@ -123,10 +124,9 @@
 
 
 				
-				<!-- skip home -->
-				
-				<li class="divider"></li>
-				
+					
+						<li class="divider"></li>
+					
 				<li >
 					<a href="projects.html">Projects</a>
 				</li>
@@ -135,9 +135,8 @@
 
 
 				
-				<!-- skip home -->
-				 
-				
+					 
+						
 				<li class="divider"></li>
 
 
@@ -148,9 +147,7 @@
 
 </div>
 
-	
-
-
+		
 
 	<div class="row ">
 
@@ -162,8 +159,8 @@
 <ul class="side-links" data-magellan-expedition="fixed" >
 <!-- <ul class="side-links sticky-test"  > -->
 	<li ><a data-reveal-id="quote"  href="#"><i class="fi-clipboard-pencil"></i>&nbsp;Get a Quote</a></li>
-	<li ><a data-reveal-id="faqs"  href="#"><i class="fi-checkbox"></i>&nbsp;FAQs</a></li>
-	<li ><a data-reveal-id="questions"  href="#"><i class="fi-comment-quotes"></i>&nbsp;Q&amp;A's</a></li>
+	<li ><a data-reveal-id="electric"  href="#"><i class="fi-checkbox"></i>&nbsp;Solar Electric</a></li>
+	<li ><a data-reveal-id="hot-water"  href="#"><i class="fi-comment-quotes"></i>&nbsp;Solar Hot Water</a></li>
 	<li ><a data-reveal-id="contact"  href="#"><i class="fi-telephone"></i>&nbsp;Contact Us</a></li>
 </ul>
 </div>
@@ -189,16 +186,16 @@
 </div>
 
 
-<div id="faqs" class="reveal-modal" data-reveal>
+<div id="electric" class="reveal-modal" data-reveal>
 
-	<h2>Quick FAQs</h2>
+	<h2>Solar Electric</h2>
 
 	<a class="close-reveal-modal">&#215;</a>
 </div>
 
-<div id="questions" class="reveal-modal" data-reveal>
+<div id="hot-water" class="reveal-modal" data-reveal>
 
-	<h2>Questions and Answers</h2>
+	<h2>Solar Hot Water</h2>
 
 
 
@@ -251,8 +248,8 @@
 			</div>
 			<div class="small-6 columns banner-contact">
 				<ul>
-					<li><i class="fi-telephone"></i>&nbsp;Phone:&nbsp;555-555-5555</li><li><i class="fi-mail"></i>&nbsp;E-mail:&nbsp;ActiveSolar@fake.com</li>
-					<li>Mail:&nbsp;222 Fake Street</li>
+					<li><i class="fi-telephone"></i>&nbsp;Phone:&nbsp;800-865-3625</li><li><i class="fi-mail"></i>&nbsp;E-mail:&nbsp;sales@activesolarusa.com</li>
+					<!-- <li>Mail:&nbsp;222 Fake Street</li> -->
 					<li>
 						<table>
 							<tr>
@@ -442,43 +439,22 @@
 			</div>
 
 		</div>
-
-
-
-
-
 	</div>
 
 </footer>
 
 
-<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
-
-<script src="foundation/js/vendor/jquery.js"></script>
-<script src="foundation/js/foundation.min.js"></script>
 
 
-<script>
-$(document).foundation({
-  // how many pixels until the magellan bar sticks, 0 = auto
-  //threshold: 50,
-  // pixels from the top of destination for it to be considered active
-  //destination_threshold: 80,//for sub-nav
- // calculation throttling to increase framerate
-  //throttle_delay: 20,
 
-  // orbit: {
-  // 	slide_number: false,//for orbit slideshow- Removes numbers
-  // 	timer_speed: 4000
-  // }
 
-});
 
-	//$(document).foundation('joyride', 'start');
+	<script src="foundation/js/vendor/jquery.js"></script>
+	<script src="foundation/js/foundation.min.js"></script>
+	<script src="js/rem.min.js"></script>
+	<script>
+		$(document).foundation();
 	</script>
-
-
-
 
 </body>
 </html>

@@ -15,12 +15,11 @@
 			<ul class ="right">
 
 				{% for node in site.pages %}
-				<!-- skip home -->
-				{% if "index.html" == node.path or node.url == "/residential_services.html" %} 
-				{% continue %}
-				{% endif %}
-				<li class="divider"></li>
-				{% if node.url == "/commercial_services.html" %}
+					{% if "index.html" == node.path or node.url == "/residential_services.html" %} 
+						{% continue %}
+					{% endif %}
+						<li class="divider"></li>
+					{% if node.url == "/commercial_services.html" %}
 
 				<li class="has-dropdown {% if page.url == '/residential_services.html' or page.url == '/commercial_services.html' %}active {% endif %}"><a href="#">Services</a>
 					<ul class="dropdown">
