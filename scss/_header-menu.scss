@@ -1,15 +1,17 @@
 
-	.header-slider{
+	.sidelinks-slider{
 		//margin-top:5px;
-		//padding:5px;
+		padding:5px 0px 0px 5px;
 		max-width:150px;
 		color:rgb(75, 75, 75);
 		border-radius:4px;
 		//margin-top:80px;
 		opacity:.8;
-		box-shadow:0 0 10px;
-		background:$secondary-color;
-		h3{
+		//box-shadow:0 0 10px;
+		// background:$secondary-color;
+		//color:$light-font;
+
+		dt{
 			text-decoration:underline;
 		}
 

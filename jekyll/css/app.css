@@ -2844,15 +2844,15 @@ button, .button {
     color: white; }
   /* line 209, ../../bower_components/foundation/scss/foundation/components/_buttons.scss */
   button.secondary, .button.secondary {
-    background-color: #c0deed;
-    border-color: #7dbbda;
-    color: #333333; }
+    background-color: #0871e7;
+    border-color: #065ab9;
+    color: white; }
     /* line 146, ../../bower_components/foundation/scss/foundation/components/_buttons.scss */
     button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
-      background-color: #7dbbda; }
-    /* line 152, ../../bower_components/foundation/scss/foundation/components/_buttons.scss */
+      background-color: #065ab9; }
+    /* line 157, ../../bower_components/foundation/scss/foundation/components/_buttons.scss */
     button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
-      color: #333333; }
+      color: white; }
   /* line 210, ../../bower_components/foundation/scss/foundation/components/_buttons.scss */
   button.success, .button.success {
     background-color: #43ac6a;
@@ -2940,22 +2940,22 @@ button, .button {
       background-color: #287c3b; }
     /* line 225, ../../bower_components/foundation/scss/foundation/components/_buttons.scss */
     button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
-      background-color: #c0deed;
-      border-color: #7dbbda;
-      color: #333333;
+      background-color: #0871e7;
+      border-color: #065ab9;
+      color: white;
       cursor: default;
       opacity: 0.7;
       -webkit-box-shadow: none;
       box-shadow: none; }
       /* line 146, ../../bower_components/foundation/scss/foundation/components/_buttons.scss */
       button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
-        background-color: #7dbbda; }
-      /* line 152, ../../bower_components/foundation/scss/foundation/components/_buttons.scss */
+        background-color: #065ab9; }
+      /* line 157, ../../bower_components/foundation/scss/foundation/components/_buttons.scss */
       button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
-        color: #333333; }
+        color: white; }
       /* line 170, ../../bower_components/foundation/scss/foundation/components/_buttons.scss */
       button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
-        background-color: #c0deed; }
+        background-color: #0871e7; }
     /* line 226, ../../bower_components/foundation/scss/foundation/components/_buttons.scss */
     button.disabled.success, button[disabled].success, .button.disabled.success, .button[disabled].success {
       background-color: #43ac6a;
@@ -3849,17 +3849,17 @@ label.error {
 .panel {
   border-style: solid;
   border-width: 1px;
-  border-color: #8cc3de;
+  border-color: #0760c3;
   margin-bottom: 1.25rem;
   padding: 1.25rem;
-  background: #afd5e8; }
+  background: #086bdb; }
   /* line 52, ../../bower_components/foundation/scss/foundation/components/_panels.scss */
   .panel > :first-child {
     margin-top: 0; }
   /* line 53, ../../bower_components/foundation/scss/foundation/components/_panels.scss */
   .panel > :last-child {
     margin-bottom: 0; }
-  /* line 58, ../../bower_components/foundation/scss/foundation/components/_panels.scss */
+  /* line 59, ../../bower_components/foundation/scss/foundation/components/_panels.scss */
   .panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6, .panel p {
     color: #6f6f6f; }
   /* line 62, ../../bower_components/foundation/scss/foundation/components/_panels.scss */
@@ -4288,10 +4288,10 @@ meta.foundation-mq-topbar {
         background: #1d5b2b; }
     /* line 330, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
     .top-bar-section ul li > a.button.secondary {
-      background: #c0deed; }
+      background: #0871e7; }
       /* line 332, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
       .top-bar-section ul li > a.button.secondary:hover {
-        background: #9bcbe3; }
+        background: #0765ce; }
     /* line 336, ../../bower_components/foundation/scss/foundation/components/_top-bar.scss */
     .top-bar-section ul li > a.button.success {
       background: #43ac6a; }
@@ -5629,46 +5629,45 @@ th.hide-for-touch {
   display: table-cell !important; }
 
 /* line 2, ../../scss/_header-menu.scss */
-.header-slider {
+.sidelinks-slider {
+  padding: 5px 0px 0px 5px;
   max-width: 150px;
   color: #4b4b4b;
   border-radius: 4px;
-  opacity: .8;
-  box-shadow: 0 0 10px;
-  background: #c0deed; }
-  /* line 12, ../../scss/_header-menu.scss */
-  .header-slider h3 {
+  opacity: .8; }
+  /* line 14, ../../scss/_header-menu.scss */
+  .sidelinks-slider dt {
     text-decoration: underline; }
 
-/* line 20, ../../scss/_header-menu.scss */
+/* line 22, ../../scss/_header-menu.scss */
 .logo-background {
   background: linear-gradient(#ffffff, #339e4b); }
-  /* line 32, ../../scss/_header-menu.scss */
+  /* line 34, ../../scss/_header-menu.scss */
   .logo-background .banner-contact ul {
     margin-bottom: -1px;
     text-align: right;
     font-size: 20px;
     margin-right: -15px;
     color: #236c33; }
-    /* line 38, ../../scss/_header-menu.scss */
+    /* line 40, ../../scss/_header-menu.scss */
     .logo-background .banner-contact ul .button {
       padding: 5px 10px;
       box-shadow: 0 0 px;
       border: solid black 1px;
       border-radius: 5px;
       margin-bottom: 3px; }
-    /* line 48, ../../scss/_header-menu.scss */
+    /* line 50, ../../scss/_header-menu.scss */
     .logo-background .banner-contact ul li.social-media {
       font-size: 30px; }
-      /* line 51, ../../scss/_header-menu.scss */
+      /* line 53, ../../scss/_header-menu.scss */
       .logo-background .banner-contact ul li.social-media i {
         margin-left: 30px; }
 
-/* line 81, ../../scss/_header-menu.scss */
+/* line 83, ../../scss/_header-menu.scss */
 .logo_pic {
   margin-bottom: 5px; }
 
-/* line 88, ../../scss/_header-menu.scss */
+/* line 90, ../../scss/_header-menu.scss */
 .banner, .banner-small {
   height: 300px;
   max-height: 300px;
@@ -5679,18 +5678,18 @@ th.hide-for-touch {
   background-image: url(http://www.siresolar.com/wp-content/uploads/2013/10/SIRenewSlider8.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
-  /* line 99, ../../scss/_header-menu.scss */
+  /* line 101, ../../scss/_header-menu.scss */
   .banner .banner-heading, .banner-small .banner-heading {
     margin-top: 40px; }
-    /* line 102, ../../scss/_header-menu.scss */
+    /* line 104, ../../scss/_header-menu.scss */
     .banner .banner-heading h4, .banner-small .banner-heading h4, .banner .banner-heading h1, .banner-small .banner-heading h1 {
       color: white;
       font-style: italic; }
-    /* line 106, ../../scss/_header-menu.scss */
+    /* line 108, ../../scss/_header-menu.scss */
     .banner .banner-heading h4, .banner-small .banner-heading h4 {
       margin-left: 2em;
       text-decoration: underline; }
-  /* line 115, ../../scss/_header-menu.scss */
+  /* line 117, ../../scss/_header-menu.scss */
   .banner .banner-slider, .banner-small .banner-slider {
     padding: 10px;
     color: #4b4b4b;
@@ -5698,19 +5697,19 @@ th.hide-for-touch {
     margin-top: 80px;
     opacity: .8;
     box-shadow: 0 0 10px;
-    background: #c0deed; }
-    /* line 123, ../../scss/_header-menu.scss */
+    background: #0871e7; }
+    /* line 125, ../../scss/_header-menu.scss */
     .banner .banner-slider h3, .banner-small .banner-slider h3 {
       text-decoration: underline; }
-  /* line 130, ../../scss/_header-menu.scss */
+  /* line 132, ../../scss/_header-menu.scss */
   .banner .social-media-icons ul, .banner-small .social-media-icons ul {
     margin-top: 80px;
     font-size: 36px; }
 
-/* line 141, ../../scss/_header-menu.scss */
+/* line 143, ../../scss/_header-menu.scss */
 .banner-small {
   max-height: 180px; }
-  /* line 145, ../../scss/_header-menu.scss */
+  /* line 147, ../../scss/_header-menu.scss */
   .banner-small .banner-contact {
     margin-top: 40px; }
 
@@ -5746,6 +5745,9 @@ footer {
   /* line 47, ../../scss/_footer.scss */
   footer .footer-bottom {
     background: #4A7E55; }
+    /* line 48, ../../scss/_footer.scss */
+    footer .footer-bottom .copyright {
+      text-align: center; }
 
 /* line 1, ../../scss/_fonts.scss */
 i {
@@ -5763,34 +5765,34 @@ ul.clearing-thumbs li {
 
 /*************END CLEARING LIGHTBOX**********************************/
 /************ORBIT SLIDE SHOW****************************************/
-/* line 17, ../../scss/_features.scss */
+/* line 16, ../../scss/_features.scss */
 .slide_show h3 {
   text-align: center; }
 
 /******************END ORBIT SLIDE SHOW****************************/
-/* line 31, ../../scss/_features.scss */
+/* line 36, ../../scss/_features.scss */
 .content-left {
   /******************MAGELLAN************************************/ }
-  /* line 36, ../../scss/_features.scss */
+  /* line 41, ../../scss/_features.scss */
   .content-left [data-magellan-expedition-clone] {
     visibility: hidden; }
-  /* line 37, ../../scss/_features.scss */
+  /* line 42, ../../scss/_features.scss */
   .content-left ul.side-links {
     margin-left: -15px;
     top: 45px !important;
     background: rgba(84, 80, 43, 0); }
     @media only screen and (max-width: 767px) {
-      /* line 37, ../../scss/_features.scss */
+      /* line 42, ../../scss/_features.scss */
       .content-left ul.side-links {
         position: static !important; } }
 
-/* line 58, ../../scss/_features.scss */
+/* line 63, ../../scss/_features.scss */
 .sticky-side-links {
   position: fixed;
   top: 0;
   margin-top: 50px; }
 
-/* line 65, ../../scss/_features.scss */
+/* line 70, ../../scss/_features.scss */
 dl.sub-nav {
   top: 45px !important;
   padding-top: 10px;
@@ -5800,23 +5802,41 @@ dl.sub-nav {
 /*******************LABELS*****************************************/
 /*********************END LABELS***********************************/
 /*********************TOP-MENU**************************************/
-/* line 91, ../../scss/_features.scss */
+/* line 96, ../../scss/_features.scss */
 .header-menu {
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   margin-bottom: 1em; }
-  /* line 103, ../../scss/_features.scss */
+  /* line 108, ../../scss/_features.scss */
   .header-menu nav li.divider {
     border-right: solid 1px white !important; }
-  /* line 107, ../../scss/_features.scss */
+  /* line 112, ../../scss/_features.scss */
+  .header-menu nav ul.dropdown li.divider {
+    border-top: solid 1px white !important; }
+  /* line 116, ../../scss/_features.scss */
   .header-menu nav ul.dropdown .active {
     text-decoration: underline; }
 
 /************************EMD TOP-MENU********************************/
 /*******INDEX*********************************/
-/* line 12, ../../scss/_pages.scss */
+/* line 14, ../../scss/_pages.scss */
+.title-box, .title-box-res, .title-box-com {
+  margin-bottom: 0px;
+  text-shadow: 2px 2px grey;
+  color: white;
+  border-radius: 10px 10px 0px 0px; }
+
+/* line 21, ../../scss/_pages.scss */
 .title-box-res {
-  background: red; }
+  background: #287c3b; }
+
+/* line 26, ../../scss/_pages.scss */
+.title-box-com {
+  background: #0871e7; }
+
+/* line 33, ../../scss/_pages.scss */
+.slide_show .orbit-caption {
+  padding: 2px 0px 2px 20px !important; }
 
 /********************************************/
 /* line 64, ../../scss/app.scss */
@@ -5826,10 +5846,6 @@ ul {
 /* line 69, ../../scss/app.scss */
 .line-border {
   border-right: 1px solid white; }
-
-/* line 84, ../../scss/app.scss */
-.content .row {
-  margin-bottom: 2em; }
 
 /* line 124, ../../scss/app.scss */
 .hr-bottom {
