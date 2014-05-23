@@ -9,9 +9,7 @@
 	{% include site-header.html %}
 	{% include top-nav.html %}
 
-		{% if page.url == '/index.html' %}
-			{% include site-banner.html %}	
-	{% endif %}
+
 
 	<div class="row ">
 
@@ -21,9 +19,7 @@
 		</div>
 
 		<div class="medium-10 content  columns">
-			{% if page.url != '/index.html' %}
-				{% include site-banner-small.html %}	
-			{% endif %}
+
 
 			{{ content }}
 
