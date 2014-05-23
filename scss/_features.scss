@@ -92,16 +92,16 @@ dl.sub-nav{//For quick anchor scrolling
 
 
 	//background: $primary-color;
-	border-top: 1px solid $hr-color;;
-	border-bottom: 1px solid $hr-color;;
+	border-top: 1px solid $light-font;
+	border-bottom: 1px solid $light-font;
 	//box-shadow: 0px 0px 5px;
-	//margin-bottom:2em;
+	margin-bottom:1em;
 	// height:100px;
 
 	nav{
 
 		li.divider{
-			border-right: solid 1px $hr-color !important;
+			border-right: solid 1px $light-font !important;
 		}
 		ul.dropdown{
 			.active{

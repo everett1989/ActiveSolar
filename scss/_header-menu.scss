@@ -1,9 +1,79 @@
 
+	.header-slider{
+		//margin-top:5px;
+		//padding:5px;
+		max-width:150px;
+		color:rgb(75, 75, 75);
+		border-radius:4px;
+		//margin-top:80px;
+		opacity:.8;
+		box-shadow:0 0 10px;
+		background:$secondary-color;
+		h3{
+			text-decoration:underline;
+		}
+
+	}
+
+
+
 .logo-background{
 	background: linear-gradient(white, $primary-light);
 
-	//background: linear-gradient(color-stops(white, white 20%, $primary-color 80%));
+	
 
+	//background: linear-gradient(color-stops(white, white 20%, $primary-color 80%));
+	.banner-contact{
+
+
+
+
+		//background:white;
+		ul{
+			margin-bottom: -1px;
+			// padding-top: 40px;
+			text-align:right;
+			font-size:20px;
+			margin-right: -15px;
+			.button{
+				padding: 5px 10px;
+				box-shadow: 0 0 px;
+				border: solid black 1px;
+				border-radius: 5px;
+				margin-bottom: 3px;
+			}
+
+			color:$primary-dark;
+
+			li.social-media{
+				
+				font-size:30px;
+				i{
+				// padding-left:40px;
+				margin-left:30px;
+			}
+
+		}
+
+	}
+
+
+
+
+		// td{
+
+		// 	padding-right:1em;
+		// 	font-size:20px;
+		// 	i{
+		// 		font-size:20px;
+		// 	}
+		// 	a{
+		// 		color:white;
+		// 	}
+		// }
+
+
+	}
 
 }
 
@@ -39,22 +109,7 @@
 		}
 	}
 
-	.banner-contact{
-		i{
-			color:white;
-		}
-		//background:white;
-		color:white;
-		td{
-			padding-right:1em;
-			font-size:36px;
-			a{
-				color:white;
-			}
-		}
 
-
-	}
 
 
 	.banner-slider{
