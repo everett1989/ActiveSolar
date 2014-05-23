@@ -9,11 +9,9 @@
 	{% include site-header.html %}
 	{% include top-nav.html %}
 
-	{% if page.url == '/index.html' %}
-		{% include site-banner.html %}	
+		{% if page.url == '/index.html' %}
+			{% include site-banner.html %}	
 	{% endif %}
-
-
 
 	<div class="row ">
 
@@ -33,6 +31,13 @@
 	</div>
 
 	{% include site-footer.html %}
+
+	<script src="foundation/js/vendor/jquery.js"></script>
+	<script src="foundation/js/foundation.min.js"></script>
+	<script src="js/rem.min.js"></script>
+	<script>
+		$(document).foundation();
+	</script>
 
 </body>
 </html>
