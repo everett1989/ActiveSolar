@@ -5741,11 +5741,7 @@ footer {
     footer .footer-bottom .copyright {
       text-align: center; }
 
-/* line 1, ../../scss/_fonts.scss */
-i {
-  color: #287c3b; }
-
-/* line 10, ../../scss/_fonts.scss */
+/* line 6, ../../scss/_fonts.scss */
 a:hover {
   text-decoration: underline; }
 
@@ -5842,24 +5838,29 @@ dl.sub-nav {
   padding: 2px 0px 2px 20px !important; }
 
 /********************************************/
-/* line 64, ../../scss/app.scss */
+/* line 62, ../../scss/app.scss */
+body {
+  width: 100%;
+  overflow-x: hidden; }
+
+/* line 67, ../../scss/app.scss */
 ul {
   list-style-type: none; }
 
-/* line 69, ../../scss/app.scss */
+/* line 72, ../../scss/app.scss */
 .line-border {
   border-right: 1px solid white; }
 
-/* line 124, ../../scss/app.scss */
+/* line 127, ../../scss/app.scss */
 .hr-bottom {
   border-bottom: 1px solid #9b9b9b;
   margin-bottom: .8em;
   padding: .4em; }
 
-/* line 135, ../../scss/app.scss */
+/* line 138, ../../scss/app.scss */
 .panel {
   box-shadow: 0 0 8px; }
 
-/* line 141, ../../scss/app.scss */
+/* line 144, ../../scss/app.scss */
 .has-icons i {
   font-size: 42px; }

@@ -59,14 +59,17 @@
   @import "pages";
 
 
+  body{//Removes right space on site while in mobile
+   width:100%;
+   overflow-x:hidden;
+ }
+
+ ul{
+   list-style-type: none;
+ }
 
 
-ul{
-	list-style-type: none;
-}
-
-
-.line-border{
+ .line-border{
   //border-color:white;
   // border-left: 1px solid $body-font-color;
   // @media #{$medium-up} {
@@ -81,9 +84,9 @@ ul{
 
 
 
-  .row{
+    .row{
 
-    
+
 
     //box-shadow: 0 0 5px;
     //margin-bottom:2em;
@@ -104,7 +107,7 @@ ul{
     // border-top: 1px solid #C4C4C4;
     // padding-top: 1em;
     // margin-bottom:3em !important;
-   
+
     
 
 
@@ -122,23 +125,23 @@ ul{
 
 
 .hr-bottom{
-      border-bottom: 1px solid $hr-color;
+  border-bottom: 1px solid $hr-color;
       // margin: 1.25rem 0 1.1875rem;
 
       // margin-bottom:1em;
-       margin-bottom: .8em;
-    padding: .4em;
+      margin-bottom: .8em;
+      padding: .4em;
 
 
 
-}
-.panel{
-  box-shadow:0 0 8px;
-}
+    }
+    .panel{
+      box-shadow:0 0 8px;
+    }
 
-.has-icons{
+    .has-icons{
 
-  i{
-    font-size:42px;
-  }
-}
+      i{
+        font-size:42px;
+      }
+    }
