@@ -5838,32 +5838,24 @@ dl.sub-nav {
   padding: 2px 0px 2px 20px !important; }
 
 /********************************************/
-/* line 62, ../../scss/app.scss */
-html, body {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden; }
-
-/* line 70, ../../scss/app.scss */
+/* line 71, ../../scss/app.scss */
 ul {
   list-style-type: none; }
 
-/* line 75, ../../scss/app.scss */
+/* line 76, ../../scss/app.scss */
 .line-border {
   border-right: 1px solid white; }
 
-/* line 130, ../../scss/app.scss */
+/* line 131, ../../scss/app.scss */
 .hr-bottom {
   border-bottom: 1px solid #9b9b9b;
   margin-bottom: .8em;
   padding: .4em; }
 
-/* line 141, ../../scss/app.scss */
+/* line 142, ../../scss/app.scss */
 .panel {
   box-shadow: 0 0 8px; }
 
-/* line 147, ../../scss/app.scss */
+/* line 148, ../../scss/app.scss */
 .has-icons i {
   font-size: 42px; }
