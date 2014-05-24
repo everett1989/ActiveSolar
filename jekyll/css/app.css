@@ -5741,11 +5741,7 @@ footer {
     footer .footer-bottom .copyright {
       text-align: center; }
 
-/* line 1, ../../scss/_fonts.scss */
-i {
-  color: #287c3b; }
-
-/* line 10, ../../scss/_fonts.scss */
+/* line 6, ../../scss/_fonts.scss */
 a:hover {
   text-decoration: underline; }
 
