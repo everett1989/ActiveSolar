@@ -12,22 +12,42 @@ ul.clearing-thumbs{//Fixed full screen gallery pictures
 /*************END CLEARING LIGHTBOX**********************************/
 
 /************ORBIT SLIDE SHOW****************************************/
-.slide_show{
-	h3{
-		text-align:center;
+
+.sidelinks-slider{
+		//margin-top:5px;
+		padding:5px 0px 0px 5px;
+		max-width:150px;
+		color:rgb(75, 75, 75);
+		border-radius:4px;
+		//margin-top:80px;
+		opacity:.8;
+		//box-shadow:0 0 10px;
+		// background:$secondary-color;
+		//color:$light-font;
+
+		dt{
+			text-decoration:underline;
+		}
+
 	}
-	ul.slider_img {
 
-		li{
 
-			img{
+	.slide_show{
+		h3{
+			text-align:center;
+		}
+		ul.slider_img {
 
+			li{
+
+				img{
+
+				}
 			}
 		}
 	}
-}
 
-.headline-slideshow{
+	.headline-slideshow{
 	// background:green;
 	//border:1px solid $primary-light;
 }
@@ -42,7 +62,7 @@ ul.clearing-thumbs{//Fixed full screen gallery pictures
 ul.side-links {//For the sticky side-nav
 	//width: 240px;
 	// @extend ul.no-underline;
-	margin-left:-15px;
+	margin-left:-18px;
 	top: 45px !important;
 	//z-index:0;
 	//padding-top:10px;
@@ -110,8 +130,8 @@ dl.sub-nav{//For quick anchor scrolling
 		}
 		ul.dropdown{
 			li.divider{
-			border-top: solid 1px $light-font !important;
-		}
+				border-top: solid 1px $light-font !important;
+			}
 
 			.active{
 				text-decoration:underline;
