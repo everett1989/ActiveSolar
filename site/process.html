@@ -12,20 +12,16 @@
   <title>Our Process &ndash; Active Solar</title>
   
 
-<!--   <meta charset="utf-8"> -->
+
 
   <title>Active Solar</title>
-  
-  <!-- <link rel="stylesheet" href="./bower_components/foundation/css/foundation.min.css"> -->
-    <!--[if lt IE 9]>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
-  <script src="//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
-  <script src="//html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
-<![endif]-->
+  <!--[if lte IE 8]>
+    <script src="js/ie8-alert.js"></script>
+  <![endif]-->
+
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="foundation/foundation-icons/foundation-icons.css">
-  <link rel="shortcut icon" href="img/favicon/Active-Solar-Favicon.ico" />
+  <link rel="shortcut icon" href="img/favicon/Active-Solar-Favicon.ico">
   <script src="foundation/js/vendor/modernizr.js"></script>
 
 
@@ -399,6 +395,20 @@
 	<script src="foundation/js/foundation.min.js"></script>
 	<script src="js/rem.min.js"></script>
 	<script>
+	jQuery(document).ready(function () {
+ 
+            if (jQuery("HTML").hasClass("ie8-custom")) {
+                for (var c = 1; c <= 12; c++) {
+                    jQuery('.small-' + c + '[class*="medium"]').removeClass("small-" + c);
+                    //Perform any other column-specific adjustments your design may require here
+                }
+                jQuery('.show-for-small').remove();
+                jQuery('.hide-for-small').removeClass('hide-for-small');
+                jQuery('.top-bar-section UL').css({ width: "inherit" });
+                jQuery('.top-bar-section UL LI').css({ float: "left" });
+                jQuery('.top-bar').css({ height: "inherit" });
+            }
+        });
 		$(document).foundation();
 	</script>
 
