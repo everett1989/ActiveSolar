@@ -12,20 +12,16 @@
   
   <title>Active Solar &ndash; Home</title>
 
-<!--   <meta charset="utf-8"> -->
+
 
   <title>Active Solar</title>
-  
-  <!-- <link rel="stylesheet" href="./bower_components/foundation/css/foundation.min.css"> -->
-    <!--[if lt IE 9]>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
-  <script src="//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
-  <script src="//html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
-<![endif]-->
+  <!--[if lte IE 8]>
+    <script src="js/ie8-alert.js"></script>
+  <![endif]-->
+
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="foundation/foundation-icons/foundation-icons.css">
-  <link rel="shortcut icon" href="img/favicon/Active-Solar-Favicon.ico" />
+  <link rel="shortcut icon" href="img/favicon/Active-Solar-Favicon.ico">
   <script src="foundation/js/vendor/modernizr.js"></script>
 
 
@@ -203,67 +199,75 @@
 		<div class="large-10 medium-9 content small-12  columns">
 
 
-			<div class="hr-bottom row slide_show show-for-medium-up">
+			<div class="hide-for-medium-up">
+	<div class="large-12 columns has-icons">
+		<h3 class="hr-bottom"><i class="fi-checkbox"></i>&nbsp;Welcome</h3>
+		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium </p>
+	</div>
+
+</div>
+<div class="hr-bottom row slide_show show-for-medium-up">
 	<div class="small-6 columns">
 		<h3 class="title-box-res">Residential</h3>
 		<ul class ="slider_img" data-orbit
-		 data-options="slide_number: false;
-		 				timer_speed: 4000;
-		 				pause_on_hover:false;
-		 				">
-			<li>
-				<img src="img/slider-pics/Residential_Slider_Pics/Residential-PV-Install-Barn-Galway-NY.jpg" alt="slide 1">
-				<div class="orbit-caption">
-					Galway NY 
-					<br>
-					22 kW Grid Tied PV System
-				</div>
-			</li>
-			<li>
-				<img src="img/slider-pics/Residential_Slider_Pics/Residential-PV-Install-Broadalbin-NY.jpg" alt="slide 2">
-				<div class="orbit-caption">
-					Broadalbin, NY 
-					<br>
-					7.67 kW Photovoltaic System
-				</div>
-			</li>
-			<li>
-				<img src="img/slider-pics/Residential_Slider_Pics/Residential-PV-Install-Saratoga-Springs-NY.jpg" alt="slide 3">
-				<div class="orbit-caption">
-					Saratoga Springs, NY
-					<br>
-					8.48 kW PV System
-				</div>
-			</li>
-		</ul>
-
-	</div>
-
-	<div class="small-6 columns">
-		<h3 class="title-box-com">Commercial</h3>
-		<ul class ="slider_img" data-orbit
 		data-options="slide_number: false;
-						pause_on_hover:false;
-		 				timer_speed: 4000;
-		 				">
-			<li>
-				<img src="img/slider-pics/Commercial_Slider_Pics/Commercial-Solar-Hot-Water-AZ.jpg" alt="slide 1">
-				<div class="orbit-caption">
-					Caption One.
-				</div>
-			</li>
-			<li>
-				<img src="img/slider-pics/Commercial_Slider_Pics/Commercial-Solar-Hot-Water-Install.jpg" alt="slide 2">
-				<div class="orbit-caption">
-					Caption Two.
-				</div>
-			</li>
-			<li>
+		timer_speed: 4000;
+		pause_on_hover:false;
+		">
+		<li>
+			<img src="img/slider-pics/Residential_Slider_Pics/Residential-PV-Install-Barn-Galway-NY.jpg" alt="slide 1">
+			<div class="orbit-caption">
+				Galway NY 
+				<br>
+				22 kW Grid Tied PV System
+			</div>
+		</li>
+		<li>
+			<img src="img/slider-pics/Residential_Slider_Pics/Residential-PV-Install-Broadalbin-NY.jpg" alt="slide 2">
+			<div class="orbit-caption">
+				Broadalbin, NY 
+				<br>
+				7.67 kW Photovoltaic System
+			</div>
+		</li>
+		<li>
+			<img src="img/slider-pics/Residential_Slider_Pics/Residential-PV-Install-Saratoga-Springs-NY.jpg" alt="slide 3">
+			<div class="orbit-caption">
+				Saratoga Springs, NY
+				<br>
+				8.48 kW PV System
+			</div>
+		</li>
+	</ul>
+
+</div>
+
+
+<div class="small-6 columns">
+	<h3 class="title-box-com">Commercial</h3>
+	<ul class ="slider_img" data-orbit
+	data-options="slide_number: false;
+	pause_on_hover:false;
+	timer_speed: 4000;
+	">
+	<li>
+		<img src="img/slider-pics/Commercial_Slider_Pics/Commercial-Solar-Hot-Water-AZ.jpg" alt="slide 1">
+		<div class="orbit-caption">
+			Caption One.
+		</div>
+	</li>
+	<li>
+		<img src="img/slider-pics/Commercial_Slider_Pics/Commercial-Solar-Hot-Water-Install.jpg" alt="slide 2">
+		<div class="orbit-caption">
+			Caption Two.
+		</div>
+	</li>
+			<!-- <li>
 				<img src="img/slider-pics/Commercial_Slider_Pics/Solar-Hot-Water-for-Bottling-Plant-Tolleson,-AZ.jpg" alt="slide 3">
 				<div class="orbit-caption">
 					Caption Three.
 				</div>
-			</li>
+			</li> -->
 			<li>
 				<img src="img/slider-pics/Commercial_Slider_Pics/Solar-Process-Water.jpg" alt="slide 3">
 				<div class="orbit-caption">
@@ -385,6 +389,20 @@
 	<script src="foundation/js/foundation.min.js"></script>
 	<script src="js/rem.min.js"></script>
 	<script>
+	jQuery(document).ready(function () {
+ 
+            if (jQuery("HTML").hasClass("ie8-custom")) {
+                for (var c = 1; c <= 12; c++) {
+                    jQuery('.small-' + c + '[class*="medium"]').removeClass("small-" + c);
+                    //Perform any other column-specific adjustments your design may require here
+                }
+                jQuery('.show-for-small').remove();
+                jQuery('.hide-for-small').removeClass('hide-for-small');
+                jQuery('.top-bar-section UL').css({ width: "inherit" });
+                jQuery('.top-bar-section UL LI').css({ float: "left" });
+                jQuery('.top-bar').css({ height: "inherit" });
+            }
+        });
 		$(document).foundation();
 	</script>
 
