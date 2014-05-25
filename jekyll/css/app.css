@@ -4730,7 +4730,7 @@ meta.foundation-mq-topbar {
   /* line 156, ../../bower_components/foundation/scss/foundation/components/_type.scss */
   .xlarge-text-justify {
     text-align: justify !important; } }
-@media only screen and (min-width: 120.063em) and (max-width: 99999999em) {
+@media only screen and (min-width: 120.063em) and (max-width: 999999999999) {
   /* line 149, ../../bower_components/foundation/scss/foundation/components/_type.scss */
   .xxlarge-only-text-left {
     text-align: left !important; }
@@ -4906,7 +4906,7 @@ meta.foundation-mq-topbar {
   /* line 245, ../../bower_components/foundation/scss/foundation/components/_type.scss */
   .xlarge-text-justify {
     text-align: justify !important; } }
-@media only screen and (min-width: 120.063em) and (max-width: 99999999em) {
+@media only screen and (min-width: 120.063em) and (max-width: 999999999999) {
   /* line 249, ../../bower_components/foundation/scss/foundation/components/_type.scss */
   .xxlarge-only-text-left {
     text-align: left !important; }
@@ -5780,7 +5780,7 @@ ul.clearing-thumbs li {
     margin-left: -18px;
     top: 45px !important;
     background: rgba(84, 80, 43, 0); }
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 40em) {
       /* line 62, ../../scss/_features.scss */
       .content-left ul.side-links {
         position: static !important; } }
@@ -5858,4 +5858,5 @@ ul {
 
 /* line 148, ../../scss/app.scss */
 .has-icons i {
+  color: #287c3b;
   font-size: 42px; }

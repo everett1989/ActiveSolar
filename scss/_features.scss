@@ -73,7 +73,7 @@ ul.side-links {//For the sticky side-nav
 
 
 
-	@media only screen and (max-width: 767px) {
+	@media  #{$small-only} {
 		position: static !important;
    		//width: 100%;
    		//display:none;
