@@ -5777,7 +5777,9 @@ ul.clearing-thumbs li {
     visibility: hidden; }
   /* line 62, ../../scss/_features.scss */
   .content-left ul.side-links {
-    margin-left: -18px;
+    margin-left: -35px;
+    font-size: 17px;
+    font-weight: bold;
     top: 45px !important;
     background: rgba(84, 80, 43, 0); }
     @media only screen and (max-width: 40em) {
@@ -5785,34 +5787,37 @@ ul.clearing-thumbs li {
       .content-left ul.side-links {
         position: static !important; } }
 
-/* line 83, ../../scss/_features.scss */
+/* line 85, ../../scss/_features.scss */
 .sticky-side-links {
   position: fixed;
   top: 0;
   margin-top: 50px; }
 
-/* line 90, ../../scss/_features.scss */
+/* line 92, ../../scss/_features.scss */
 dl.sub-nav {
   top: 45px !important;
   padding-top: 10px;
   background: white; }
+  /* line 100, ../../scss/_features.scss */
+  dl.sub-nav dd {
+    font-size: 1.0rem; }
 
 /******************END MAGELLAN************************************/
 /*******************LABELS*****************************************/
 /*********************END LABELS***********************************/
 /*********************TOP-MENU**************************************/
-/* line 116, ../../scss/_features.scss */
+/* line 121, ../../scss/_features.scss */
 .header-menu {
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   margin-bottom: 1em; }
-  /* line 128, ../../scss/_features.scss */
+  /* line 133, ../../scss/_features.scss */
   .header-menu nav li.divider {
     border-right: solid 1px white !important; }
-  /* line 132, ../../scss/_features.scss */
+  /* line 137, ../../scss/_features.scss */
   .header-menu nav ul.dropdown li.divider {
     border-top: solid 1px white !important; }
-  /* line 136, ../../scss/_features.scss */
+  /* line 141, ../../scss/_features.scss */
   .header-menu nav ul.dropdown .active {
     text-decoration: underline; }
 
