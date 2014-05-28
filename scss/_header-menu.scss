@@ -3,7 +3,7 @@
 
 
 .logo-background{
-	background: linear-gradient(white, $primary-light);
+	background: linear-gradient(to right, white, $primary-light);
 
 	
 
@@ -17,9 +17,9 @@
 		ul{
 			margin-bottom: -1px;
 			// padding-top: 40px;
-			@media  #{$medium-up} {
-				text-align:right;
-			 }
+			// @media  #{$medium-up} {
+			// 	text-align:right;
+			//  }
 			
 			
 			font-size:20px;
@@ -32,7 +32,8 @@
 				margin-bottom: 3px;
 			}
 
-			color:$primary-dark;
+			//color:$primary-dark;
+			color:$light-font;
 
 			li.social-media{
 				
@@ -96,13 +97,6 @@
 			text-decoration:underline;
 		}
 
-	}
-
-	.social-media-icons{
-		ul{
-			margin-top:80px;
-			font-size:36px;
-		}
 	}
 
 	

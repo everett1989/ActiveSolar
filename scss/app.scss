@@ -146,7 +146,45 @@
     .has-icons{
 
       i{
-        color:$primary-color;
+        color: $secondary-color;//$primary-color;
         font-size:42px;
+
+
       }
     }
+
+
+  .fi-social-facebook{
+    color:$facebook-color;
+    &:hover{
+      color:scale-color($facebook-color,$lightness: 13%);;
+    }
+
+
+  }
+
+  .fi-social-twitter{
+    color:$twitter-color;
+     &:hover{
+      color:scale-color($twitter-color,$lightness: 13%);;
+    }
+
+  }
+  .fi-social-linkedin{
+    color:$linkedin-color;
+     &:hover{
+      color:scale-color($linkedin-color,$lightness: 13%);;
+    }
+
+  }
+
+
+.link-color{
+  a{
+    color: $secondary-color;
+  }
+}
+
+.highlight{
+  color: $secondary-color;
+}
