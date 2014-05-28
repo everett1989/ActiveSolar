@@ -13,7 +13,7 @@ ul.clearing-thumbs{//Fixed full screen gallery pictures
 
 /************ORBIT SLIDE SHOW****************************************/
 
-.sidelinks-slider{
+.sidelinks-slider{ 
 		//margin-top:5px;
 		padding:5px 0px 0px 5px;
 		max-width:150px;
@@ -133,14 +133,15 @@ dl.sub-nav{//For quick anchor scrolling
 		li.divider{
 			border-right: solid 1px $light-font !important;
 		}
+			.active{
+				text-decoration:underline;
+			}
 		ul.dropdown{
 			li.divider{
 				border-top: solid 1px $light-font !important;
 			}
 
-			.active{
-				text-decoration:underline;
-			}
+		
 		}
 
 

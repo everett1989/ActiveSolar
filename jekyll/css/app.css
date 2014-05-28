@@ -4730,7 +4730,7 @@ meta.foundation-mq-topbar {
   /* line 156, ../../bower_components/foundation/scss/foundation/components/_type.scss */
   .xlarge-text-justify {
     text-align: justify !important; } }
-@media only screen and (min-width: 120.063em) and (max-width: 999999999999) {
+@media only screen and (min-width: 120.063em) and (max-width: 99999999em) {
   /* line 149, ../../bower_components/foundation/scss/foundation/components/_type.scss */
   .xxlarge-only-text-left {
     text-align: left !important; }
@@ -4906,7 +4906,7 @@ meta.foundation-mq-topbar {
   /* line 245, ../../bower_components/foundation/scss/foundation/components/_type.scss */
   .xlarge-text-justify {
     text-align: justify !important; } }
-@media only screen and (min-width: 120.063em) and (max-width: 999999999999) {
+@media only screen and (min-width: 120.063em) and (max-width: 99999999em) {
   /* line 249, ../../bower_components/foundation/scss/foundation/components/_type.scss */
   .xxlarge-only-text-left {
     text-align: left !important; }
@@ -5630,17 +5630,13 @@ th.hide-for-touch {
 
 /* line 5, ../../scss/_header-menu.scss */
 .logo-background {
-  background: linear-gradient(#ffffff, #339e4b); }
+  background: linear-gradient(to right, #ffffff, #339e4b); }
   /* line 17, ../../scss/_header-menu.scss */
   .logo-background .banner-contact ul {
     margin-bottom: -1px;
     font-size: 20px;
     margin-right: -15px;
-    color: #236c33; }
-    @media only screen and (min-width: 40.063em) {
-      /* line 17, ../../scss/_header-menu.scss */
-      .logo-background .banner-contact ul {
-        text-align: right; } }
+    color: white; }
     /* line 27, ../../scss/_header-menu.scss */
     .logo-background .banner-contact ul .button {
       padding: 5px 10px;
@@ -5648,18 +5644,18 @@ th.hide-for-touch {
       border: solid black 1px;
       border-radius: 5px;
       margin-bottom: 3px; }
-    /* line 37, ../../scss/_header-menu.scss */
+    /* line 38, ../../scss/_header-menu.scss */
     .logo-background .banner-contact ul li.social-media {
       font-size: 30px; }
-      /* line 40, ../../scss/_header-menu.scss */
+      /* line 41, ../../scss/_header-menu.scss */
       .logo-background .banner-contact ul li.social-media i {
         margin-left: 30px; }
 
-/* line 53, ../../scss/_header-menu.scss */
+/* line 54, ../../scss/_header-menu.scss */
 .logo_pic {
   margin-bottom: 5px; }
 
-/* line 60, ../../scss/_header-menu.scss */
+/* line 61, ../../scss/_header-menu.scss */
 .banner, .banner-small {
   height: 300px;
   max-height: 300px;
@@ -5670,18 +5666,18 @@ th.hide-for-touch {
   background-image: url(http://www.siresolar.com/wp-content/uploads/2013/10/SIRenewSlider8.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
-  /* line 71, ../../scss/_header-menu.scss */
+  /* line 72, ../../scss/_header-menu.scss */
   .banner .banner-heading, .banner-small .banner-heading {
     margin-top: 40px; }
-    /* line 74, ../../scss/_header-menu.scss */
+    /* line 75, ../../scss/_header-menu.scss */
     .banner .banner-heading h4, .banner-small .banner-heading h4, .banner .banner-heading h1, .banner-small .banner-heading h1 {
       color: white;
       font-style: italic; }
-    /* line 78, ../../scss/_header-menu.scss */
+    /* line 79, ../../scss/_header-menu.scss */
     .banner .banner-heading h4, .banner-small .banner-heading h4 {
       margin-left: 2em;
       text-decoration: underline; }
-  /* line 87, ../../scss/_header-menu.scss */
+  /* line 88, ../../scss/_header-menu.scss */
   .banner .banner-slider, .banner-small .banner-slider {
     padding: 10px;
     color: #4b4b4b;
@@ -5690,18 +5686,14 @@ th.hide-for-touch {
     opacity: .8;
     box-shadow: 0 0 10px;
     background: #0871e7; }
-    /* line 95, ../../scss/_header-menu.scss */
+    /* line 96, ../../scss/_header-menu.scss */
     .banner .banner-slider h3, .banner-small .banner-slider h3 {
       text-decoration: underline; }
-  /* line 102, ../../scss/_header-menu.scss */
-  .banner .social-media-icons ul, .banner-small .social-media-icons ul {
-    margin-top: 80px;
-    font-size: 36px; }
 
-/* line 113, ../../scss/_header-menu.scss */
+/* line 107, ../../scss/_header-menu.scss */
 .banner-small {
   max-height: 180px; }
-  /* line 117, ../../scss/_header-menu.scss */
+  /* line 111, ../../scss/_header-menu.scss */
   .banner-small .banner-contact {
     margin-top: 40px; }
 
@@ -5725,9 +5717,6 @@ footer {
     footer .certifications img {
       padding: 3px;
       height: 80px; }
-  /* line 33, ../../scss/_footer.scss */
-  footer ul {
-    text-align: center; }
   /* line 37, ../../scss/_footer.scss */
   footer .footer-content {
     margin-top: 2em; }
@@ -5814,12 +5803,12 @@ dl.sub-nav {
   /* line 133, ../../scss/_features.scss */
   .header-menu nav li.divider {
     border-right: solid 1px white !important; }
-  /* line 137, ../../scss/_features.scss */
+  /* line 136, ../../scss/_features.scss */
+  .header-menu nav .active {
+    text-decoration: underline; }
+  /* line 140, ../../scss/_features.scss */
   .header-menu nav ul.dropdown li.divider {
     border-top: solid 1px white !important; }
-  /* line 141, ../../scss/_features.scss */
-  .header-menu nav ul.dropdown .active {
-    text-decoration: underline; }
 
 /************************EMD TOP-MENU********************************/
 /*******INDEX*********************************/
@@ -5863,5 +5852,34 @@ ul {
 
 /* line 148, ../../scss/app.scss */
 .has-icons i {
-  color: #287c3b;
+  color: #0871e7;
   font-size: 42px; }
+
+/* line 157, ../../scss/app.scss */
+.fi-social-facebook {
+  color: #3b5998; }
+  /* line 159, ../../scss/app.scss */
+  .fi-social-facebook:hover {
+    color: #4669b4; }
+
+/* line 166, ../../scss/app.scss */
+.fi-social-twitter {
+  color: #00aced; }
+  /* line 168, ../../scss/app.scss */
+  .fi-social-twitter:hover {
+    color: #11beff; }
+
+/* line 173, ../../scss/app.scss */
+.fi-social-linkedin {
+  color: #007bb6; }
+  /* line 175, ../../scss/app.scss */
+  .fi-social-linkedin:hover {
+    color: #0098e1; }
+
+/* line 183, ../../scss/app.scss */
+.link-color a {
+  color: #0871e7; }
+
+/* line 188, ../../scss/app.scss */
+.highlight {
+  color: #0871e7; }
