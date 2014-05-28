@@ -3,5 +3,6 @@ _images/
 .DS_store
 node_modules/
 bower_components/
-sass-cache/
-.sass-cache/
+*.DS_Store
+/node_modules/*
+.sass-cache
