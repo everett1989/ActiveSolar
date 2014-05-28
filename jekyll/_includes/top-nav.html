@@ -5,21 +5,29 @@
 	<nav class="top-bar" data-topbar>
 
 		<ul class="title-area">
-			<li class="name"><h1><a href="index.html">Home</a></h1></li>
+			<li class="name" ><h1><a {% if page.url == "/index.html" %} class="active" {% endif %} href="index.html">Home</a></h1></li>
 			<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>	
 		</ul>
 
 		<section class = "top-bar-section">
-
-
 			<ul class ="right">
-
-
-
 				<li class="divider"></li>
 
+				{% if page.url == '/residential_services.html' or page.url == '/commercial_services.html' %} 
+					{% assign serviceActive = 'active' %}
+					{% assign serviceName = page.title %}
 
-				<li class="has-dropdown {% if page.url == '/residential_services.html' or page.url == '/commercial_services.html' %}active {% endif %}"><a href="#">Services</a>
+				{% else %}
+
+					{% assign serviceName = 'Services' %}
+					{% assign serviceActive = '' %}
+
+				{% endif %}
+
+
+
+
+				<li class="has-dropdown {{ serviceActive }}"><a href="#">{{ serviceName }}</a>
 					<ul class="dropdown">
 						<li class="divider"></li>
 
@@ -44,10 +52,21 @@
 				</li>
 				<li class="divider"></li>
 
+					{% if page.url == '/about.html' or page.url == '/about_solar.html' or page.url == '/contact.html' %} 
+					{% assign aboutActive = 'active' %}
+					{% assign aboutName = page.title %}
 
-				<li class="has-dropdown {% if page.url == '/about.html' or page.url == '/about_solar.html' %}active {% endif %}"><a href="#">About</a>
+				{% else %}
+
+					{% assign aboutName = 'About' %}
+					{% assign aboutActive = '' %}
+
+				{% endif %}
+
+
+				<li class="has-dropdown {{ aboutActive }}"><a href="#">{{ aboutName }}</a>
 					<ul class="dropdown">
-						<!-- <li class="divider"></li> -->
+
 
 						<li {% if page.url == '/about.html' %} class="active"{% endif %} ><a href="about.html">About Us</a></li>
 						<li class="divider"></li>

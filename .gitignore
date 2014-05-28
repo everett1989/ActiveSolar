@@ -2,3 +2,6 @@ _site/
 _images/
 .DS_store
 node_modules/
+bower_components/
+sass-cache/
+.sass-cache/

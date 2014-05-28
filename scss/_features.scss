@@ -133,14 +133,15 @@ dl.sub-nav{//For quick anchor scrolling
 		li.divider{
 			border-right: solid 1px $light-font !important;
 		}
+			.active{
+				text-decoration:underline;
+			}
 		ul.dropdown{
 			li.divider{
 				border-top: solid 1px $light-font !important;
 			}
 
-			.active{
-				text-decoration:underline;
-			}
+		
 		}
 
 
