@@ -9170,48 +9170,6 @@ th.hide-for-touch {
 .logo_pic {
   margin-bottom: 5px; }
 
-/* line 61, ../../scss/_header-menu.scss */
-.banner, .banner-small {
-  height: 300px;
-  max-height: 300px;
-  margin-bottom: 3em;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 0 30px;
-  background-image: url(http://www.siresolar.com/wp-content/uploads/2013/10/SIRenewSlider8.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; }
-  /* line 72, ../../scss/_header-menu.scss */
-  .banner .banner-heading, .banner-small .banner-heading {
-    margin-top: 40px; }
-    /* line 75, ../../scss/_header-menu.scss */
-    .banner .banner-heading h4, .banner-small .banner-heading h4, .banner .banner-heading h1, .banner-small .banner-heading h1 {
-      color: white;
-      font-style: italic; }
-    /* line 79, ../../scss/_header-menu.scss */
-    .banner .banner-heading h4, .banner-small .banner-heading h4 {
-      margin-left: 2em;
-      text-decoration: underline; }
-  /* line 88, ../../scss/_header-menu.scss */
-  .banner .banner-slider, .banner-small .banner-slider {
-    padding: 10px;
-    color: #4b4b4b;
-    border-radius: 4px;
-    margin-top: 80px;
-    opacity: .8;
-    box-shadow: 0 0 10px;
-    background: #0871e7; }
-    /* line 96, ../../scss/_header-menu.scss */
-    .banner .banner-slider h3, .banner-small .banner-slider h3 {
-      text-decoration: underline; }
-
-/* line 107, ../../scss/_header-menu.scss */
-.banner-small {
-  max-height: 180px; }
-  /* line 111, ../../scss/_header-menu.scss */
-  .banner-small .banner-contact {
-    margin-top: 40px; }
-
 /* line 3, ../../scss/_footer.scss */
 footer {
   box-shadow: 0 0 5px;
