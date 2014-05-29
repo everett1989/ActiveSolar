@@ -1,3 +1,5 @@
+.sass-cache/
+.sass-cache/*
 _site/
 _images/
 .DS_store
@@ -5,4 +7,3 @@ node_modules/
 bower_components/
 *.DS_Store
 /node_modules/*
-.sass-cache

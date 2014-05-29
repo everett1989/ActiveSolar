@@ -34,12 +34,19 @@ footer{
 	// 	text-align:center;
 	// }
 
+	.footer-items{
+		margin-top: 30px;
+		a:hover{
+			color: $light-font;
+		}
+	}
+
 	.footer-content{
 
 		margin-top:2em;
-			a:hover{
-		color: $light-font;
-	}
+		// a:hover{
+		// 	color: $light-font;
+		// }
 
 
 	}
@@ -49,7 +56,7 @@ footer{
 			text-align:center;
 		}
 
-	
+
 
 		background:#4A7E55;//$primary-dark;
 	}
