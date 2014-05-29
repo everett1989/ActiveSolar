@@ -9191,15 +9191,18 @@ footer {
       padding: 3px;
       height: 80px; }
   /* line 37, ../../scss/_footer.scss */
+  footer .footer-items {
+    margin-top: 30px; }
+    /* line 39, ../../scss/_footer.scss */
+    footer .footer-items a:hover {
+      color: white; }
+  /* line 44, ../../scss/_footer.scss */
   footer .footer-content {
     margin-top: 2em; }
-    /* line 40, ../../scss/_footer.scss */
-    footer .footer-content a:hover {
-      color: white; }
-  /* line 47, ../../scss/_footer.scss */
+  /* line 54, ../../scss/_footer.scss */
   footer .footer-bottom {
     background: #4A7E55; }
-    /* line 48, ../../scss/_footer.scss */
+    /* line 55, ../../scss/_footer.scss */
     footer .footer-bottom .copyright {
       text-align: center; }
 
@@ -9249,23 +9252,20 @@ ul.clearing-thumbs li {
     font-size: 17px;
     top: 45px !important;
     background: rgba(84, 80, 43, 0); }
+    /* line 75, ../../scss/_features.scss */
+    .content-left ul.side-links i {
+      font-size: 23px; }
     @media only screen and (max-width: 40em) {
       /* line 62, ../../scss/_features.scss */
       .content-left ul.side-links {
         position: static !important; } }
 
-/* line 85, ../../scss/_features.scss */
-.sticky-side-links {
-  position: fixed;
-  top: 0;
-  margin-top: 50px; }
-
-/* line 92, ../../scss/_features.scss */
+/* line 90, ../../scss/_features.scss */
 dl.sub-nav {
   top: 45px !important;
   padding-top: 10px;
   background: white; }
-  /* line 100, ../../scss/_features.scss */
+  /* line 98, ../../scss/_features.scss */
   dl.sub-nav dd {
     font-size: 1.0rem; }
 
@@ -9273,18 +9273,18 @@ dl.sub-nav {
 /*******************LABELS*****************************************/
 /*********************END LABELS***********************************/
 /*********************TOP-MENU**************************************/
-/* line 121, ../../scss/_features.scss */
+/* line 119, ../../scss/_features.scss */
 .header-menu {
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   margin-bottom: 1em; }
-  /* line 133, ../../scss/_features.scss */
+  /* line 131, ../../scss/_features.scss */
   .header-menu nav li.divider {
     border-right: solid 1px white !important; }
-  /* line 136, ../../scss/_features.scss */
+  /* line 134, ../../scss/_features.scss */
   .header-menu nav .active {
     text-decoration: underline; }
-  /* line 140, ../../scss/_features.scss */
+  /* line 138, ../../scss/_features.scss */
   .header-menu nav ul.dropdown li.divider {
     border-top: solid 1px white !important; }
 
