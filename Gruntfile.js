@@ -4,7 +4,9 @@ module.exports = function(grunt) {
 
     compass: {
       options: {
-        importPath: ['bower_components/foundation/scss'],
+        importPath: ['bower_components/foundation/scss'], 
+        //importPath: ['bower_components/foundation-icon-fonts'],
+        //importPath: ['bower_components/stackicons-master/scss'],
         sassDir: 'scss',
         cssDir: 'jekyll/css',
         imagesDir: 'img',
@@ -33,6 +35,7 @@ module.exports = function(grunt) {
 
       sass: {
         files: 'scss/**/*.scss',
+        //files: 'bower_components/stackicons-master/stackicons-social-minimal/**/*.scss',
         tasks: ['compass:dev']
       }
     }
