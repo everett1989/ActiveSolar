@@ -72,6 +72,9 @@ ul.side-links {//For the sticky side-nav
 	background: rgba(84, 80, 43, 0);
 	//position:absolute;
 	//min-width: 100px !important;
+	i{
+		font-size: 23px;
+	}
 
 
 
@@ -82,12 +85,7 @@ ul.side-links {//For the sticky side-nav
    	}
    }
 }
-.sticky-side-links {
-	position:fixed;
-	top:0;
-	margin-top:50px;
-  // z-index:99999;
-}
+
 
 dl.sub-nav{//For quick anchor scrolling
 	  //margin-top: 45px;

@@ -9170,48 +9170,6 @@ th.hide-for-touch {
 .logo_pic {
   margin-bottom: 5px; }
 
-/* line 61, ../../scss/_header-menu.scss */
-.banner, .banner-small {
-  height: 300px;
-  max-height: 300px;
-  margin-bottom: 3em;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 0 30px;
-  background-image: url(http://www.siresolar.com/wp-content/uploads/2013/10/SIRenewSlider8.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; }
-  /* line 72, ../../scss/_header-menu.scss */
-  .banner .banner-heading, .banner-small .banner-heading {
-    margin-top: 40px; }
-    /* line 75, ../../scss/_header-menu.scss */
-    .banner .banner-heading h4, .banner-small .banner-heading h4, .banner .banner-heading h1, .banner-small .banner-heading h1 {
-      color: white;
-      font-style: italic; }
-    /* line 79, ../../scss/_header-menu.scss */
-    .banner .banner-heading h4, .banner-small .banner-heading h4 {
-      margin-left: 2em;
-      text-decoration: underline; }
-  /* line 88, ../../scss/_header-menu.scss */
-  .banner .banner-slider, .banner-small .banner-slider {
-    padding: 10px;
-    color: #4b4b4b;
-    border-radius: 4px;
-    margin-top: 80px;
-    opacity: .8;
-    box-shadow: 0 0 10px;
-    background: #0871e7; }
-    /* line 96, ../../scss/_header-menu.scss */
-    .banner .banner-slider h3, .banner-small .banner-slider h3 {
-      text-decoration: underline; }
-
-/* line 107, ../../scss/_header-menu.scss */
-.banner-small {
-  max-height: 180px; }
-  /* line 111, ../../scss/_header-menu.scss */
-  .banner-small .banner-contact {
-    margin-top: 40px; }
-
 /* line 3, ../../scss/_footer.scss */
 footer {
   box-shadow: 0 0 5px;
@@ -9233,15 +9191,18 @@ footer {
       padding: 3px;
       height: 80px; }
   /* line 37, ../../scss/_footer.scss */
+  footer .footer-items {
+    margin-top: 30px; }
+    /* line 39, ../../scss/_footer.scss */
+    footer .footer-items a:hover {
+      color: white; }
+  /* line 44, ../../scss/_footer.scss */
   footer .footer-content {
     margin-top: 2em; }
-    /* line 40, ../../scss/_footer.scss */
-    footer .footer-content a:hover {
-      color: white; }
-  /* line 47, ../../scss/_footer.scss */
+  /* line 54, ../../scss/_footer.scss */
   footer .footer-bottom {
     background: #4A7E55; }
-    /* line 48, ../../scss/_footer.scss */
+    /* line 55, ../../scss/_footer.scss */
     footer .footer-bottom .copyright {
       text-align: center; }
 
@@ -9291,23 +9252,20 @@ ul.clearing-thumbs li {
     font-size: 17px;
     top: 45px !important;
     background: rgba(84, 80, 43, 0); }
+    /* line 75, ../../scss/_features.scss */
+    .content-left ul.side-links i {
+      font-size: 23px; }
     @media only screen and (max-width: 40em) {
       /* line 62, ../../scss/_features.scss */
       .content-left ul.side-links {
         position: static !important; } }
 
-/* line 85, ../../scss/_features.scss */
-.sticky-side-links {
-  position: fixed;
-  top: 0;
-  margin-top: 50px; }
-
-/* line 92, ../../scss/_features.scss */
+/* line 90, ../../scss/_features.scss */
 dl.sub-nav {
   top: 45px !important;
   padding-top: 10px;
   background: white; }
-  /* line 100, ../../scss/_features.scss */
+  /* line 98, ../../scss/_features.scss */
   dl.sub-nav dd {
     font-size: 1.0rem; }
 
@@ -9315,18 +9273,18 @@ dl.sub-nav {
 /*******************LABELS*****************************************/
 /*********************END LABELS***********************************/
 /*********************TOP-MENU**************************************/
-/* line 121, ../../scss/_features.scss */
+/* line 119, ../../scss/_features.scss */
 .header-menu {
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   margin-bottom: 1em; }
-  /* line 133, ../../scss/_features.scss */
+  /* line 131, ../../scss/_features.scss */
   .header-menu nav li.divider {
     border-right: solid 1px white !important; }
-  /* line 136, ../../scss/_features.scss */
+  /* line 134, ../../scss/_features.scss */
   .header-menu nav .active {
     text-decoration: underline; }
-  /* line 140, ../../scss/_features.scss */
+  /* line 138, ../../scss/_features.scss */
   .header-menu nav ul.dropdown li.divider {
     border-top: solid 1px white !important; }
 
