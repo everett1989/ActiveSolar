@@ -2,6 +2,8 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+
+
     compass: {
       options: {
         importPath: ['bower_components/foundation/scss'], 
@@ -32,6 +34,16 @@ module.exports = function(grunt) {
 
     watch: {
       grunt: { files: ['Gruntfile.js'] },
+
+      fi_icons:{ 
+        files: 'bower_components/foundation-icon-fonts/**/*.scss',
+        tasks: ['compass:dev']
+      },
+
+       font_awesome:{ 
+        files: 'bower_components/font-awesome/**/*.scss',
+        tasks: ['compass:dev']
+      },
 
       sass: {
         files: 'scss/**/*.scss',

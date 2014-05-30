@@ -4,8 +4,10 @@
 	<ul class="side-links show-for-medium-up" data-magellan-expedition="fixed" >
 		<!-- <ul class="side-links sticky-test"  > -->
 		<li ><a data-reveal-id="quote"  href="#"><i class="fi-clipboard-pencil"></i>&nbsp;Get a Quote</a></li>
-		<li ><a data-reveal-id="electric"  href="#"><i class="fi-lightbulb"></i>&nbsp;Solar Electric</a></li>
-		<li ><a data-reveal-id="hot-water"  href="#"><i class="fi-power"></i>&nbsp;Solar Hot Water</a></li>
+		<!-- <li ><a data-reveal-id="electric"  href="#"><i class="fa fa-bolt"></i>&nbsp;Solar Electric</a></li> -->
+		<li ><a href="#"><i class="fi-lightbulb"></i>&nbsp;Solar Electric</a></li>
+		<!-- <li><a data-reveal-id="hot-water"  href="#"><i class="fa fa-coffee"></i>&nbsp;Solar Hot Water</a></li> -->
+		<li ><a   href="#"><i class="fi-power"></i>&nbsp;Solar Hot Water</a></li>
 		<li ><a data-reveal-id="contact"  href="#"><i class="fi-telephone"></i>&nbsp;Contact Us</a></li>
 
 	</ul>
@@ -32,21 +34,21 @@
 </div>
 
 
-<div id="electric" class="reveal-modal" data-reveal>
+<!-- <div id="electric" class="reveal-modal" data-reveal>
 
 	<h2>Solar Electric</h2>
 
 	<a class="close-reveal-modal">&#215;</a>
-</div>
+</div> -->
 
-<div id="hot-water" class="reveal-modal" data-reveal>
+<!-- <div id="hot-water" class="reveal-modal" data-reveal>
 
 	<h2>Solar Hot Water</h2>
 
 
 
 	<a class="close-reveal-modal">&#215;</a>
-</div>
+</div> -->
 
 <div id="contact" class="reveal-modal" data-reveal>
 
@@ -54,7 +56,12 @@
 
 	<dl>
 		<dt>Phone</dt>
-		<dd>555-555-5555</dd>
+		<dd>{{ phone }}</dd>
+		<dt>Email</dt>
+		<dd>{{ email }}</dd>
+		<dt>PO-Box</dt>
+		<dd>{{ po-box }}</dd>
+
 	</dl>
 
 	<a class="close-reveal-modal">&#215;</a>

@@ -1,7 +1,8 @@
 # Require any additional compass plugins here.
 add_import_path "bower_components/foundation/scss"
-add_import_path "bower_components/foundation-icon-fonts" 
-add_import_path "bower_components/stackicons-master/scss" 
+add_import_path "bower_components/foundation-icon-fonts"
+add_import_path "bower_components/font-awesome/scss" 
+#add_import_path "bower_components/stackicons-master/scss" 
 
 # Set this to the root of your project when deployed:
 http_path = "/"
