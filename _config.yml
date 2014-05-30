@@ -8,6 +8,20 @@ source: ./jekyll
 
 destination: ./site
 
+contact:
+  phone: 800-865-3625
+  email: blah@gmail.com
+  pobox: PO Box 23 - Amsterdam, NY 12010
+
+social:
+  twt: 
+  fb:
+  li: https://www.linkedin.com/company/active-solar-development-llc
+
+cert:
+  nab:
+  bpi:
+  poly:
 
 # change baseurl to:
 # '': for root level domains ie: mycustomdomain.com
