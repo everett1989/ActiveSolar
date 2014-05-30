@@ -7,7 +7,7 @@
 @import "constants";
 //@import "foundation-icons";
 
-@import "stackicons-social-minimal";
+//@import "stackicons-social-minimal";
 
 
 @import "foundation-icons";
@@ -166,29 +166,29 @@
 
 
 
-  // .fi-social-facebook{
-  //   color:$facebook-color;
-  //   &:hover{
-  //     color:scale-color($facebook-color,$lightness: 13%);;
-  //   }
+  .fi-social-facebook{
+    color:$facebook-color;
+    &:hover{
+      color:scale-color($facebook-color,$lightness: 13%);;
+    }
 
 
-  // }
+  }
 
-  // .fi-social-twitter{
-  //   color:$twitter-color;
-  //    &:hover{
-  //     color:scale-color($twitter-color,$lightness: 13%);;
-  //   }
+  .fi-social-twitter{
+    color:$twitter-color;
+     &:hover{
+      color:scale-color($twitter-color,$lightness: 13%);;
+    }
 
-  // }
-  // .fi-social-linkedin{
-  //   color:$linkedin-color;
-  //    &:hover{
-  //     color:scale-color($linkedin-color,$lightness: 13%);;
-  //   }
+  }
+  .fi-social-linkedin{
+    color:$linkedin-color;
+     &:hover{
+      color:scale-color($linkedin-color,$lightness: 13%);;
+    }
 
-  // }
+  }
 
 
 .link-color{
