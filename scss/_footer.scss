@@ -9,6 +9,9 @@ footer{
 	*{
 		color: $light-font;
 	}
+	a{
+		color:#DEDEDE;
+	}
 
 	
 
@@ -36,6 +39,9 @@ footer{
 
 	.footer-items{
 		margin-top: 30px;
+	
+			color:#DEDEDE;
+		
 		a:hover{
 			color: $light-font;
 		}
@@ -54,7 +60,9 @@ footer{
 	.footer-bottom{
 		border-top: 1px solid $light-font;
 		.copyright{
-	
+
+			padding-top: 15px;
+
 		}
 
 
