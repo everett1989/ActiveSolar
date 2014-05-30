@@ -52,13 +52,14 @@ footer{
 	}
 
 	.footer-bottom{
+		border-top: 1px solid $light-font;
 		.copyright{
-			text-align:center;
+	
 		}
 
 
 
-		background:#4A7E55;//$primary-dark;
+		//background:#4A7E55;//$primary-dark;
 	}
 
 }
