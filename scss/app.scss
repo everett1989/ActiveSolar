@@ -10,8 +10,8 @@
 //@import "stackicons-social-minimal";
 
 
-@import "foundation-icons";
-
+@import "foundation-icons.scss";
+@import "font-awesome.scss";
 
 
 
@@ -166,7 +166,7 @@
 
 
 
-  .fi-social-facebook{
+  .fi-social-facebook,.fa-facebook-square{
     color:$facebook-color;
     &:hover{
       color:scale-color($facebook-color,$lightness: 13%);;
@@ -175,14 +175,14 @@
 
   }
 
-  .fi-social-twitter{
+  .fi-social-twitter, .fa-twitter,.fa-twitter-square{
     color:$twitter-color;
      &:hover{
       color:scale-color($twitter-color,$lightness: 13%);;
     }
 
   }
-  .fi-social-linkedin{
+  .fi-social-linkedin,.fa-linkedin-square{
     color:$linkedin-color;
      &:hover{
       color:scale-color($linkedin-color,$lightness: 13%);;
@@ -199,4 +199,10 @@
 
 .highlight{
   color: $secondary-color;
+
+}
+
+
+.content-attr{
+  @extend .link-color, .has-icons;
 }
