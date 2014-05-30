@@ -9162,6 +9162,9 @@ footer {
   /* line 60, ../../scss/_footer.scss */
   footer .footer-bottom {
     border-top: 1px solid white; }
+    /* line 62, ../../scss/_footer.scss */
+    footer .footer-bottom .copyright {
+      padding-top: 15px; }
 
 /* line 6, ../../scss/_fonts.scss */
 a:hover {
