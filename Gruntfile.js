@@ -98,6 +98,18 @@ htmlmin: {                                     // Task
     // }
   },
 
+  /*********************UGLIFY JS*********************/
+   uglify: {
+    my_target: {
+      files: [{
+          expand: true,
+          cwd: './js',
+          src: '**/*.js',
+          dest: './jekyll/js'
+      }]
+    }
+  },
+
 
 
     watch: {
@@ -114,6 +126,12 @@ htmlmin: {                                     // Task
       font_awesome:{ 
         files: 'bower_components/font-awesome/**/*.scss',
         tasks: ['compass:dev']
+      },
+
+      uglify:{
+        files: 'js/**/*.js',
+        tasks: ['uglify']
+
       },
 
       sass: {
@@ -142,6 +160,9 @@ grunt.registerTask('imagemini', ['imagemin']);
 
 grunt.loadNpmTasks('grunt-contrib-htmlmin');
 grunt.registerTask('minihtml', ['htmlmin']);
+
+grunt.loadNpmTasks('grunt-contrib-uglify');
+grunt.registerTask('minijs', ['uglify']);
 
 
 }

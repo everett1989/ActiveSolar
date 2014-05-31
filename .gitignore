@@ -9,3 +9,5 @@ bower_components/
 img/*
 /node_modules/*
 jekyll/img*
+site/.settings/*
+site/.project/*
