@@ -82,7 +82,7 @@ htmlmin: {                                     // Task
           expand: true,     // Enable dynamic expansion.
           cwd: './site',      // Src matches are relative to this path.
           src: ['**/*.html'], // Actual pattern(s) to match.
-          dest: '.site/',   // Destination path prefix.
+          dest: './site',   // Destination path prefix.
         },
       ]
       // files: {                                   // Dictionary of files
