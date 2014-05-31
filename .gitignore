@@ -8,6 +8,8 @@ bower_components/
 *.DS_Store
 img/*
 /node_modules/*
-jekyll/img*
+jekyll/img/*
 site/.settings/*
-site/.project/*
+site/.project
+site/WebContent/*
+
