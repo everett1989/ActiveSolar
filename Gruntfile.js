@@ -70,7 +70,33 @@ module.exports = function(grunt) {
       }
     },
 
-
+/*******************HTML COMPRESSION***********************/
+htmlmin: {                                     // Task
+    dist: {                                      // Target
+      options: {                                 // Target options
+        removeComments: true,
+        collapseWhitespace: true
+      },
+      files: [
+        {
+          expand: true,     // Enable dynamic expansion.
+          cwd: './site',      // Src matches are relative to this path.
+          src: ['**/*.html'], // Actual pattern(s) to match.
+          dest: './site',   // Destination path prefix.
+        },
+      ]
+      // files: {                                   // Dictionary of files
+      //   './site/*': './site/*',     // 'destination': 'source'
+      //   //'dist/contact.html': 'src/contact.html'
+      // }
+    },
+    // dev: {                                       // Another target
+    //   files: {
+    //     'dist/index.html': 'src/index.html',
+    //     'dist/contact.html': 'src/contact.html'
+    //   }
+    // }
+  },
 
 
 
@@ -112,6 +138,10 @@ grunt.registerTask('default', ['compass:dev','watch']);
 
 grunt.loadNpmTasks('grunt-contrib-imagemin');
 grunt.registerTask('imagemini', ['imagemin']);
+
+
+grunt.loadNpmTasks('grunt-contrib-htmlmin');
+grunt.registerTask('minihtml', ['htmlmin']);
 
 
 }
