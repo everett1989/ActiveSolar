@@ -15,7 +15,7 @@ module.exports = function(grunt) {
         javascriptsDir: 'js',
         outputStyle: 'nested',
         relativeAssets: true,
-        noLineComments: false
+        noLineComments: true
       },
       dev: {
         files: {
@@ -32,15 +32,60 @@ module.exports = function(grunt) {
       }
     },
 
+    /******IMG COMPRESSION*********************/
+    imagemin: {
+      png: {
+        options: {
+          optimizationLevel: 7
+        },
+        files: [
+        {
+          // Set to true to enable the following options…
+          expand: true,
+          // cwd is 'current working directory'
+          cwd: './img/',
+          src: ['**/*.png'],
+          // Could also match cwd line above. i.e. ./img/
+          dest: './jekyll/img/',
+          ext: '.png'
+        }
+        ]
+      },
+      jpg: {
+        options: {
+          progressive: true
+        },
+        files: [
+        {
+          // Set to true to enable the following options…
+          expand: true,
+          // cwd is 'current working directory'
+          cwd: './img/',
+          src: ['**/*.jpg'],
+          // Could also match cwd. i.e. ./img/
+          dest: './jekyll/img/',
+          ext: '.jpg'
+        }
+        ]
+      }
+    },
+
+
+
+
+
     watch: {
-      grunt: { files: ['Gruntfile.js'] },
+      grunt: { 
+        files: ['Gruntfile.js'],
+        tasks: ['compass:dev']
+      },
 
       fi_icons:{ 
         files: 'bower_components/foundation-icon-fonts/**/*.scss',
         tasks: ['compass:dev']
       },
 
-       font_awesome:{ 
+      font_awesome:{ 
         files: 'bower_components/font-awesome/**/*.scss',
         tasks: ['compass:dev']
       },
@@ -51,10 +96,22 @@ module.exports = function(grunt) {
         tasks: ['compass:dev']
       }
     }
+
+
   });
 
-  require("matchdep").filterDev("grunt-*").forEach(grunt.loadNpmTasks);
 
-  grunt.registerTask('build', ['compass:prod']);
-  grunt.registerTask('default', ['compass:dev','watch']);
+
+
+require("matchdep").filterDev("grunt-*").forEach(grunt.loadNpmTasks);
+
+grunt.registerTask('build', ['compass:prod']);
+grunt.registerTask('default', ['compass:dev','watch']);
+
+
+
+grunt.loadNpmTasks('grunt-contrib-imagemin');
+grunt.registerTask('imagemini', ['imagemin']);
+
+
 }
