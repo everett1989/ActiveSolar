@@ -6,4 +6,6 @@ _images/
 node_modules/
 bower_components/
 *.DS_Store
+img/*
 /node_modules/*
+site/*

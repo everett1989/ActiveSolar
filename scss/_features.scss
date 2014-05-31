@@ -92,7 +92,7 @@ ul.side-links {//For the sticky side-nav
 
 dl.sub-nav{//For quick anchor scrolling
 	  //margin-top: 45px;
-
+	  
 	  top: 45px !important;
 	  padding-top:10px;
 	  //max-height: 35px;
@@ -100,6 +100,10 @@ dl.sub-nav{//For quick anchor scrolling
 	  background: $body-bg;
 	  dd{
 	  font-size: 1.0rem;
+	  &.active a{
+	  	//background: $secondary-color;
+	  }
+
 	}
 	  //width:816px;
 	  //padding-bottom
