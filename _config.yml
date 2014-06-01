@@ -4,8 +4,6 @@ markdown: redcarpet
 highlighter: pygments 
 
 source: ./jekyll
-
-
 destination: ./site
 
 contact:
@@ -28,3 +26,12 @@ cert:
 # '/projectname': for subdomains ie: user.github.io/projectname
 baseurl: '/ActiveSolar'
 permalink: :title.html
+
+
+# sass:
+#     sass_dir: app
+#     style: :compressed
+
+# assets:
+#   js_compressor:  uglifier
+#   css_compressor: sass
