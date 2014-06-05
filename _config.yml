@@ -4,8 +4,6 @@ markdown: redcarpet
 highlighter: pygments 
 
 source: ./jekyll
-
-
 destination: ./site
 
 contact:
@@ -28,3 +26,31 @@ cert:
 # '/projectname': for subdomains ie: user.github.io/projectname
 baseurl: '/ActiveSolar'
 permalink: :title.html
+
+exclude: ["js/*",'img/*','scss/*','package.json','config.rb','bower.json','Gruntfile.js','node_modules/*','.jekyll-assets-cache/*','site/*','.sass-cache/*','bower_components/*','jekyll/*']
+# include: ['../bower_components/']
+
+#minfy_html: false
+
+
+# assets:
+
+#   sources:
+#     - _assets/fonts
+#     - _assets/images
+#     - _assets/javascripts
+#     - _assets/stylesheets
+
+
+  # cache: false
+  # # js_compressor:  uglifier
+  # css_compressor: sass
+  # baseurl: assets/
+
+
+# jekyll-press:
+#   exclude: 'atom.xml' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
+#   js_options: {}      # js minifier options
+#   css_options: {}     # css minifier options
+#   html_options: {}    # html minifier options
+

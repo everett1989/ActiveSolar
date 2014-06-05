@@ -28,11 +28,15 @@
 
 	{% include site-footer.html %}
 
-	<script src="foundation/js/vendor/jquery.js"></script>
+	<!--[if lte IE 8]>
+    <script src="js/ie8-alert.js"></script>
+    <![endif]-->
+ 	<script src="foundation/js/vendor/jquery.js"></script>
 	<script src="foundation/js/foundation.min.js"></script>
 	<script>
 		$(document).foundation();
 	</script>
+
 
 </body>
 </html>
