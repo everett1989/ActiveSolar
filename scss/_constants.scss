@@ -91,21 +91,21 @@ $topbar-media-query: "only screen and (min-width: #{$topbar-breakpoint})";
 
 
 // We use these to control the background and border styles
-$panel-bg: scale-color($secondary-color, $lightness: -5%);
-$panel-border-style: solid;
-$panel-border-size: 1px;
+// $panel-bg: scale-color($primary-color, $lightness: -13%);
+// $panel-border-style: solid;
+// $panel-border-size: 1px;
 
-// We use this % to control how much we darken things on hover
-$panel-function-factor: -11%;
-$panel-border-color: scale-color($panel-bg, $lightness: $panel-function-factor);
+// // We use this % to control how much we darken things on hover
+// $panel-function-factor: -11%;
+// $panel-border-color: scale-color($panel-bg, $lightness: $panel-function-factor);
 
-// We use these to set default inner padding and bottom margin
-$panel-margin-bottom: rem-calc(20);
-$panel-padding: rem-calc(20);
+// // We use these to set default inner padding and bottom margin
+// $panel-margin-bottom: rem-calc(20);
+// $panel-padding: rem-calc(20);
 
-// We use these to set default font colors
-$panel-font-color: $dark-font; //#333;
-$panel-font-color-alt: $dark-font;
+// // We use these to set default font colors
+// $panel-font-color: #333;//$dark-font; //#333;
+// $panel-font-color-alt: #fff; //$dark-font;
 
 // $panel-header-adjust: true;
 // $callout-panel-link-color: $primary-color;
