@@ -7,15 +7,17 @@ module.exports = function(grunt) {
     compass: {
       options: {
         importPath: ['bower_components/foundation/scss'], 
-        //importPath: ['bower_components/foundation-icon-fonts'],
+        // importPath: ['bower_components/foundation-icon-fonts'],
         //importPath: ['bower_components/stackicons-master/scss'],
         sassDir: 'scss',
-        cssDir: 'jekyll/css',
+        //cssDir: 'jekyll/_assets/stylesheets',
+         cssDir: 'jekyll/source/css',
+        // fontsDir: 'bower_components/foundation-icon-fonts',
         imagesDir: 'img',
         javascriptsDir: 'js',
         outputStyle: 'nested',
         relativeAssets: true,
-        noLineComments: true
+        noLineComments: true 
       },
       dev: {
         files: {
@@ -46,7 +48,7 @@ module.exports = function(grunt) {
           cwd: './img/',
           src: ['**/*.png'],
           // Could also match cwd line above. i.e. ./img/
-          dest: './jekyll/img/',
+          dest: './jekyll/source/img/',
           ext: '.png'
         }
         ]
@@ -63,7 +65,7 @@ module.exports = function(grunt) {
           cwd: './img/',
           src: ['**/*.jpg'],
           // Could also match cwd. i.e. ./img/
-          dest: './jekyll/img/',
+          dest: './jekyll/source/img/',
           ext: '.jpg'
         }
         ]
@@ -98,7 +100,74 @@ htmlmin: {                                     // Task
     // }
   },
 
+  /*********************UGLIFY JS*********************/
+   uglify: {
+    my_target: {
+      files: [{
+          expand: true,
+          cwd: './js',
+          src: '**/*.js',
+          dest: './jekyll/source/js'
+      }]
+    }
+  },
 
+
+///Concaticnation/////////////////
+  //  directives: {
+  //   // options: {
+  //   //   // Task-specific options go here.
+  //   //    files: { 'dest/output': 'src/input' },
+  //   // },
+  //   your_target: {
+
+  //     files: { 'jekyll/_assets/javascripts/test.js': 'foundation/js/vendor/jquery.js',
+  //      'jekyll/_assets/javascripts/test.js': 'foundation/js/foundation.min.js'},
+  //     // Target-specific file lists and/or options go here.
+  //   },
+  // },
+
+  //  concat: {
+  //   options: {
+  //     separator: ';',
+  //   },
+  //   dist: {
+  //     src: ['bower_components/foundation/js/vendor/jquery.js', 'bower_components/foundation/js/foundation.min.js'],
+  //     dest: 'jekyll/_assets/javascripts/test.js',
+  //   },
+  // },
+
+
+   bowercopy: {
+       vendorjs: {
+            options: {
+                destPrefix: 'jekyll/_assets/javascripts/foundation/'
+            },
+            files: {
+                // Keys are destinations (prefixed with `options.destPrefix`)
+                // Values are sources (prefixed with `options.srcPrefix`); One source per destination
+                // e.g. 'bower_components/chai/lib/chai.js' will be copied to 'test/js/libs/chai.js'
+
+                'modernizr.js': 'foundation/js/vendor/modernizr.js',
+                'jquery.js': 'foundation/js/vendor/jquery.js',
+                'foundation.min.js': 'foundation/js/foundation.min.js'
+            }
+        },
+        fi_icons: {
+            options: {
+                destPrefix: 'jekyll/source/fonts/'
+            },
+            files: {
+                // Keys are destinations (prefixed with `options.destPrefix`)
+                // Values are sources (prefixed with `options.srcPrefix`); One source per destination
+                // e.g. 'bower_components/chai/lib/chai.js' will be copied to 'test/js/libs/chai.js'
+
+                'fi-fonts': 'foundation-icon-fonts/'
+            }
+        }
+
+
+    },
 
     watch: {
       grunt: { 
@@ -111,10 +180,16 @@ htmlmin: {                                     // Task
         tasks: ['compass:dev']
       },
 
-      font_awesome:{ 
-        files: 'bower_components/font-awesome/**/*.scss',
-        tasks: ['compass:dev']
-      },
+      // font_awesome:{ 
+      //   files: 'bower_components/font-awesome/**/*.scss',
+      //   tasks: ['compass:dev']
+      // },
+
+      // uglify:{
+      //   files: 'js/**/*.js',
+      //   tasks: ['uglify']
+
+      // },
 
       sass: {
         files: 'scss/**/*.scss',
@@ -143,5 +218,19 @@ grunt.registerTask('imagemini', ['imagemin']);
 grunt.loadNpmTasks('grunt-contrib-htmlmin');
 grunt.registerTask('minihtml', ['htmlmin']);
 
+grunt.loadNpmTasks('grunt-contrib-uglify');
+grunt.registerTask('minijs', ['uglify']);
 
+
+// grunt.loadNpmTasks('grunt-sprockets-directives');
+// grunt.registerTask('concat',['directives'])
+
+
+// grunt.loadNpmTasks('grunt-contrib-concat');
+
+
+grunt.loadNpmTasks('grunt-bowercopy');
+//grunt.registerTask("copy",['bowercopy'])
+
+// grunt.loadNpmTasks('grunt-bower');
 }

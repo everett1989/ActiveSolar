@@ -1,14 +1,14 @@
 
 <div>
 	<!-- <ul class="side-links"> -->
-	<ul class="side-links show-for-medium-up" data-magellan-expedition="fixed" >
+	<ul class="side-links no-bullet show-for-medium-up" data-magellan-expedition="fixed" >
 		<!-- <ul class="side-links sticky-test"  > -->
 		<li ><a data-reveal-id="quote"  href="#"><i class="fi-clipboard-pencil"></i>&nbsp;Get a Quote</a></li>
 		<!-- <li ><a data-reveal-id="electric"  href="#"><i class="fa fa-bolt"></i>&nbsp;Solar Electric</a></li> -->
-		<li ><a href="#"><i class="fi-lightbulb"></i>&nbsp;Solar Electric</a></li>
+		<li ><a href="solar-electric.html"><i class="fi-lightbulb"></i>&nbsp;Solar Electric</a></li>
 		<!-- <li><a data-reveal-id="hot-water"  href="#"><i class="fa fa-coffee"></i>&nbsp;Solar Hot Water</a></li> -->
-		<li ><a   href="#"><i class="fi-power"></i>&nbsp;Solar Hot Water</a></li>
-		<li ><a data-reveal-id="contact"  href="#"><i class="fi-telephone"></i>&nbsp;Contact Us</a></li>
+		<li ><a href="solar-hotwater.html"><i class="fi-power"></i>&nbsp;Solar Hot Water</a></li>
+		<li ><a data-reveal-id="contact"  ><i class="fi-telephone"></i>&nbsp;Contact Us</a></li>
 
 	</ul>
 </div>
@@ -16,19 +16,76 @@
 <div id="quote" class="reveal-modal" data-reveal>
 
 	<form data-abide>
-		<div class="name-field">
-			<label>Your name <small>required</small>
-				<input type="text" required pattern="[a-zA-Z]+">
-			</label>
-			<small class="error">Name is required and must be a string.</small>
+		<div class="row">
+			<div class="name-field large-6 columns">
+				<label>Your name <small>required</small>
+					<input type="text" required pattern="[a-zA-Z]+">
+				</label>
+				<small class="error">Name is required and must be a string.</small>
+			</div>
+		<!-- </div> -->
+		<!-- <div class="row"> -->
+			<div class="address-field large-6 columns">
+				<label>Your street address <small>required</small>
+					<input type="text" required>
+				</label>
+				<!-- <small class="error">Name is required and must be a string.</small> -->
+			</div>
 		</div>
-		<div class="email-field">
-			<label>Email <small>required</small>
-				<input type="email" required>
-			</label>
-			<small class="error">An email address is required.</small>
+		<div class="row">
+			<div class="phone-field large-4 columns">
+				<label>Your phone number <small>required</small>
+					<input type="text" required>
+				</label>
+				<!-- <small class="error">Name is required and must be a string.</small> -->
+			</div>
+			<div class="email-field large-6 columns">
+				<label>Email <small>required</small>
+					<input type="email" required>
+				</label>
+				<small class="error">An email address is required.</small>
+			</div>
+			<div class="time-field large-2 columns">
+				<label>Best contact time 
+					<input type="time">
+				</label>
+				<small class="error">Please enter a time</small>
+			</div>
 		</div>
+
+		<div class="row">
+			<div class="bill-field large-4 columns">
+				<label>What is your monthly electric bill?
+					<input type="text">
+				</label>
+				<!-- <small class="error">Name is required and must be a string.</small> -->
+			</div>
+			
+			<div class="res-or-com-field large-4 columns">
+				<label>For residential or commercial?</label>
+				<input id="checkbox1" type="checkbox"><label for="checkbox1">Residential</label>
+				<input id="checkbox2" type="checkbox"><label for="checkbox2">Commercial</label>
+			</div>
+			<div class="elec-or-water-field large-4 columns">
+				<label>Solar electric or solar hot water?</label>
+				<input id="select-hotwater" type="checkbox"><label for="select-hotwater">Solar Hot Water</label>
+				<input id="select-electric" type="checkbox"><label for="select-electric">Solar Solar Electric</label>
+			</div>
+		</div>
+		<div class="row">
+		<div class="comments-field large-12 columns">
+			
+			<label>Comments
+				<textarea placeholder="small-12.columns"></textarea>
+			</label>
+
 		<button type="submit">Submit</button>
+		</div>
+	</div>
+
+
+
+		
 	</form>
 	<a class="close-reveal-modal">&#215;</a>
 </div>
