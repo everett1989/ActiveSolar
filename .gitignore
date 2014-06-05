@@ -9,6 +9,7 @@ bower_components/
 img/*
 /node_modules/*
 jekyll/img/*
+jeykll/_assets/*
 site/.settings/*
 site/.project
 site/WebContent/*

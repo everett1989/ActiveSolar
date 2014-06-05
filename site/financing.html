@@ -15,15 +15,23 @@
 
 
   <title>Active Solar</title>
-  <!--[if lte IE 8]>
-    <script src="js/ie8-alert.js"></script>
-    <![endif]-->
+  
 
-    <link rel="stylesheet" href="css/app.css">
-    <!-- <link rel="stylesheet" href="foundation/foundation-icons/foundation-icons.css"c> -->
+    <link rel="stylesheet" href="source/css/app.css">
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="foundation/foundation-icons/foundation-icons.css"c>
     <link rel="shortcut icon" href="img/favicon/Active-Solar-Favicon.ico">
-    <!-- <link rel="stylesheet" href="css/stackicons-social-minimal.css"> -->
     <script src="foundation/js/vendor/modernizr.js"></script>
+  
+    <!-- <link rel="stylesheet" href="css/stackicons-social-minimal.css"> -->
+    
+
 
 
 
@@ -37,26 +45,29 @@
 	<div class="row">
 		<div class="medium-6 small-12 columns">
 			<!-- <a href="index.html"><img class="logo_pic" src="img/logo/Active_Solar_Installations_Logo.png" alt="logo"></a> -->
-			<a href="index.html"><img class="logo_pic" src="img/logo/Logo.png" alt="logo"></a>
+			<a href="index.html"><img class="logo_pic" src="source/img/logo/Logo.png" alt="logo">
+
+
+			</a>
 
 		</div>
-
+		
 		<div class="medium-6 small-12 columns banner-contact">
-			<ul class="right text-right ">
-				<li><a class="button" href="#">Get a Free Quote</a></li>
+			<ul class="right text-right no-bullet ">
+				<li><a data-reveal-id="quote" class="button" href="#">Get a Free Quote</a></li>
 				<li class="phone-color">Phone:&nbsp;800-865-3625</li>
 				<li class="social-media ">
 					<!-- <a title="Facebook" class="st-icon-facebook " href=""></a>
 					<a title="Twitter" class="st-icon-twitter " href=""></a>
 					<a title="Linkedin" class="st-icon-linkedin" href=""></a> -->
-					
+
 					<a href=""><i class="fi-social-facebook"></i></a>
 					<a href=""><i class="fi-social-twitter"></i></a>
 					<a href="https://www.linkedin.com/company/active-solar-development-llc"><i class="fi-social-linkedin"></i></a>
-
-					<!-- <a href=""><i class="fa fa-facebook-square"></i></a> -->
-					<!-- <a href=""><i class="fa fa-twitter"></i></a> -->
-					<!-- <a href=""><i class="fa fa-linkedin-square"></i></a> -->
+<!-- 
+					<a href=""><i class="fa fa-facebook-square"></i></a>
+					<a href=""><i class="fa fa-twitter"></i></a>
+					<a href=""><i class="fa fa-linkedin-square"></i></a> -->
 				</li>
 			</ul>
 
@@ -85,6 +96,16 @@
 					
 
 				
+
+				
+				<!-- <li >
+					<a href="solar-electric.html">Solar Electric</a>
+				</li>
+				<li class="divider"></li>
+				<li >
+					<a href="solar-hotwater.html">Solar Hot Water</a>
+				</li>
+				<li class="divider"></li> -->
 
 
 
@@ -154,14 +175,14 @@
 			
 <div>
 	<!-- <ul class="side-links"> -->
-	<ul class="side-links show-for-medium-up" data-magellan-expedition="fixed" >
+	<ul class="side-links no-bullet show-for-medium-up" data-magellan-expedition="fixed" >
 		<!-- <ul class="side-links sticky-test"  > -->
 		<li ><a data-reveal-id="quote"  href="#"><i class="fi-clipboard-pencil"></i>&nbsp;Get a Quote</a></li>
 		<!-- <li ><a data-reveal-id="electric"  href="#"><i class="fa fa-bolt"></i>&nbsp;Solar Electric</a></li> -->
-		<li ><a href="#"><i class="fi-lightbulb"></i>&nbsp;Solar Electric</a></li>
+		<li ><a href="solar-electric.html"><i class="fi-lightbulb"></i>&nbsp;Solar Electric</a></li>
 		<!-- <li><a data-reveal-id="hot-water"  href="#"><i class="fa fa-coffee"></i>&nbsp;Solar Hot Water</a></li> -->
-		<li ><a   href="#"><i class="fi-power"></i>&nbsp;Solar Hot Water</a></li>
-		<li ><a data-reveal-id="contact"  href="#"><i class="fi-telephone"></i>&nbsp;Contact Us</a></li>
+		<li ><a href="solar-hotwater.html"><i class="fi-power"></i>&nbsp;Solar Hot Water</a></li>
+		<li ><a data-reveal-id="contact"  ><i class="fi-telephone"></i>&nbsp;Contact Us</a></li>
 
 	</ul>
 </div>
@@ -169,19 +190,76 @@
 <div id="quote" class="reveal-modal" data-reveal>
 
 	<form data-abide>
-		<div class="name-field">
-			<label>Your name <small>required</small>
-				<input type="text" required pattern="[a-zA-Z]+">
-			</label>
-			<small class="error">Name is required and must be a string.</small>
+		<div class="row">
+			<div class="name-field large-6 columns">
+				<label>Your name <small>required</small>
+					<input type="text" required pattern="[a-zA-Z]+">
+				</label>
+				<small class="error">Name is required and must be a string.</small>
+			</div>
+		<!-- </div> -->
+		<!-- <div class="row"> -->
+			<div class="address-field large-6 columns">
+				<label>Your street address <small>required</small>
+					<input type="text" required>
+				</label>
+				<!-- <small class="error">Name is required and must be a string.</small> -->
+			</div>
 		</div>
-		<div class="email-field">
-			<label>Email <small>required</small>
-				<input type="email" required>
-			</label>
-			<small class="error">An email address is required.</small>
+		<div class="row">
+			<div class="phone-field large-4 columns">
+				<label>Your phone number <small>required</small>
+					<input type="text" required>
+				</label>
+				<!-- <small class="error">Name is required and must be a string.</small> -->
+			</div>
+			<div class="email-field large-6 columns">
+				<label>Email <small>required</small>
+					<input type="email" required>
+				</label>
+				<small class="error">An email address is required.</small>
+			</div>
+			<div class="time-field large-2 columns">
+				<label>Best contact time 
+					<input type="time">
+				</label>
+				<small class="error">Please enter a time</small>
+			</div>
 		</div>
+
+		<div class="row">
+			<div class="bill-field large-4 columns">
+				<label>What is your monthly electric bill?
+					<input type="text">
+				</label>
+				<!-- <small class="error">Name is required and must be a string.</small> -->
+			</div>
+			
+			<div class="res-or-com-field large-4 columns">
+				<label>For residential or commercial?</label>
+				<input id="checkbox1" type="checkbox"><label for="checkbox1">Residential</label>
+				<input id="checkbox2" type="checkbox"><label for="checkbox2">Commercial</label>
+			</div>
+			<div class="elec-or-water-field large-4 columns">
+				<label>Solar electric or solar hot water?</label>
+				<input id="select-hotwater" type="checkbox"><label for="select-hotwater">Solar Hot Water</label>
+				<input id="select-electric" type="checkbox"><label for="select-electric">Solar Solar Electric</label>
+			</div>
+		</div>
+		<div class="row">
+		<div class="comments-field large-12 columns">
+			
+			<label>Comments
+				<textarea placeholder="small-12.columns"></textarea>
+			</label>
+
 		<button type="submit">Submit</button>
+		</div>
+	</div>
+
+
+
+		
 	</form>
 	<a class="close-reveal-modal">&#215;</a>
 </div>
@@ -224,7 +302,52 @@
 
 		<div class="large-10 medium-9 content small-12  columns">
 
-			
+			<div class="row">
+	<div class="large-6 columns">
+		<a href="#residential" class="button">Residential</a>
+	</div>
+	<div class="large-6 columns">
+		<a href="#commercial" class="button">Commercial</a>
+	</div>
+
+</div>
+
+<div class="row content-attr">
+
+		<div  class=" large-12 columns">
+
+			<h1  class=" hr-bottom"><i class="fi-widget"></i>&nbsp;Financing</h1>
+
+			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa qu?</p>
+		</div>
+	</div>
+
+
+
+
+<div class="row content-attr">
+
+		<div  class=" large-12 columns">
+
+			<h2 id="commercial" class="anchor subheader  hr-bottom"><i class="fi-widget"></i>&nbsp;Commercial</h2>
+
+			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+		</div>
+	</div>
+
+
+<div class="row content-attr">
+
+		<div  class="large-12 anchor columns">
+
+			<h2 id="residential" class="hr-bottom subheader"><i class="fi-widget"></i>&nbsp;Residential</h2>
+
+			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+		</div>
+	</div>
+
+
+
 
 		</div>
 	</div>
@@ -242,9 +365,9 @@
 	</div>
 
 	<div class="row">
-			<ul class="text-center small-block-grid-2 large-block-grid-4 footer-items">
+			<ul class=" text-center small-block-grid-2 large-block-grid-4 footer-items">
 				<li class="line-border">
-					<ul  >
+					<ul class="no-bullet" >
 						<li><h4>About</h4></li>
 						<li><a href="about.html">About Us</a></li>
 						<li><a href="about_solar.html">About Solar</a></li>
@@ -253,21 +376,21 @@
 				</li>
 
 				<li  class="line-border">
-					<ul >
+					<ul class="no-bullet" >
 						<li><h4>For Home</h4></li>
-						<li><a href="residential_services.html#solar_electric">Solar Hot Water</a></li>
-						<li><a href="#">Photovoltaics PV</a></li>
-						<li><a href="#">Financing</a></li>
+						<li><a href="residential_services.html#solar_electric">Solar Electric</a></li>
+						<li><a href="residential_services.html#solar_hotwater">Solar Hot Water</a></li>
+						<li><a href="financing.html#residential">Financing</a></li>
 
 					</ul>
 				</li>
 
 				<li  class="line-border">
-					<ul >
+					<ul class="no-bullet">
 						<li><h4>For Business</h4></li>
-						<li><a href="#">Solar Hot Water</a></li>
-						<li><a href="#">Photovoltaics PV</a></li>
-						<li><a href="#">Financing</a></li>
+						<li><a href="commercial_services.html#solar_electric">Solar Electric</a></li>
+						<li><a href="commercial_services.html#solar_hotwater">Solar Hot Water</a></li>
+						<li><a href="financing.html#commercial">Financing</a></li>
 
 					</ul>
 				</li>
@@ -275,16 +398,22 @@
 				<li>
 					<!-- <div class="row"> -->
 						<div class="small-centered columns">
-							<a href=""><img src="img/certifications/NABCEP_LOGO.png" alt="nabcep"></a>
+							<a href=""><img src="source/img/certifications/NABCEP_LOGO.png" alt="nabcep">
+								
+
+							</a>
 							
 						</div>
 					<!-- </div> -->
 					<!-- <div class="row"> -->
 						<div class="medium-6 small-12 columns ">
-							<a href=""><img src="img/certifications/BPI Cert.png" alt="BPI"></a>
+							<a href=""><img src="source/img/certifications/BPI Cert.png" alt="BPI">
 						</div>
 						<div class="medium-6 small-12 columns ">
-							<a href=""><img src="img/certifications/POLYSUN_CERT.png" alt="polysun"></a>
+							<a href=""><img src="source/img/certifications/POLYSUN_CERT.png" alt="polysun">
+								
+
+							</a>
 						</div>
 
 					<!-- </div> -->
@@ -319,11 +448,15 @@
 
 
 
-	<script src="foundation/js/vendor/jquery.js"></script>
+	<!--[if lte IE 8]>
+    <script src="js/ie8-alert.js"></script>
+    <![endif]-->
+ 	<script src="foundation/js/vendor/jquery.js"></script>
 	<script src="foundation/js/foundation.min.js"></script>
 	<script>
 		$(document).foundation();
 	</script>
+
 
 </body>
 </html>

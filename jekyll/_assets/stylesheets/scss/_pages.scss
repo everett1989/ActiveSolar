@@ -1,0 +1,39 @@
+
+
+/*******INDEX*********************************/
+
+
+
+// .line-height{
+// 	height:60px;
+// }
+
+
+.title-box{
+	margin-bottom: 0px;
+	text-shadow: 2px 2px grey;
+	color:$light-font;
+	border-radius:10px 10px 0px 0px;
+
+}
+.title-box-res{
+	@extend .title-box;
+	background:$primary-color;
+
+}
+.title-box-com{
+	@extend .title-box;
+	background:$secondary-color;
+
+}
+
+.slide_show{
+	.orbit-caption{
+		padding:2px 0px 2px 20px !important;
+	}
+}
+
+
+
+
+/********************************************/

@@ -59,11 +59,13 @@ ul.clearing-thumbs{//Fixed full screen gallery pictures
 	/******************MAGELLAN************************************/
 [data-magellan-expedition-clone] { visibility:hidden; }//Hides clone until patch comes out
 ul.side-links {//For the sticky side-nav
+	//@extend .no-bullet;
 	//width: 240px;
 	// @extend ul.no-underline;
 	margin-left: -10px;//-18px;
 	width: 200px;
 	line-height:1.25;
+
 
 	font-size:18px;
 	//font-weight:bold;
@@ -75,7 +77,7 @@ ul.side-links {//For the sticky side-nav
 	//position:absolute;
 	//min-width: 100px !important;
 	i{
-		font-size: 23px;
+		font-size: 25px;
 	}
 
 
@@ -123,6 +125,7 @@ dl.sub-nav{//For quick anchor scrolling
 /*********************TOP-MENU**************************************/
 
 .header-menu{
+
 
 
 	//background: $primary-color;
