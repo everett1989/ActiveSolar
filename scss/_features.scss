@@ -56,9 +56,10 @@ ul.clearing-thumbs{//Fixed full screen gallery pictures
 
 
 
-	/******************MAGELLAN************************************/
+/******************MAGELLAN************************************/
 [data-magellan-expedition-clone] { visibility:hidden; }//Hides clone until patch comes out
 ul.side-links {//For the sticky side-nav
+
 
 	margin-left: -16px;//-18px;
 
@@ -71,9 +72,9 @@ ul.side-links {//For the sticky side-nav
 	font-size:18px;
 	width:200px;
 	//font-weight:bold;
-	top: 45px !important;
-	//z-index:0;
-	//padding-top:10px;
+	//top: 60px !important;
+	z-index:0;
+	padding-top:30px;
 	//background: $body-bg;
 	background: rgba(84, 80, 43, 0);
 	//position:absolute;
@@ -92,46 +93,72 @@ ul.side-links {//For the sticky side-nav
    }
 
 
-.magellan-nav{	
-	background: $body-bg;
+   .magellan-nav{	
+   	background: $body-bg;
 	// font-size: 1.0rem;
 	//padding-top:45px;
 	// margin-top:35px;
 	// margin-bottom: 40px;
-	 padding-bottom:0px;
+	padding-bottom:0px;
 	// line-height:1;
 	margin-left: -16px;
-	margin-top:35px;
+	//margin-top:35px;
 	a{
-		font-size: 1.0rem;
+		//font-size: 1.0rem;
 	}
 
 
 }
 dl.sub-nav{//For quick anchor scrolling
-	  //margin-top: 45px;
-	//   &[data-magellan-expedition]{
-	//   	padding-bottom:0px;
-	//   	line-height:1;
-	//   }
-	  
-	//   top: 47px !important;
-	//   //padding-top:10px;
-	//   margin-left: -16px;
-	//   //max-height: 35px;
-	//   //box-shadow: 0 0 3px;
-	//   background: $body-bg;
-	//   dd{
-	  font-size: 1.0rem;
-	//   &.active a{
-	//   	//background: $secondary-color;
-	//   }
 
-	// }
-	  //width:816px;
-	  //padding-bottom
-	// z-index:0;
+	font-size: 1.0rem;
+
+	& dd.active.comm-color {
+
+		a{
+			background:$commercial-color;
+		}
+
+	}& dd.active.res-color {
+
+		a{
+			background:$residential-color;
+		}
+
+	}
+
+
+	& dd.active.comm-color {
+
+		a{
+			background:$commercial-color;
+		}
+
+	}
+
+
 }
+
+dl.sub-nav-comm{
+	& dd.active {
+		a{
+			background:$commercial-color;
+		}
+	}
+
+}
+
+dl.sub-nav-res{
+	& dd.active {
+		a{
+			background:$residential-color;
+		}
+	}
+
+}
+
+
+
 /******************END MAGELLAN************************************/
 
 
@@ -150,7 +177,7 @@ dl.sub-nav{//For quick anchor scrolling
 
 
 
-	//background: $primary-color;
+	background: $primary-color;
 	border-top: 1px solid $light-font;
 	border-bottom: 1px solid $light-font;
 	//box-shadow: 0px 0px 5px;
@@ -162,15 +189,15 @@ dl.sub-nav{//For quick anchor scrolling
 		li.divider{
 			border-right: solid 1px $light-font !important;
 		}
-			.active{
-				text-decoration:underline;
-			}
+		.active{
+			text-decoration:underline;
+		}
 		ul.dropdown{
 			li.divider{
 				border-top: solid 1px $light-font !important;
 			}
 
-		
+
 		}
 
 

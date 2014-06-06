@@ -4,15 +4,15 @@
 
 @import "compass"; 
 
-@import "settings";
-
+@import "../bower_components/foundation/scss/foundation/settings";
+//@import "settings";
 @import "constants";
 
 
 //@import "stackicons-social-minimal";
 
 
-@import "foundation-icons.scss";
+@import "foundation-icons";
 //@import "font-awesome.scss";
 
 
@@ -209,8 +209,22 @@
       @extend .link-color, .has-icons;
 
       img{
-        box-shadow:0 0 10px;
+        box-shadow:0 0 10px; 
+
   //border-radius:3px;
+}
+
+h2{
+  //text-shadow: 2px 2px grey;
+}
+ .hr-bottom{
+
+  // @include background-image(linear-gradient(left, white, $secondary-color));
+
+  
+  // border-bottom: 3px solid $secondary-color;
+
+
 }
 }
 
@@ -228,7 +242,7 @@
   padding-left:35px;
 }
 
-.com{
+.comm{
   @extend .content-attr;
   i{
     color:$commercial-color;
@@ -242,16 +256,16 @@
   }
   .panel{
    // background:scale-color($commercial-color, $lightness: -50%);
-  }
-  .hr-bottom{
+ }
+ .hr-bottom{
 
-  @include background-image(linear-gradient(left, white, $hr-color));
+  @include background-image(linear-gradient(left, white, $commercial-color));
 
   
-    border-bottom: 3px solid $commercial-color;
-    
+  border-bottom: 3px solid $commercial-color;
 
-  }
+
+}
 
 }
 
@@ -259,7 +273,7 @@
   @extend .content-attr;
 
   .hr-bottom{
-  @include background-image(linear-gradient(left, white, $hr-color));
+    @include background-image(linear-gradient(left, white, $residential-color));
 
   }
   //$res-temp:#D4FFDE
@@ -281,11 +295,11 @@
    //background:scale-color($residential-color, $lightness: -10%);
  }
  .hr-bottom{
-    border-bottom: 3px solid $residential-color;
-    line-height:0;
-    
+  border-bottom: 3px solid $residential-color;
+  //line-height:0;
 
-  }
+
+}
 
 }
 
@@ -305,7 +319,7 @@
   height:200px;
   overflow:hidden;
   // margin-bottom:10px;
-  margin-bottom:-35px;
+  //margin-bottom:-35px;
 }
 
 
@@ -313,7 +327,7 @@ hr.divide{
   margin-top:20px;
   margin-bottom: 20px;
   border: 0;
-  height: 1px;
+  height: 2px;
   @include background-image(linear-gradient(left, white, $hr-color,white));
   //@mixin linear-gradient(color-stops(white, black), left);
 
@@ -325,7 +339,11 @@ hr.divide{
 
 a.anchor{display: block;
  position: relative;
-  //top: -50px; 
-  visibility: hidden;
+ top: -30px; 
+ visibility: hidden;
 }
 
+.type-heading{
+  margin-top:60px;
+  margin-bottom:10px;
+}
