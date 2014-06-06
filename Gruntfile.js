@@ -7,41 +7,45 @@ module.exports = function(grunt) {
     compass: {
       options: {
         importPath: ['bower_components/foundation/scss'], 
-        // importPath: ['bower_components/foundation-icon-fonts'],
+        //importPath: ['bower_components/foundation-icon-fonts'],
         //importPath: ['bower_components/stackicons-master/scss'],
         sassDir: 'scss',
         //cssDir: 'jekyll/_assets/stylesheets',
-         cssDir: 'jekyll/source/css',
-        // fontsDir: 'bower_components/foundation-icon-fonts',
+        cssDir: 'jekyll/source/css',
+       // fontsPath: 'bower_components/fosundation-icon-fonts',
+        
         imagesDir: 'img',
         javascriptsDir: 'js',
+
+        fontsDir: 'bower_components/foundation-icon-fonts',
         outputStyle: 'nested',
         relativeAssets: true,
-        noLineComments: true 
-      },
-      dev: {
-        files: {
-          'css/app.css': 'scss/app.scss'
-        }
-      },
-      dist: {
-        options: {
-          outputStyle: 'compressed',
-        },
-        files: {
-          'css/app.css': 'scss/app.scss'
-        }
+        noLineComments: false,
+       // assetCacheBuster: false
+     },
+     dev: {
+      files: {
+        'css/app.css': 'scss/app.scss'
       }
     },
+    dist: {
+      options: {
+        outputStyle: 'compressed',
+      },
+      files: {
+        'css/app.css': 'scss/app.scss'
+      }
+    }
+  },
 
-    /******IMG COMPRESSION*********************/
-    imagemin: {
-      png: {
-        options: {
-          optimizationLevel: 7
-        },
-        files: [
-        {
+  /******IMG COMPRESSION*********************/
+  imagemin: {
+    png: {
+      options: {
+        optimizationLevel: 7
+      },
+      files: [
+      {
           // Set to true to enable the following options…
           expand: true,
           // cwd is 'current working directory'
@@ -72,7 +76,7 @@ module.exports = function(grunt) {
       }
     },
 
-/*******************HTML COMPRESSION***********************/
+    /*******************HTML COMPRESSION***********************/
 htmlmin: {                                     // Task
     dist: {                                      // Target
       options: {                                 // Target options
@@ -80,13 +84,13 @@ htmlmin: {                                     // Task
         collapseWhitespace: true
       },
       files: [
-        {
+      {
           expand: true,     // Enable dynamic expansion.
           cwd: './site',      // Src matches are relative to this path.
           src: ['**/*.html'], // Actual pattern(s) to match.
           dest: './site',   // Destination path prefix.
         },
-      ]
+        ]
       // files: {                                   // Dictionary of files
       //   './site/*': './site/*',     // 'destination': 'source'
       //   //'dist/contact.html': 'src/contact.html'
@@ -101,14 +105,19 @@ htmlmin: {                                     // Task
   },
 
   /*********************UGLIFY JS*********************/
-   uglify: {
-    my_target: {
-      files: [{
-          expand: true,
-          cwd: './js',
-          src: '**/*.js',
-          dest: './jekyll/source/js'
-      }]
+  uglify: {
+    js: {
+      files: {
+        
+        "jekyll/source/js/app.min.js":[
+        'bower_components/foundation/js/vendor/jquery.js',
+        'bower_components/foundation/js/foundation.min.js',
+        'js/foundation-options.js'
+        ],
+        "jekyll/source/js/modernizr.min.js":'bower_components/foundation/js/vendor/modernizr.js',
+        "jekyll/source/js/ie8-alert.min.js":'js/ie8-alert.js'
+        
+      }
     }
   },
 
@@ -138,66 +147,36 @@ htmlmin: {                                     // Task
   // },
 
 
-   bowercopy: {
-       vendorjs: {
-            options: {
-                destPrefix: 'jekyll/_assets/javascripts/foundation/'
-            },
-            files: {
-                // Keys are destinations (prefixed with `options.destPrefix`)
-                // Values are sources (prefixed with `options.srcPrefix`); One source per destination
-                // e.g. 'bower_components/chai/lib/chai.js' will be copied to 'test/js/libs/chai.js'
 
-                'modernizr.js': 'foundation/js/vendor/modernizr.js',
-                'jquery.js': 'foundation/js/vendor/jquery.js',
-                'foundation.min.js': 'foundation/js/foundation.min.js'
-            }
-        },
-        fi_icons: {
-            options: {
-                destPrefix: 'jekyll/source/fonts/'
-            },
-            files: {
-                // Keys are destinations (prefixed with `options.destPrefix`)
-                // Values are sources (prefixed with `options.srcPrefix`); One source per destination
-                // e.g. 'bower_components/chai/lib/chai.js' will be copied to 'test/js/libs/chai.js'
+  //   jekyll: {                             // Task
+  //   options: {                          // Universal options
+  //     watch: true,
+  //     serve:true
+      
+  //   }
+  // },
 
-                'fi-fonts': 'foundation-icon-fonts/'
-            }
-        }
-
-
+  watch: {
+    grunt: { 
+      files: ['Gruntfile.js'],
+      tasks: ['compass:dev','uglify']
     },
 
-    jekyll: {                             // Task
-    options: {                          // Universal options
-      watch: true,
-      serve:true
-      
-    }
-  },
-
-    watch: {
-      grunt: { 
-        files: ['Gruntfile.js'],
-        tasks: ['compass:dev']
-      },
-
-      fi_icons:{ 
-        files: 'bower_components/foundation-icon-fonts/**/*.scss',
-        tasks: ['compass:dev']
-      },
+    fi_icons:{ 
+      files: 'bower_components/foundation-icon-fonts/**/*.scss',
+      tasks: ['compass:dev']
+    },
 
       // font_awesome:{ 
       //   files: 'bower_components/font-awesome/**/*.scss',
       //   tasks: ['compass:dev']
       // },
 
-      // uglify:{
-      //   files: 'js/**/*.js',
-      //   tasks: ['uglify']
+      uglify:{
+        files: ['js/*.js',],
+        tasks: ['uglify']
 
-      // },
+      },
 
       sass: {
         files: 'scss/**/*.scss',
