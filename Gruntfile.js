@@ -169,6 +169,14 @@ htmlmin: {                                     // Task
 
     },
 
+    jekyll: {                             // Task
+    options: {                          // Universal options
+      watch: true,
+      serve:true
+      
+    }
+  },
+
     watch: {
       grunt: { 
         files: ['Gruntfile.js'],
@@ -207,7 +215,7 @@ htmlmin: {                                     // Task
 require("matchdep").filterDev("grunt-*").forEach(grunt.loadNpmTasks);
 
 grunt.registerTask('build', ['compass:prod']);
-grunt.registerTask('default', ['compass:dev','watch']);
+
 
 
 
@@ -230,7 +238,10 @@ grunt.registerTask('minijs', ['uglify']);
 
 
 grunt.loadNpmTasks('grunt-bowercopy');
+grunt.loadNpmTasks('grunt-jekyll');
 //grunt.registerTask("copy",['bowercopy'])
 
 // grunt.loadNpmTasks('grunt-bower');
+
+grunt.registerTask('default', ['compass:dev','watch']);
 }

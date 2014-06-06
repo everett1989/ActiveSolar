@@ -15,6 +15,7 @@
 
 
   <title>Active Solar</title>
+  <script src="foundation/js/vendor/modernizr.js"></script>
   
 
     <link rel="stylesheet" href="source/css/app.css">
@@ -27,7 +28,7 @@
 
     <link rel="stylesheet" href="foundation/foundation-icons/foundation-icons.css"c>
     <link rel="shortcut icon" href="img/favicon/Active-Solar-Favicon.ico">
-    <script src="foundation/js/vendor/modernizr.js"></script>
+    
   
     <!-- <link rel="stylesheet" href="css/stackicons-social-minimal.css"> -->
     
@@ -46,8 +47,6 @@
 		<div class="medium-6 small-12 columns">
 			<!-- <a href="index.html"><img class="logo_pic" src="img/logo/Active_Solar_Installations_Logo.png" alt="logo"></a> -->
 			<a href="index.html"><img class="logo_pic" src="source/img/logo/Logo.png" alt="logo">
-
-
 			</a>
 
 		</div>
@@ -174,15 +173,12 @@
 		<div class="content-left large-2 medium-3 hide-for-small-only columns">
 			
 <div>
-	<!-- <ul class="side-links"> -->
+
 	<ul class="side-links no-bullet show-for-medium-up" data-magellan-expedition="fixed" >
-		<!-- <ul class="side-links sticky-test"  > -->
-		<li ><a data-reveal-id="quote"  href="#"><i class="fi-clipboard-pencil"></i>&nbsp;Get a Quote</a></li>
-		<!-- <li ><a data-reveal-id="electric"  href="#"><i class="fa fa-bolt"></i>&nbsp;Solar Electric</a></li> -->
-		<li ><a href="solar-electric.html"><i class="fi-lightbulb"></i>&nbsp;Solar Electric</a></li>
-		<!-- <li><a data-reveal-id="hot-water"  href="#"><i class="fa fa-coffee"></i>&nbsp;Solar Hot Water</a></li> -->
-		<li ><a href="solar-hotwater.html"><i class="fi-power"></i>&nbsp;Solar Hot Water</a></li>
-		<li ><a data-reveal-id="contact"  ><i class="fi-telephone"></i>&nbsp;Contact Us</a></li>
+		<li><a data-reveal-id="quote"  href="#"><i class="fi-clipboard-pencil"></i>&nbsp;Get a Quote</a></li>
+		<li><a href="solar-electric.html"><i class="fi-lightbulb"></i>&nbsp;Solar Electric</a></li>
+		<li><a href="solar-hotwater.html"><i class="fi-power"></i>&nbsp;Solar Hot Water</a></li>
+		<li><a data-reveal-id="contact"><i class="fi-telephone"></i>&nbsp;Contact Us</a></li>
 
 	</ul>
 </div>
@@ -536,8 +532,27 @@
  	<script src="foundation/js/vendor/jquery.js"></script>
 	<script src="foundation/js/foundation.min.js"></script>
 	<script>
-		$(document).foundation();
+		$(document).foundation({
+
+		// 	magellan:{
+		// 		threshold:200,
+		// 		destination_threshold: 200
+		// }
+
+
+  // specify the class used for active sections
+  //active_class: 'active',
+  // how many pixels until the magellan bar sticks, 0 = auto
+  // threshold: -400,
+  // // pixels from the top of destination for it to be considered active
+  // destination_threshold: 200
+  // calculation throttling to increase framerate
+  //throttle_delay: 50 
+
+});
 	</script>
+
+
 
 
 </body>

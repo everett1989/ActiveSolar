@@ -52,18 +52,16 @@ ul.clearing-thumbs{//Fixed full screen gallery pictures
 }
 
 /******************END ORBIT SLIDE SHOW****************************/
-.content-left{
+.content-left{}
 
 
 
 	/******************MAGELLAN************************************/
 [data-magellan-expedition-clone] { visibility:hidden; }//Hides clone until patch comes out
 ul.side-links {//For the sticky side-nav
-	//@extend .no-bullet;
-	//width: 240px;
-	// @extend ul.no-underline;
+
 	margin-left: -16px;//-18px;
-	width: 200px;
+
 	line-height:1.05;
 	a{
 		//color:$secondary-color;
@@ -71,6 +69,7 @@ ul.side-links {//For the sticky side-nav
 
 
 	font-size:18px;
+	width:200px;
 	//font-weight:bold;
 	top: 45px !important;
 	//z-index:0;
@@ -91,28 +90,44 @@ ul.side-links {//For the sticky side-nav
    		//display:none;
    	}
    }
+
+
+.magellan-nav{	
+	background: $body-bg;
+	// font-size: 1.0rem;
+	//padding-top:45px;
+	// margin-top:35px;
+	// margin-bottom: 40px;
+	 padding-bottom:0px;
+	// line-height:1;
+	margin-left: -16px;
+	margin-top:35px;
+	a{
+		font-size: 1.0rem;
+	}
+
+
 }
-
-
 dl.sub-nav{//For quick anchor scrolling
 	  //margin-top: 45px;
-	  &[data-magellan-expedition]{
-	  	padding-bottom:0px;
-	  }
+	//   &[data-magellan-expedition]{
+	//   	padding-bottom:0px;
+	//   	line-height:1;
+	//   }
 	  
-	  top: 45px !important;
-	  //padding-top:10px;
-	  margin-left: -16px;
-	  //max-height: 35px;
-	  //box-shadow: 0 0 3px;
-	  background: $body-bg;
-	  dd{
+	//   top: 47px !important;
+	//   //padding-top:10px;
+	//   margin-left: -16px;
+	//   //max-height: 35px;
+	//   //box-shadow: 0 0 3px;
+	//   background: $body-bg;
+	//   dd{
 	  font-size: 1.0rem;
-	  &.active a{
-	  	//background: $secondary-color;
-	  }
+	//   &.active a{
+	//   	//background: $secondary-color;
+	//   }
 
-	}
+	// }
 	  //width:816px;
 	  //padding-bottom
 	// z-index:0;
