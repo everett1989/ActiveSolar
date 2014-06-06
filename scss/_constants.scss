@@ -2,11 +2,16 @@
 
 
  $primary-color: #287c3b;//#75D97B;//#61C67F;//#61C66A;
- $secondary-color: #0871e7;//#C0DEED;// #BDE6FB;
+ $secondary-color:red;//#7A00FF;//red;//#C0DEED;// #BDE6FB;
+ $residential-color:#287c3b;
+ $commercial-color:#0871e7;
+
  $alert-color: #f04124;
  $success-color: #43AC6A;
  $warning-color: #f08a24;
  $info-color: #a0d3e8;
+
+ 
 
  $footer-color: scale-color($primary-color,$lightness: 13%);
  

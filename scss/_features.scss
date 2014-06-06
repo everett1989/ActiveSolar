@@ -62,9 +62,12 @@ ul.side-links {//For the sticky side-nav
 	//@extend .no-bullet;
 	//width: 240px;
 	// @extend ul.no-underline;
-	margin-left: -10px;//-18px;
+	margin-left: -16px;//-18px;
 	width: 200px;
-	line-height:1.25;
+	line-height:1.05;
+	a{
+		//color:$secondary-color;
+	}
 
 
 	font-size:18px;
@@ -93,9 +96,13 @@ ul.side-links {//For the sticky side-nav
 
 dl.sub-nav{//For quick anchor scrolling
 	  //margin-top: 45px;
+	  &[data-magellan-expedition]{
+	  	padding-bottom:0px;
+	  }
 	  
 	  top: 45px !important;
-	  padding-top:10px;
+	  //padding-top:10px;
+	  margin-left: -16px;
 	  //max-height: 35px;
 	  //box-shadow: 0 0 3px;
 	  background: $body-bg;

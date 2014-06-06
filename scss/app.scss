@@ -5,7 +5,7 @@
 @import "compass"; 
 
 @import "settings";
- 
+
 @import "constants";
 
 
@@ -168,46 +168,53 @@
 
 
 
-  .fi-social-facebook,.fa-facebook-square{
-    color:$facebook-color;
-    &:hover{
-      color:scale-color($facebook-color,$lightness: 13%);;
+    .fi-social-facebook,.fa-facebook-square{
+      color:$facebook-color;
+      &:hover{
+        color:scale-color($facebook-color,$lightness: 13%);;
+      }
+
+
+    }
+
+    .fi-social-twitter, .fa-twitter,.fa-twitter-square{
+      color:$twitter-color;
+      &:hover{
+        color:scale-color($twitter-color,$lightness: 13%);;
+      }
+
+    }
+    .fi-social-linkedin,.fa-linkedin-square{
+      color:$linkedin-color;
+      &:hover{
+        color:scale-color($linkedin-color,$lightness: 13%);;
+      }
+
     }
 
 
-  }
-
-  .fi-social-twitter, .fa-twitter,.fa-twitter-square{
-    color:$twitter-color;
-     &:hover{
-      color:scale-color($twitter-color,$lightness: 13%);;
+    .link-color{
+      a{
+        color: $secondary-color;
+      }
     }
 
-  }
-  .fi-social-linkedin,.fa-linkedin-square{
-    color:$linkedin-color;
-     &:hover{
-      color:scale-color($linkedin-color,$lightness: 13%);;
+    .highlight{ 
+      color: $secondary-color;
+
     }
 
-  }
 
+    .content-attr{
+      @extend .link-color, .has-icons;
 
-.link-color{
-  a{
-    color: $secondary-color;
-  }
+      img{
+        box-shadow:0 0 10px;
+  //border-radius:3px;
 }
-
-.highlight{ 
-  color: $secondary-color;
-
 }
 
 
-.content-attr{
-  @extend .link-color, .has-icons;
-}
 
 .underline{
   text-decoration:underline;
@@ -224,44 +231,71 @@
 .com{
   @extend .content-attr;
   i{
-    color:$secondary-color;
+    color:$commercial-color;
 
   }
   a{
-    color: $secondary-color;
+    color: $commercial-color;
   }
   h2{
-    color: $secondary-color;
+    color: $commercial-color;
+  }
+  .panel{
+   // background:scale-color($commercial-color, $lightness: -50%);
+  }
+  .hr-bottom{
+    border-bottom: 3px solid $commercial-color;
+    
+
   }
 
 }
 
 .res{
   @extend .content-attr;
+  //$res-temp:#D4FFDE
+
+
 
   i{
-    color:$primary-color;
+    color:$residential-color;
   }
   a{
-    color: $primary-color;
+    color: $residential-color;
   }
 
   h2{
-    color: $primary-color;
+    color: $residential-color;
+  }
+  .panel{
+     //background:#E0FFD4;//#D4FFDE;
+   //background:scale-color($residential-color, $lightness: -10%);
+ }
+ .hr-bottom{
+    border-bottom: 3px solid $residential-color;
+    line-height:0;
+    
+
   }
 
 }
 
 .bannertest{
   h1{
+
     text-shadow: 2px 2px grey;
-  color:white;
-}
+    color:white;
+    font-style: italic;
+    //text-decoration:underline;
+
+  }
+  box-shadow:0 0 10px;
   background-image: url("http://grist.files.wordpress.com/2013/04/solar-panels-homepage.jpg");
   background-repeat: round;
   width:100%;
   height:200px;
   overflow:hidden;
+  margin-bottom:10px;
 }
 
 
@@ -276,3 +310,12 @@ hr.divide{
   //background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
   //background-image: linear-gradient(to-left, black,rgba(0,0,0,0.75),black);
 }
+
+
+
+a.anchor{display: block;
+ position: relative;
+  top: -15px; 
+  visibility: hidden;
+}
+

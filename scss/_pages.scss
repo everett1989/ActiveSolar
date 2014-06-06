@@ -18,12 +18,12 @@
 }
 .title-box-res{
 	@extend .title-box;
-	background:$primary-color;
+	background:$residential-color;
 
 }
 .title-box-com{
 	@extend .title-box;
-	background:$secondary-color;
+	background:$commercial-color;
 
 }
 
@@ -45,15 +45,6 @@
 	width:100%;
 }
 
-.anchor{
-	//padding-bottom: 60px;
-	//margin-bottom: -60px;
-// display: block;
-//   height: 45px; /*same height as header*/
-//   margin-top: -45px; /*same height as header*/
-//   padding-top:45px;
-
-}
 
 
 
