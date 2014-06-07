@@ -77,12 +77,12 @@
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
- }
+  }
 
 
 
 
- .line-border{
+  .line-border{
   //border-color:white;
   // border-left: 1px solid $body-font-color;
   // @media #{$medium-up} {
@@ -104,9 +104,7 @@
 
 
     }
-    .panel{
-      //box-shadow:0 0 8px;
-    }
+
 
     .has-icons{
 
@@ -163,20 +161,26 @@
 
       img{
         box-shadow:0 0 10px; 
+      }
 
-  //border-radius:3px;
-}
-
-h2{
+      h2{
   //text-shadow: 2px 2px grey;
 }
- .hr-bottom{
+.hr-bottom{
 
   // @include background-image(linear-gradient(left, white, $secondary-color));
 
   
   // border-bottom: 3px solid $secondary-color;
 
+
+}
+
+hr.header{
+  border:0px;
+  height:2px;
+  //background:$hr-color;
+  @include background-image(linear-gradient(left, $hr-color,$panel-bg));
 
 }
 }
@@ -204,19 +208,45 @@ h2{
   a{
     color: $commercial-color;
   }
-  h2{
+
+h2{
     color: $commercial-color;
   }
   .panel{
-   // background:scale-color($commercial-color, $lightness: -50%);
+    h3{
+      color:white;
+      text-shadow: 2px 2px grey;
+    }
+
+
+    //background:lighten( $commercial-color, 64% );
+
+    //@include background-image(linear-gradient(bottom, white 75%, $commercial-color));
+  
+   // @media #{$small-up} {
+    @include background-image(linear-gradient(top,  $commercial-color, $panel-bg 80px));
+  // }
+
+  //   @media #{$large-up} {
+  //   @include background-image(linear-gradient(bottom, white 75%, $commercial-color));
+  // }
+   
+    border-color: #BBB;
+    //background:$commercial-color;
+     //background:#E0FFD4;//#D4FFDE;
+   //background:scale-color($commercial-color, $lightness: -10%);
  }
  .hr-bottom{
-
-  @include background-image(linear-gradient(left, white, $commercial-color));
-
-  
   border-bottom: 3px solid $commercial-color;
+  //line-height:0;
 
+
+}
+hr.header{
+  border:0px;
+  height:2px;
+  //background: scale-color($commercial-color,$lightness: 40%);//$commercial-color;
+  @include background-image(linear-gradient(left, $commercial-color,$panel-bg));
 
 }
 
@@ -226,7 +256,9 @@ h2{
   @extend .content-attr;
 
   .hr-bottom{
-    @include background-image(linear-gradient(left, white, $residential-color));
+
+    border-bottom: 1px solid ;
+    //@include background-image(linear-gradient(left, white, $residential-color));
 
   }
   //$res-temp:#D4FFDE
@@ -244,6 +276,27 @@ h2{
     color: $residential-color;
   }
   .panel{
+     h3{
+      color:white;
+      text-shadow: 2px 2px grey;
+    }
+
+    //background:lighten( $residential-color, 64% );
+
+    //@include background-image(linear-gradient(bottom, white 75%, $residential-color));
+
+     @include background-image(linear-gradient(top,  $residential-color, $panel-bg 80px));
+  
+  //  @media #{$small-up} {
+  //   @include background-image(linear-gradient(bottom, white 87%, $residential-color));
+  // }
+
+  //   @media #{$large-up} {
+  //   @include background-image(linear-gradient(bottom, white 75%, $residential-color));
+  // }
+   
+    border-color: #BBB;
+    //background:$residential-color;
      //background:#E0FFD4;//#D4FFDE;
    //background:scale-color($residential-color, $lightness: -10%);
  }
@@ -254,6 +307,21 @@ h2{
 
 }
 
+hr.header{
+  border:0px;
+  height:2px;
+
+  //background: scale-color($residential-color,$lightness:20%);
+  //background:$residential-color;
+  @include background-image(linear-gradient(left, $residential-color,$panel-bg));
+
+}
+
+// hr.divide{
+//  @include background-image(linear-gradient(left, white, $residential-color,white));
+//   //back
+// }
+
 }
 
 .page-banner{
@@ -263,27 +331,27 @@ h2{
     font-style: italic;
   }
 
-  box-shadow:0 0 10px;
+  box-shadow:0 0 5px;
 
- 
-  background-image: url("http://grist.files.wordpress.com/2013/04/solar-panels-homepage.jpg");
+
+  background-image: url("https://assets.nerdwallet.com/blog/finance/files/2012/08/solar-panels.png");
   //background-repeat: round;
   background-size:cover;
   width:100%;
   height:150px;
   overflow:hidden;
- 
+
 }
 .page-banner-electric{
   @extend .page-banner;
   background-image: url("http://upload.wikimedia.org/wikipedia/commons/8/8d/Solar_panels_in_Ogiinuur.jpg");
 
-  }
-  .page-banner-hotwater{
+}
+.page-banner-hotwater{
   @extend .page-banner;
   background-image: url("https://assets.nerdwallet.com/blog/finance/files/2012/08/solar-panels.png");
 
-  }
+}
 
 
 
@@ -291,8 +359,8 @@ h2{
 
 
 hr.divide{
-  margin-top:20px;
-  margin-bottom: 20px;
+  margin-top:30px;
+  margin-bottom: 30px;
   border: 0;
   height: 2px;
   @include background-image(linear-gradient(left, white, $hr-color,white));
