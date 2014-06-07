@@ -25,14 +25,14 @@
 				{% endif %}
 
 				
-				<!-- <li {% if page.url == "/solar-electric.html" %} class="active" {% endif %}>
+				<li class="hide-for-medium-up" {% if page.url == "/solar-electric.html" %} class="active" {% endif %}>
 					<a href="solar-electric.html">Solar Electric</a>
 				</li>
-				<li class="divider"></li>
-				<li {% if page.url == "/solar-hotwater.html" %} class="active" {% endif %}>
+				<li class="divider hide-for-medium-up"></li>
+				<li class="hide-for-medium-up" {% if page.url == "/solar-hotwater.html" %} class="active" {% endif %}>
 					<a href="solar-hotwater.html">Solar Hot Water</a>
 				</li>
-				<li class="divider"></li> -->
+				<li class="divider hide-for-medium-up"></li>
 
 
 
@@ -48,36 +48,6 @@
 					</ul>
 				</li>
 				<li class="divider"></li>
-
-
-
-
-				{% if page.url == '/solar-electric.html' or page.url == '/solar-hotwater.html' %} 
-					{% assign technologyActive = 'active' %}
-					{% assign technologyName = page.title %}
-
-				{% else %}
-
-					{% assign technologyName = 'Technology' %}
-					{% assign technologyActive = '' %}
-
-				{% endif %}
-
-
-				<li class="has-dropdown {{ technologyActive }}"><a href="#">{{ technologyName }}</a>
-					<ul class="dropdown">
-						<li class="divider"></li>
-
-						<li {% if page.url == '/solar-electric.html' %} class="active"{% endif %} ><a href="solar-electric.html">Solar Electric</a></li>
-						<li class="divider"></li>
-						<li {% if page.url == '/solar-hotwater.html' %} class="active"{% endif %} ><a href="solar-hotwater.html">Solar Hot Water</a></li>
-						<li class="divider"></li>
-					</ul>
-				</li>
-				<li class="divider"></li>
-
-
-
 
 				<li {% if page.url == "/process.html" %} class="active" {% endif %}>
 					<a href="process.html">Our Process</a>

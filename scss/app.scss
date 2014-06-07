@@ -80,9 +80,6 @@
  }
 
 
- ul{
-   // list-style-type: none;
- }
 
 
  .line-border{
@@ -259,24 +256,38 @@ h2{
 
 }
 
-.bannertest{
+.page-banner{
   h1{
-
     text-shadow: 2px 2px grey;
     color:white;
     font-style: italic;
-    //text-decoration:underline;
+  }
+
+  box-shadow:0 0 10px;
+
+ 
+  background-image: url("http://grist.files.wordpress.com/2013/04/solar-panels-homepage.jpg");
+  //background-repeat: round;
+  background-size:cover;
+  width:100%;
+  height:150px;
+  overflow:hidden;
+ 
+}
+.page-banner-electric{
+  @extend .page-banner;
+  background-image: url("http://upload.wikimedia.org/wikipedia/commons/8/8d/Solar_panels_in_Ogiinuur.jpg");
 
   }
-  box-shadow:0 0 10px;
-  background-image: url("http://grist.files.wordpress.com/2013/04/solar-panels-homepage.jpg");
-  background-repeat: round;
-  width:100%;
-  height:200px;
-  overflow:hidden;
-  // margin-bottom:10px;
-  //margin-bottom:-35px;
-}
+  .page-banner-hotwater{
+  @extend .page-banner;
+  background-image: url("https://assets.nerdwallet.com/blog/finance/files/2012/08/solar-panels.png");
+
+  }
+
+
+
+
 
 
 hr.divide{
