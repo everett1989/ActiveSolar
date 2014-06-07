@@ -1,4 +1,12 @@
 
-
-
-{% for  %}
+{% for node in site.pages %}
+	{% if page.url == node.url %}	
+		{% if page.url == '/index.html' %}
+			{% continue %} 
+		{% else %}
+			<div class="page-banner" class="large-12 columns">
+				<h1>{{ node.title }}</h1>
+			</div>
+		{% endif %}
+	{% endif %}
+{% endfor %}
