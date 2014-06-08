@@ -4,7 +4,10 @@
 		{% if page.url == '/index.html' %}
 			{% continue %} 
 		{% else %}
+		{% assign page = site.title %}
 			<div class="page-banner" class="large-12 columns">
+				<img src="{{ site.banner.solarelectric }}" alt="">
+
 				<h1>{{ node.title }}</h1>
 			</div>
 		{% endif %}

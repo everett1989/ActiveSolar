@@ -54,3 +54,6 @@ exclude: ["js/*",'img/*','scss/*','package.json','config.rb','bower.json','Grunt
 #   css_options: {}     # css minifier options
 #   html_options: {}    # html minifier options
 
+banner:
+  solarelectric:'https://assets.nerdwallet.com/blog/finance/files/2012/08/solar-panels.png'
+  Solar Hot Water:'https://assets.nerdwallet.com/blog/finance/files/2012/08/solar-panelss.png'
