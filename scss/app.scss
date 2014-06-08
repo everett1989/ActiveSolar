@@ -224,7 +224,11 @@ h2{
     //@include background-image(linear-gradient(bottom, white 75%, $commercial-color));
   
    // @media #{$small-up} {
-    @include background-image(linear-gradient(top,  $commercial-color, $panel-bg 80px));
+    @include background-image(linear-gradient(right, $panel-bg, $commercial-color));
+    background-repeat:no-repeat;
+background-size:100% 70px;
+
+    //@include background-image(linear-gradient(top,  $commercial-color, $panel-bg 80px));
   // }
 
   //   @media #{$large-up} {
