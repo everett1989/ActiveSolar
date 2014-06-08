@@ -250,7 +250,7 @@ hr.header{
   border:0px;
   height:2px;
   //background: scale-color($commercial-color,$lightness: 40%);//$commercial-color;
-  @include background-image(linear-gradient(left, $commercial-color,$panel-bg));
+  @include background-image(linear-gradient(left, white,$panel-bg));
 
 }
 
@@ -348,12 +348,12 @@ hr.header{
 }
 .page-banner-electric{
   @extend .page-banner;
-  background-image: url("http://upload.wikimedia.org/wikipedia/commons/8/8d/Solar_panels_in_Ogiinuur.jpg");
+  //background-image: url("http://upload.wikimedia.org/wikipedia/commons/8/8d/Solar_panels_in_Ogiinuur.jpg");
 
 }
 .page-banner-hotwater{
   @extend .page-banner;
-  background-image: url("https://assets.nerdwallet.com/blog/finance/files/2012/08/solar-panels.png");
+  //background-image: url("https://assets.nerdwallet.com/blog/finance/files/2012/08/solar-panels.png");
 
 }
 
@@ -389,4 +389,10 @@ a.anchor{display: block;
 
 .row_space{
   margin-top:60px;
+}
+
+.panel-space{
+   .panel{
+    margin-bottom:50px;
+  }
 }
