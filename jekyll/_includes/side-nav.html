@@ -14,29 +14,61 @@
 
 <div id="quote" class="reveal-modal" data-reveal>
 
-	<form data-abide>
-		<div class="row">
-			<div class="name-field large-6 columns">
-				<label>Your name <small>required</small>
+<!-- 	<form data-abide name='feedback' method='POST' action='./cgi-bin/mysurvey.cgi' accept-charset='UTF-8'>
+ -->	<form data-abide="ajax">
+ <div class="row">
+			<div class="first-name-field large-6 columns">
+				<label>First Name <small>required</small>
 					<input type="text" required pattern="[a-zA-Z]+">
 				</label>
-				<small class="error">Name is required and must be a string.</small>
+				<small class="error">Please include your first name</small>
 			</div>
-		<!-- </div> -->
-		<!-- <div class="row"> -->
-			<div class="address-field large-6 columns">
-				<label>Your street address <small>required</small>
-					<input type="text" required>
+			<div class="last-name-field large-6 columns">
+				<label>Last Name <small>required</small>
+					<input type="text" required pattern="[a-zA-Z]+">
 				</label>
-				<!-- <small class="error">Name is required and must be a string.</small> -->
+				<small class="error">Please include your last name</small>
 			</div>
 		</div>
+
+
+		<div class="row">
+	
+		
+			<div class="street-address-field large-4 columns">
+				<label>Street Address <small>required</small>
+					<input type="text" required>
+				</label>
+				<small class="error">Please include your Street Address</small>
+			</div>
+			<div class="city-field large-4 columns">
+				<label>City <small>required</small>
+					<input type="text" required>
+				</label>
+				<small class="error">Include City</small>
+			</div>
+			<div class="state-field large-2 columns">
+				<label>State <small>required</small>
+					<input type="text" required>
+				</label>
+				<small class="error">Include state</small>
+			</div>
+			<div class="zip-field large-2 columns">
+				<label>Zip <small>required</small>
+					<input maxlength="5" type="number" required>
+				</label>
+				<small class="error">Zip</small>
+			</div>
+
+
+		</div>
+
 		<div class="row">
 			<div class="phone-field large-4 columns">
 				<label>Your phone number <small>required</small>
 					<input type="text" required>
 				</label>
-				<!-- <small class="error">Name is required and must be a string.</small> -->
+				<small class="error">Name is required and must be a string.</small>
 			</div>
 			<div class="email-field large-6 columns">
 				<label>Email <small>required</small>
@@ -57,7 +89,7 @@
 				<label>What is your monthly electric bill?
 					<input type="text">
 				</label>
-				<!-- <small class="error">Name is required and must be a string.</small> -->
+				<small class="error">Name is required and must be a string.</small>
 			</div>
 			
 			<div class="res-or-com-field large-4 columns">
@@ -72,6 +104,7 @@
 			</div>
 		</div>
 		<div class="row">
+			<input type='hidden' name="recipient" value="extremezoo@gmail.com">
 		<div class="comments-field large-12 columns">
 			
 			<label>Comments

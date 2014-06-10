@@ -13,3 +13,98 @@ a:hover {text-decoration:underline;}
 
 
 // }
+
+
+.underline{
+	text-decoration:underline;
+}
+
+.italic{
+	font-style:italic;
+}
+
+.indent{
+	padding-left:35px;
+}
+
+
+
+.line-border{
+  //border-color:white;
+  // border-left: 1px solid $body-font-color;
+  // @media #{$medium-up} {
+  	border-right: 1px solid white;
+
+  //  }  
+}
+
+
+
+.hr-bottom{
+	border-bottom: 1px solid $hr-color;
+      // margin: 1.25rem 0 1.1875rem;
+
+      // margin-bottom:1em;
+      margin-bottom: .8em;
+      padding: .4em;
+
+
+
+  }
+
+
+  .has-icons{
+
+  	i{
+        color: $secondary-color;//$primary-color;
+        font-size:42px;
+
+
+    }
+}
+
+
+
+
+.fi-social-facebook,.fa-facebook-square{
+	color:$facebook-color;
+	&:hover{
+		color:scale-color($facebook-color,$lightness: 13%);;
+	}
+
+
+}
+
+.fi-social-twitter, .fa-twitter,.fa-twitter-square{
+	color:$twitter-color;
+	&:hover{
+		color:scale-color($twitter-color,$lightness: 13%);;
+	}
+
+}
+.fi-social-linkedin,.fa-linkedin-square{
+	color:$linkedin-color;
+	&:hover{
+		color:scale-color($linkedin-color,$lightness: 13%);;
+	}
+
+}
+
+
+.link-color{
+	a{
+		color: $secondary-color;
+	}
+}
+
+.highlight{ 
+	color: $secondary-color;
+
+}
+
+
+
+
+
+
+
