@@ -4,9 +4,13 @@
 		{% if page.url == '/index.html' %}
 			{% continue %} 
 		{% else %}
-		{% assign page = site.title %}
-			<div class="page-banner" class="large-12 columns">
-				<img src="{{ site.banner.solarelectric }}" alt="">
+		{% assign src = page.path|remove:'.html' %}
+		 {% assign banner-url = {{site.banner}}.[src]  %}
+
+			<div class="page-banner row">
+				<!-- <img src="{{ banner-url }}" alt=""> -->
+
+				<img src="https://assets.nerdwallet.com/blog/finance/files/2012/08/solar-panels.png" alt="">
 
 				<h1>{{ node.title }}</h1>
 			</div>

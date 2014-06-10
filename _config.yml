@@ -33,20 +33,6 @@ exclude: ["js/*",'img/*','scss/*','package.json','config.rb','bower.json','Grunt
 #minfy_html: false
 
 
-# assets:
-
-#   sources:
-#     - _assets/fonts
-#     - _assets/images
-#     - _assets/javascripts
-#     - _assets/stylesheets
-
-
-  # cache: false
-  # # js_compressor:  uglifier
-  # css_compressor: sass
-  # baseurl: assets/
-
 
 # jekyll-press:
 #   exclude: 'atom.xml' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
@@ -55,5 +41,5 @@ exclude: ["js/*",'img/*','scss/*','package.json','config.rb','bower.json','Grunt
 #   html_options: {}    # html minifier options
 
 banner:
-  solarelectric:'https://assets.nerdwallet.com/blog/finance/files/2012/08/solar-panels.png'
-  Solar Hot Water:'https://assets.nerdwallet.com/blog/finance/files/2012/08/solar-panelss.png'
+  solar-electric: https://assets.nerdwallet.com/blog/finance/files/2012/08/solar-panels.png
+  solar-hotwater: http://assets.inhabitat.com/wp-content/blogs.dir/1/files/2010/08/solarhotwater-ed01.jpg

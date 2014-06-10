@@ -6,9 +6,6 @@
   {% if page.title != 'Home'%}<title>{{ page.title }} &ndash; Active Solar</title>{% endif %}
   {% if page.title == 'Home'%}<title>Active Solar &ndash; Home</title>{% endif %}
 
-
-
-  <title>Active Solar</title>
   
   
 
@@ -17,6 +14,21 @@
     <!-- <link rel="stylesheet" href="css/stackicons-social-minimal.css"> -->
 
     <script src="source/js/modernizr.min.js"></script>
+     </style>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWuOy0ekHKSV3bidPuLvdhfNThMMU-rL0">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(-34.397, 150.644),
+          zoom: 8
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
     
 
 
