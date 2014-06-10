@@ -12,9 +12,6 @@
   
   <title>Active Solar &ndash; Home</title>
 
-
-
-  <title>Active Solar</title>
   
   
 
@@ -23,6 +20,21 @@
     <!-- <link rel="stylesheet" href="css/stackicons-social-minimal.css"> -->
 
     <script src="source/js/modernizr.min.js"></script>
+     </style>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWuOy0ekHKSV3bidPuLvdhfNThMMU-rL0">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(-34.397, 150.644),
+          zoom: 8
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
     
 
 
@@ -137,11 +149,11 @@
 				<li class="has-dropdown "><a href="#">About</a>
 					<ul class="dropdown">
 
-
+						<li class="divider"></li>
 						<li  ><a href="about.html">About Us</a></li>
 						<li class="divider"></li>
-						<li  ><a href="about_solar.html">About Solar</a></li>
-						<li class="divider"></li>
+					<!-- 	<li  ><a href="about_solar.html">About Solar</a></li>
+						<li class="divider"></li> -->
 						<li  ><a href="contact.html">Contact Us</a></li>
 						<li class="divider"></li>
 					</ul>
@@ -179,29 +191,61 @@
 
 <div id="quote" class="reveal-modal" data-reveal>
 
-	<form data-abide>
-		<div class="row">
-			<div class="name-field large-6 columns">
-				<label>Your name <small>required</small>
+<!-- 	<form data-abide name='feedback' method='POST' action='./cgi-bin/mysurvey.cgi' accept-charset='UTF-8'>
+ -->	<form data-abide="ajax">
+ <div class="row">
+			<div class="first-name-field large-6 columns">
+				<label>First Name <small>required</small>
 					<input type="text" required pattern="[a-zA-Z]+">
 				</label>
-				<small class="error">Name is required and must be a string.</small>
+				<small class="error">Please include your first name</small>
 			</div>
-		<!-- </div> -->
-		<!-- <div class="row"> -->
-			<div class="address-field large-6 columns">
-				<label>Your street address <small>required</small>
-					<input type="text" required>
+			<div class="last-name-field large-6 columns">
+				<label>Last Name <small>required</small>
+					<input type="text" required pattern="[a-zA-Z]+">
 				</label>
-				<!-- <small class="error">Name is required and must be a string.</small> -->
+				<small class="error">Please include your last name</small>
 			</div>
 		</div>
+
+
+		<div class="row">
+	
+		
+			<div class="street-address-field large-4 columns">
+				<label>Street Address <small>required</small>
+					<input type="text" required>
+				</label>
+				<small class="error">Please include your Street Address</small>
+			</div>
+			<div class="city-field large-4 columns">
+				<label>City <small>required</small>
+					<input type="text" required>
+				</label>
+				<small class="error">Include City</small>
+			</div>
+			<div class="state-field large-2 columns">
+				<label>State <small>required</small>
+					<input type="text" required>
+				</label>
+				<small class="error">Include state</small>
+			</div>
+			<div class="zip-field large-2 columns">
+				<label>Zip <small>required</small>
+					<input maxlength="5" type="number" required>
+				</label>
+				<small class="error">Zip</small>
+			</div>
+
+
+		</div>
+
 		<div class="row">
 			<div class="phone-field large-4 columns">
 				<label>Your phone number <small>required</small>
 					<input type="text" required>
 				</label>
-				<!-- <small class="error">Name is required and must be a string.</small> -->
+				<small class="error">Name is required and must be a string.</small>
 			</div>
 			<div class="email-field large-6 columns">
 				<label>Email <small>required</small>
@@ -222,7 +266,7 @@
 				<label>What is your monthly electric bill?
 					<input type="text">
 				</label>
-				<!-- <small class="error">Name is required and must be a string.</small> -->
+				<small class="error">Name is required and must be a string.</small>
 			</div>
 			
 			<div class="res-or-com-field large-4 columns">
@@ -237,6 +281,7 @@
 			</div>
 		</div>
 		<div class="row">
+			<input type='hidden' name="recipient" value="extremezoo@gmail.com">
 		<div class="comments-field large-12 columns">
 			
 			<label>Comments
@@ -306,9 +351,31 @@
 
 	
 
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
 		
 		
 			
+	
+
+	
+
+	
+
+	
+
+	
+
 	
 
 	
@@ -330,11 +397,7 @@
 <div class="hr-bottom row slide_show show-for-medium-up">
 	<div class="small-6 columns">
 		<h3 class="title-box-res">Residential</h3>
-		<ul class ="slider_img" data-orbit
-		data-options="slide_number: false;
-		timer_speed: 4000;
-		pause_on_hover:false;
-		">
+		<ul class ="slider_img" data-orbit>
 		<li>
 			<img src="source/img/slider-pics/Residential_Slider_Pics/Residential-PV-Install-Barn-Galway-NY.jpg" alt="slide 1">
 
@@ -383,11 +446,7 @@
 
 <div class="small-6 columns">
 	<h3 class="title-box-com">Commercial</h3>
-	<ul class ="slider_img" data-orbit
-	data-options="slide_number: false;
-	pause_on_hover:false;
-	timer_speed: 4000;
-	">
+	<ul class ="slider_img" data-orbit>
 	<li>
 		<img src="source/img/slider-pics/Commercial_Slider_Pics/Commercial-Solar-Hot-Water-AZ.jpg" alt="slide 1">
 		<div class="orbit-caption">
@@ -465,81 +524,71 @@
 	</div>
 
 	<div class="row">
-			<ul class=" text-center small-block-grid-2 large-block-grid-4 footer-items">
-				<li class="line-border">
-					<ul class="no-bullet" >
-						<li><h4>About</h4></li>
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="about_solar.html">About Solar</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</li>
+		<ul class=" text-center small-block-grid-2 large-block-grid-4 footer-items">
+			<li class="line-border">
+				<ul class="no-bullet" >
+					<li><h4>About</h4></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="about_solar.html">About Solar</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</li>
 
-				<li  class="line-border">
-					<ul class="no-bullet" >
-						<li><h4>For Home</h4></li>
-						<li><a href="residential_services.html#solar_electric">Solar Electric</a></li>
-						<li><a href="residential_services.html#solar_hotwater">Solar Hot Water</a></li>
-						<li><a href="financing.html#residential">Financing</a></li>
+			<li  class="line-border">
+				<ul class="no-bullet" >
+					<li><h4>For Home</h4></li>
+					<li><a href="residential_services.html#solar_electric">Solar Electric</a></li>
+					<li><a href="residential_services.html#solar_hotwater">Solar Hot Water</a></li>
+					<li><a href="financing.html#residential">Financing</a></li>
 
-					</ul>
-				</li>
+				</ul>
+			</li>
 
-				<li  class="line-border">
-					<ul class="no-bullet">
-						<li><h4>For Business</h4></li>
-						<li><a href="commercial_services.html#solar_electric">Solar Electric</a></li>
-						<li><a href="commercial_services.html#solar_hotwater">Solar Hot Water</a></li>
-						<li><a href="financing.html#commercial">Financing</a></li>
+			<li  class="line-border">
+				<ul class="no-bullet">
+					<li><h4>For Business</h4></li>
+					<li><a href="commercial_services.html#solar_electric">Solar Electric</a></li>
+					<li><a href="commercial_services.html#solar_hotwater">Solar Hot Water</a></li>
+					<li><a href="financing.html#commercial">Financing</a></li>
 
-					</ul>
-				</li>
+				</ul>
+			</li>
 
-				<li>
-					<!-- <div class="row"> -->
-						<div class="small-centered columns">
-							<a href=""><img src="source/img/certifications/NABCEP_LOGO.png" alt="nabcep">
-								
+			<li>
+				<!-- <div class="row"> -->
+				<div class="small-centered columns">
+					<a href=""><img src="source/img/certifications/NABCEP_LOGO.png" alt="nabcep">
+						
 
-							</a>
-							
-						</div>
-					<!-- </div> -->
-					<!-- <div class="row"> -->
-						<div class="medium-6 small-12 columns ">
-							<a href=""><img src="source/img/certifications/BPI Cert.png" alt="BPI">
-						</div>
-						<div class="medium-6 small-12 columns ">
-							<a href=""><img src="source/img/certifications/POLYSUN_CERT.png" alt="polysun">
-								
+					</a>
+					
+				</div>
+				<!-- </div> -->
+				<!-- <div class="row"> -->
+				<div class="medium-6 small-12 columns ">
+					<a href=""><img src="source/img/certifications/BPI Cert.png" alt="BPI">
+					</a>
+				</div>
+				<div class="medium-6 small-12 columns ">
+					<a href=""><img src="source/img/certifications/POLYSUN_CERT.png" alt="polysun">
+						
 
-							</a>
-						</div>
+					</a>
+				</div>
 
-					<!-- </div> -->
-				</li>
-			</ul>
+				<!-- </div> -->
+			</li>
+		</ul>
 	</div>
 
 
 
 	<div class=" row footer-bottom" >
-			<div class=" large-12 columns ">
-				<p class="copyright text-center">Copyright &copy; 2014</p>
-			</div>
-		</div>
-
-
-	<!-- <div class="footer-bottom">
-
-
-		<div class=" row">
-			<div class=" large-12 columns ">
-				<p class="copyright">Copyright &copy; 2014</p>
-			</div>
+		<div class=" large-12 columns ">
+			<p class="copyright text-center">Copyright &copy; 2014</p>
 		</div>
 	</div>
- -->
+
 </footer>
 
 
