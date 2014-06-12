@@ -6,20 +6,7 @@ highlighter: pygments
 source: ./jekyll
 destination: ./site
 
-contact:
-  phone: 800-865-3625
-  email: blah@gmail.com
-  pobox: PO Box 23 - Amsterdam, NY 12010
 
-social:
-  twt: 
-  fb:
-  li: https://www.linkedin.com/company/active-solar-development-llc
-
-cert:
-  nab:
-  bpi:
-  poly:
 
 # change baseurl to:
 # '': for root level domains ie: mycustomdomain.com
@@ -28,7 +15,7 @@ baseurl: '/ActiveSolar'
 permalink: :title.html
 
 exclude: ["js/*",'img/*','scss/*','package.json','config.rb','bower.json','Gruntfile.js','node_modules/*','.jekyll-assets-cache/*','site/*','.sass-cache/*','bower_components/*','jekyll/*']
-# include: ['../bower_components/']
+# include: ['']
 
 #minfy_html: false
 
@@ -40,6 +27,3 @@ exclude: ["js/*",'img/*','scss/*','package.json','config.rb','bower.json','Grunt
 #   css_options: {}     # css minifier options
 #   html_options: {}    # html minifier options
 
-banner:
-  solar-electric: https://assets.nerdwallet.com/blog/finance/files/2012/08/solar-panels.png
-  solar-hotwater: http://assets.inhabitat.com/wp-content/blogs.dir/1/files/2010/08/solarhotwater-ed01.jpg

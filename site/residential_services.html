@@ -64,8 +64,8 @@
 					<a title="Twitter" class="st-icon-twitter " href=""></a>
 					<a title="Linkedin" class="st-icon-linkedin" href=""></a> -->
 
-					<a href=""><i class="fi-social-facebook"></i></a>
-					<a href=""><i class="fi-social-twitter"></i></a>
+					<a href="#"><i class="fi-social-facebook"></i></a>
+					<a href="#"><i class="fi-social-twitter"></i></a>
 					<a href="https://www.linkedin.com/company/active-solar-development-llc"><i class="fi-social-linkedin"></i></a>
 <!-- 
 					<a href=""><i class="fa fa-facebook-square"></i></a>
@@ -179,8 +179,6 @@
 
 	<ul class="side-links no-bullet show-for-medium-up" data-magellan-expedition="fixed" >
 		<li><a data-reveal-id="quote"  href="#"><i class="fi-clipboard-pencil"></i>&nbsp;Get a Quote</a></li>
-<!-- 		<li><a data-reveal-id="calculator"><i class="fi-clipboard-notes"></i>&nbsp;Calculator</a></li>
-		<li><a data-reveal-id="like"><i class="fi-like"></i>&nbsp;Like us</a></li> -->
 		<li><a href="solar-electric.html"><i class="fi-lightbulb"></i>&nbsp;Solar Electric</a></li>
 		<li><a href="solar-hotwater.html"><i class="fi-power"></i>&nbsp;Solar Hot Water</a></li>
 		<li><a data-reveal-id="contact"><i class="fi-telephone"></i>&nbsp;Contact Us</a></li>
@@ -190,112 +188,114 @@
 
 <div id="quote" class="reveal-modal" data-reveal>
 
-<!-- 	<form data-abide name='feedback' method='POST' action='./cgi-bin/mysurvey.cgi' accept-charset='UTF-8'>
- -->	<form data-abide="ajax">
- <div class="row">
-			<div class="first-name-field large-6 columns">
-				<label>First Name <small>required</small>
-					<input type="text" required pattern="[a-zA-Z]+">
-				</label>
-				<small class="error">Please include your first name</small>
-			</div>
-			<div class="last-name-field large-6 columns">
-				<label>Last Name <small>required</small>
-					<input type="text" required pattern="[a-zA-Z]+">
-				</label>
-				<small class="error">Please include your last name</small>
-			</div>
-		</div>
-
-
-		<div class="row">
-	
-		
-			<div class="street-address-field large-4 columns">
-				<label>Street Address <small>required</small>
-					<input type="text" required>
-				</label>
-				<small class="error">Please include your Street Address</small>
-			</div>
-			<div class="city-field large-4 columns">
-				<label>City <small>required</small>
-					<input type="text" required>
-				</label>
-				<small class="error">Include City</small>
-			</div>
-			<div class="state-field large-2 columns">
-				<label>State <small>required</small>
-					<input type="text" required>
-				</label>
-				<small class="error">Include state</small>
-			</div>
-			<div class="zip-field large-2 columns">
-				<label>Zip <small>required</small>
-					<input maxlength="5" type="number" required>
-				</label>
-				<small class="error">Zip</small>
-			</div>
-
-
-		</div>
-
-		<div class="row">
-			<div class="phone-field large-4 columns">
-				<label>Your phone number <small>required</small>
-					<input type="text" required>
-				</label>
-				<small class="error">Name is required and must be a string.</small>
-			</div>
-			<div class="email-field large-6 columns">
-				<label>Email <small>required</small>
-					<input type="email" required>
-				</label>
-				<small class="error">An email address is required.</small>
-			</div>
-			<div class="time-field large-2 columns">
-				<label>Best contact time 
-					<input type="time">
-				</label>
-				<small class="error">Please enter a time</small>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="bill-field large-4 columns">
-				<label>What is your monthly electric bill?
-					<input type="text">
-				</label>
-				<small class="error">Name is required and must be a string.</small>
-			</div>
-			
-			<div class="res-or-com-field large-4 columns">
-				<label>For residential or commercial?</label>
-				<input id="checkbox1" type="checkbox"><label for="checkbox1">Residential</label>
-				<input id="checkbox2" type="checkbox"><label for="checkbox2">Commercial</label>
-			</div>
-			<div class="elec-or-water-field large-4 columns">
-				<label>Solar electric or solar hot water?</label>
-				<input id="select-hotwater" type="checkbox"><label for="select-hotwater">Solar Hot Water</label>
-				<input id="select-electric" type="checkbox"><label for="select-electric">Solar Solar Electric</label>
-			</div>
-		</div>
-		<div class="row">
-			<input type='hidden' name="recipient" value="extremezoo@gmail.com">
-		<div class="comments-field large-12 columns">
-			
-			<label>Comments
-				<textarea placeholder="small-12.columns"></textarea>
+<!-- 	<form data-abide name='feedback' method='POST' action='./cgi-bin/mysurvey.cgi' data-abide="ajax" accept-charset='UTF-8'> method="post" action="source/send_form_email.asp"
+-->	
+<form data-abide="ajax" id="contactform" name="contactform" >
+<!-- <form data-abide> -->
+	<div class="row"> 
+		<div class="first-name-field large-6 columns">
+			<label>First Name <small>required</small>
+				<input type="text" name="first-name-field" required pattern="[a-zA-Z]+">
 			</label>
+			<small class="error">Please include your first name</small>
+		</div>
+		<div class="last-name-field large-6 columns">
+			<label>Last Name <small>required</small>
+				<input name="last-name-field" type="text" required pattern="[a-zA-Z]+">
+			</label>
+			<small class="error">Please include your last name</small>
+		</div>
+	</div>
 
-		<button type="submit">Submit</button>
+
+	<div class="row">
+		<div class="large-4 columns">
+			<label>Street Address <small>required</small>
+				<input name="street-address-field" type="text" required>
+			</label>
+			<small class="error">Please include your Street Address</small>
+		</div>
+		<div class="large-4 columns">
+			<label>City <small>required</small>
+				<input name="city-field" type="text" required>
+			</label>
+			<small class="error">Include City</small>
+		</div>
+		<div class="large-2 columns">
+			<label>State <small>required</small>
+				<input name="state-field" type="text" required>
+			</label>
+			<small class="error">Include state</small>
+		</div>
+		<div class="large-2 columns">
+			<label>Zip <small>required</small>
+				<input name="zip-field"  maxlength="5" type="text" required>
+			</label>
+			<small class="error">Include Zip</small>
 		</div>
 	</div>
 
 
 
-		
-	</form>
-	<a class="close-reveal-modal">&#215;</a>
+
+
+	<div class="row">
+		<div class="large-4 columns">
+			<label>Your phone number <small>required</small>
+				<input name="phone-field" type="text" required>
+			</label>
+			<small class="error">Not a valid Number</small>
+		</div>
+		<div class="large-6 columns">
+			<label>Email <small>required</small>
+				<input name="email-field" type="email" required>
+			</label>
+			<small class="error">Not a valid Email</small>
+		</div>
+		<div class="large-2 columns">
+			<label>Best contact time 
+				<input name="contact-time-field" type="text">
+			</label>
+			<small class="error">Enter Correct Time</small>
+		</div>
+	</div>
+
+
+
+
+
+
+	<div class="row">
+		<div class=" large-4 columns">
+			<label>What is your monthly electric bill?
+				<input name="bill-field" type="text">
+			</label>
+			<small class="error">Name is required and must be a string.</small>
+		</div>
+		<div class="large-4 columns">
+			<label>For residential or commercial?</label>
+			<input name="select-residential-field" value="X" id="select-residential" type="checkbox"><label for="select-residential">Residential</label>
+			<input name='select-commercial-field' value="X" id="select-commercial" type="checkbox"><label for="select-commercial">Commercial</label>
+		</div>
+		<div class="elec-or-water-field large-4 columns">
+			<label>Solar electric or solar hot water?</label>
+			<input name="select-electric-field" value="X" id="select-electric" type="checkbox"><label for="select-electric">Solar Electric</label>
+			<input name="select-hotwater-field" id="select-hotwater" value="X" type="checkbox"><label for="select-hotwater">Solar Hot Water</label>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="comments-field large-12 columns">
+			<label for="comments-field">Comments
+				<textarea name="comments-field" placeholder="Enter your comments here"></textarea>
+			</label>
+		</div>
+	</div>
+
+	<button type="submit">Submit</button>
+</form>
+
+<a class="close-reveal-modal">&#215;</a>
 </div>
 
 
@@ -334,29 +334,30 @@
 </div>
 
 
+<div id="contact-success" class="reveal-modal" data-reveal>
+
+	<h2> Success!</h2>
+
+	
+
+	<a class="close-reveal-modal">&#215;</a>
+	
+</div>
+
+<div id="contact-failure" class="reveal-modal" data-reveal>
+
+	<h2>Failure!</h2>
+
+	
+
+	<a class="close-reveal-modal">&#215;</a>
+	
+</div>
 
 		</div>
 
 		<div class="large-10 medium-9 content small-12  columns">
 			
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
 
 	
 
@@ -387,10 +388,6 @@
 				<h1>Residential Services</h1>
 			</div>
 		
-	
-
-	
-
 	
 
 	
@@ -561,7 +558,7 @@
 			<li>
 				<!-- <div class="row"> -->
 				<div class="small-centered columns">
-					<a href=""><img src="source/img/certifications/NABCEP_LOGO.png" alt="nabcep">
+					<a href="#"><img src="source/img/certifications/NABCEP_LOGO.png" alt="nabcep">
 						
 
 					</a>
@@ -570,11 +567,11 @@
 				<!-- </div> -->
 				<!-- <div class="row"> -->
 				<div class="medium-6 small-12 columns ">
-					<a href=""><img src="source/img/certifications/BPI Cert.png" alt="BPI">
+					<a href="#"><img src="source/img/certifications/BPI Cert.png" alt="BPI">
 					</a>
 				</div>
 				<div class="medium-6 small-12 columns ">
-					<a href=""><img src="source/img/certifications/POLYSUN_CERT.png" alt="polysun">
+					<a href="#"><img src="source/img/certifications/POLYSUN_CERT.png" alt="polysun">
 						
 
 					</a>
