@@ -114,46 +114,48 @@ dl.sub-nav{//For quick anchor scrolling
 
 	font-size: 1.0rem;
 
-	& dd.active.comm-color {
+	& dd.active.comm-color a {
 
-		a{
 			background:$commercial-color;
-		}
 
-	}& dd.active.res-color {
+			&:hover{
+				background: scale-color($commercial-color, $lightness: -14%);
+			}
+		
 
-		a{
+
+	}
+	& dd.active.res-color a {
+		
 			background:$residential-color;
-		}
+
+			&:hover{
+				background: scale-color($residential-color, $lightness: -14%);
+			}
 
 	}
-
-
-	& dd.active.comm-color {
-
-		a{
-			background:$commercial-color;
-		}
-
-	}
-
 
 }
 
 dl.sub-nav-comm{
-	& dd.active {
-		a{
+	& dd.active a {
+		// a{
 			background:$commercial-color;
-		}
-	}
 
+			&:hover{
+				background: scale-color($commercial-color, $lightness: -14%);
+			}
+		}
 }
 
 dl.sub-nav-res{
-	& dd.active {
-		a{
+	& dd.active a{
+		
 			background:$residential-color;
-		}
+			&:hover{
+				background: scale-color($residential-color, $lightness: -14%);
+			}
+		
 	}
 
 }
