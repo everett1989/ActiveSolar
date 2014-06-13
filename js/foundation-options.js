@@ -38,10 +38,10 @@ $(document).ready(function(){
   $('form[name="contactform"]').on('valid', function() {
     form_info =  $('form[name="contactform"]').serialize();
 
-    $.post("source/send_form_email.asp",form_info, function(data) {
+    $.post("source/asp/send_form_email.asp",form_info, function(data) {
 
     }).done(function(){
-      // alert("success");
+
 
       $('#contact-success').foundation('reveal', 'open');
 
