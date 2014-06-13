@@ -1,3 +1,11 @@
 
-solar-electric: https://assets.nerdwallet.com/blog/finance/files/2012/08/solar-panels.png
-solar-hotwater: http://assets.inhabitat.com/wp-content/blogs.dir/1/files/2010/08/solarhotwater-ed01.jpg
+
+solar-electric: 'banner_solar_electric.jpg'
+solar-hotwater: 'banner_solar_hotwater.jpg'
+commercial-services: 'banner_commercial_services.jpg'
+residential-services: 'banner_residential_services.jpg'
+process: 'banner_our_process.jpg'
+projects: 'banner_projects.jpg'
+financing: 'banner_financing.jpg'
+about-us: 'banner_about_us.jpg'
+contact: 'banner_contact.jpg'
