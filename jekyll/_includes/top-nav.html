@@ -11,9 +11,17 @@
 
 		<section class = "top-bar-section">
 			<ul class ="right">
-				<li class="divider"></li>
+				<li class="divider"></li>				
+				<li class="hide-for-medium-up" {% if page.url == "/solar-electric.html" %} class="active" {% endif %}>
+					<a href="solar-electric.html">Solar Electric</a>
+				</li>
+				<li class="divider hide-for-medium-up"></li>
+				<li class="hide-for-medium-up" {% if page.url == "/solar-hotwater.html" %} class="active" {% endif %}>
+					<a href="solar-hotwater.html">Solar Hot Water</a>
+				</li>
+				<li class="divider hide-for-medium-up"></li>
 
-				{% if page.url == '/residential_services.html' or page.url == '/commercial_services.html' %} 
+				{% if page.url == '/residential-services.html' or page.url == '/commercial-services.html' %} 
 					{% assign serviceActive = 'active' %}
 					{% assign serviceName = page.title %}
 
@@ -24,26 +32,13 @@
 
 				{% endif %}
 
-				
-				<li class="hide-for-medium-up" {% if page.url == "/solar-electric.html" %} class="active" {% endif %}>
-					<a href="solar-electric.html">Solar Electric</a>
-				</li>
-				<li class="divider hide-for-medium-up"></li>
-				<li class="hide-for-medium-up" {% if page.url == "/solar-hotwater.html" %} class="active" {% endif %}>
-					<a href="solar-hotwater.html">Solar Hot Water</a>
-				</li>
-				<li class="divider hide-for-medium-up"></li>
-
-
-
-
 				<li class="has-dropdown {{ serviceActive }}"><a href="#">{{ serviceName }}</a>
 					<ul class="dropdown">
 						<li class="divider"></li>
 
-						<li {% if page.url == '/residential_services.html' %} class="active"{% endif %} ><a href="residential_services.html">Residential</a></li>
+						<li {% if page.url == '/residential-services.html' %} class="active"{% endif %} ><a href="residential-services.html">Residential</a></li>
 						<li class="divider"></li>
-						<li {% if page.url == '/commercial_services.html' %} class="active"{% endif %} ><a href="commercial_services.html">Commercial</a></li>
+						<li {% if page.url == '/commercial-services.html' %} class="active"{% endif %} ><a href="commercial-services.html">Commercial</a></li>
 						<li class="divider"></li>
 					</ul>
 				</li>
@@ -62,7 +57,7 @@
 				</li>
 				<li class="divider"></li>
 
-					{% if page.url == '/about.html' or page.url == '/about_solar.html' or page.url == '/contact.html' %} 
+					{% if page.url == '/about-us.html' or page.url == '/contact.html' %} 
 					{% assign aboutActive = 'active' %}
 					{% assign aboutName = page.title %}
 
@@ -78,10 +73,8 @@
 					<ul class="dropdown">
 
 						<li class="divider"></li>
-						<li {% if page.url == '/about.html' %} class="active"{% endif %} ><a href="about.html">About Us</a></li>
+						<li {% if page.url == '/about-us.html' %} class="active"{% endif %} ><a href="about-us.html">About Us</a></li>
 						<li class="divider"></li>
-					<!-- 	<li {% if page.url == '/about_solar.html' %} class="active"{% endif %} ><a href="about_solar.html">About Solar</a></li>
-						<li class="divider"></li> -->
 						<li {% if page.url == '/contact.html' %} class="active"{% endif %} ><a href="contact.html">Contact Us</a></li>
 						<li class="divider"></li>
 					</ul>
