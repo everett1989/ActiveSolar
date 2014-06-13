@@ -20,7 +20,7 @@
 		</div>
 
 		<div class="large-10 medium-9 content small-12  columns">
-			{% include page-banner.html %}
+			{% include site-banner.html %}
 
 			{{ content }}
 
@@ -34,10 +34,19 @@
     <![endif]-->
  	
 	<script src="source/js/app.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+	{% if page.url == '/contact.html' %}
+
+	
+<!-- 
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWuOy0ekHKSV3bidPuLvdhfNThMMU-rL0">
 </script>
+-->
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+
+
 <script src="source/js/google-api.js"></script>
+{% endif %}
 
 
 
