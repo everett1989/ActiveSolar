@@ -1,18 +1,12 @@
 
 
 
-a:hover {text-decoration:underline;}
-
-
-// .social-media{
-// @extend .st-shape-circle, .st-embossed;
-// font-size: 1.05em;
-// margin-top: -15px;
-// padding-bottom:3px;
-// //margin-top: -12px;
-
-
-// }
+a:hover {
+	text-decoration:underline;
+	&.close-reveal-modal{
+		text-decoration: none;
+	}
+}
 
 
 .underline{
@@ -30,12 +24,8 @@ a:hover {text-decoration:underline;}
 
 
 .line-border{
-  //border-color:white;
-  // border-left: 1px solid $body-font-color;
-  // @media #{$medium-up} {
-  	border-right: 1px solid white;
+	border-right: 1px solid white;
 
-  //  }  
 }
 
 
