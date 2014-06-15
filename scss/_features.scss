@@ -6,159 +6,75 @@ ul.clearing-thumbs{//Fixed full screen gallery pictures
 		clear: none !important;
 		margin-right: 0;
 	} 
-
 }
 /*************END CLEARING LIGHTBOX**********************************/
 
 /************ORBIT SLIDE SHOW****************************************/
 
 .sidelinks-slider{ 
-		//margin-top:5px;
-		padding:5px 0px 0px 5px;
-		max-width:150px;
-		color:rgb(75, 75, 75);
-		border-radius:4px;
-		//margin-top:80px;
-		opacity:.8;
-		//box-shadow:0 0 10px;
-		// background:$secondary-color;
-		//color:$light-font;
-
-		dt{
-			text-decoration:underline;
-		}
-
-	}
-
-
-	.slide_show{
-		h3{
-			text-align:center;
-		}
-		ul.slider_img {
-
-			li{
-
-				img{
-
-				}
-			}
-		}
-	}
-
-	.headline-slideshow{
-	// background:green;
-	//border:1px solid $primary-light;
+	padding:5px 0px 0px 5px;
+	max-width:150px;
+	color:rgb(75, 75, 75);
+	border-radius:4px;
+	opacity:.8;
+	dt{text-decoration:underline;}
 }
 
+
 /******************END ORBIT SLIDE SHOW****************************/
-.content-left{}
+
 
 
 
 /******************MAGELLAN************************************/
 [data-magellan-expedition-clone] { visibility:hidden; }//Hides clone until patch comes out
 ul.side-links {//For the sticky side-nav
-
-
 	margin-left: -16px;//-18px;
-
 	line-height:1.05;
-	a{
-		//color:$secondary-color;
-	}
-
-
 	font-size:18px;
 	width:200px;
-	//font-weight:bold;
-	//top: 60px !important;
 	z-index:0;
 	padding-top:30px;
-	//background: $body-bg;
 	background: rgba(84, 80, 43, 0);
-	//position:absolute;
-	//min-width: 100px !important;
-	i{
-		font-size: 25px;
-	}
-
-
-
-	@media  #{$small-only} {
-		position: static !important;
-   		//width: 100%;
-   		//display:none;
-   	}
+	i{font-size: 25px;}
+	@media  #{$small-only} {position: static !important;}
    }
 
 
    .magellan-nav{	
    	background: $body-bg;
-	// font-size: 1.0rem;
-	//padding-top:45px;
-	// margin-top:35px;
-	// margin-bottom: 40px;
 	padding-bottom:0px;
-	// line-height:1;
 	margin-left: -16px;
 	margin-bottom: 40px;
-	//margin-top:35px;
-	a{
+}
+dl.sub-nav{//For quick anchor scrolling
+	& a{
+		@media #{$small-only} {padding:0px;}
 		//font-size: 1.0rem;
 	}
 
 
-}
-dl.sub-nav{//For quick anchor scrolling
+	@mixin magellan-color-adjust($color){
+	background:$color;
 
-	font-size: 1.0rem;
-
+	&:hover{background: scale-color($color, $lightness: -14%);}
+	}
 	& dd.active.comm-color a {
-
-			background:$commercial-color;
-
-			&:hover{
-				background: scale-color($commercial-color, $lightness: -14%);
-			}
-		
-
-
+		@include magellan-color-adjust($commercial-color);	
 	}
 	& dd.active.res-color a {
-		
-			background:$residential-color;
-
-			&:hover{
-				background: scale-color($residential-color, $lightness: -14%);
-			}
-
+		@include magellan-color-adjust($residential-color);
 	}
-
 }
 
-dl.sub-nav-comm{
+@mixin single-type-theme($color){
 	& dd.active a {
-		// a{
-			background:$commercial-color;
-
-			&:hover{
-				background: scale-color($commercial-color, $lightness: -14%);
-			}
-		}
-}
-
-dl.sub-nav-res{
-	& dd.active a{
-		
-			background:$residential-color;
-			&:hover{
-				background: scale-color($residential-color, $lightness: -14%);
-			}
-		
+		background:$color;
+		&:hover{background: scale-color($color, $lightness: -14%);}
 	}
-
 }
+dl.sub-nav-comm{@include single-type-theme($commercial-color);}
+dl.sub-nav-res{@include single-type-theme($residential-color);}
 
 
 
@@ -183,28 +99,15 @@ dl.sub-nav-res{
 	background: $primary-color;
 	border-top: 1px solid $light-font;
 	border-bottom: 1px solid $light-font;
-	//box-shadow: 0px 0px 5px;
-	//margin-bottom:1em;
-	// height:100px;
 
 	nav{
 
-		li.divider{
-			border-right: solid 1px $light-font !important;
-		}
-		.active{
-			text-decoration:underline;
-		}
+		li.divider{border-right: solid 1px $light-font !important;}
+		.active{text-decoration:underline;}
 		ul.dropdown{
-			li.divider{
-				border-top: solid 1px $light-font !important;
-			}
-
-
+			li.divider{border-top: solid 1px $light-font !important;}
 		}
-
-
-	}//end nav
+	}
 
 }
 
