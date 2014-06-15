@@ -1,62 +1,39 @@
 
 
 .logo-background{
-	 @include background-image(linear-gradient(left, white,$primary-light));
+	@include background-image(linear-gradient(left, white,$primary-light));
 	// background: linear-gradient(to right, white, $primary-light);
+}
 
-	
+.phone-header{
+	color:$light-font;
+	font-size:25px;
+	@media #{$small-only} {font-size: 18px;}
+}
 
-	//background: linear-gradient(color-stops(white, white 20%, $primary-color 80%));
-	.banner-contact{
-
-
-
-
-
-		//background:white;
-		ul{
-			
-			margin-bottom: -1px;
-			// padding-top: 40px;
-			// @media  #{$medium-up} {
-			// 	text-align:right;
-			//  }
-			
-			
-			font-size:20px;
-			margin-right: -15px;
-			.button{
-				padding: 5px 10px;
-				box-shadow: 0 0 px;
-				border: solid black 1px;
-				border-radius: 5px;
-				margin-bottom: 3px;
-			}
-
-			//color:$primary-dark;
-			color:$light-font;
-
-			li.social-media{
-				line-height: 0;
-				font-size: 40px;
-				i{
-				// padding-left:40px;
-				margin-left:30px;
-
-			}
-
+.social-media-header{
+	font-size: 50px;
+	@media #{$small-only} {font-size: 40px;}
+	@media #{$medium-up} {
+		.fi-social-twitter{
+			padding-right:10px;
+			padding-left:10px
 		}
-
 	}
 }
 
+a.get-quote-button{
+
+	@media #{$small-only} {font-size: 12px;}
+	padding: 5px 5px;
+	border: solid black 1px;
+	border-radius: 5px;
+	margin-bottom: .5em;
+	max-width:180px;
 }
 
 
-.logo_pic{
-
-	margin-bottom:5px;
-}
+.logo_pic{margin-bottom:5px;}
 
 
 

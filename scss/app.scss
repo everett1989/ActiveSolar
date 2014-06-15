@@ -146,8 +146,9 @@ html{//Removes right space on site while in mobile
   width:100%;
   overflow:hidden;
 
-  h1{ 
-    @media #{$medium-up} {font-size: 3em;}
+  h1{
+    font-size: 3em; 
+    @media #{$medium-only} {font-size: 2.7em;}
     @media #{$small-only} {font-size: 1.7em;}
     margin-top: 0px;
     position: absolute;
