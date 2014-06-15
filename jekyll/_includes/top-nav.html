@@ -5,7 +5,11 @@
 	<nav class="top-bar" data-topbar>
 
 		<ul class="title-area">
-			<li class="name" ><h1><a {% if page.url == "/index.html" %} class="active" {% endif %} href="index.html">Home</a></h1></li>
+			<li class="name" >
+				<h1>
+					<a {% if page.url == "/index.html" %} class="active" {% endif %} href="index.html"><span class="hide-for-medium-up">Active Solar</span><span class="show-for-medium-up">Home</span></a>
+				</h1>
+			</li>
 			<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>	
 		</ul>
 
