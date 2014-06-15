@@ -115,15 +115,17 @@ html{//Removes right space on site while in mobile
     color:$color;
     //text-shadow: 2px 2px grey;
   }
-  h2{margin-bottom:0;}
+  hr.header{color:$color;}
+  //h2{margin-bottom:0;}
   i{color:$color;}
   a{color: $color;}
   img{box-shadow: 3px 3px 3px;}
   hr.header{
-    margin-top: 0;
+    //color:$color;
+    margin-top: -10px;
     border:0px;
     height:2px;
-    @include background-image(linear-gradient(left, $hr-color,$panel-bg));
+    @include background-image(linear-gradient(left, $color,$body-bg));
   }
 }
 
