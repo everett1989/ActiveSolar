@@ -84,10 +84,7 @@ html{//Removes right space on site while in mobile
 
 .content-attr{
   @extend .link-color, .has-icons;
-
-  img{
-    box-shadow: 3px 3px 3px;
-  }
+  img{box-shadow: 3px 3px 3px;}
   hr.header{
     border:0px;
     height:2px;
@@ -97,64 +94,59 @@ html{//Removes right space on site while in mobile
 
 @mixin content-attr-color($color){
    @extend .content-attr;
-  i{
-    color:$color;
-  }
-  a{
-    color: $color;
-  }
-
-  h2{
-    color: $color;
-  }
+   @include background-image(linear-gradient(top,  $color, $panel-bg 80px));
+  i{color:$color;}
+  a{color: $color;}
+  h2{color: $color;}
+  .hr-bottom{border-bottom: 3px solid $color;}
+  hr.header{ @include background-image(linear-gradient(left, $color,$panel-bg));}
   .panel{
+    border-color: #BBB;
     h3{
       color:white;
       text-shadow: 2px 2px grey;
     }
+  }
+}
 
-    @include background-image(linear-gradient(top,  $color, $panel-bg 80px));
-    border-color: #BBB;
+@mixin color-theme($color){
+  @extend .content-attr;
+  h3,h2{
+    color:$color;
+    //text-shadow: 2px 2px grey;
   }
-  .hr-bottom{
-    border-bottom: 3px solid $color;
-  }
+  h2{margin-bottom:0;}
+  i{color:$color;}
+  a{color: $color;}
+  img{box-shadow: 3px 3px 3px;}
   hr.header{
-    @include background-image(linear-gradient(left, $color,$panel-bg));
+    margin-top: 0;
+    border:0px;
+    height:2px;
+    @include background-image(linear-gradient(left, $hr-color,$panel-bg));
   }
-
 }
 
-.comm{
-  @include content-attr-color($commercial-color);
-}
+.res{ @include color-theme($residential-color); }
+.comm{@include color-theme($commercial-color); }
 
-.res{
-    @include content-attr-color($residential-color);
-}
+
+
+
+
 
 
 .page-banner{
-
-
   box-shadow: 3px 3px 3px;
   margin-bottom: 5px !important;
-
-  img{
-    min-width: 450px;
-  }
+  img{min-width: 450px;}
 
   width:100%;
   overflow:hidden;
 
-  h1{
-    @media #{$medium-up} {
-       font-size: 3em;
-    }
-     @media #{$small-only} {
-       font-size: 1.7em;
-    }
-    
+  h1{ 
+    @media #{$medium-up} {font-size: 3em;}
+    @media #{$small-only} {font-size: 1.7em;}
     margin-top: 0px;
     position: absolute;
     top: 0;
@@ -163,13 +155,7 @@ html{//Removes right space on site while in mobile
     background:rgba($primary-color, .7);//$secondary-color;
     border-bottom-right-radius: 2em;
     padding-right: 1em;
-// -webkit-transform: skew(-20deg);
-// background:$secondary-color;
-// padding-top: 10px;
-// padding-bottom: 10px;
     font-style: italic;
-
-    // text-decoration:underline;
   }
 }
 
@@ -194,19 +180,12 @@ a.anchor{
   visibility: hidden;
 }
 
-.type-heading{
-  //margin-top:60px;
-  margin-bottom:10px;
-}
+.type-heading{margin-bottom:10px;}
 
-.row_space{
-  margin-top:60px;
-}
+.row-space{margin-top:30px !important;}
 
 .panel-space{
-  .panel{
-    margin-bottom:50px;
-  }
+  .panel{margin-bottom:50px;}
 }
 
 
