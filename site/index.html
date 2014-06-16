@@ -1,2 +1,587 @@
-<!DOCTYPE html> <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]--><!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]--><!--[if IE 8]><html class="no-js lt-ie9"><![endif]--><!--[if gt IE 8]><!--><html class="no-js" lang="en"> <!--<![endif]--><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Active Solar – Home</title><link rel="stylesheet" href="source/css/app.css"><link rel="shortcut icon" href="source/img/favicon/Active-Solar-Favicon.ico"><script src="source/js/modernizr.min.js"></script></head><body><div class="logo-background"><div class="row"><div class="medium-7 small-6 columns"> <a href="index.html"> <img class="logo_pic show-for-medium-up" src="source/img/logo/Logo.png" alt="logo"> <img class="logo_pic show-for-small-only" src="source/img/logo/Active_Solar_Installations_Logo_small.png" alt="logo"></a></div><div class="medium-5 small-6 columns"><div class="row right text-right no-bullet"><div class="large-12 columns"> <a data-reveal-id="quote" class="button get-quote-button" href="#">Get a Free Quote</a></div><div class="phone-header large-12 columns"> 800-865-3625</div><div class="social-media social-media-header large-12 columns"><a rel="nofollow" target="_blank" href="#"><i class="fi-social-facebook"></i></a> <a rel="nofollow" target="_blank" href="#"><i class="fi-social-twitter"></i></a> <a rel="nofollow" target="_blank" href="https://www.linkedin.com/company/active-solar-development-llc"><i class="fi-social-linkedin"></i></a></div></div></div></div></div><div class="sticky contain-to-grid header-menu"><nav class="top-bar" data-topbar><ul class="title-area"><li class="name"><h1> <a class="active" href="index.html"><span class="hide-for-medium-up">Active Solar</span><span class="show-for-medium-up">Home</span></a></h1></li><li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li></ul><section class= " top-bar-section"><ul class="right"><li class="divider"></li><li class="hide-for-medium-up"> <a href="solar-electric.html">Solar Electric</a></li><li class="divider hide-for-medium-up"></li><li class="hide-for-medium-up"> <a href="solar-hotwater.html">Solar Hot Water</a></li><li class="divider hide-for-medium-up"></li><li class="has-dropdown"><a href="#">Services</a><ul class="dropdown"><li class="divider"></li><li><a href="residential-services.html">Residential</a></li><li class="divider"></li><li><a href="commercial-services.html">Commercial</a></li><li class="divider"></li></ul></li><li class="divider"></li><li > <a href="process.html">Our Process</a></li><li class="divider"></li><li > <a href="projects.html">Projects</a></li><li class="divider"></li><li > <a href="financing.html">Financing</a></li><li class="divider"></li><li class="has-dropdown"><a href="#">About</a><ul class="dropdown"><li class="divider"></li><li><a href="about-us.html">About Us</a></li><li class="divider"></li><li><a href="contact.html">Contact Us</a></li><li class="divider"></li></ul></li><li class="divider"></li></ul> </section></nav></div><div class="row"><div class="content-left large-2 medium-3 hide-for-small-only columns"><div><ul class="side-links no-bullet show-for-medium-up" data-magellan-expedition="fixed"><li><a data-reveal-id="quote" href="#"><i class="fi-clipboard-pencil"></i> Get a Quote</a></li><li><a href="solar-electric.html"><i class="fi-lightbulb"></i> Solar Electric</a></li><li><a href="solar-hotwater.html"><i class="fi-power"></i> Solar Hot Water</a></li><li><a data-reveal-id="contact"><i class="fi-telephone"></i> Contact Us</a></li></ul></div><div id="quote" class="reveal-modal" data-reveal><form data-abide="ajax" id="contactform" name="contactform"><div class="row"><div class="first-name-field large-6 columns"> <label>First Name <small>required</small> <input name="first-name-field" required> </label> <small class="error">Please include your first name</small></div><div class="last-name-field large-6 columns"> <label>Last Name <small>required</small> <input name="last-name-field"  required> </label> <small class="error">Please include your last name</small></div></div><div class="row"><div class="large-4 columns"> <label>Street Address <small>required</small> <input name="street-address-field"  required> </label> <small class="error">Please include your Street Address</small></div><div class="large-4 columns"> <label>City <small>required</small> <input name="city-field"  required> </label> <small class="error">Include City</small></div><div class="large-2 columns"> <label>State <small>required</small> <input name="state-field"  required> </label> <small class="error">Include state</small></div><div class="large-2 columns"> <label>Zip <small>required</small> <input name="zip-field" maxlength="5"  required pattern="zip"> </label> <small class="error">Include Zip</small></div></div><div class="row"><div class="large-4 columns"> <label>Your phone number <small>required</small> <input name="phone-field"  required pattern="phone"> </label> <small class="error">Not a valid Number</small></div><div class="large-6 columns"> <label>Email <small>required</small> <input name="email-field" type="email" required> </label> <small class="error">Not a valid Email</small></div><div class="large-2 columns"> <label>Best contact time <input name="contact-time-field" type="time" pattern> </label> <small class="error">Enter Correct Time</small></div></div><div class="row"></div><div class="row"><div class="large-4 columns"> <label>What is your monthly electric bill? <span class="bill-result-color">$ <span id="bill-result"></span> </span> </label><div id="bill-slider" class='range-slider radius' data-slider> <span class="range-slider-handle"></span> <span class="range-slider-active-segment"></span> <input name="bill-field" type="hidden"></div> <small class="error">Name is required and must be a string.</small></div><div class="large-4 columns"> <label>For residential or commercial?</label> <input name="select-residential-field" value="X" id="select-residential" type="checkbox"><label for="select-residential">Residential</label> <input name='select-commercial-field' value="X" id="select-commercial" type="checkbox"><label for="select-commercial">Commercial</label></div><div class="elec-or-water-field large-4 columns"> <label>Solar electric or solar hot water?</label> <input name="select-electric-field" value="X" id="select-electric" type="checkbox"><label for="select-electric">Solar Electric</label> <input name="select-hotwater-field" id="select-hotwater" value="X" type="checkbox"><label for="select-hotwater">Solar Hot Water</label></div></div><div class="row"><div class="comments-field large-12 columns"> <label for="comments-field">Comments <textarea name="comments-field" placeholder="Enter your comments here"></textarea>
-</label></div></div><button type="submit">Submit</button></form><a class="close-reveal-modal">×</a></div><div id="contact" class="reveal-modal" data-reveal><h2> Contact Us</h2><dl><dt>Phone</dt><dd>800-865-3625</dd><dt>Email</dt><dd>blah@gmail.com</dd><dt>PO-Box</dt><dd>PO Box 23 - Amsterdam, NY 12010</dd></dl><a class="close-reveal-modal">×</a></div><div id="contact-success" class="reveal-modal" data-reveal><h2> Success!</h2> <a class="close-reveal-modal">×</a></div><div id="contact-failure" class="reveal-modal" data-reveal><h2>Failure!</h2> <a class="close-reveal-modal">×</a></div></div><div class="large-10 medium-9 content small-12 columns"><div class="hide-for-medium-up has-icons row"><h3 class="hr-bottom">Welcome</h3><div class="small-12 columns"><p>Active Solar Development manages your commercial solar thermal project from concept to completion. Our experienced staff will perform all phases of construction and installation. Contact us to see how solar thermal can help your business save money!</p></div><div class="small-12 columns"> <img class="" src="https://assets.nerdwallet.com/blog/finance/files/2012/08/solar-panels.png" alt=""></div></div><div class="slideshow-wrapper hr-bottom row slide_show show-for-medium-up"><div class="small-6 columns"><h3 class="title-box-res text-center">Residential</h3><ul class="slider_img"  data-orbit><li> <img src="source/img/slider-pics/Residential_Slider_Pics/Residential-PV-Install-Barn-Galway-NY.jpg" alt="slide 1"><div class="orbit-caption"> Galway NY <br> 22 kW Grid Tied PV System</div></li><li> <img src="source/img/slider-pics/Residential_Slider_Pics/Residential-PV-Install-Broadalbin-NY.jpg" alt="slide 2"><div class="orbit-caption"> Broadalbin, NY <br> 7.67 kW Photovoltaic System</div></li><li> <img src="source/img/slider-pics/Residential_Slider_Pics/Residential-PV-Install-Saratoga-Springs-NY.jpg" alt="slide 3"><div class="orbit-caption"> Saratoga Springs, NY <br> 8.48 kW PV System</div></li></ul></div><div class="small-6 columns"><h3 class="title-box-com text-center">Commercial</h3><ul class="slider_img"  data-orbit><li> <img src="source/img/slider-pics/Commercial_Slider_Pics/Commercial-Solar-Hot-Water-AZ.jpg" alt="slide 1"><div class="orbit-caption"> Caption One.</div></li><li> <img src="source/img/slider-pics/Commercial_Slider_Pics/Commercial-Solar-Hot-Water-Install.jpg" alt="slide 2"><div class="orbit-caption"> Caption Two.</div></li><li> <img src="source/img/slider-pics/Commercial_Slider_Pics/Solar-Process-Water.jpg" alt="slide 3"><div class="orbit-caption"> Caption Four.</div></li></ul></div></div><div class="row content-attr"><div class="large-4 columns"><h3 class="hr-bottom "><i class="fi-dollar"></i> Save Money</h3><p >Installing a solar energy system is your opportunity to save money on energy bills. As gas, and electricity prices increase your solar installation will continue to provide low cost energy from the sun. Low interest financing and solar incentives are available to ensure your solar energy system is affordable. When you are ready to save money on your energy bills call us or <a href="#">click here.</a></p></div><div class="large-4 columns"><h3 class="hr-bottom "><i class="fi-checkbox"></i> Why Us?</h3><p>Calling Active Solar Development for a quote gives you access to seasoned professionals who are experts in renewable energy systems. We examine all aspects of your energy usage to determine the optimal solar system for your business or home. Our professional installers are factory trained, <a href="#">NABCEP certified</a> and <a href="#">BPI certified</a> to ensure that we are providing you the best solar products and the highest quality installation. Give us a call so we can start saving you money now. <b class="highlight">800-865-3625</b></p></div><div class="large-4 columns"><h3 class=" hr-bottom"><i class="fi-clipboard-pencil"></i> Incentives</h3><p>In addition to the money you save by choosing solar energy, there are multiple state and federal solar energy incentives you may qualify for. Active Solar Development has the experience to guide you through these solar programs. <a href="#">Cash grants</a>, <a href="#">Tax Credits</a> and <a href="#">low interest loans</a> are available for solar energy systems. Let us show you how we can make Solar Energy affordable.</p></div></div></div></div> <footer class="footer-content"><div class="footer-heading"><div class="row"></div></div><div class="row"><div class="large-12 columns"><ul class="text-center small-block-grid-2 large-block-grid-4 footer-items"><li class="line-border"><ul class="no-bullet"><li><h4>About</h4></li><li><a href="about-us.html">About Us</a></li><li><a href="contact.html">Contact</a></li><li> <br></li></ul></li><li class="line-border-special"><ul class="no-bullet"><li><h4>For Home</h4></li><li><a href="residential-services.html#solar_electric">Solar Electric</a></li><li><a href="residential-services.html#solar_hotwater">Solar Hot Water</a></li><li><a href="financing.html#residential">Financing</a></li></ul></li><li class="line-border"><ul class="no-bullet"><li><h4>For Business</h4></li><li><a href="commercial-services.html#solar_electric">Solar Electric</a></li><li><a href="commercial-services.html#solar_hotwater">Solar Hot Water</a></li><li><a href="financing.html#commercial">Financing</a></li></ul></li><li class="footer-cert"><div class="small-centered columns"> <a rel="nofollow" target="_blank" href="#"><img src="source/img/certifications/NABCEP_LOGO.png" alt="nabcep"> </a></div><div class="medium-6 columns"> <a rel="nofollow" target="_blank" href="#"><img src="source/img/certifications/BPI Cert.png" alt="BPI"> </a></div><div class="medium-6 columns"> <a rel="nofollow" target="_blank" href="#"><img src="source/img/certifications/POLYSUN_CERT.png" alt="polysun"></a></div></li></ul></div></div><div class="row footer-bottom"><div class="large-12 columns"><p class="copyright text-center">Copyright © 2014</p></div></div></footer><!--[if lte IE 8]><script src="source/js/ie8-alert.js"></script><![endif]--><script src="source/js/app.min.js"></script></body></html>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  
+  <title>Active Solar &ndash; Home</title>
+
+  
+  
+
+  <link rel="stylesheet" href="source/css/app.css">
+  <link rel="shortcut icon" href="source/img/favicon/Active-Solar-Favicon.ico">
+  <!-- <link rel="stylesheet" href="css/stackicons-social-minimal.css"> -->
+
+  <script src="source/js/modernizr.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+	<div class="logo-background">
+	<div class="row">
+		<div class=" medium-7 small-6 columns">
+			<a href="index.html">
+				<img class="logo_pic show-for-medium-up" src="source/img/logo/Logo.png" alt="logo">
+				<img class="logo_pic show-for-small-only" src="source/img/logo/Active_Solar_Installations_Logo_small.png" alt="logo">
+
+			</a>
+
+		</div>
+		
+		<div class=" medium-5 small-6 columns ">
+			<div class="row right text-right no-bullet ">
+				<div class="large-12 columns">
+					<a data-reveal-id="quote" class="button get-quote-button" href="#">Get a Free Quote</a>
+				</div>
+				<div class="phone-header large-12 columns">
+					800-865-3625
+				</div>
+				<div class="social-media social-media-header large-12 columns">
+
+					<a rel="nofollow" target="_blank" href="#"><i class="fi-social-facebook"></i></a>
+					<a rel="nofollow" target="_blank" href="#"><i class="fi-social-twitter"></i></a>
+					<a rel="nofollow" target="_blank" href="https://www.linkedin.com/company/active-solar-development-llc"><i class="fi-social-linkedin"></i></a>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+	 
+<div class="sticky contain-to-grid header-menu">
+	<!-- <div class=" contain-to-grid header-menu"> -->
+
+	<nav class="top-bar" data-topbar>
+
+		<ul class="title-area">
+			<li class="name" >
+				<h1>
+					<a  class="active"  href="index.html"><span class="hide-for-medium-up">Active Solar</span><span class="show-for-medium-up">Home</span></a>
+				</h1>
+			</li>
+			<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>	
+		</ul>
+
+		<section class = "top-bar-section">
+			<ul class ="right">
+				<li class="divider"></li>				
+				<li class="hide-for-medium-up" >
+					<a href="solar-electric.html">Solar Electric</a>
+				</li>
+				<li class="divider hide-for-medium-up"></li>
+				<li class="hide-for-medium-up" >
+					<a href="solar-hotwater.html">Solar Hot Water</a>
+				</li>
+				<li class="divider hide-for-medium-up"></li>
+
+				
+
+					
+					
+
+				
+
+				<li class="has-dropdown "><a href="#">Services</a>
+					<ul class="dropdown">
+						<li class="divider"></li>
+
+						<li  ><a href="residential-services.html">Residential</a></li>
+						<li class="divider"></li>
+						<li  ><a href="commercial-services.html">Commercial</a></li>
+						<li class="divider"></li>
+					</ul>
+				</li>
+				<li class="divider"></li>
+
+				<li >
+					<a href="process.html">Our Process</a>
+				</li>
+				<li class="divider"></li>
+				<li >
+					<a href="projects.html">Projects</a>
+				</li>
+				<li class="divider"></li>
+				<li >
+					<a href="financing.html">Financing</a>
+				</li>
+				<li class="divider"></li>
+
+					
+
+					
+					
+
+				
+
+
+				<li class="has-dropdown "><a href="#">About</a>
+					<ul class="dropdown">
+
+						<li class="divider"></li>
+						<li  ><a href="about-us.html">About Us</a></li>
+						<li class="divider"></li>
+						<li  ><a href="contact.html">Contact Us</a></li>
+						<li class="divider"></li>
+					</ul>
+				</li>
+				<li class="divider"></li>
+
+
+			</ul>
+		</section>
+
+	</nav>
+
+</div>
+
+
+
+
+	<div class="row ">
+
+
+		<div class="content-left large-2 medium-3 hide-for-small-only columns">
+			
+<div>
+
+	<ul class="side-links no-bullet show-for-medium-up" data-magellan-expedition="fixed" >
+		<li><a data-reveal-id="quote"  href="#"><i class="fi-clipboard-pencil"></i>&nbsp;Get a Quote</a></li>
+		<li><a href="solar-electric.html"><i class="fi-lightbulb"></i>&nbsp;Solar Electric</a></li>
+		<li><a href="solar-hotwater.html"><i class="fi-power"></i>&nbsp;Solar Hot Water</a></li>
+		<li><a data-reveal-id="contact"><i class="fi-telephone"></i>&nbsp;Contact Us</a></li>
+
+	</ul>
+</div>
+
+<div id="quote" class="reveal-modal" data-reveal>
+
+	
+
+
+	<form data-abide="ajax" id="contactform" name="contactform" >
+		<div class="row"> 
+			<div class="first-name-field large-6 columns">
+				<label>First Name <small>required</small>
+					<input type="text" name="first-name-field" required >
+				</label>
+				<small class="error">Please include your first name</small>
+			</div>
+			<div class="last-name-field large-6 columns">
+				<label>Last Name <small>required</small>
+					<input name="last-name-field" type="text" required >
+				</label>
+				<small class="error">Please include your last name</small>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="large-4 columns">
+				<label>Street Address <small>required</small>
+					<input name="street-address-field" type="text" required>
+				</label>
+				<small class="error">Please include your Street Address</small>
+			</div>
+			<div class="large-4 columns">
+				<label>City <small>required</small>
+					<input name="city-field" type="text" required >
+				</label>
+				<small class="error">Include City</small>
+			</div>
+			<div class="large-2 columns">
+				<label>State <small>required</small>
+					<input name="state-field" type="text" required  >
+				</label>
+				<small class="error">Include state</small>
+			</div>
+			<div class="large-2 columns">
+				<label>Zip <small>required</small>
+					<input name="zip-field"  maxlength="5" type="text" required pattern="zip">
+				</label>
+				<small class="error">Include Zip</small>
+			</div>
+		</div>
+
+
+
+
+
+		<div class="row">
+			<div class="large-4 columns">
+				<label>Your phone number <small>required</small>
+					<input name="phone-field" type="text" required pattern="phone">
+				</label>
+				<small class="error">Not a valid Number</small>
+			</div>
+			<div class="large-6 columns">
+				<label>Email <small>required</small>
+					<input name="email-field" type="email" required>
+				</label>
+				<small class="error">Not a valid Email</small>
+			</div>
+			<div class="large-2 columns">
+				<label>Best contact time 
+					<input name="contact-time-field" type="time" pattern>
+				</label>
+				<small class="error">Enter Correct Time</small>
+			</div>
+		</div>
+
+		<div class="row">
+			
+	
+		</div> 
+
+
+
+
+
+
+		<div class="row">
+			<div class="large-4  columns" >
+				<label>What is your monthly electric bill? 
+					<span class="bill-result-color">&#36;
+					<span id="bill-result"></span>
+					</span>
+				</label>
+
+				<div id="bill-slider"class='range-slider radius' data-slider>
+					<span class="range-slider-handle"></span>
+  					<span class="range-slider-active-segment"></span>
+  					<input name="bill-field" type="hidden">
+				</div>
+				<small class="error">Name is required and must be a string.</small>
+			</div>
+			<!-- <div class=" large-4 columns">
+				<label>What is your monthly electric bill?
+					<input name="bill-field" type="text">
+				</label>
+				<small class="error">Name is required and must be a string.</small>
+			</div> -->
+			<div class="large-4 columns">
+				<label>For residential or commercial?</label>
+				<input name="select-residential-field" value="X" id="select-residential" type="checkbox"><label for="select-residential">Residential</label>
+				<input name='select-commercial-field' value="X" id="select-commercial" type="checkbox"><label for="select-commercial">Commercial</label>
+			</div>
+			<div class="elec-or-water-field large-4 columns">
+				<label>Solar electric or solar hot water?</label>
+				<input name="select-electric-field" value="X" id="select-electric" type="checkbox"><label for="select-electric">Solar Electric</label>
+				<input name="select-hotwater-field" id="select-hotwater" value="X" type="checkbox"><label for="select-hotwater">Solar Hot Water</label>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="comments-field large-12 columns">
+				<label for="comments-field">Comments
+					<textarea name="comments-field" placeholder="Enter your comments here"></textarea>
+				</label>
+			</div>
+		</div>
+
+		<button type="submit">Submit</button>
+	</form>
+
+	<a class="close-reveal-modal">&#215;</a>
+</div>
+
+
+<!-- <div id="electric" class="reveal-modal" data-reveal>
+
+	<h2>Solar Electric</h2>
+
+	<a class="close-reveal-modal">&#215;</a>
+</div> -->
+
+<!-- <div id="hot-water" class="reveal-modal" data-reveal>
+
+	<h2>Solar Hot Water</h2>
+
+
+
+	<a class="close-reveal-modal">&#215;</a>
+</div> -->
+
+<div id="contact" class="reveal-modal" data-reveal>
+
+	<h2> Contact Us</h2>
+
+	<dl>
+		<dt>Phone</dt>
+		<dd>800-865-3625</dd>
+		<dt>Email</dt>
+		<dd>blah@gmail.com</dd>
+		<dt>PO-Box</dt>
+		<dd>PO Box 23 - Amsterdam, NY 12010</dd>
+
+	</dl>
+
+	<a class="close-reveal-modal">&#215;</a>
+	
+</div>
+
+
+<div id="contact-success" class="reveal-modal" data-reveal>
+
+	<h2> Success!</h2>
+	<a class="close-reveal-modal">&#215;</a>
+	
+</div>
+
+<div id="contact-failure" class="reveal-modal" data-reveal>
+
+	<h2>Failure!</h2>
+	<a class="close-reveal-modal">&#215;</a>
+	
+</div>
+
+		</div>
+
+		<div class="large-10 medium-9 content small-12  columns">
+			
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+		
+		
+			
+	
+
+	
+
+	
+
+	
+
+	
+
+
+			<div class=" hide-for-medium-up has-icons row">
+	<h3 class="hr-bottom">Welcome</h3>
+	<div class="small-12 columns">
+		<p>Active Solar Development manages your commercial solar thermal project from concept to completion. Our experienced staff will perform all phases of construction and installation. Contact us to see how solar thermal can help your business save money!</p>
+	</div> 
+
+	<div class="small-12 columns ">
+		<!-- <h3 class="title-box-res text-center">Premium Solar Panels</h3> -->
+		<img class="" src="https://assets.nerdwallet.com/blog/finance/files/2012/08/solar-panels.png" alt="">
+	</div>
+</div>
+
+<div class="slideshow-wrapper hr-bottom row slide_show show-for-medium-up">
+	<div class="small-6 columns ">
+		<!-- <div class="preloader"></div> -->
+		<h3 class="title-box-res text-center">Residential</h3>
+		<ul class ="slider_img" data-orbit>
+			<li>
+				<img src="source/img/slider-pics/Residential_Slider_Pics/Residential-PV-Install-Barn-Galway-NY.jpg" alt="slide 1">
+
+				<div class="orbit-caption">
+					Galway NY 
+					<br>
+					22 kW Grid Tied PV System
+				</div>
+			</li>
+			<li>
+				<img src="source/img/slider-pics/Residential_Slider_Pics/Residential-PV-Install-Broadalbin-NY.jpg" alt="slide 2">
+
+				<div class="orbit-caption">
+					Broadalbin, NY 
+					<br>
+					7.67 kW Photovoltaic System
+				</div>
+			</li>
+			<li>
+				<img src="source/img/slider-pics/Residential_Slider_Pics/Residential-PV-Install-Saratoga-Springs-NY.jpg" alt="slide 3">
+
+				<div class="orbit-caption">
+					Saratoga Springs, NY
+					<br>
+					8.48 kW PV System
+				</div>
+			</li>
+		</ul>
+
+	</div>
+
+
+	<div class="small-6 columns ">
+		 <!-- <div class="preloader"></div> -->
+		<h3 class="title-box-com text-center">Commercial</h3>
+		<ul class ="slider_img" data-orbit>
+			<li>
+				<img src="source/img/slider-pics/Commercial_Slider_Pics/Commercial-Solar-Hot-Water-AZ.jpg" alt="slide 1">
+				<div class="orbit-caption">
+					Caption One.
+				</div>
+			</li>
+			<li>
+				<img src="source/img/slider-pics/Commercial_Slider_Pics/Commercial-Solar-Hot-Water-Install.jpg" alt="slide 2">
+				<div class="orbit-caption">
+					Caption Two.
+				</div>
+			</li>
+			<li>
+				<img src="source/img/slider-pics/Commercial_Slider_Pics/Solar-Process-Water.jpg" alt="slide 3">
+
+				<div class="orbit-caption">
+					Caption Four.
+				</div>
+			</li>
+		</ul>
+
+	</div>
+</div>
+
+<div class="row content-attr ">
+	<div class="large-4 columns ">
+		<h3 class="hr-bottom "><i class="fi-dollar"></i>&nbsp;Save Money</h3>
+		<p >Installing a solar energy system is your opportunity to save money on energy bills. As gas, and electricity prices increase your solar installation will continue to provide low cost energy from the sun.  Low interest financing and solar incentives are available to ensure your solar energy system is affordable. When you are ready to save money on your energy bills call us or <a href="#">click here.</a></p>
+	</div>
+
+	<div class="large-4 columns">
+		
+		<h3 class="hr-bottom "><i class="fi-checkbox"></i>&nbsp;Why Us?</h3>
+		<p>Calling Active Solar Development for a quote gives you access to seasoned professionals who are experts in renewable energy systems.  We examine all aspects of your energy usage to determine the optimal solar system for your business or home.  Our professional installers are factory trained, <a href="#">NABCEP certified</a> and <a href="#">BPI certified</a> to ensure that we are providing you the best solar products and the highest quality installation.  Give us a call so we can start saving you money now. <b class="highlight">800-865-3625</b></p> 
+	</div>
+
+	<div class="large-4 columns ">
+		<h3 class=" hr-bottom"><i class="fi-clipboard-pencil"></i>&nbsp;Incentives</h3>
+		<p>In addition to the money you save by choosing solar energy, there are multiple state and federal solar energy incentives you may qualify for.  Active Solar Development has the experience to guide you through these solar programs.  <a href="#">Cash grants</a>, <a href="#">Tax Credits</a> and <a href="#">low interest loans</a> are available for solar energy systems.  Let us show you how we can make Solar Energy affordable.</p>
+
+	</div>
+
+</div>
+
+
+
+
+		</div>
+	</div>
+
+	<!-- <footer class="site-info" role="contentinfo">
+  <p>Here is a footer.</p>
+</footer> -->
+<footer class="footer-content">
+
+
+	<div class="footer-heading">
+		<div class="row"></div>
+	</div>
+
+	<div class="row">
+		<div class="large-12 columns">
+			
+
+			<ul class=" text-center small-block-grid-2 large-block-grid-4 footer-items">
+				<li class="line-border">
+					<ul class="no-bullet" >
+						<li><h4>About</h4></li>
+						<li><a href="about-us.html">About Us</a></li>
+						<!-- <li><a href="about_solar.html">About Solar</a></li> -->
+						<li><a href="contact.html">Contact</a></li>
+						<li> <br></li>
+					</ul>
+				</li>
+
+				<li class="line-border-special">
+					<ul class="no-bullet" >
+						<li><h4>For Home</h4></li>
+						<li><a href="residential-services.html#solar_electric">Solar Electric</a></li>
+						<li><a href="residential-services.html#solar_hotwater">Solar Hot Water</a></li>
+						<li><a href="financing.html#residential">Financing</a></li>
+
+					</ul>
+				</li>
+
+				<li  class="line-border">
+					<ul class="no-bullet">
+						<li><h4>For Business</h4></li>
+						<li><a href="commercial-services.html#solar_electric">Solar Electric</a></li>
+						<li><a href="commercial-services.html#solar_hotwater">Solar Hot Water</a></li>
+						<li><a href="financing.html#commercial">Financing</a></li>
+
+					</ul>
+				</li>
+
+				<li class="footer-cert">
+					<!-- <div class="row"> -->
+					<div class="small-centered columns">
+						<a rel="nofollow" target="_blank" href="#"><img src="source/img/certifications/NABCEP_LOGO.png" alt="nabcep">
+						</a>
+
+					</div>
+
+					<div class="medium-6  columns ">
+						<a rel="nofollow" target="_blank" href="#"><img src="source/img/certifications/BPI Cert.png" alt="BPI">
+						</a>
+					</div>
+					<div class="medium-6  columns ">
+						<a rel="nofollow" target="_blank" href="#"><img src="source/img/certifications/POLYSUN_CERT.png" alt="polysun">
+
+
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+
+	<div class=" row footer-bottom" >
+		<div class=" large-12 columns ">
+			<p class="copyright text-center">Copyright &copy; 2014</p>
+		</div>
+	</div>
+
+</footer>
+
+
+
+
+
+
+
+	<!--[if lte IE 8]>
+    <script src="source/js/ie8-alert.js"></script>
+    <![endif]-->
+ 	
+	<script type="text/javascript" src="source/js/app.min.js"></script>
+	
+
+
+
+
+
+</body>
+</html>
+
