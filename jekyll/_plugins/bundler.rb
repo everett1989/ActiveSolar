@@ -10,5 +10,4 @@
 
 # require "bundler/setup"
 # Bundler.require(:jekyll_plugins)
-
-# require "jekyll-minify-html"
+#require "jekyll-minify-html"
