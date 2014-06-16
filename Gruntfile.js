@@ -118,7 +118,8 @@ htmlmin: {                                     // Task
         'js/foundation-options.js'
         ],
         "jekyll/source/js/modernizr.min.js":'bower_components/foundation/js/vendor/modernizr.js',
-        "jekyll/source/js/ie8-alert.min.js":'js/ie8-alert.js'
+        "jekyll/source/js/ie8-alert.min.js":'js/ie8-alert.js',
+        "jekyll/source/js/google-api.min.js":'js/google-api.js'
         
       }
     }

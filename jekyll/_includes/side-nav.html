@@ -12,113 +12,133 @@
 
 <div id="quote" class="reveal-modal" data-reveal>
 
+	
 
-<form data-abide="ajax" id="contactform" name="contactform" >
 
-	<div class="row"> 
-		<div class="first-name-field large-6 columns">
-			<label>First Name <small>required</small>
-				<input type="text" name="first-name-field" required pattern="[a-zA-Z]+">
-			</label>
-			<small class="error">Please include your first name</small>
+	<form data-abide="ajax" id="contactform" name="contactform" >
+		<div class="row"> 
+			<div class="first-name-field large-6 columns">
+				<label>First Name <small>required</small>
+					<input type="text" name="first-name-field" required >
+				</label>
+				<small class="error">Please include your first name</small>
+			</div>
+			<div class="last-name-field large-6 columns">
+				<label>Last Name <small>required</small>
+					<input name="last-name-field" type="text" required >
+				</label>
+				<small class="error">Please include your last name</small>
+			</div>
 		</div>
-		<div class="last-name-field large-6 columns">
-			<label>Last Name <small>required</small>
-				<input name="last-name-field" type="text" required pattern="[a-zA-Z]+">
-			</label>
-			<small class="error">Please include your last name</small>
+
+
+		<div class="row">
+			<div class="large-4 columns">
+				<label>Street Address <small>required</small>
+					<input name="street-address-field" type="text" required>
+				</label>
+				<small class="error">Please include your Street Address</small>
+			</div>
+			<div class="large-4 columns">
+				<label>City <small>required</small>
+					<input name="city-field" type="text" required >
+				</label>
+				<small class="error">Include City</small>
+			</div>
+			<div class="large-2 columns">
+				<label>State <small>required</small>
+					<input name="state-field" type="text" required  >
+				</label>
+				<small class="error">Include state</small>
+			</div>
+			<div class="large-2 columns">
+				<label>Zip <small>required</small>
+					<input name="zip-field"  maxlength="5" type="text" required pattern="zip">
+				</label>
+				<small class="error">Include Zip</small>
+			</div>
 		</div>
-	</div>
 
 
-	<div class="row">
-		<div class="large-4 columns">
-			<label>Street Address <small>required</small>
-				<input name="street-address-field" type="text" required>
-			</label>
-			<small class="error">Please include your Street Address</small>
+
+
+
+		<div class="row">
+			<div class="large-4 columns">
+				<label>Your phone number <small>required</small>
+					<input name="phone-field" type="text" required pattern="phone">
+				</label>
+				<small class="error">Not a valid Number</small>
+			</div>
+			<div class="large-6 columns">
+				<label>Email <small>required</small>
+					<input name="email-field" type="email" required>
+				</label>
+				<small class="error">Not a valid Email</small>
+			</div>
+			<div class="large-2 columns">
+				<label>Best contact time 
+					<input name="contact-time-field" type="time" pattern>
+				</label>
+				<small class="error">Enter Correct Time</small>
+			</div>
 		</div>
-		<div class="large-4 columns">
-			<label>City <small>required</small>
-				<input name="city-field" type="text" required>
-			</label>
-			<small class="error">Include City</small>
+
+		<div class="row">
+			
+	
+		</div> 
+
+
+
+
+
+
+		<div class="row">
+			<div class="large-4  columns" >
+				<label>What is your monthly electric bill? 
+					<span class="bill-result-color">&#36;
+					<span id="bill-result"></span>
+					</span>
+				</label>
+
+				<div id="bill-slider"class='range-slider radius' data-slider>
+					<span class="range-slider-handle"></span>
+  					<span class="range-slider-active-segment"></span>
+  					<input name="bill-field" type="hidden">
+				</div>
+				<small class="error">Name is required and must be a string.</small>
+			</div>
+			<!-- <div class=" large-4 columns">
+				<label>What is your monthly electric bill?
+					<input name="bill-field" type="text">
+				</label>
+				<small class="error">Name is required and must be a string.</small>
+			</div> -->
+			<div class="large-4 columns">
+				<label>For residential or commercial?</label>
+				<input name="select-residential-field" value="X" id="select-residential" type="checkbox"><label for="select-residential">Residential</label>
+				<input name='select-commercial-field' value="X" id="select-commercial" type="checkbox"><label for="select-commercial">Commercial</label>
+			</div>
+			<div class="elec-or-water-field large-4 columns">
+				<label>Solar electric or solar hot water?</label>
+				<input name="select-electric-field" value="X" id="select-electric" type="checkbox"><label for="select-electric">Solar Electric</label>
+				<input name="select-hotwater-field" id="select-hotwater" value="X" type="checkbox"><label for="select-hotwater">Solar Hot Water</label>
+			</div>
 		</div>
-		<div class="large-2 columns">
-			<label>State <small>required</small>
-				<input name="state-field" type="text" required>
-			</label>
-			<small class="error">Include state</small>
+
+		<div class="row">
+			<div class="comments-field large-12 columns">
+				<label for="comments-field">Comments
+					<textarea name="comments-field" placeholder="Enter your comments here"></textarea>
+				</label>
+			</div>
 		</div>
-		<div class="large-2 columns">
-			<label>Zip <small>required</small>
-				<input name="zip-field"  maxlength="5" type="text" required>
-			</label>
-			<small class="error">Include Zip</small>
-		</div>
-	</div>
 
+		<button type="submit">Submit</button>
+	</form>
 
-
-
-
-	<div class="row">
-		<div class="large-4 columns">
-			<label>Your phone number <small>required</small>
-				<input name="phone-field" type="text" required>
-			</label>
-			<small class="error">Not a valid Number</small>
-		</div>
-		<div class="large-6 columns">
-			<label>Email <small>required</small>
-				<input name="email-field" type="email" required>
-			</label>
-			<small class="error">Not a valid Email</small>
-		</div>
-		<div class="large-2 columns">
-			<label>Best contact time 
-				<input name="contact-time-field" type="text">
-			</label>
-			<small class="error">Enter Correct Time</small>
-		</div>
-	</div>
-
-
-
-
-
-
-	<div class="row">
-		<div class=" large-4 columns">
-			<label>What is your monthly electric bill?
-				<input name="bill-field" type="text">
-			</label>
-			<small class="error">Name is required and must be a string.</small>
-		</div>
-		<div class="large-4 columns">
-			<label>For residential or commercial?</label>
-			<input name="select-residential-field" value="X" id="select-residential" type="checkbox"><label for="select-residential">Residential</label>
-			<input name='select-commercial-field' value="X" id="select-commercial" type="checkbox"><label for="select-commercial">Commercial</label>
-		</div>
-		<div class="elec-or-water-field large-4 columns">
-			<label>Solar electric or solar hot water?</label>
-			<input name="select-electric-field" value="X" id="select-electric" type="checkbox"><label for="select-electric">Solar Electric</label>
-			<input name="select-hotwater-field" id="select-hotwater" value="X" type="checkbox"><label for="select-hotwater">Solar Hot Water</label>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="comments-field large-12 columns">
-			<label for="comments-field">Comments
-				<textarea name="comments-field" placeholder="Enter your comments here"></textarea>
-			</label>
-		</div>
-	</div>
-
-	<button type="submit">Submit</button>
-</form>
-
-<a class="close-reveal-modal">&#215;</a>
+	<a class="close-reveal-modal">&#215;</a>
 </div>
 
 
