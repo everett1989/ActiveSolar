@@ -20,27 +20,56 @@ $(document).foundation({
   },
 
   'abide':{
+    live_validate : false,
 
     patterns:{
+      phone: /^\D?(\d{3})\D?\D?(\d{3})\D?(\d{4})$/,
+     // name: /^([A-Z][a-z]+)\s([A-Z][a-zA-Z-]+)$/,
+      zip: /\d{5}/,
+      time: /./
+     // time : /^(0[0-9]|1[0-9]|2[0-3])(:[0-5][0-9]){2}$/,
+      //'phone': '^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$'
+
+
       // time: /^(0[0-9]|1[0-9]|2[0-3])(:[0-5][0-9]){2}$/
-      time: '[a-zA-Z0-9]'
+      // time: '[a-zA-Z0-9]'
       //time: /^(0?[1-9]|1[012])(:[0-5]\d) [APap][mM]$/
 
     }
 
-  }
+  },
+   slider: {
+      start: 1,
+      end: 1000,
+      step: 1,
+      initial: 200,
+      display_selector: '#bill-result'
+
+    }
+  
 
 });
+
+
+
+
+$(document).on('opened', '#quote', function () {
+  $(this).foundation('slider', 'reflow');
+
+});
+
+//$(document).foundation( 'reflow');
 
 
 $(document).ready(function(){
 
   $('form[name="contactform"]').on('valid', function() {
-    form_info =  $('form[name="contactform"]').serialize();
 
-    $.post("source/asp/send_form_email.asp",form_info, function(data) {
+    form_info =  $(this).serialize();
+    //alert(form_info);
 
-    }).done(function(){
+    $.post("source/asp/send_form_email.asp",form_info)
+    .done(function(){
 
 
       $('#contact-success').foundation('reveal', 'open');

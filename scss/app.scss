@@ -55,7 +55,8 @@
   "foundation/components/top-bar",
   "foundation/components/type",
   //"foundation/components/offcanvas",
-  "foundation/components/visibility";
+  "foundation/components/visibility",
+  "foundation/components/range-slider";
 
 
 
@@ -71,13 +72,13 @@
   @import "pages";
 
 
-html{//Removes right space on site while in mobile
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden; 
-}
+// html{//Removes right space on site while in mobile
+//   width: 100%;
+//   height: 100%;
+//   margin: 0px;
+//   padding: 0px;
+//   overflow-x: hidden; 
+// }
 
 
 
@@ -147,9 +148,8 @@ html{//Removes right space on site while in mobile
   overflow:hidden;
 
   h1{
-    font-size: 3em; 
-    @media #{$medium-only} {font-size: 2.7em;}
-    @media #{$small-only} {font-size: 1.7em;}
+    font-size: 3em;
+    padding-right: 1em;
     margin-top: 0px;
     position: absolute;
     top: 0;
@@ -157,8 +157,12 @@ html{//Removes right space on site while in mobile
     color:white;
     background:rgba($primary-color, .7);//$secondary-color;
     border-bottom-right-radius: 2em;
-    padding-right: 1em;
-    font-style: italic;
+    font-style: italic; 
+    @media #{$medium-only} {font-size: 2.7em;}
+    @media #{$small-only} {
+      font-size: 1.7em;
+      padding-right: 2em;
+    }
   }
 }
 

@@ -11,6 +11,8 @@
  $warning-color: #f08a24;
  $info-color: #a0d3e8;
 
+ //$form-label-font-color: $primary-color;// scale-color(#000, $lightness: 30%);
+
  
 
  $footer-color: scale-color($primary-color,$lightness: 13%);
@@ -71,6 +73,8 @@ $topbar-link-bg-active-hover: scale-color($primary-dark, $lightness: -14%);
 //$topbar-title-font-size: 15px;
 $topbar-link-font-size:  15px;
 //$topbar-link-font-size: rem-calc(13);
+$topbar-menu-link-color-toggled: scale-color($light-font, $lightness: -20%);;
+// $topbar-menu-icon-color-toggled: #888;
 
 
 
@@ -116,5 +120,8 @@ $topbar-media-query: "only screen and (min-width: #{$topbar-breakpoint})";
 // $callout-panel-link-color: $primary-color;
 
 $hr-color: #9B9B9B;//#dddddd;
+
+
+
 
 
