@@ -3,9 +3,8 @@
 
 a:hover {
 	text-decoration:underline;
-	&.close-reveal-modal{
-		text-decoration: none;
-	}
+	&.close-reveal-modal{text-decoration: none;}
+	&.clearing-close{text-decoration: none;}
 }
 
 
@@ -14,6 +13,7 @@ a:hover {
 .indent{padding-left:35px;}
 
 .line-border{border-right: 1px solid white;}
+.line-border-special{@media #{$large-up} {border-right: 1px solid white;} }
 
 
 
@@ -45,6 +45,13 @@ a:hover {
 
 .highlight{ color: $secondary-color;}
 
+
+
+.bill-result-color{
+	margin-left:10px;
+	color:$secondary-color;
+	font-size:1.3em;
+}
 
 
 
