@@ -24,9 +24,10 @@ $(document).foundation({
 
     patterns:{
       phone: /^\D?(\d{3})\D?\D?(\d{3})\D?(\d{4})$/,
-     // name: /^([A-Z][a-z]+)\s([A-Z][a-zA-Z-]+)$/,
+      name: /^[A-Za-z .'-]+$/,
       zip: /\d{5}/,
-      time: /./
+      time: /./,
+      //time: /([01]?[0-9]|2[0-3]):[0-5][0-9]/
      // time : /^(0[0-9]|1[0-9]|2[0-3])(:[0-5][0-9]){2}$/,
       //'phone': '^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$'
 
@@ -82,4 +83,10 @@ $(document).ready(function(){
     });
 
   });
+});
+
+
+
+$(function() {
+    FastClick.attach(document.body);
 });

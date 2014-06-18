@@ -70,3 +70,23 @@ a.th{
 /***************END PROJECTS*********************/
 
 
+/****************CONTACT US************************/
+
+.contact-us {
+	 dl{
+	// line-height: 1;
+	font-style:italic;
+	font-size: .95rem;
+	& dd{
+		font-style:bold;
+		padding-left:20px;
+		//text-indent:20px;
+	}
+}
+  img {max-height: 275px;}
+
+}
+
+/*************END CONTACT US***********************/
+
+
