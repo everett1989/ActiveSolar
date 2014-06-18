@@ -2,34 +2,43 @@
 layout: fundamental
 title: Contact Us
 ---
+{% assign imgSrc = "source/img/pages/contact_page/" %}
 
+<div class="row has-icons row-space content-attr contact-us ">
 
-<div class=" panel  row">
-	<div class="large-12  columns">
-
-		<dl>
-			<dt>Phone</dt>
-			<dd>{{ site.data.contact.phone }}</dd>
-			<dt>Email</dt>
-			<dd>{{ site.data.contact.email }}</dd>
-			<dt>PO-Box</dt>
-			<dd>{{ site.data.contact.pobox}}</dd>
-
-		</dl>
-
-
-
+	<!-- <div class="row"> -->
 		
+		<div class="large-12  columns">
+			<h3 class="hr-bottom"><i class="fi-lightbulb"></i>&nbsp;Get in touch</h3>
+		</div>
+		<div class="large-8  columns">
+
+			<p>Contact Active Solar Development to see how much money we can save your business on energy!</p>
+
+			<img src="{{ imgSrc }}contact-us-solar-panel-house.jpg" alt="">
+		</div>
+
+		<div class="large-4 columns panel contact-us-list">
+			<dl>
+				<dt>Phone</dt>
+				<dd class="highlight">{{ site.data.contact.phone }}</dd>
+				<dt>Email</dt>
+				<dd class="highlight">{{ site.data.contact.email }}</dd>
+				<dt>PO-Box</dt>
+				<dd class="highlight">{{ site.data.contact.pobox}}</dd>
+				<dt>Address</dt>
+				<dd class="highlight">{{ site.data.contact.address}}</dd>
+			</dl>
+		</div>
 	</div>
-	<!-- <div class="large-12 columns"> -->
+	
+<hr>
+<div class="row has-icons row-space">
 
-		<input id="pac-input" class="controls" type="text" placeholder="Enter your Address for Directions">
-		<div id="map-canvas"></div>
-		<!-- <div id="directions-panel"></div> -->
-	<!-- </div> -->
-	<!-- <div class="large-12  columns"> -->
-		<div id="directions-panel"></div>
-	<!-- </div> -->
+	<div class="large-12  columns">
+	<input id="pac-input" class="controls" type="text" placeholder="Enter your Address for Directions">
+	<div id="map-canvas"></div>
 
-
+	<div id="directions-panel"></div>
+	</div>
 </div>

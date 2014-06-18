@@ -38,11 +38,11 @@ ul.side-links {//For the sticky side-nav
 	background: rgba(84, 80, 43, 0);
 	i{font-size: 25px;}
 	@media  #{$small-only} {position: static !important;}
-   }
+}
 
 
-   .magellan-nav{	
-   	background: $body-bg;
+.magellan-nav{	
+	background: $body-bg;
 	padding-bottom:0px;
 	margin-left: -16px;
 	margin-bottom: 40px;
@@ -54,69 +54,64 @@ dl.sub-nav{//For quick anchor scrolling
 	}
 
 
-	@mixin magellan-color-adjust($color){
+@mixin magellan-color-adjust($color){	
 	background:$color;
 
-	&:hover{background: scale-color($color, $lightness: -14%);}
-	}
-	& dd.active.comm-color a {
-		@include magellan-color-adjust($commercial-color);	
-	}
-	& dd.active.res-color a {
-		@include magellan-color-adjust($residential-color);
-	}
+	&:hover{background: scale-color($color, $lightness: -14%);} }
+	& dd.active.comm-color a {@include magellan-color-adjust($commercial-color);}
+	& dd.active.res-color a { @include magellan-color-adjust($residential-color);}
 }
 
 @mixin single-type-theme($color){
-	& dd.active a {
-		background:$color;
-		&:hover{background: scale-color($color, $lightness: -14%);}
-	}
-}
-dl.sub-nav-comm{@include single-type-theme($commercial-color);}
-dl.sub-nav-res{@include single-type-theme($residential-color);}
-
-
-
-/******************END MAGELLAN************************************/
-
-
-
-/*******************LABELS*****************************************/
-
-
-
-
-/*********************END LABELS***********************************/
-
-
-/*********************TOP-MENU**************************************/
-
-.header-menu{
-
-
-
-	background: $primary-color;
-	border-top: 1px solid $light-font;
-	border-bottom: 1px solid $light-font;
-
-	nav{
-
-		li.divider{border-right: solid 1px $light-font !important;}
-		.active{text-decoration:underline;}
-		ul.dropdown{
-			li.divider{border-top: solid 1px $light-font !important;}
+		& dd.active a {
+			background:$color;
+			&:hover{background: scale-color($color, $lightness: -14%);}
 		}
 	}
-
-}
-
-
-
-/************************EMD TOP-MENU********************************/
+	dl.sub-nav-comm{@include single-type-theme($commercial-color);}
+	dl.sub-nav-res{@include single-type-theme($residential-color);}
 
 
-/************************GOOGLE MAPS API********************************/
+
+	/******************END MAGELLAN************************************/
+
+
+
+	/*******************LABELS*****************************************/
+
+
+
+
+	/*********************END LABELS***********************************/
+
+
+	/*********************TOP-MENU**************************************/
+
+	.header-menu{
+
+
+
+		background: $primary-color;
+		border-top: 1px solid $light-font;
+		border-bottom: 1px solid $light-font;
+
+		nav{
+
+			li.divider{border-right: solid 1px $light-font !important;}
+			.active{text-decoration:underline;}
+			ul.dropdown{
+				li.divider{border-top: solid 1px $light-font !important;}
+			}
+		}
+
+	}
+
+
+
+	/************************EMD TOP-MENU********************************/
+
+
+	/************************GOOGLE MAPS API********************************/
 
       // .controls {
       //   margin-top: 16px;
@@ -130,42 +125,49 @@ dl.sub-nav-res{@include single-type-theme($residential-color);}
       // }
 
       #pac-input {
-        background-color: #fff;
-        padding: 0 11px 0 13px;
-        width: 400px;
-        font-family: Roboto;
-        font-size: 15px;
-        font-weight: 300;
-        text-overflow: ellipsis;
+      	background-color: #fff;
+      	padding: 0 11px 0 13px;
+      	width: 400px;
+      	font-family: Roboto;
+      	font-size: 15px;
+      	font-weight: 300;
+      	text-overflow: ellipsis;
+      	top:25px !important;
+      	@media #{$small-only} {width: 200px;}
+
+      	&:focus{
+      		border-color: #4d90fe;
+      		margin-left: -1px;
+      		padding-left: 14px;  /* Regular padding-left + 1. */
+      		//width: 401px;
+      	}
       }
 
-      #pac-input:focus {
-        border-color: #4d90fe;
-        margin-left: -1px;
-        padding-left: 14px;  /* Regular padding-left + 1. */
-        width: 401px;
-      }
+      .gm-style-iw div {overflow: hidden !important;}
+
 
       .pac-container {
-        font-family: Roboto;
+      	font-family: Roboto;
       }
 
-.page-map, .ui-content, #map-canvas { width: 100%; height: 400px; padding: 0; }
+      .page-map, .ui-content, #map-canvas { 
+      	width: 100%; height: 400px; padding: 0;
+      	 }
 
-#map-canvas img {
-    max-width: none;
-}
-#directions-panel{
-  img.adp-marker {
-    /* width: 22px; */
-/* height: 40px; */
-height:initial;
-width:initial;
-/* display: block; */
-margin-left: 20px;
-padding-right: 30px;
+      #map-canvas img {
+      	max-width: none;
+      }
+      #directions-panel{
+      	img.adp-marker {
+      		/* width: 22px; */
+      		/* height: 40px; */
+      		height:initial;
+      		width:initial;
+      		/* display: block; */
+      		margin-left: 20px;
+      		padding-right: 30px;
 
-  }
-}
+      	}
+      }
 
 /********************END GOOGLE MAPS API********************************/
