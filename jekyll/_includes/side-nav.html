@@ -15,13 +15,13 @@
 		<div class="row"> 
 			<div class="first-name-field large-6 columns">
 				<label>First Name <small>required</small>
-					<input type="text" name="first-name-field" required >
+					<input type="text" name="first-name-field" required pattern="name" >
 				</label>
 				<small class="error">Please include your first name</small>
 			</div>
 			<div class="last-name-field large-6 columns">
 				<label>Last Name <small>required</small>
-					<input name="last-name-field" type="text" required >
+					<input name="last-name-field" type="text" required   pattern="name">
 				</label>
 				<small class="error">Please include your last name</small>
 			</div>
@@ -31,13 +31,13 @@
 		<div class="row">
 			<div class="large-4 columns">
 				<label>Street Address <small>required</small>
-					<input name="street-address-field" type="text" required>
+					<input name="street-address-field" type="text" required  >
 				</label>
 				<small class="error">Please include your Street Address</small>
 			</div>
 			<div class="large-4 columns">
 				<label>City <small>required</small>
-					<input name="city-field" type="text" required >
+					<input name="city-field" type="text" required pattern="name" >
 				</label>
 				<small class="error">Include City</small>
 			</div>
@@ -159,12 +159,7 @@
 				</div>
 				<small class="error">Name is required and must be a string.</small>
 			</div>
-			<!-- <div class=" large-4 columns">
-				<label>What is your monthly electric bill?
-					<input name="bill-field" type="text">
-				</label>
-				<small class="error">Name is required and must be a string.</small>
-			</div> -->
+
 			<div class="large-4 columns">
 				<label>For residential or commercial?</label>
 				<input name="select-residential-field" value="X" id="select-residential" type="checkbox"><label class="highlight" for="select-residential">Residential</label>
@@ -192,21 +187,6 @@
 </div>
 
 
-<!-- <div id="electric" class="reveal-modal" data-reveal>
-
-	<h2>Solar Electric</h2>
-
-	<a class="close-reveal-modal">&#215;</a>
-</div> -->
-
-<!-- <div id="hot-water" class="reveal-modal" data-reveal>
-
-	<h2>Solar Hot Water</h2>
-
-
-
-	<a class="close-reveal-modal">&#215;</a>
-</div> -->
 
 <div id="contact" class="reveal-modal" data-reveal>
 
@@ -237,9 +217,3 @@
 	
 </div>
 
-<div id="contact-failure" class="reveal-modal" data-reveal>
-
-	<h2>Failure!</h2>
-	<a class="close-reveal-modal">&#215;</a>
-	
-</div>

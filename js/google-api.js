@@ -16,10 +16,12 @@ function initialize() {
 
   var mapOptions = {
     center: endLocation,
-    zoom: 13
+    zoom: 11
   };
   var map = new google.maps.Map(document.getElementById('map-canvas'),
     mapOptions);
+
+  map.panBy(0, -100);
 
 
   var solarMarker = new google.maps.Marker({
@@ -34,12 +36,18 @@ function initialize() {
   });
 
   solarInfowindow.open(map,solarMarker);
+
+   
+
   
 
 
   // google.maps.event.addListener(marker, 'click', function() {
   //   infowindow.open(map,marker);
   // });
+ google.maps.event.addListener(solarMarker, 'click', function() {
+    solarInfowindow.open(map,solarMarker);
+  });
 
 
   directionsDisplay.setMap(map);
