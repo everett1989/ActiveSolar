@@ -3,6 +3,9 @@ layout: fundamental
 title: Home
 ---
 
+{% assign res-slider-img-src = "source/img/pages/index_page/slider-pics/Residential_Slider_Pics/"  %}
+{% assign com-slider-img-src = "source/img/pages/index_page/slider-pics/Commercial_Slider_Pics/"  %}
+
 <div class=" hide-for-medium-up has-icons row">
 	<h3 class="hr-bottom">Welcome</h3>
 	<div class="small-12 columns">
@@ -10,8 +13,8 @@ title: Home
 	</div> 
 
 	<div class="small-12 columns ">
-		<!-- <h3 class="title-box-res text-center">Premium Solar Panels</h3> -->
-		<img class="" src="https://assets.nerdwallet.com/blog/finance/files/2012/08/solar-panels.png" alt="">
+		<h3 class="title-box-res text-center">Premium Solar Panels</h3>
+		<img class="" src="{{ res-slider-img-src }}Residential-PV-Install-Broadalbin-NY.jpg" alt="">
 	</div>
 </div>
 
@@ -21,7 +24,7 @@ title: Home
 		<h3 class="title-box-res text-center">Residential</h3>
 		<ul class ="slider_img" data-orbit>
 			<li>
-				<img src="source/img/slider-pics/Residential_Slider_Pics/Residential-PV-Install-Barn-Galway-NY.jpg" alt="slide 1">
+				<img src="{{ res-slider-img-src }}Residential-PV-Install-Barn-Galway-NY.jpg" alt="slide 1">
 
 				<div class="orbit-caption">
 					Galway NY 
@@ -30,7 +33,7 @@ title: Home
 				</div>
 			</li>
 			<li>
-				<img src="source/img/slider-pics/Residential_Slider_Pics/Residential-PV-Install-Broadalbin-NY.jpg" alt="slide 2">
+				<img src="{{ res-slider-img-src }}Residential-PV-Install-Broadalbin-NY.jpg" alt="slide 2">
 
 				<div class="orbit-caption">
 					Broadalbin, NY 
@@ -39,7 +42,7 @@ title: Home
 				</div>
 			</li>
 			<li>
-				<img src="source/img/slider-pics/Residential_Slider_Pics/Residential-PV-Install-Saratoga-Springs-NY.jpg" alt="slide 3">
+				<img src="{{ res-slider-img-src }}Residential-PV-Install-Saratoga-Springs-NY.jpg" alt="slide 3">
 
 				<div class="orbit-caption">
 					Saratoga Springs, NY
@@ -57,19 +60,19 @@ title: Home
 		<h3 class="title-box-com text-center">Commercial</h3>
 		<ul class ="slider_img" data-orbit>
 			<li>
-				<img src="source/img/slider-pics/Commercial_Slider_Pics/Commercial-Solar-Hot-Water-AZ.jpg" alt="slide 1">
+				<img src="{{com-slider-img-src}}Commercial-Solar-Hot-Water-AZ.jpg" alt="slide 1">
 				<div class="orbit-caption">
 					Caption One.
 				</div>
 			</li>
 			<li>
-				<img src="source/img/slider-pics/Commercial_Slider_Pics/Commercial-Solar-Hot-Water-Install.jpg" alt="slide 2">
+				<img src="{{com-slider-img-src}}Commercial-Solar-Hot-Water-Install.jpg" alt="slide 2">
 				<div class="orbit-caption">
 					Caption Two.
 				</div>
 			</li>
 			<li>
-				<img src="source/img/slider-pics/Commercial_Slider_Pics/Solar-Process-Water.jpg" alt="slide 3">
+				<img src="{{com-slider-img-src}}Solar-Process-Water.jpg" alt="slide 3">
 
 				<div class="orbit-caption">
 					Caption Four.

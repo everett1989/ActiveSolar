@@ -5,6 +5,7 @@
 @import "compass"; 
 
 @import "../bower_components/foundation/scss/foundation/settings";
+@import "../bower_components/foundation-icon-fonts/foundation-icons";
 //@import "settings";
 @import "constants";
 
@@ -12,7 +13,7 @@
 //@import "stackicons-social-minimal";
 
 
-@import "foundation-icons";
+//@import "foundation-icons";
 //@import "font-awesome.scss";
 
 
@@ -142,12 +143,14 @@
 .page-banner{
   box-shadow: 3px 3px 3px;
   margin-bottom: 5px !important;
-  img{min-width: 450px;}
+ // img{min-width: 450px;}
+ & img{width:100%;}
 
   width:100%;
   overflow:hidden;
 
   h1{
+    padding-left: .5em;
     text-rendering: initial;
     font-size: 3em;
     padding-right: 1em;

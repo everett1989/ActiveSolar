@@ -64,19 +64,21 @@ $(document).on('opened', '#quote', function () {
 $(document).ready(function(){
 
   $('form[name="contactform"]').on('valid', function() {
-
-    form_info =  $(this).serialize();
-    //alert(form_info);
+    var form = $(this);
+    var form_info =  form.serialize();
+    var print_response = $('#message');
 
     $.post("source/asp/send_form_email.asp",form_info)
-    .done(function(){
+    .done(function(response){
 
-
-      $('#contact-success').foundation('reveal', 'open');
-
+      print_response.text(response);      
+      form[0].reset();
 
     }).fail(function(){
-      $('#contact-failure').foundation('reveal', 'open');
+        print_response .text("Sorry but there was an error! Please contact us via phone or Email");
+    }).always(function(){
+      $('#contact-success').foundation('reveal', 'open');
+
     });
 
   });

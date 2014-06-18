@@ -220,8 +220,8 @@ grunt.registerTask('minijs', ['uglify']);
 // grunt.loadNpmTasks('grunt-contrib-concat');
 
 
-grunt.loadNpmTasks('grunt-bowercopy');
-grunt.loadNpmTasks('grunt-jekyll');
+//grunt.loadNpmTasks('grunt-bowercopy');
+//grunt.loadNpmTasks('grunt-jekyll');
 //grunt.registerTask("copy",['bowercopy'])
 
 // grunt.loadNpmTasks('grunt-bower');
