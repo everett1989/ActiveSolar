@@ -48,14 +48,11 @@ module.exports = function(grunt) {
         optimizationLevel: 7
       },
       files: [
-      {
-          // Set to true to enable the following options…
-          expand: true,
-          // cwd is 'current working directory'
-          cwd: './img/',
-          src: ['**/*.png'],
-          // Could also match cwd line above. i.e. ./img/
-          dest: './jekyll/source/img/',
+      {         
+          expand: true,// Set to true to enable the following options…     
+          cwd: './img/', // cwd is 'current working directory'
+          src: ['**/*.png'],      
+          dest: './jekyll/source/img/',  // Could also match cwd line above. i.e. ./img/
           ext: '.png'
         }
         ]
@@ -65,14 +62,11 @@ module.exports = function(grunt) {
           progressive: true
         },
         files: [
-        {
-          // Set to true to enable the following options…
-          expand: true,
-          // cwd is 'current working directory'
-          cwd: './img/',
-          src: ['**/*.jpg'],
-          // Could also match cwd. i.e. ./img/
-          dest: './jekyll/source/img/',
+        {     
+          expand: true,// Set to true to enable the following options…         
+          cwd: './img/',// cwd is 'current working directory'
+          src: ['**/*.jpg'],     
+          dest: './jekyll/source/img/',// Could also match cwd. i.e. ./img/
           ext: '.jpg'
         }
         ]
@@ -94,17 +88,7 @@ htmlmin: {                                     // Task
           dest: './site',   // Destination path prefix.
         },
         ]
-      // files: {                                   // Dictionary of files
-      //   './site/*': './site/*',     // 'destination': 'source'
-      //   //'dist/contact.html': 'src/contact.html'
-      // }
     },
-    // dev: {                                       // Another target
-    //   files: {
-    //     'dist/index.html': 'src/index.html',
-    //     'dist/contact.html': 'src/contact.html'
-    //   }
-    // }
   },
 
   /*********************UGLIFY JS*********************/
@@ -126,40 +110,29 @@ htmlmin: {                                     // Task
     }
   },
 
+   smushit: {
 
-///Concaticnation/////////////////
-  //  directives: {
-  //   // options: {
-  //   //   // Task-specific options go here.
-  //   //    files: { 'dest/output': 'src/input' },
-  //   // },
-  //   your_target: {
+    // src folder is 'tests/img' and dest is 'tests/opt_img'
+    group1: {
+      cwd: './img/',
+      expand: true,
+      src: ['**/*.jpg','**/*.png'],
+      dest: './jekyll/source/img/'
+    }
+   
+ // {     
+ //    expand: true,// Set to true to enable the following options…         
+ //    cwd: './img/',// cwd is 'current working directory'
+ //    src: ['**/*.jpg'],     
+ //    dest: './jekyll/source/img/',// Could also match cwd. i.e. ./img/
+ //    ext: '.jpg'
+ //        }
 
-  //     files: { 'jekyll/_assets/javascripts/test.js': 'foundation/js/vendor/jquery.js',
-  //      'jekyll/_assets/javascripts/test.js': 'foundation/js/foundation.min.js'},
-  //     // Target-specific file lists and/or options go here.
-  //   },
-  // },
 
-  //  concat: {
-  //   options: {
-  //     separator: ';',
-  //   },
-  //   dist: {
-  //     src: ['bower_components/foundation/js/vendor/jquery.js', 'bower_components/foundation/js/foundation.min.js'],
-  //     dest: 'jekyll/_assets/javascripts/test.js',
-  //   },
-  // },
+  },
 
 
 
-  //   jekyll: {                             // Task
-  //   options: {                          // Universal options
-  //     watch: true,
-  //     serve:true
-      
-  //   }
-  // },
 
   watch: {
     grunt: { 
@@ -172,26 +145,33 @@ htmlmin: {                                     // Task
       tasks: ['compass:dev']
     },
 
-      // font_awesome:{ 
-      //   files: 'bower_components/font-awesome/**/*.scss',
-      //   tasks: ['compass:dev']
-      // },
+    uglify:{
+      files: ['js/*.js',],
+      tasks: ['uglify']
+    },
 
-      uglify:{
-        files: ['js/*.js',],
-        tasks: ['uglify']
-
+    sass: {
+      files: ['scss/**/*.scss','bower_components/foundation/scss/**/*.scss'],
+      tasks: ['compass:dev']
       },
 
-      sass: {
-        files: 'scss/**/*.scss',
-        //files: 'bower_components/stackicons-master/stackicons-social-minimal/**/*.scss',
-        tasks: ['compass:dev']
-      }
-    }
+    // minihtml:{
+    //   files: 'site/*.html',
+    //    tasks: ['newer:htmlmin']
+    // },
 
+    // smushit:{
+    //   files: 'img/**/*',
+    //   tasks: ['newer:smushit']
+    // }
 
-  });
+    // imagemin:{
+    //   files: 'img/**/*',
+    //   tasks: ['newer:imagemin']
+    // }
+  }
+
+});
 
 
 
@@ -213,6 +193,13 @@ grunt.registerTask('minihtml', ['htmlmin']);
 grunt.loadNpmTasks('grunt-contrib-uglify');
 grunt.registerTask('minijs', ['uglify']);
 
+grunt.registerTask('minipic', ['smushit']);
+grunt.loadNpmTasks('grunt-smushit');
+
+
+grunt.loadNpmTasks('grunt-newer');
+
+
 
 // grunt.loadNpmTasks('grunt-sprockets-directives');
 // grunt.registerTask('concat',['directives'])
@@ -228,4 +215,6 @@ grunt.registerTask('minijs', ['uglify']);
 // grunt.loadNpmTasks('grunt-bower');
 
 grunt.registerTask('default', ['compass:dev','watch']);
+
+
 }
