@@ -15,7 +15,11 @@ footer{
 		text-align:center;
 	}
 
-	.footer-cert img {@media #{$small-only} { width:65px;} }
+	.footer-cert img {
+		@media #{$small-only} { width:65px;}
+		//margin-top: .3em;
+		margin-bottom: .3em;
+	 }
 
 	.footer-items{
 		margin-top: 30px;	
@@ -29,6 +33,7 @@ footer{
 		border-top: 1px solid $light-font;
 		.copyright{padding-top: 15px;}
 	}
+
 }
 
 
