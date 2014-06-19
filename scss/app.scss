@@ -90,18 +90,23 @@
   hr.header{
     border:0px;
     height:2px;
-    @include background-image(linear-gradient(left, $hr-color,$panel-bg));
+    //@include background-image(linear-gradient(left, $hr-color,$panel-bg));
+    @include background-gradient(left, $hr-color,$panel-bg);
+
   }
 }
 
 @mixin content-attr-color($color){
    @extend .content-attr;
-   @include background-image(linear-gradient(top,  $color, $panel-bg 80px));
+   //@include background-image(linear-gradient(top,  $color, $panel-bg 80px));
+   @include background-gradient(top,  $color, $panel-bg 80px);
   i{color:$color;}
   a{color: $color;}
   h2{color: $color;}
   .hr-bottom{border-bottom: 3px solid $color;}
-  hr.header{ @include background-image(linear-gradient(left, $color,$panel-bg));}
+  hr.header{ //@include background-image(linear-gradient(left, $color,$panel-bg));
+   @include background-gradient(left, $color,$panel-bg);
+  }
   .panel{
     border-color: #BBB;
     h3{
@@ -127,7 +132,8 @@
     margin-top: -10px;
     border:0px;
     height:2px;
-    @include background-image(linear-gradient(left, $color,$body-bg));
+    //@include background-image(linear-gradient(left, $color,$body-bg));
+    @include background-gradient(left, $color,$body-bg);
   }
 }
 
@@ -179,7 +185,8 @@ hr.divide{
   margin-bottom: 30px;
   border: 0;
   height: 1px;
-  @include background-image(linear-gradient(left, white, $hr-color,white));
+  //@include background-image(linear-gradient(left, white, $hr-color,white));
+  @include background-gradient(left, $body-bg, $hr-color,$body-bg);
 }
 
 

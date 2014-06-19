@@ -121,7 +121,17 @@ $topbar-media-query: "only screen and (min-width: #{$topbar-breakpoint})";
 
 $hr-color: #9B9B9B;//#dddddd;
 
+@mixin background-gradient($direction,$first-color,$second-color,$third-color:"") {
+	@if ($third-color != ""){
+		@include background-image(linear-gradient($direction, $first-color,$second-color,$third-color ));
+		//@include background-image(linear-gradient(left, white, $hr-color,white));
+		background: -ms-linear-gradient($direction, $first-color,$second-color,#{$third-color});
 
+	} @else {
+		@include background-image(linear-gradient($direction, $first-color,$second-color));
+		background: -ms-linear-gradient($direction, $first-color,$second-color);
+	}
+}
 
 
 

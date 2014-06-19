@@ -1,7 +1,8 @@
 
 
 .logo-background{
-	@include background-image(linear-gradient(left, white,$primary-light));
+	//@include background-image(linear-gradient(left, white,$primary-light));
+	@include background-gradient(left,$body-bg, $primary-light)
 	// background: linear-gradient(to right, white, $primary-light);
 }
 
