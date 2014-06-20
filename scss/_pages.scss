@@ -90,3 +90,124 @@ a.th{
 /*************END CONTACT US***********************/
 
 
+.content-attr{
+  @extend .link-color, .has-icons;
+  img{box-shadow: 3px 3px 3px;}
+  hr.header{
+    border:0px;
+    height:2px;
+    //@include background-image(linear-gradient(left, $hr-color,$panel-bg));
+    @include background-gradient(left, $hr-color,$panel-bg);
+
+  }
+}
+
+@mixin content-attr-color($color){
+   @extend .content-attr;
+   //@include background-image(linear-gradient(top,  $color, $panel-bg 80px));
+   @include background-gradient(top,  $color, $panel-bg 80px);
+  i{color:$color;}
+  a{color: $color;}
+  h2{color: $color;}
+  .hr-bottom{border-bottom: 3px solid $color;}
+  hr.header{ //@include background-image(linear-gradient(left, $color,$panel-bg));
+   @include background-gradient(left, $color,$panel-bg);
+  }
+  .panel{
+    border-color: #BBB;
+    h3{
+      color:white;
+      text-shadow: 2px 2px grey;
+    }
+  }
+}
+
+@mixin color-theme($color){
+  @extend .content-attr;
+  h3,h2{
+    color:$color;
+    //text-shadow: 2px 2px grey;
+  }
+  hr.header{color:$color;}
+  //h2{margin-bottom:0;}
+  i{color:$color;}
+  a{color: $color;}
+  img{box-shadow: 3px 3px 3px;}
+  hr.header{
+    //color:$color;
+    margin-top: -10px;
+    border:0px;
+    height:2px;
+    //@include background-image(linear-gradient(left, $color,$body-bg));
+    @include background-gradient(left, $color,$body-bg);
+  }
+}
+
+.res{ @include color-theme($residential-color); }
+.comm{@include color-theme($commercial-color); }
+
+
+
+
+
+
+
+.page-banner{
+  box-shadow: 3px 3px 3px;
+  margin-bottom: 5px !important;
+ // img{min-width: 450px;}
+ & img{width:100%;}
+
+  width:100%;
+  overflow:hidden;
+
+  h1{
+    padding-left: .5em;
+    text-rendering: initial;
+    font-size: 3em;
+    padding-right: 1em;
+    margin-top: 0px;
+    position: absolute;
+    top: 0;
+    text-shadow: 2px 2px grey;
+    color:white;
+    background:rgba($primary-color, .7);//$secondary-color;
+    border-bottom-right-radius: 2em;
+    font-style: italic; 
+    @media #{$medium-only} {font-size: 2.7em;}
+    @media #{$small-only} {
+      text-rendering: initial;
+      font-size: 2em;
+    }
+  }
+}
+
+
+
+
+
+hr.divide{
+  margin-top:30px;
+  margin-bottom: 30px;
+  border: 0;
+  height: 1px;
+  //@include background-image(linear-gradient(left, white, $hr-color,white));
+  @include background-gradient(left, $body-bg, $hr-color,$body-bg);
+}
+
+
+
+a.anchor{
+  display: block;
+  position: relative;
+  top: -60px; 
+  visibility: hidden;
+}
+
+.type-heading{margin-bottom:10px;}
+
+.row-space{margin-top:30px !important;}
+
+.panel-space{
+  .panel{margin-bottom:50px;}
+}
