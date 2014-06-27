@@ -8,6 +8,9 @@
 <body>
 	{% include site-header.html %}
 	{% include top-nav.html %}
+	<!-- {% include site-off-canvas-top.html %} -->
+
+
 
 	<div class="row ">
 
@@ -23,12 +26,20 @@
 		</div>
 	</div>
 
+
+
+
 	{% include site-footer.html %}
+
+	<!-- {% include site-off-canvas-bottom.html %} -->
+
+
 
 
 	<!--[if lte IE 8]>
     <script src="source/js/ie8-alert.js"></script>
     <![endif]-->
+
  	
 	<script async type="text/javascript" src="source/js/app.min.js"></script>
 	{% if page.url == '/contact.html' %}
