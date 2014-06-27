@@ -55,7 +55,7 @@
   //"foundation/components/tooltips",
   "foundation/components/top-bar",
   "foundation/components/type",
-  //"foundation/components/offcanvas",
+  "foundation/components/offcanvas",
   "foundation/components/visibility",
   "foundation/components/range-slider";
 
@@ -118,10 +118,9 @@
 
 @mixin color-theme($color){
   @extend .content-attr;
-  h3,h2{
-    color:$color;
-    //text-shadow: 2px 2px grey;
-  }
+  h3{color:rgba($color,.75);}
+  // h3{color:lighten($color, 20);}
+  h2{color:$color;}
   hr.header{color:$color;}
   //h2{margin-bottom:0;}
   i{color:$color;}
