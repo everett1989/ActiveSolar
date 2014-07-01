@@ -89,35 +89,7 @@ htmlmin: {                                     // Task
 
   /*********************UGLIFY JS*********************/
   uglify: {
-
-    // foundation: {
-    //     files:{ 
-    //       "jekyll/source/js/app.min.js":[
-    //       'bower_components/foundation/js/vendor/jquery.js',
-    //       'bower_components/foundation/js/foundation/foundation.js',
-    //       'bower_components/foundation/js/foundation/foundation.abide.js',
-    //       'bower_components/foundation/js/foundation/foundation.clearing.js',
-    //       'bower_components/foundation/js/foundation/foundation.magellan.js',
-    //       'bower_components/foundation/js/foundation/foundation.orbit.js',
-    //       'bower_components/foundation/js/foundation/foundation.reveal.js',
-    //       'bower_components/foundation/js/foundation/foundation.slider.js',
-    //       'bower_components/foundation/js/foundation/foundation.topbar.js',
-    //       'js/foundation-options.js'
-
-    //       ]
-
-
-    //   }
-    //       //expand: true,
-    //       //cwd: 'bower_components/foundation/js/foundation',
-    //       //src: "jekyll/source/js/test":['foundation.js','abide.js']
-    //       //dest: 'jekyll/source/js/test'
-        
-    // },
-
-
-
-
+    
     js: {
       files: {
         
