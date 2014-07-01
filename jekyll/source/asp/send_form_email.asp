@@ -3,13 +3,13 @@ Dim email_to, email_subject, host, username, password, reply_to, port, from_addr
 Dim first_name, last_name, street_address, city,state, zip, email_from, telephone, select_residential, select_commercial, select_electric, select_hotwater, comments, error_message
 Dim ObjSendMail, email_message
 
-email_to = "extremezoo@gmail.com"  'Enter the email you want to send the form to
+email_to = "sales@activesolarusa.com"  'Enter the email you want to send the form to
 email_subject = "New Active Solar Customer"  'You can put whatever subject here
 host = "mail21.safesecureweb.com"   'The mail server name. (Commonly mail.yourdomain.xyz if your mail is hosted with HostMySite) 
-username = "extremezoo@activesolarusa.com"  'A valid email address you have setup 
-from_address = "extremezoo@activesolarusa.com" 'If your mail is hosted with HostMySite this has to match the email address above 
-password = "Today@123"  'Password for the above email address
-reply_to = "extremezoo@gmail.com"  'Enter the email you want customers to reply to
+username = "sales@activesolarusa.com"  'A valid email address you have setup 
+from_address = "sales@activesolarusa.com" 'If your mail is hosted with HostMySite this has to match the email address above 
+password = "Sales101"  'Password for the above email address
+reply_to = "sales@activesolarusa.com"  'Enter the email you want customers to reply to
 port = "25" 'This is the default port. Try port 50 if this port gives you issues and your mail is hosted with HostMySite
   
 Sub Died(errors)
