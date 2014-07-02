@@ -6,12 +6,23 @@
   {% if page.title != 'Home'%}<title>{{ page.title }} &ndash; Active Solar</title>{% endif %}
   {% if page.title == 'Home'%}<title>Active Solar &ndash; Home</title>{% endif %}
 
-  
-  <!-- <link rel="stylesheet" href="source/css/test.css"> -->
+
+	{% if page.url == '/index.html' %}
+
+		{% assign siteName = '' %}
+
+	{% else %}
+
+		{% assign siteName = page.url %}
+
+
+	{% endif %}
+
+
+	<link rel="canonical" href="http://www.activesolarusa.com{{ siteName }}"/>
 
   <link rel="stylesheet" href="source/css/app.css">
   <link rel="shortcut icon" href="source/img/favicon/Active-Solar-Favicon.ico">
-  <!-- <link rel="stylesheet" href="css/stackicons-social-minimal.css"> -->
 
   <script async src="source/js/modernizr.min.js"></script>
 
