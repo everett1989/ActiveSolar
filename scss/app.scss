@@ -148,11 +148,6 @@
 .page-banner{
   box-shadow: 3px 3px 3px;
   margin-bottom: 5px !important;
- // img{min-width: 450px;}
- & img{width:100%;}
-
-  width:100%;
-  overflow:hidden;
 
   h1{
     padding-left: .5em;
@@ -167,10 +162,7 @@
     border-bottom-right-radius: 2em;
     font-style: italic; 
     @media #{$medium-only} {font-size: 2.7em;}
-    @media #{$small-only} {
-      text-rendering: initial;
-      font-size: 2em;
-    }
+    @media #{$small-only} {font-size: 2em;}
   }
 }
 
