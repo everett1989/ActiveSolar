@@ -21,10 +21,17 @@ title: Contact Us
 		<div class="large-4 columns panel contact-us-list">
 			<h3>Contact Us</h3>
 			<dl>
-				<dt>Phone</dt>
-				<dd class="highlight">{{ site.data.contact.phone }}</dd>
+				<dt>Phone</dt>			
+				<dd class="highlight">
+					<span class="show-for-medium-up">{{ site.data.contact.phone }}</span>
+					<a class="show-for-small-only" href="tel:{{ site.data.contact.phone }}">{{ site.data.contact.phone }}</a>
+				</dd>
 				<dt>Email</dt>
-				<dd class="highlight">{{ site.data.contact.email }}</dd>
+				<dd class="highlight">
+					<a href="mailto:{{ site.data.contact.email }}?Subject=Contact%20ActiveSolar" target="_top">
+						{{ site.data.contact.email }}
+					</a>
+				</dd>
 				<!-- <dt>PO-Box</dt>
 				<dd class="highlight">{{ site.data.contact.pobox}}</dd> -->
 				<dt>Address</dt>
