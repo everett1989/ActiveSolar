@@ -148,6 +148,10 @@
 .page-banner{
   box-shadow: 3px 3px 3px;
   margin-bottom: 5px !important;
+  // @media #{$small-only} {
+  //   min-width: 600px;
+  //   overflow-x: hidden;
+  // }
 
   h1{
     padding-left: .5em;
