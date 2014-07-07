@@ -13,4 +13,5 @@ jeykll/_assets/*
 site/.settings/*
 site/.project
 site/WebContent/*
+jekyll/contact.html
 
