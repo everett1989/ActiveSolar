@@ -200,25 +200,33 @@
 <div>
 
 	<ul class="side-links no-bullet show-for-medium-up" data-magellan-expedition="fixed" >
+		
 		<li><a data-reveal-id="quote"  href="#"><i class="fi-clipboard-pencil"></i>&nbsp;Get a Quote</a></li>
-		<li><a href="solar-electric.html"><i class="fi-lightbulb"></i>&nbsp;Solar Electric</a></li>
-		<li><a href="solar-hotwater.html"><i class="fi-power"></i>&nbsp;Solar Hot Water</a></li>
+		
+		<!-- <li><a href="solar-electric.html"><i class="fi-lightbulb"></i>&nbsp;Solar Electric</a></li>
+		<li><a href="solar-hotwater.html"><i class="fi-power"></i>&nbsp;Solar Hot Water</a></li> -->
+		<li><a href="residential-services.html"><i class="fi-home"></i>&nbsp;Residential</a></li>
+		<li><a href="commercial-services.html"><i class="fi-torso-business"></i>&nbsp;Commercial</a></li>
 		<!-- <li><a data-reveal-id="contact"><i class="fi-telephone"></i>&nbsp;Contact Us</a></li> -->
+		
 		<li><a href="contact.html"><i class="fi-telephone"></i>&nbsp;Contact Us</a></li>
+		
 
 	</ul>
 </div>
+ 
 
 <div id="quote" class="reveal-modal" data-reveal>
-	<form data-abide="ajax" id="contactform" name="contactform" >
+	
+	<form data-abide="ajax" class="contactform" name="contactform" >
 		<div class="row"> 
-			<div class="first-name-field large-6 columns">
+			<div class="first-name-field medium-6 columns">
 				<label>First Name <small>required</small>
 					<input type="text" name="first-name-field" required pattern="name" >
 				</label>
 				<small class="error">Please include your first name</small>
 			</div>
-			<div class="last-name-field large-6 columns">
+			<div class="last-name-field medium-6 columns">
 				<label>Last Name <small>required</small>
 					<input name="last-name-field" type="text" required   pattern="name">
 				</label>
@@ -228,19 +236,19 @@
 
 
 		<div class="row">
-			<div class="large-4 columns">
+			<div class="medium-4 columns">
 				<label>Street Address <small>required</small>
 					<input name="street-address-field" type="text" required  >
 				</label>
 				<small class="error">Please include your Street Address</small>
 			</div>
-			<div class="large-4 columns">
+			<div class="medium-4 columns">
 				<label>City <small>required</small>
 					<input name="city-field" type="text" required pattern="name" >
 				</label>
 				<small class="error">Include City</small>
 			</div>
-			<div class="large-2 columns">
+			<div class="medium-2 columns">
 				<label>State <small>required</small>
 
 					<select name="state-field">
@@ -296,11 +304,10 @@
 						<option value="WI">Wisconsin</option>
 						<option value="WY">Wyoming</option>
 					</select>
-					<!-- <input name="state-field" type="text" required  > -->
 				</label>
 				<small class="error">Include state</small>
 			</div>
-			<div class="large-2 columns">
+			<div class="medium-2 columns">
 				<label>Zip <small>required</small>
 					<input name="zip-field"  maxlength="5" type="text" required pattern="zip">
 				</label>
@@ -313,20 +320,20 @@
 
 
 		<div class="row">
-			<div class="large-4 columns">
+			<div class="medium-4 columns">
 				<label>Your phone number <small>required</small>
 					<input name="phone-field" type="text" required pattern="phone">
 				</label>
 				<small class="error">Not a valid Number</small>
 			</div>
-			<div class="large-6 columns">
+			<div class="medium-6 columns">
 				<label>Email <small>required</small>
 					<input name="email-field" type="email" required>
 				</label>
 				<small class="error">Not a valid Email</small>
 			</div>
-			<div class="large-2 columns">
-				<label>Best contact time 
+			<div class="medium-2 columns">
+				<label>Contact Time 
 					<input name="contact-time-field" type="time">
 				</label>
 				<small class="error">Enter Correct Time</small>
@@ -334,10 +341,10 @@
 		</div>
 
 		<div class="row">
-			<div class="large-4  columns" >
-				<label>What is your monthly electric bill? 
+			<div class="medium-4  columns" >
+				<label>Monthly Electric Bill 
 					<span class="bill-result-color">&#36;
-						<span id="bill-result"></span>
+						<span class="bill-result"></span>
 					</span>
 				</label>
 
@@ -349,20 +356,34 @@
 				<small class="error">Name is required and must be a string.</small>
 			</div>
 
-			<div class="large-4 columns">
-				<label>For residential or commercial?</label>
-				<input name="select-residential-field" value="X" id="select-residential" type="checkbox"><label class="highlight" for="select-residential">Residential</label>
-				<input name='select-commercial-field' value="X" id="select-commercial" type="checkbox"><label class="highlight" for="select-commercial">Commercial</label>
+			<div class="medium-4 columns">
+				<label>For Residential and/or Commercial?</label>
+				<div class="row">	
+					<div class="large-12 columns">
+						<input name="select-residential-field" value="X" id="select-residential" type="checkbox"><label class="highlight bold" for="select-residential">Residential</label>					
+					</div>
+
+					<div class="large-12 columns">
+						<input name='select-commercial-field' value="X" id="select-commercial" type="checkbox"><label class="highlight bold" for="select-commercial">Commercial</label>					
+					</div>
+				</div>
 			</div>
-			<div class="elec-or-water-field large-4 columns">
-				<label>Solar electric or solar hot water?</label>
-				<input name="select-electric-field" value="X" id="select-electric" type="checkbox"><label class="highlight" for="select-electric">Solar Electric</label>
-				<input name="select-hotwater-field" id="select-hotwater" value="X" type="checkbox"><label class="highlight" for="select-hotwater">Solar Hot Water</label>
+			<div class="elec-or-water-field medium-4 columns">
+				<label>Solar Electric and/or Solar Hot Water?</label>
+				<div class='row'>
+					<div class='large-12 columns'>
+						<input name="select-electric-field" value="X" id="select-electric" type="checkbox"><label class="highlight bold" for="select-electric">Solar Electric</label>
+					</div>
+					
+					<div class='large-12 columns'>
+						<input name="select-hotwater-field" id="select-hotwater" value="X" type="checkbox"><label class="highlight bold" for="select-hotwater">Solar Hot Water</label>
+					</div>
+				</div>
 			</div>
 		</div>
 
 		<div class="row">
-			<div class="comments-field large-12 columns">
+			<div class="comments-field medium-12 columns">
 				<label>Comments
 					<textarea name="comments-field" placeholder="Enter your comments here"></textarea>
 				</label>
@@ -374,38 +395,6 @@
 
 	<a class="close-reveal-modal">&#215;</a>
 </div>
-
-
-
-<!-- <div id="contact" class="reveal-modal" data-reveal>
-
-	<h2> Contact Us</h2>
-<div class="row">
-	<div class="large-8 columns">
-		<p>Contact Active Solar Development to see how much money we can save your business on energy!</p>
-		
-	</div>
-	<div class="large-4 columns">
-
-	<dl>
-		<dt>Phone</dt>
-		<dd>800-865-3625</dd>
-		<dt>Email</dt>
-		<dd>sales@activesolarusa.com</dd>
-		<dt>PO-Box</dt>
-		<dd>PO Box 23 - Amsterdam, NY 12010</dd>
-	</dl>
-
-		
-	</div>
-	
-	
-</div>
-
-
-	<a class="close-reveal-modal">&#215;</a>
-	
-</div> -->
 
 
 <div id="contact-success" class="reveal-modal" data-reveal>
@@ -494,26 +483,27 @@
 <div class="row content-attr row-space">
 	<div  class="large-12 columns">
 		<a class="anchor" name="phase-1"></a>
-		<h3 data-magellan-destination="phase-1" class="subheader"><i class="fi-map"></i>&nbsp;Phase 1 |  Site Visit</h3>
+		<h3 data-magellan-destination="phase-1" class="subheader"><i class="fi-map"></i>&nbsp;Phase 1 |  Site Evaluation</h3>
 	</div>
 
 	<div  class="medium-9 columns">
-		<p>Active Solar Development breaks its projects into three phases. Phase one involves customer relationship building, and the planning and design of the project. a free site evaluation at your desired location, followed by a proposal for the system that will best suit your needs.</p>
+		<p>Active Solar Development breaks its projects into three phases. Phase One involves customer relationship building and a free site evaluation at your desired location.</p>
 
+		<h6>You can expect:</h6>
 		<ul class="circle">
-			<li>On-site visit</li>
-			<li>Current energy profile assessment</li>
+			<li>On-site visit including solar energy potetial which will answer these questions:
+				<ul class='disc initial'>
+					<li>Do you have a south facing or near-south facing roof ?</li>
+					<li>Is your roof unobstructed and not shaded?</li>
+					<li>Is your property free from deed restrictions on solar-panel systems?</li>
+					<li>Is your roof in good condition?</li>
+					<li>Do you have open land that may be suitable for a ground mounted system?</li>
+				</ul>
+			</li>
 			<li>Evaluation of your up-to-date energy bill to calculate your current energy consumption</li>
-			<li>Predict potential future savings</li>
+			<li>Development of initial site design and solar model</li>
+			<li>Joint decision is made to move forward to Phase Two</li>
 		</ul>
-
-
-
- 
-
-
-
-
 	</div>
 
 	<div class="medium-3 columns">
@@ -526,19 +516,20 @@
 <div class="row content-attr row-space">
 	<div  class="large-12 columns">
 		<a class="anchor" name="phase-2"></a>
-		<h3 data-magellan-destination="phase-2" class="subheader"><i class="fi-clipboard-pencil"></i>&nbsp;Phase 2 | Proposal </h3>
+		<h3 data-magellan-destination="phase-2" class="subheader"><i class="fi-clipboard-pencil"></i>&nbsp;Phase 2 | Planning and Design </h3>
 	</div>
 
 
 
 	<div  class="medium-9 columns">
-		<p>Once you feel comfortable with your proposal we shift to phase two. Phase two is the build phase where we pick out all of the necessary materials for you system and our qualified engineers put the pieces together.</p>
+		<p>Phase Two is the development of the project including a multi-page proposal for the system that will best suit your specific energy needs and budget.</p>
 
+		<h6>You can expect:</h6>
 		<ul class="circle">
-			<li>Solar energy proposal to meet your specific energy needs</li>
-			<li>Polysun (solar modeling) report to ensure that energy estimates are accurate</li>
-			<li>Accurate payback estimate</li>
-			<li>Financing includes all available incentives and tax credits</li>
+			<li>Our engineers will design your solar energy system</li>
+			<li> Polysun (solar modeling) report will ensure that our energy estimates are accurate</li>
+			<li>Accurate payback estimate is calculated</li>
+			<li><a href='financing.html' class='bold'>Financing options</a> include all available incentives and tax credits</li>
 		</ul>
 	</div>
 
@@ -558,19 +549,25 @@
 <div class="row content-attr row-space">
 	<div  class="large-12 columns">
 		<a class="anchor" name="phase-3"></a>
-		<h3 data-magellan-destination="phase-3" class="subheader"><i class="fi-checkbox"></i>&nbsp;Phase 3 | Build</h3>
+		<h3 data-magellan-destination="phase-3" class="subheader"><i class="fi-checkbox"></i>&nbsp;Phase 3 | Installation and Commissioning</h3>
 	</div>
 
 	<div  class="medium-9 columns">
-		<p>Once the system is finally put together we enter phase three. Phase three involves routine maintenance and commissioning to ensure your system is performing to satisfaction.</p>
+		<p>Once the system design is complete we enter Phase Three. Phase Three involves the preparation, build, and commissioning of your solar energy system.  Our qualified engineers and installers assemble the components to complete your system.</p>
 
+		<h6>You can expect:</h6>
 		<ul class="circle">
-			<li>Our engineers design your solar energy system</li>
-			<li>Our structural engineer will evaluate your roof if necessary</li>
-			<li>State incentives are applied for on your behalf</li>
-			<li>Installation begins upon approval of incentives and permits</li>
-			<li>Interconnection to the grid after installation is complete</li>
-			<li>Final inspection</li>
+			<li>Contract for work is presented and payment schedule is set</li>
+			<li>State and/or Federal incentives are applied for on your behalf</li>
+			<li>Our structural engineer will evaluate your site</li>
+			<li>Building permits are applied for on your behalf</li>
+			<li>Interconnection paperwork is applied for on your behalf</li>
+			<li>Installation begins upon approval of incentives and permits, and receipt of materials</li>
+			<li>Electrical inspection is completed</li>
+			<li>Interconnection to the grid after installation is completed and approved</li>
+			<li>Utility inspection is completed</li>
+			<li>System is commissioned</li>
+			<li>Watch your energy bills shrink!</li>
 		</ul>
 	</div>
 

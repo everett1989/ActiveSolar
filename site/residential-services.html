@@ -199,25 +199,33 @@
 <div>
 
 	<ul class="side-links no-bullet show-for-medium-up" data-magellan-expedition="fixed" >
+		
 		<li><a data-reveal-id="quote"  href="#"><i class="fi-clipboard-pencil"></i>&nbsp;Get a Quote</a></li>
-		<li><a href="solar-electric.html"><i class="fi-lightbulb"></i>&nbsp;Solar Electric</a></li>
-		<li><a href="solar-hotwater.html"><i class="fi-power"></i>&nbsp;Solar Hot Water</a></li>
+		
+		<!-- <li><a href="solar-electric.html"><i class="fi-lightbulb"></i>&nbsp;Solar Electric</a></li>
+		<li><a href="solar-hotwater.html"><i class="fi-power"></i>&nbsp;Solar Hot Water</a></li> -->
+		<li><a href="residential-services.html"><i class="fi-home"></i>&nbsp;Residential</a></li>
+		<li><a href="commercial-services.html"><i class="fi-torso-business"></i>&nbsp;Commercial</a></li>
 		<!-- <li><a data-reveal-id="contact"><i class="fi-telephone"></i>&nbsp;Contact Us</a></li> -->
+		
 		<li><a href="contact.html"><i class="fi-telephone"></i>&nbsp;Contact Us</a></li>
+		
 
 	</ul>
 </div>
+ 
 
 <div id="quote" class="reveal-modal" data-reveal>
-	<form data-abide="ajax" id="contactform" name="contactform" >
+	
+	<form data-abide="ajax" class="contactform" name="contactform" >
 		<div class="row"> 
-			<div class="first-name-field large-6 columns">
+			<div class="first-name-field medium-6 columns">
 				<label>First Name <small>required</small>
 					<input type="text" name="first-name-field" required pattern="name" >
 				</label>
 				<small class="error">Please include your first name</small>
 			</div>
-			<div class="last-name-field large-6 columns">
+			<div class="last-name-field medium-6 columns">
 				<label>Last Name <small>required</small>
 					<input name="last-name-field" type="text" required   pattern="name">
 				</label>
@@ -227,19 +235,19 @@
 
 
 		<div class="row">
-			<div class="large-4 columns">
+			<div class="medium-4 columns">
 				<label>Street Address <small>required</small>
 					<input name="street-address-field" type="text" required  >
 				</label>
 				<small class="error">Please include your Street Address</small>
 			</div>
-			<div class="large-4 columns">
+			<div class="medium-4 columns">
 				<label>City <small>required</small>
 					<input name="city-field" type="text" required pattern="name" >
 				</label>
 				<small class="error">Include City</small>
 			</div>
-			<div class="large-2 columns">
+			<div class="medium-2 columns">
 				<label>State <small>required</small>
 
 					<select name="state-field">
@@ -295,11 +303,10 @@
 						<option value="WI">Wisconsin</option>
 						<option value="WY">Wyoming</option>
 					</select>
-					<!-- <input name="state-field" type="text" required  > -->
 				</label>
 				<small class="error">Include state</small>
 			</div>
-			<div class="large-2 columns">
+			<div class="medium-2 columns">
 				<label>Zip <small>required</small>
 					<input name="zip-field"  maxlength="5" type="text" required pattern="zip">
 				</label>
@@ -312,20 +319,20 @@
 
 
 		<div class="row">
-			<div class="large-4 columns">
+			<div class="medium-4 columns">
 				<label>Your phone number <small>required</small>
 					<input name="phone-field" type="text" required pattern="phone">
 				</label>
 				<small class="error">Not a valid Number</small>
 			</div>
-			<div class="large-6 columns">
+			<div class="medium-6 columns">
 				<label>Email <small>required</small>
 					<input name="email-field" type="email" required>
 				</label>
 				<small class="error">Not a valid Email</small>
 			</div>
-			<div class="large-2 columns">
-				<label>Best contact time 
+			<div class="medium-2 columns">
+				<label>Contact Time 
 					<input name="contact-time-field" type="time">
 				</label>
 				<small class="error">Enter Correct Time</small>
@@ -333,10 +340,10 @@
 		</div>
 
 		<div class="row">
-			<div class="large-4  columns" >
-				<label>What is your monthly electric bill? 
+			<div class="medium-4  columns" >
+				<label>Monthly Electric Bill 
 					<span class="bill-result-color">&#36;
-						<span id="bill-result"></span>
+						<span class="bill-result"></span>
 					</span>
 				</label>
 
@@ -348,20 +355,34 @@
 				<small class="error">Name is required and must be a string.</small>
 			</div>
 
-			<div class="large-4 columns">
-				<label>For residential or commercial?</label>
-				<input name="select-residential-field" value="X" id="select-residential" type="checkbox"><label class="highlight" for="select-residential">Residential</label>
-				<input name='select-commercial-field' value="X" id="select-commercial" type="checkbox"><label class="highlight" for="select-commercial">Commercial</label>
+			<div class="medium-4 columns">
+				<label>For Residential and/or Commercial?</label>
+				<div class="row">	
+					<div class="large-12 columns">
+						<input name="select-residential-field" value="X" id="select-residential" type="checkbox"><label class="highlight bold" for="select-residential">Residential</label>					
+					</div>
+
+					<div class="large-12 columns">
+						<input name='select-commercial-field' value="X" id="select-commercial" type="checkbox"><label class="highlight bold" for="select-commercial">Commercial</label>					
+					</div>
+				</div>
 			</div>
-			<div class="elec-or-water-field large-4 columns">
-				<label>Solar electric or solar hot water?</label>
-				<input name="select-electric-field" value="X" id="select-electric" type="checkbox"><label class="highlight" for="select-electric">Solar Electric</label>
-				<input name="select-hotwater-field" id="select-hotwater" value="X" type="checkbox"><label class="highlight" for="select-hotwater">Solar Hot Water</label>
+			<div class="elec-or-water-field medium-4 columns">
+				<label>Solar Electric and/or Solar Hot Water?</label>
+				<div class='row'>
+					<div class='large-12 columns'>
+						<input name="select-electric-field" value="X" id="select-electric" type="checkbox"><label class="highlight bold" for="select-electric">Solar Electric</label>
+					</div>
+					
+					<div class='large-12 columns'>
+						<input name="select-hotwater-field" id="select-hotwater" value="X" type="checkbox"><label class="highlight bold" for="select-hotwater">Solar Hot Water</label>
+					</div>
+				</div>
 			</div>
 		</div>
 
 		<div class="row">
-			<div class="comments-field large-12 columns">
+			<div class="comments-field medium-12 columns">
 				<label>Comments
 					<textarea name="comments-field" placeholder="Enter your comments here"></textarea>
 				</label>
@@ -373,38 +394,6 @@
 
 	<a class="close-reveal-modal">&#215;</a>
 </div>
-
-
-
-<!-- <div id="contact" class="reveal-modal" data-reveal>
-
-	<h2> Contact Us</h2>
-<div class="row">
-	<div class="large-8 columns">
-		<p>Contact Active Solar Development to see how much money we can save your business on energy!</p>
-		
-	</div>
-	<div class="large-4 columns">
-
-	<dl>
-		<dt>Phone</dt>
-		<dd>800-865-3625</dd>
-		<dt>Email</dt>
-		<dd>sales@activesolarusa.com</dd>
-		<dt>PO-Box</dt>
-		<dd>PO Box 23 - Amsterdam, NY 12010</dd>
-	</dl>
-
-		
-	</div>
-	
-	
-</div>
-
-
-	<a class="close-reveal-modal">&#215;</a>
-	
-</div> -->
 
 
 <div id="contact-success" class="reveal-modal" data-reveal>
@@ -481,14 +470,14 @@
 	<div class="row">
 		<div class="large-12 columns">
 			<a class="anchor" name="solar_electric"></a>
-			<h3 data-magellan-destination="solar_electric" class="">Solar Electric(PV)</h3>	
+			<h3 data-magellan-destination="solar_electric" class="">Solar Electric (PV)</h3>	
 		</div>
 
 		<div class="large-7 columns">
 
-			<p>Tired of opening your electric bill only to find out the rate has increased again? Choosing to install photovoltaic solar panels allows you to replace energy from your utility provider with energy from the sun. Doing so allows you to know your costs for the life of your solar energy system. These systems can be integrated into the utility grid (grid tied) or stand alone systems (off grid). Active Solar Development’s staff can perform a site visit to assess your home’s solar resource and design a system to suit your lifestyle. <a class="bold" href="contact.html">Contact us</a> to schedule a site visit and start saving!</p>
+			<p>Tired of opening your electric bill only to find out the rate has increased again? Choosing to install photovoltaic (PV) solar panels allows you to replace energy from your utility provider with energy from the sun. Doing so allows you to predict your costs for the life of your solar energy system. These systems can be integrated into the utility grid (grid tied) or stand alone systems (off grid). Active Solar Development’s staff will perform a site visit to assess your home’s solar resource and design a system to suit your lifestyle. <a class="bold" data-reveal-id="quote" href="#">Contact us</a> to schedule a site visit and start saving!</p>
 			
-		</div>
+		</div> 
 		<div class="large-5 columns">
 			<img src="source/img/pages/services/residential-page/Residential-Solar-PV.jpg" alt="Residential Solar PV">
 		</div>
@@ -504,7 +493,7 @@
 		</div>
 		<div class="large-7 columns">
 
-			<p>Did you know that up to 30% of your utility bill may be from an electric water heater?  A solar hot water system can provide up to 80% of the energy needed to heat your homes hot water supply. If you have a low temperature heating system like radiant floors we can also help supplement you heating needs. Our expert designers use Polysun solar modeling software so that we can pinpoint the best solar hot water design to suit your needs and budget. <a class=" bold" href="contact.html">Contact us</a> to schedule a site visit.</p>
+			<p>Did you know that up to 30% of your utility bill may be from an electric water heater?  A solar hot water system (also called Solar Thermal) can provide up to 80% of the energy needed to heat your home's hot water supply. If you have a low temperature heating system such as radiant floors we can supplement you heating needs. Our expert designers use Polysun solar modeling software to pinpoint the best solar hot water design to suit your needs and budget. <a class=" bold" data-reveal-id="quote" href="#">Contact us</a> to schedule a site visit.</p>
 		</div>
 
 		<div class="large-5 columns">
