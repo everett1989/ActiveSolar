@@ -199,25 +199,33 @@
 <div>
 
 	<ul class="side-links no-bullet show-for-medium-up" data-magellan-expedition="fixed" >
+		
 		<li><a data-reveal-id="quote"  href="#"><i class="fi-clipboard-pencil"></i>&nbsp;Get a Quote</a></li>
-		<li><a href="solar-electric.html"><i class="fi-lightbulb"></i>&nbsp;Solar Electric</a></li>
-		<li><a href="solar-hotwater.html"><i class="fi-power"></i>&nbsp;Solar Hot Water</a></li>
+		
+		<!-- <li><a href="solar-electric.html"><i class="fi-lightbulb"></i>&nbsp;Solar Electric</a></li>
+		<li><a href="solar-hotwater.html"><i class="fi-power"></i>&nbsp;Solar Hot Water</a></li> -->
+		<li><a href="residential-services.html"><i class="fi-home"></i>&nbsp;Residential</a></li>
+		<li><a href="commercial-services.html"><i class="fi-torso-business"></i>&nbsp;Commercial</a></li>
 		<!-- <li><a data-reveal-id="contact"><i class="fi-telephone"></i>&nbsp;Contact Us</a></li> -->
+		
 		<li><a href="contact.html"><i class="fi-telephone"></i>&nbsp;Contact Us</a></li>
+		
 
 	</ul>
 </div>
+ 
 
 <div id="quote" class="reveal-modal" data-reveal>
-	<form data-abide="ajax" id="contactform" name="contactform" >
+	
+	<form data-abide="ajax" class="contactform" name="contactform" >
 		<div class="row"> 
-			<div class="first-name-field large-6 columns">
+			<div class="first-name-field medium-6 columns">
 				<label>First Name <small>required</small>
 					<input type="text" name="first-name-field" required pattern="name" >
 				</label>
 				<small class="error">Please include your first name</small>
 			</div>
-			<div class="last-name-field large-6 columns">
+			<div class="last-name-field medium-6 columns">
 				<label>Last Name <small>required</small>
 					<input name="last-name-field" type="text" required   pattern="name">
 				</label>
@@ -227,19 +235,19 @@
 
 
 		<div class="row">
-			<div class="large-4 columns">
+			<div class="medium-4 columns">
 				<label>Street Address <small>required</small>
 					<input name="street-address-field" type="text" required  >
 				</label>
 				<small class="error">Please include your Street Address</small>
 			</div>
-			<div class="large-4 columns">
+			<div class="medium-4 columns">
 				<label>City <small>required</small>
 					<input name="city-field" type="text" required pattern="name" >
 				</label>
 				<small class="error">Include City</small>
 			</div>
-			<div class="large-2 columns">
+			<div class="medium-2 columns">
 				<label>State <small>required</small>
 
 					<select name="state-field">
@@ -295,11 +303,10 @@
 						<option value="WI">Wisconsin</option>
 						<option value="WY">Wyoming</option>
 					</select>
-					<!-- <input name="state-field" type="text" required  > -->
 				</label>
 				<small class="error">Include state</small>
 			</div>
-			<div class="large-2 columns">
+			<div class="medium-2 columns">
 				<label>Zip <small>required</small>
 					<input name="zip-field"  maxlength="5" type="text" required pattern="zip">
 				</label>
@@ -312,20 +319,20 @@
 
 
 		<div class="row">
-			<div class="large-4 columns">
+			<div class="medium-4 columns">
 				<label>Your phone number <small>required</small>
 					<input name="phone-field" type="text" required pattern="phone">
 				</label>
 				<small class="error">Not a valid Number</small>
 			</div>
-			<div class="large-6 columns">
+			<div class="medium-6 columns">
 				<label>Email <small>required</small>
 					<input name="email-field" type="email" required>
 				</label>
 				<small class="error">Not a valid Email</small>
 			</div>
-			<div class="large-2 columns">
-				<label>Best contact time 
+			<div class="medium-2 columns">
+				<label>Contact Time 
 					<input name="contact-time-field" type="time">
 				</label>
 				<small class="error">Enter Correct Time</small>
@@ -333,10 +340,10 @@
 		</div>
 
 		<div class="row">
-			<div class="large-4  columns" >
-				<label>What is your monthly electric bill? 
+			<div class="medium-4  columns" >
+				<label>Monthly Electric Bill 
 					<span class="bill-result-color">&#36;
-						<span id="bill-result"></span>
+						<span class="bill-result"></span>
 					</span>
 				</label>
 
@@ -348,20 +355,34 @@
 				<small class="error">Name is required and must be a string.</small>
 			</div>
 
-			<div class="large-4 columns">
-				<label>For residential or commercial?</label>
-				<input name="select-residential-field" value="X" id="select-residential" type="checkbox"><label class="highlight" for="select-residential">Residential</label>
-				<input name='select-commercial-field' value="X" id="select-commercial" type="checkbox"><label class="highlight" for="select-commercial">Commercial</label>
+			<div class="medium-4 columns">
+				<label>For Residential and/or Commercial?</label>
+				<div class="row">	
+					<div class="large-12 columns">
+						<input name="select-residential-field" value="X" id="select-residential" type="checkbox"><label class="highlight bold" for="select-residential">Residential</label>					
+					</div>
+
+					<div class="large-12 columns">
+						<input name='select-commercial-field' value="X" id="select-commercial" type="checkbox"><label class="highlight bold" for="select-commercial">Commercial</label>					
+					</div>
+				</div>
 			</div>
-			<div class="elec-or-water-field large-4 columns">
-				<label>Solar electric or solar hot water?</label>
-				<input name="select-electric-field" value="X" id="select-electric" type="checkbox"><label class="highlight" for="select-electric">Solar Electric</label>
-				<input name="select-hotwater-field" id="select-hotwater" value="X" type="checkbox"><label class="highlight" for="select-hotwater">Solar Hot Water</label>
+			<div class="elec-or-water-field medium-4 columns">
+				<label>Solar Electric and/or Solar Hot Water?</label>
+				<div class='row'>
+					<div class='large-12 columns'>
+						<input name="select-electric-field" value="X" id="select-electric" type="checkbox"><label class="highlight bold" for="select-electric">Solar Electric</label>
+					</div>
+					
+					<div class='large-12 columns'>
+						<input name="select-hotwater-field" id="select-hotwater" value="X" type="checkbox"><label class="highlight bold" for="select-hotwater">Solar Hot Water</label>
+					</div>
+				</div>
 			</div>
 		</div>
 
 		<div class="row">
-			<div class="comments-field large-12 columns">
+			<div class="comments-field medium-12 columns">
 				<label>Comments
 					<textarea name="comments-field" placeholder="Enter your comments here"></textarea>
 				</label>
@@ -373,38 +394,6 @@
 
 	<a class="close-reveal-modal">&#215;</a>
 </div>
-
-
-
-<!-- <div id="contact" class="reveal-modal" data-reveal>
-
-	<h2> Contact Us</h2>
-<div class="row">
-	<div class="large-8 columns">
-		<p>Contact Active Solar Development to see how much money we can save your business on energy!</p>
-		
-	</div>
-	<div class="large-4 columns">
-
-	<dl>
-		<dt>Phone</dt>
-		<dd>800-865-3625</dd>
-		<dt>Email</dt>
-		<dd>sales@activesolarusa.com</dd>
-		<dt>PO-Box</dt>
-		<dd>PO Box 23 - Amsterdam, NY 12010</dd>
-	</dl>
-
-		
-	</div>
-	
-	
-</div>
-
-
-	<a class="close-reveal-modal">&#215;</a>
-	
-</div> -->
 
 
 <div id="contact-success" class="reveal-modal" data-reveal>
@@ -545,7 +534,7 @@
 	<div class="large-4 columns">
 		
 		<h3 class="hr-bottom "><i class="fi-checkbox"></i>&nbsp;Why Us?</h3>
-		<p>Calling Active Solar Development for a quote gives you access to seasoned professionals who are experts in renewable energy systems.  We examine all aspects of your energy usage to determine the optimal solar system for your business or home.  Our professional installers are factory trained,<!--  <a class='bold' href="#"> -->NABCEP<!-- </a> --> certified and <!-- <a class='bold' href="#"> -->BPI<!-- </a> --> certified to ensure that we are providing you the best solar products and the highest quality installation.  Give us a call so we can start saving you money now.
+		<p>Calling Active Solar Development for a quote gives you access to seasoned professionals who are experts in renewable energy systems.  We examine all aspects of your energy usage to determine the optimal solar system for your business or home.  Our professional installers are factory trained, <!--  <a class='bold' href="#"> -->NABCEP<!-- </a> --> certified and <!-- <a class='bold' href="#"> -->BPI<!-- </a> --> certified to ensure that we are providing you the best solar products and the highest quality installation.  Give us a call so we can start saving you money now.
 		 <b class="highlight">
 		 	<span class="show-for-medium-up">800-865-3625</span>
 			<a class="show-for-small-only" href="tel:800-865-3625">800-865-3625</a>
@@ -554,7 +543,7 @@
 
 	<div class="large-4 columns ">
 		<h3 class=" hr-bottom"><i class="fi-clipboard-pencil"></i>&nbsp;Incentives</h3>
-		<p>In addition to the money you save by choosing solar energy, there are multiple state and federal solar energy incentives for which you may qualify. Active Solar Development has the experience to guide you through these solar programs.  <a class='bold' href="#">Cash Grants, Tax Credits and Low Interest Loans</a> are available for solar energy systems. Let us show you how we can make solar energy affordable.</p>
+		<p>In addition to the money you save by choosing solar energy, there are multiple state and federal solar energy incentives for which you may qualify. Active Solar Development has the experience to guide you through these solar programs.  <a class='bold' href="financing.html">Cash Grants, Tax Credits and Low Interest Loans</a> are available for solar energy systems. Let us show you how we can make solar energy affordable.</p>
 	</div>
 
 </div>
