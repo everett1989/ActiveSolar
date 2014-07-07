@@ -44,7 +44,7 @@ $(document).foundation({
       end: 1000,
       step: 1,
       initial: 200,
-      display_selector: '#bill-result'
+      display_selector: '.bill-result'
 
     }
   
@@ -76,7 +76,7 @@ $(document).ready(function(){
       form[0].reset();
 
     }).fail(function(){
-        print_response .text("Sorry but there was an error! Please contact us via phone or Email");
+        print_response .text(" Sorry but there was an error! Please contact us at 800-865-3625 or sales@activesolarusa.com.  We are happy to assist you!");
     }).always(function(){
       $('#contact-success').foundation('reveal', 'open');
 
