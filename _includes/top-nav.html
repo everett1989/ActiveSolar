@@ -1,0 +1,94 @@
+ 
+<div class="sticky contain-to-grid header-menu">
+
+	<nav class="top-bar" data-topbar>
+
+		<ul class="title-area">
+			<li class="name" >
+				<h1>
+					<a {% if page.url == "/index.html" %} class="active" {% endif %} href="index.html"><span class="hide-for-medium-up">Active Solar</span><span class="show-for-medium-up">Home</span></a>
+				</h1>
+			</li>
+			<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>	
+		</ul>
+
+		<section class = "top-bar-section">
+			<ul class ="right">
+				<li class="divider"></li>				
+				<li class="hide-for-medium-up" {% if page.url == "/solar-electric.html" %} class="active" {% endif %}>
+					<a href="solar-electric.html">Solar Electric</a>
+				</li>
+				<li class="divider hide-for-medium-up"></li>
+				<li class="hide-for-medium-up" {% if page.url == "/solar-hotwater.html" %} class="active" {% endif %}>
+					<a href="solar-hotwater.html">Solar Hot Water</a>
+				</li>
+				<li class="divider hide-for-medium-up"></li>
+
+				{% if page.url == '/residential-services.html' or page.url == '/commercial-services.html' %} 
+					{% assign serviceActive = 'active' %}
+					{% assign serviceName = page.title %}
+
+				{% else %}
+
+					{% assign serviceName = 'Services' %}
+					{% assign serviceActive = '' %}
+
+				{% endif %}
+
+				<!-- <li class="has-dropdown {{ serviceActive }}"><a href="#">{{ serviceName }}</a> -->
+				<li class="has-dropdown {{ serviceActive }}"><a href="#">Services</a>
+					<ul class="dropdown">
+						<li class="divider"></li>
+
+						<li {% if page.url == '/residential-services.html' %} class="active"{% endif %} ><a href="residential-services.html">Residential</a></li>
+						<li class="divider"></li>
+						<li {% if page.url == '/commercial-services.html' %} class="active"{% endif %} ><a href="commercial-services.html">Commercial</a></li>
+						<li class="divider"></li>
+					</ul>
+				</li>
+				<li class="divider"></li>
+
+				<li {% if page.url == "/process.html" %} class="active" {% endif %}>
+					<a href="process.html">Our Process</a>
+				</li>
+				<li class="divider"></li>
+				<li {% if page.url == "/projects.html" %} class="active" {% endif %}>
+					<a href="projects.html">Projects</a>
+				</li>
+				<li class="divider"></li>
+				<li {% if page.url == "/financing.html" %} class="active" {% endif %}>
+					<a href="financing.html">Financing</a>
+				</li>
+				<li class="divider"></li>
+
+					{% if page.url == '/about-us.html' or page.url == '/contact.html' %} 
+					{% assign aboutActive = 'active' %}
+					{% assign aboutName = page.title %}
+
+				{% else %}
+
+					{% assign aboutName = 'About' %}
+					{% assign aboutActive = '' %}
+
+				{% endif %}
+
+
+				<li class="has-dropdown {{ aboutActive }}"><a href="#">{{ aboutName }}</a>
+					<ul class="dropdown">
+
+						<li class="divider"></li>
+						<li {% if page.url == '/about-us.html' %} class="active"{% endif %} ><a href="about-us.html">About Us</a></li>
+						<li class="divider"></li>
+						<li {% if page.url == '/contact.html' %} class="active"{% endif %} ><a href="contact.html">Contact Us</a></li>
+						<li class="divider"></li>
+					</ul>
+				</li>
+				<li class="divider"></li>
+
+
+			</ul>
+		</section>
+
+	</nav>
+
+</div>

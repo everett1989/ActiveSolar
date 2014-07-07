@@ -3,8 +3,8 @@ markdown: redcarpet
 #pygments: false
 highlighter: pygments 
 
-source: ./jekyll
-destination: ./site
+# source: ./jekyll
+# destination: ./site
 
 
 
