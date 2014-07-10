@@ -135,8 +135,8 @@ $base-line-height: 150% !default;
 // $hover-color - icon color during hover
 // $offcanvas - Set to true of @include in offcanvas
 @mixin hamburger($width, $left, $top, $thickness, $gap, $color, $hover-color, $offcanvas) {
-  span:after {
-    content: '';
+  span::after {
+    content: "";
     position: absolute;
     display: block;
     height: 0;
@@ -155,7 +155,11 @@ $base-line-height: 150% !default;
     	@else {
     	  left: ($tabbar-menu-icon-width - $width)/2;
     	}
-    }
+    } @else {
+       top: 50%;
+       margin-top: -$width/2;
+       #{$opposite-direction}: $topbar-link-padding;
+     }
     	
     box-shadow:
       0 0px 0 $thickness $color,
