@@ -29,7 +29,7 @@ ul.clearing-thumbs{//Fixed full screen gallery pictures
 /******************MAGELLAN************************************/
 [data-magellan-expedition-clone] { visibility:hidden; }//Hides clone until patch comes out
 ul.side-links {//For the sticky side-nav
-	margin-left: -16px;//-18px;
+	//margin-left: -16px;//-18px;
 	line-height:1.05;
 	font-size:18px;
 	width:200px;
@@ -45,7 +45,7 @@ ul.side-links {//For the sticky side-nav
 	background: $body-bg;
 	padding-bottom:0px;
 	margin-left: -16px;
-	margin-bottom: 40px;
+	margin-bottom: 40px; 
 }
 dl.sub-nav{//For quick anchor scrolling
 	& a{
