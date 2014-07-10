@@ -118,7 +118,7 @@
 
 @mixin color-theme($color){
   @extend .content-attr;
-  h3{color:rgba($color,.75);}
+  h3,h4{color:rgba($color,.90);}
   // h3{color:lighten($color, 20);}
   h2{color:$color;}
   hr.header{color:$color;}
