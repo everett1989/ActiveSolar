@@ -91,11 +91,15 @@ htmlmin: {                                     // Task
   uglify: {
     
     js: {
+      //  options: {
+      //   beautify: true,
+      //   mangle: false
+      // },
       files: {
         
         "jekyll/source/js/app.min.js":[
         'bower_components/foundation/js/vendor/jquery.js',
-        'bower_components/foundation/js/foundation.min.js',
+        'bower_components/foundation/js/foundation.js',
         'js/foundation-options.js',
         //'bower_components/foundation/js/vendor/fastclick.js',
         ],
