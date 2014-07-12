@@ -17,7 +17,8 @@
 					<a data-reveal-id="quote" class="button get-quote-button" href="#">Get a Free Quote</a>
 				</div>
 				<div class="phone-header large-12 columns">
-					{{ site.data.contact.phone }}
+					<span class="show-for-medium-up">{{ site.data.contact.phone }}</span>
+					<a class="show-for-small-only small-phone-color" href="tel:{{ site.data.contact.phone }}">{{ site.data.contact.phone }}</a>
 				</div>
 				<div class="social-media social-media-header large-12 columns">
 

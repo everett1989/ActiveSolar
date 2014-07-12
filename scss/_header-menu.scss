@@ -38,6 +38,12 @@ a.get-quote-button{
 
 .logo_pic{margin-bottom:5px;}
 
+.small-phone-color{
+	color:$light-font;
+
+	&:hover{color:scale-color($light-font, $lightness: -14%);} 
+}
+
 
 
 
