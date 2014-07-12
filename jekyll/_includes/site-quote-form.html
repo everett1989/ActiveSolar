@@ -1,4 +1,10 @@
-<form data-abide="ajax" class="contactform" name="contactform" >
+{% assign concat='' %}
+{% if include.param == "isContactPage" %}
+
+	{% assign concat='-contact' %}
+
+{% endif %}
+<form data-abide="ajax" class="contactform" name="contactform{{ concat }}" >
 		<div class="row"> 
 			<div class="first-name-field medium-6 columns">
 				<label>First Name <small>required</small>
@@ -124,11 +130,11 @@
 			<div class="medium-4  columns" >
 				<label>Monthly Electric Bill 
 					<span class="bill-result-color">&#36;
-						<span class="bill-result"></span>
+						<span class="bill-result{{ concat }}"></span>
 					</span>
 				</label>
 
-				<div id="bill-slider"class='range-slider radius' data-slider>
+				<div id="bill-slider{{ concat }}"class='range-slider radius' data-options="display_selector:.bill-result{{ concat }}" data-slider>
 					<span class="range-slider-handle"></span>
 					<span class="range-slider-active-segment"></span>
 					<input name="bill-field" type="hidden">
@@ -140,11 +146,11 @@
 				<label>For Residential and/or Commercial?</label>
 				<div class="row">	
 					<div class="large-12 columns">
-						<input name="select-residential-field" value="X" id="select-residential" type="checkbox"><label class="highlight bold" for="select-residential">Residential</label>					
+						<input name="select-residential-field" value="X" id="select-residential{{ concat }}" type="checkbox"><label class="highlight bold" for="select-residential{{ concat }}">Residential</label>					
 					</div>
 
 					<div class="large-12 columns">
-						<input name='select-commercial-field' value="X" id="select-commercial" type="checkbox"><label class="highlight bold" for="select-commercial">Commercial</label>					
+						<input name='select-commercial-field' value="X" id="select-commercial{{ concat }}" type="checkbox"><label class="highlight bold" for="select-commercial{{ concat }}">Commercial</label>					
 					</div>
 				</div>
 			</div>
@@ -152,11 +158,11 @@
 				<label>Solar Electric and/or Solar Hot Water?</label>
 				<div class='row'>
 					<div class='large-12 columns'>
-						<input name="select-electric-field" value="X" id="select-electric" type="checkbox"><label class="highlight bold" for="select-electric">Solar Electric</label>
+						<input name="select-electric-field" value="X" id="select-electric{{ concat }}" type="checkbox"><label class="highlight bold" for="select-electric{{ concat }}">Solar Electric</label>
 					</div>
 					
 					<div class='large-12 columns'>
-						<input name="select-hotwater-field" id="select-hotwater" value="X" type="checkbox"><label class="highlight bold" for="select-hotwater">Solar Hot Water</label>
+						<input name="select-hotwater-field" id="select-hotwater{{ concat }}" value="X" type="checkbox"><label class="highlight bold" for="select-hotwater{{ concat }}">Solar Hot Water</label>
 					</div>
 				</div>
 			</div>

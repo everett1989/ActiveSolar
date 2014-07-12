@@ -44,8 +44,8 @@ $(document).foundation({
       start: 1,
       end: 1000,
       step: 1,
-      initial: 200,
-      display_selector: '.bill-result'
+      initial: 200
+     // display_selector: '.bill-result'
 
     }
   
@@ -65,7 +65,7 @@ $(document).on('opened', '#quote', function () {
 
 $(document).ready(function(){
 
-  $('form[name="contactform"]').on('valid', function() {
+  $('form[name="contactform"],form[name="contactform-contact"]').on('valid', function() {
     var form = $(this);
     var form_info =  form.serialize();
     var print_response = $('#message');
