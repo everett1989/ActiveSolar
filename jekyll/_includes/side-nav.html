@@ -2,9 +2,9 @@
 <div>
 
 	<ul class="side-links no-bullet show-for-medium-up" data-magellan-expedition="fixed" >
-		{% if page.url != '/contact.html' %}
+
 		<li><a data-reveal-id="quote"  href="#"><i class="fi-clipboard-pencil"></i>&nbsp;Get a Quote</a></li>
-		{% endif %}
+
 		<!-- <li><a href="solar-electric.html"><i class="fi-lightbulb"></i>&nbsp;Solar Electric</a></li>
 		<li><a href="solar-hotwater.html"><i class="fi-power"></i>&nbsp;Solar Hot Water</a></li> -->
 		<li><a href="residential-services.html"><i class="fi-home"></i>&nbsp;Residential</a></li>
@@ -17,14 +17,14 @@
 	</ul>
 </div>
  
-{% if page.url != '/contact.html' %}
+
 <div id="quote" class="reveal-modal" data-reveal>
 	
 	{% include site-quote-form.html %}
 
 	<a class="close-reveal-modal">&#215;</a>
 </div>
-{% endif %}
+
 
 <div id="contact-success" class="reveal-modal" data-reveal>
 
