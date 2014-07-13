@@ -1,7 +1,5 @@
 # robots.txt generated at http://www.mcanerin.com
 User-agent: *
-Disallow: 
-Crawl-delay: 10
 Disallow: /cgi-bin/
-Disallow: /source/asp/
-Disallow: /web.config
+Disallow: /web.config/
+Sitemap: http://www.activesolarusa.com/sitemap.xml
