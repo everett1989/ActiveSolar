@@ -86,7 +86,6 @@
 
 .content-attr{
   @extend .link-color, .has-icons;
-  img{box-shadow: 3px 3px 3px;}
   hr.header{
     border:0px;
     height:2px;
@@ -118,20 +117,16 @@
 
 @mixin color-theme($color){
   @extend .content-attr;
-  h3,h4{color:rgba($color,.90);}
-  // h3{color:lighten($color, 20);}
+  h3,h4,h5,h6{color:rgba($color,.90);}
   h2{color:$color;}
-  hr.header{color:$color;}
-  //h2{margin-bottom:0;}
   i{color:$color;}
   a{color: $color;}
-  img{box-shadow: 3px 3px 3px;}
+  //img{box-shadow: 3px 3px 3px;}
   hr.header{
-    //color:$color;
+    color:$color;
     margin-top: -10px;
     border:0px;
     height:2px;
-    //@include background-image(linear-gradient(left, $color,$body-bg));
     @include background-gradient(left, $color,$body-bg);
   }
 }
@@ -148,6 +143,7 @@
 .page-banner{
   box-shadow: 3px 3px 3px;
   margin-bottom: 5px !important;
+  & img{width:100%;}
   // @media #{$small-only} {
   //   min-width: 600px;
   //   overflow-x: hidden;
@@ -200,5 +196,5 @@ a.anchor{
   .panel{margin-bottom:50px;}
 }
 
-
+img.box-shadow{box-shadow: 3px 3px 3px;}
 
