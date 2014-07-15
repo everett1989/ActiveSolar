@@ -14,6 +14,7 @@ site/.settings/*
 site/.project
 site/WebContent/*
 sftp-config.json
-send_form_email.asp
+jekyll/source/asp/*
+site/source/asp/*
 
 
